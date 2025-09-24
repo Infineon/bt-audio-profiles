@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,13 +54,14 @@
 #define HFP_VERSION_1_6                 0x0106
 #define HFP_VERSION_1_7                 0x0107
 #define HFP_VERSION_1_8                 0x0108
-#define HFP_AG_VERSION                  HFP_VERSION_1_8
+#define HFP_VERSION_1_9                 0x0109
+#define HFP_AG_VERSION                  HFP_VERSION_1_9
 
 /* HF feature masks */
 #define HFP_HF_FEAT_ECNR                0x00000001   /* Echo cancellation and/or noise reduction */
 #define HFP_HF_FEAT_3WAY                0x00000002   /* Call waiting and three-way calling */
 #define HFP_HF_FEAT_CLIP                0x00000004   /* Caller ID presentation capability  */
-#define HFP_HF_FEAT_VREC                0x00000008   /* Voice recoginition activation capability  */
+#define HFP_HF_FEAT_VREC                0x00000008   /* Voice recognition activation capability  */
 #define HFP_HF_FEAT_RVOL                0x00000010   /* Remote volume control capability  */
 #define HFP_HF_FEAT_ECS                 0x00000020   /* Enhanced Call Status  */
 #define HFP_HF_FEAT_ECC                 0x00000040   /* Enhanced Call Control  */
@@ -81,12 +82,22 @@
 #define HFP_AG_FEAT_CODEC               0x00000200   /* Codec Negotiation */
 #define HFP_AG_FEAT_HF_IND              0x00000400   /* HF Indicators */
 #define HFP_AG_FEAT_ESCO                0x00000800   /* eSCO S4 ( and T2 ) setting supported */
+#define HFP_AG_FEAT_EVREC_STATUS        0x00001000   /* Enhanced Voice Recognition Status */
+#define HFP_AG_FEAT_VREC_TEXT           0x00002000   /* Voice Recognition Text */
 
 /* SCO Codec Types */
 #define HFP_CODEC_CVSD                  0x0001
 #define HFP_CODEC_MSBC                  0x0002
+#define HFP_CODEC_LC3                   0x0003
 
-/* ASCII charcter string of arguments to the AT command or response */
+typedef enum
+{
+    WICED_BT_HFP_AG_CODEC_CVSD = 0x01u,
+    WICED_BT_HFP_AG_CODEC_MSBC = 0x02u,
+    WICED_BT_HFP_AG_CODEC_LC3 = 0x04u
+} wiced_bt_hfp_ag_codec_t;
+
+/* ASCII character string of arguments to the AT command or response */
 #define HFP_AG_AT_MAX_LEN               200
 
 /* HFP VGS and VGM Max/Min value */
@@ -94,10 +105,18 @@
 #define HFP_VGM_VGS_MIN                 0
 
 #undef  BTM_WBS_INCLUDED
-#define BTM_WBS_INCLUDED                TRUE
+#define BTM_WBS_INCLUDED                TRUE /* Wide band support */
 
-/* SDP SupportedFeatures attribute bit mapping for HF.
-   Table 5.4 of Hand-Free Profile 1.8 */
+#undef BTM_SWBS_INCLUDED
+#define BTM_SWBS_INCLUDED               TRUE /* Super wide band Support */
+
+#undef BTM_HF_INDICATOR_INCLUDED
+#define BTM_HF_INDICATOR_INCLUDED TRUE /* HF Indicator Support */
+
+
+
+/* SDP SupportedFeatures attribute bit mapping for AG.
+   Table 5.4 of Hand-Free Profile 1.9 */
 #define WICED_BT_HFP_AG_SDP_FEATURE_3WAY_CALLING    0x0001  /* Call waiting or three-way calling (yes:1, no:0) */
 #define WICED_BT_HFP_AG_SDP_FEATURE_ECNR            0x0002  /* EC and/or NR function (yes:1, no:0) */
 #define WICED_BT_HFP_AG_SDP_FEATURE_VRECG           0x0004  /* Voice recognition activation (yes:1, no:0) */
@@ -106,6 +125,7 @@
 #define WICED_BT_HFP_AG_SDP_FEATURE_WIDEBAND_SPEECH 0x0020  /* Wide band speech (yes:1, no:0) */
 #define WICED_BT_HFP_AG_SDP_FEATURE_EVRS            0x0040  /* Enhanced Voice Recognition Status (yes/no, 1 = yes, 0 = no)  */
 #define WICED_BT_HFP_AG_SDP_FEATURE_VRC_TEXT        0x0080  /* Voice Recognition Text (yes/no, 1 = yes, 0 = no) */
+#define WICED_BT_HFP_AG_SDP_FEATURE_SWB_SPEECH      0x0100  /* Super Wide Band Speech (yes/no, 1 = yes, 0 = no) */
 
 /* type for each service control block */
 /* Handsfree device control block */
@@ -137,11 +157,10 @@ typedef struct
     uint32_t hf_features; /* HF device features */
     uint16_t hf_version;  /* HF device profile version */
 
-#if (BTM_WBS_INCLUDED == TRUE)
-    wiced_timer_t cn_timer; /* codec negotiation timer */
-
-    wiced_bool_t peer_supports_msbc; /* TRUE if peer supports mSBC */
-    wiced_bool_t msbc_selected;      /* TRUE if we have selected mSBC */
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
+    wiced_timer_t           cn_timer;               /* codec negotiation timer */
+    uint8_t                 peer_supported_codecs;  /* Codecs supported by peer (see wiced_bt_hfp_ag_codec_t) */
+    wiced_bt_hfp_ag_codec_t local_selected_codec;   /* TRUE if we have selected mSBC */
 #endif
 
     uint16_t sco_idx;          /* SCO handle */
@@ -152,7 +171,20 @@ typedef struct
     wiced_bool_t clip_enabled; /* set to TRUE if HF enables CLIP reporting */
     wiced_bool_t cmer_enabled; /* set to TRUE if HF enables CMER reporting */
     wiced_bool_t cmee_enabled; /* set to TRUE if HF enables CME ERROR reporting */
+
+    /* Codec connection : See HFP 1.9 4.11 (Audio Connection Setup) */
+#define CODEC_CONN_STATE_NOT_STARTED    0x00
+#define CODEC_CONN_STATE_BAC_REC        0x01
+#define CODEC_CONN_STATE_BCS_SENT       0x02
+#define CODEC_CONN_STATE_BCS_RES_RECVD  0x03
+    wiced_bool_t codec_conn_state; /* State for codec connection */
     uint8_t indicator_bit_map; /* Indicator bit map */
+#if (BTM_HF_INDICATOR_INCLUDED==TRUE)
+#define HF_IND_ENHANCED_SAFETY      0x01u
+#define HF_IND_REM_BATTERY_LEVEL    0x02u
+    uint8_t hf_indicator_hf_support; /* Indicators supported by HF */
+    uint8_t hf_indicator_ag_status; /* Current status of HF indicator support in AG */
+#endif //BTM_HF_INDICATOR_INCLUDED
 #if BTSTACK_VER >= 0x03000001
     /* TODO : for now fifo size if fixed, need to update the required max memory for rfcomm_fifo */
     uint8_t rfcomm_fifo[400];
@@ -192,8 +224,8 @@ typedef struct
 /* data associated with WICED_BT_HFP_AG_EVENT_AUDIO_OPEN */
 typedef struct
 {
-    uint8_t wbs_supported;
-    uint8_t wbs_used;
+    uint8_t peer_supported_codecs;
+    uint8_t local_selected_codec;
 } wiced_bt_hfp_ag_audio_open_t;
 /* union of data associated with AG callback */
 typedef union
@@ -212,7 +244,8 @@ typedef enum
     WICED_BT_HFP_AG_EVENT_AUDIO_OPEN,
     WICED_BT_HFP_AG_EVENT_AUDIO_CLOSE,
     WICED_BT_HFP_AG_EVENT_AT_CMD,
-    WICED_BT_HFP_AG_EVENT_CLCC_REQ
+    WICED_BT_HFP_AG_EVENT_CLCC_REQ,
+    WICED_BT_HFP_AG_EVENT_NREC_CMD,
 }wiced_bt_hfp_ag_event_t;
 
 typedef enum
@@ -283,6 +316,17 @@ extern uint8_t wiced_bt_hfp_ag_send_cmd_str_to_hf (wiced_bt_hfp_ag_session_cb_t 
 extern void wiced_bt_hfp_ag_send_OK_to_hf (wiced_bt_hfp_ag_session_cb_t *p_scb);
 extern void wiced_bt_hfp_ag_set_cind(char *cind_str, uint8_t length);
 extern void wiced_bt_hfp_ag_send_Error_to_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, int error_code);
+
+/*
+ * Enable or disable the indicator.
+ * If indicator is not supported by HF or AG, error is returned.
+ *
+ * This can be called anytime after wiced_bt_hfp_ag_startup is done.
+ * This will set the status (enabled or disabled) for the hf_indicator locally.
+ * This will also send +BIND AT command to HF if SLC is up.
+ */
+extern uint8_t wiced_bt_hfp_ag_change_hf_ind_status(uint16_t handle, uint8_t indicator, wiced_bool_t enable);
+
     /**
      * @} wicedbt_ag
      */

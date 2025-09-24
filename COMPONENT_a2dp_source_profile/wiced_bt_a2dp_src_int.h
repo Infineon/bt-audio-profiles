@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,6 +33,35 @@
 **  Constants
 *****************************************************************************/
 
+/* We have to mandatorily support SBC. */
+#if(WICED_BT_A2DP_SOURCE_NUM_CODECS == 1)
+#undef A2DP_SOURCE_AAC_ENABLED
+#undef A2DP_SOURCE_MD_USAC_ENABLED
+#endif//WICED_BT_A2DP_SOURCE_NUM_CODECS
+
+/* Optional audio codecs are unsupported by default */
+#ifdef A2DP_SOURCE_AAC_ENABLED
+#define WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT TRUE
+#else
+#define WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT FALSE
+#endif //A2DP_SOURCE_AAC_ENABLED
+
+#ifdef A2DP_SOURCE_AAC_ENABLED
+#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT TRUE
+#else
+#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT FALSE
+#endif //A2DP_SOURCE_AAC_ENABLED
+
+#ifdef A2DP_SOURCE_MD_USAC_ENABLED
+#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT TRUE
+#else
+#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT FALSE
+#endif //A2DP_SOURCE_MD_USAC_ENABLED
+
+/* We don't have support for vendor specific codec in source */
+#define WICED_BT_A2DP_SOURCE_CO_VENDOR_SPECIFIC_SUPPORT FALSE
+
+
 /* Set it to TRUE for adding debugging traces */
 //#define WICED_BT_A2DP_SOURCE_DEBUG
 
@@ -40,11 +69,11 @@
 #define WICED_BT_A2DP_SOURCE_DEBUG FALSE
 #endif
 
-/* Maximun number of AVDTP signaling connections */
+/* Maximum number of AVDTP signaling connections */
 #define WICED_BT_A2DP_SOURCE_MAX_NUM_CONN            1
-#define WICED_BT_A2DP_SOURCE_MAX_NUM_CODECS          1
-/* Max stream end-points */
-#define WICED_BT_A2DP_SOURCE_MAX_SEPS                WICED_BT_A2DP_SOURCE_MAX_NUM_CONN*WICED_BT_A2DP_SOURCE_MAX_NUM_CODECS
+
+/* Max Local stream end-points */
+#define WICED_BT_A2DP_SOURCE_MAX_SEPS                WICED_BT_A2DP_SOURCE_MAX_NUM_CONN*WICED_BT_A2DP_SOURCE_NUM_CODECS
 #define WICED_BT_A2DP_SOURCE_SEP_MEDIA_TYPE_INDEX    2
 
 /* The timer in milliseconds to guard against link busy and AVDT_CloseReq failed to be sent */
@@ -54,9 +83,6 @@
 
 /* Define the task message box for A2DP Sink */
 #define WICED_BT_A2DP_SOURCE_TASK_MBOX        TASK_MBOX_2
-
-/* Maximum number of SEPS in stream discovery results */
-#define WICED_BT_A2DP_SOURCE_NUM_SEPS         3
 
 /* Size of database for service discovery */
 #define WICED_BT_A2DP_SOURCE_DISC_BUF_SIZE    1000
@@ -237,8 +263,8 @@ typedef struct
 /* Type for A2DP source stream control block */
 typedef struct
 {
-    wiced_bt_sdp_discovery_db_t     *p_sdp_db;       /* pointer to SDP database */
-    wiced_bt_avdt_cfg_t              *p_cap;          /* buffer used for get capabilities */
+    wiced_bt_sdp_discovery_db_t      *p_sdp_db;      /* pointer to SDP database */
+    wiced_bt_avdt_cfg_t              *p_cap;         /* buffer used for get capabilities */
     wiced_bt_avdt_sep_info_t         *sep_info;      /* stream discovery results */
     wiced_bt_avdt_cfg_t              cfg;            /* local SEP configuration */
     wiced_bt_device_address_t        peer_addr;      /* peer BD address */
@@ -268,7 +294,8 @@ typedef struct
     wiced_bool_t                     deregistring;   /* TRUE if deregistering */
     wiced_bool_t                     recfg_ind;      /* TRUE if reconfigure attempt happens in open state */
     wiced_bool_t                     is_api_close;   /* Whether the close is called by local device through API or not */
-    wiced_bt_a2dp_source_av_sep_info av_sep_info[WICED_BT_A2DP_SOURCE_MAX_NUM_CODECS];
+    wiced_bt_a2dp_source_av_sep_info
+        av_sep_info[WICED_BT_A2DP_SOURCE_NUM_SEPS];  /* Sep info for peer where we have finished getCap */
     uint8_t                          configured_sep; /* Stored configured SEP id */
     wiced_bt_a2dp_codec_info_t       cap_configured; /* Stored configured CODEC capabilities */
     wiced_bool_t                     is_accepter;    /* TRUE if device is accepter otherwise false */
@@ -291,14 +318,14 @@ typedef struct
 /* Type for A2DP source control block */
 typedef struct
 {
-    wiced_bt_a2dp_source_sep_t         seps[WICED_BT_A2DP_SOURCE_MAX_SEPS];
-    wiced_bt_a2dp_source_config_data_t     *p_config_data;  /* Configuration data from the application */
-    wiced_bt_a2dp_source_control_cb_t  control_cb;     /* Application registered control callback function */
-    wiced_bool_t                     is_init;        /* A2DP Sink is initialized or not */
-    wiced_bt_device_address_t        sdp_bd_addr;    /* peer BD address */
-    wiced_bt_a2dp_source_ccb_t         ccb[WICED_BT_A2DP_SOURCE_MAX_NUM_CONN];  /* AVDTP connection control block */
-    wiced_bt_a2dp_source_scb_t         p_scb[WICED_BT_A2DP_SOURCE_MAX_NUM_CONN];/* Pointer to a stream control block */
-    wiced_bt_heap_t*                   heap; /* Heap to be used for dynamic memory */
+    wiced_bt_a2dp_source_sep_t              seps[WICED_BT_A2DP_SOURCE_MAX_SEPS];    /* Local SEPS */
+    wiced_bt_a2dp_source_config_data_ext_t *p_config_data;                          /* Configuration data from the application */
+    wiced_bt_a2dp_source_control_cb_t       control_cb;                             /* Application registered control callback function */
+    wiced_bool_t                            is_init;                                /* A2DP Sink is initialized or not */
+    wiced_bt_device_address_t               sdp_bd_addr;                            /* peer BD address */
+    wiced_bt_a2dp_source_ccb_t              ccb[WICED_BT_A2DP_SOURCE_MAX_NUM_CONN]; /* AVDTP connection control block */
+    wiced_bt_a2dp_source_scb_t              p_scb[WICED_BT_A2DP_SOURCE_MAX_NUM_CONN];/* Pointer to a stream control block */
+    wiced_bt_heap_t*                        heap;                                    /* Heap to be used for dynamic memory */
 } wiced_bt_a2dp_source_cb_t;
 
 /* Type for non state machine action functions */
@@ -325,6 +352,11 @@ typedef struct  {
 
 /* Control block declaration */
 extern wiced_bt_a2dp_source_cb_t wiced_bt_a2dp_source_cb;
+/*
+ * This  holds the application provided codec config. Used only for backward compability.
+ *If wiced_bt_a2dp_source_init is removed, then this shall be removed as well.
+ */
+extern wiced_bt_a2dp_source_config_data_ext_t wiced_bt_a2dp_source_app_config;
 
 /*****************************************************************************
 **  Function prototypes

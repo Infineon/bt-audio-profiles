@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,26 +27,6 @@
 #endif
 
 
-/****************************************************************************\
-* Audio definitions
-\****************************************************************************/
-/* Optional audio codecs are unsupported by default */
-#ifdef A2DP_SINK_AAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT               TRUE
-#else
-#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT               FALSE
-#endif
-
-#ifdef A2DP_SINK_AAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT               TRUE
-#else
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT               FALSE
-#endif
-
-#ifndef WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT
-#define WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT   FALSE
-#endif
-
 #if (WICED_BT_A2DP_SINK_CO_M12_SUPPORT == TRUE)
 #include "wiced_bt_a2d_m12.h"
 #endif
@@ -54,6 +34,14 @@
 #if (WICED_BT_A2DP_SINK_CO_M24_SUPPORT == TRUE)
 #include "wiced_bt_a2d_m24.h"
 #endif
+
+#if (WICED_BT_A2DP_SINK_CO_MDU_SUPPORT == TRUE)
+#include "wiced_bt_a2d_mdu.h"
+#endif
+
+/****************************************************************************\
+* Audio definitions
+\****************************************************************************/
 
 /*******************************************************************************
 **
@@ -130,25 +118,41 @@ wiced_bool_t wiced_bt_a2dp_sink_cfg_init(wiced_bt_a2dp_codec_info_t *p_codec_inf
 #if (WICED_BT_A2DP_SINK_CO_M12_SUPPORT == TRUE)
     case WICED_BT_A2DP_CODEC_M12: /* MP3 */
         /* Set up for MP3 codec */
-        wiced_bt_a2d_bld_m12info(AVDT_MEDIA_AUDIO,
+        a2d_status = wiced_bt_a2d_bld_m12info(AVDT_MEDIA_AUDIO,
             (wiced_bt_a2d_m12_cie_t *) &p_codec_info->cie.m12,
             p_built_codec_info);
         WICED_BTA2DP_TRACE("m12 [0x%02x;0x%02x;0x%02x;0x%02x;0x%02x;0x%02x] \n", \
             p_built_codec_info[1], p_built_codec_info[2], p_built_codec_info[3],
             p_built_codec_info[4], p_built_codec_info[5], p_built_codec_info[6]);
-        return WICED_TRUE;
+        return (A2D_SUCCESS == a2d_status) ? WICED_TRUE : WICED_FALSE;
 #endif
 
 #if (WICED_BT_A2DP_SINK_CO_M24_SUPPORT == TRUE)
     case WICED_BT_A2DP_CODEC_M24: /* AAC */
         /* Set up for AAC codec */
-        wiced_bt_a2d_bld_m24info(AVDT_MEDIA_AUDIO,
+        a2d_status = wiced_bt_a2d_bld_m24info(AVDT_MEDIA_AUDIO,
             (wiced_bt_a2d_m24_cie_t *) &p_codec_info->cie.m24,
             p_built_codec_info);
         WICED_BTA2DP_TRACE("m24 [0x%02x;0x%02x;0x%02x;0x%02x;0x%02x;0x%02x] \n", \
             p_built_codec_info[1], p_built_codec_info[2], p_built_codec_info[3],
             p_built_codec_info[4], p_built_codec_info[5], p_built_codec_info[6]);
-        return WICED_TRUE;
+        return (A2D_SUCCESS == a2d_status) ? WICED_TRUE : WICED_FALSE;
+#endif
+
+#if (WICED_BT_A2DP_SINK_CO_MDU_SUPPORT == TRUE)
+    case WICED_BT_A2DP_CODEC_MDU: /* MPEG-D USAC*/
+        a2d_status = wiced_bt_a2d_bld_mdu_info(AVDT_MEDIA_AUDIO,
+                                              (wiced_bt_a2d_mdu_cie_t *)&p_codec_info->cie.mdu,
+                                              p_built_codec_info);
+        WICED_BTA2DP_TRACE("mdu [0x%02x;0x%02x;0x%02x;0x%02x;0x%02x;0x%02x;0x%02x] \n",
+                           p_built_codec_info[1],
+                           p_built_codec_info[2],
+                           p_built_codec_info[3],
+                           p_built_codec_info[4],
+                           p_built_codec_info[5],
+                           p_built_codec_info[6],
+                           p_built_codec_info[7]);
+        return (A2D_SUCCESS == a2d_status) ? WICED_TRUE : WICED_FALSE;
 #endif
 
 #if (WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT == TRUE)
@@ -264,7 +268,29 @@ void wiced_bt_a2dp_sink_cfg_setcfg_ind_handler(
                 }
 
                 break;
-#endif
+#endif//WICED_BT_A2DP_SINK_CO_M24_SUPPORT
+
+#if (WICED_BT_A2DP_SINK_CO_MDU_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_MDU:
+                /* Verify MPEG-D USAC configuration */
+                if ((status = wiced_bt_a2dp_mdu_cfg_in_cap(
+                         p_codec_info,
+                         (wiced_bt_a2d_mdu_cie_t *)&(p_codec_capability_info->cie.mdu))) == A2D_SUCCESS)
+                {
+                    /* Do not allow content protection for now */
+                    if (num_protect != 0)
+                    {
+                        status = A2D_BAD_CP_TYPE;
+                        category = AVDT_ASC_PROTECT;
+                    }
+                    else
+                    {
+                        wiced_bt_a2d_pars_mdu_info(&codec_config.cie.mdu, p_codec_info, WICED_FALSE);
+                    }
+                }
+
+                break;
+#endif //WICED_BT_A2DP_SINK_CO_MDU_SUPPORT
 
                 case WICED_BT_A2DP_CODEC_VENDOR_SPECIFIC:
 #if (WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT == TRUE)

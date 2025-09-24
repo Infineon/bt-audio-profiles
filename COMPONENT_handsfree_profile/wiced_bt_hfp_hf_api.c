@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -139,7 +139,12 @@ wiced_result_t wiced_bt_hfp_hf_connect(wiced_bt_device_address_t bd_address)
          return result;
     }
 
+#ifdef WICED_ENABLE_BT_HSP_PROFILE
+    wiced_bt_hfp_hf_cb.ag_profile_uuid = UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY;
+#else
     wiced_bt_hfp_hf_cb.ag_profile_uuid = UUID_SERVCLASS_AG_HANDSFREE;
+#endif //WICED_ENABLE_BT_HSP_PROFILE
+
     p_buf->hf_evt = WICED_BT_HFP_HF_API_CONNECT_EVT;
     wiced_bt_hfp_hf_utils_bdcpy(p_buf->bd_address, bd_address);
     GKI_send_msg(WICED_BT_HFP_HF_TASK_ID, WICED_BT_HFP_HF_TASK_MBOX, p_buf);

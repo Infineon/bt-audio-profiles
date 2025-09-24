@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -339,9 +339,10 @@ static void hfp_ag_rfcomm_opened ( wiced_bt_hfp_ag_session_cb_t *p_scb )
     p_scb->sco_idx              = BTM_INVALID_SCO_INDEX;
     p_scb->b_sco_opened         = WICED_FALSE;
     p_scb->indicator_bit_map    = 0x7F;
-#if (BTM_WBS_INCLUDED == TRUE)
-    p_scb->peer_supports_msbc   = WICED_FALSE;
-    p_scb->msbc_selected        = WICED_FALSE;
+    p_scb->codec_conn_state     = CODEC_CONN_STATE_NOT_STARTED;
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
+    p_scb->local_selected_codec = WICED_BT_HFP_AG_CODEC_CVSD;
+    p_scb->peer_supported_codecs = WICED_BT_HFP_AG_CODEC_CVSD;
 #endif
 
     hfp_ag_process_open_callback ( p_scb, WICED_BT_HFP_AG_STATUS_SUCCESS );

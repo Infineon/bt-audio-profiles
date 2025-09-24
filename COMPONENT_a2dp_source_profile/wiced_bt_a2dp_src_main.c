@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,6 +30,11 @@
 
 /* A2DP source control block */
 wiced_bt_a2dp_source_cb_t wiced_bt_a2dp_source_cb;
+/*
+ * This  holds the application provided codec config. Used only for backward compability.
+ *If wiced_bt_a2dp_source_init is removed, then this shall be removed as well.
+ */
+wiced_bt_a2dp_source_config_data_ext_t wiced_bt_a2dp_source_app_config;
 
 /*******************************************************************************
 **
@@ -350,7 +355,7 @@ static wiced_bt_a2dp_source_ccb_t *wiced_bt_a2dp_source_get_ccb(uint16_t event,
     default:
 #if (defined(WICED_BT_A2DP_SOURCE_DEBUG) && WICED_BT_A2DP_SOURCE_DEBUG == TRUE)
         WICED_BTA2DP_SRC_TRACE("%s: Unknown event %s \n", __FUNCTION__,
-            wiced_bt_a2dp_source_evt_code(event));
+            wiced_bt_a2dp_source_evt_code((uint8_t)event));
 #endif
         break;
     }
@@ -508,7 +513,7 @@ static void wiced_bt_a2dp_source_reg_a2dp(wiced_bt_avdt_cs_t *p_cs, wiced_bt_a2d
     }
 
     /* how many codecs are there */
-    codec_count = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.count;
+    codec_count = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->count;
 
     for ( index = 0; index < WICED_BT_A2DP_SOURCE_MAX_NUM_CONN; index++ )
     {
@@ -516,7 +521,7 @@ static void wiced_bt_a2dp_source_reg_a2dp(wiced_bt_avdt_cs_t *p_cs, wiced_bt_a2d
         for ( c_index = 0; c_index < codec_count; c_index++ )
         {
             wiced_bool_t ret = WICED_FALSE;
-            ret = wiced_bt_a2dp_source_cfg_init(&wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[c_index],
+            ret = wiced_bt_a2dp_source_cfg_init(&wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[c_index],
                                               p_cs->cfg.codec_info,
                                               &p_cs->cfg.num_protect,
                                               p_cs->cfg.protect_info);
@@ -524,7 +529,7 @@ static void wiced_bt_a2dp_source_reg_a2dp(wiced_bt_avdt_cs_t *p_cs, wiced_bt_a2d
             {
                 if( ( sep_index < WICED_BT_A2DP_SOURCE_MAX_SEPS ) && (wiced_bt_avdt_create_stream(&(wiced_bt_a2dp_source_cb.seps[sep_index].av_handle), p_cs) == AVDT_SUCCESS ) )
                 {
-                    wiced_bt_a2dp_source_cb.seps[sep_index].codec_type = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[c_index].codec_id;
+                    wiced_bt_a2dp_source_cb.seps[sep_index].codec_type = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[c_index].codec_id;
                     wiced_bt_a2dp_source_cb.seps[sep_index].codec_cap_index = c_index;
                     WICED_BTA2DP_SRC_TRACE("%s: audio[%d] av_handle: %d codec_type: %d \n", __FUNCTION__,
                             sep_index, wiced_bt_a2dp_source_cb.seps[sep_index].av_handle, wiced_bt_a2dp_source_cb.seps[sep_index].codec_type);

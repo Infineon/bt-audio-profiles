@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,19 +52,26 @@ extern "C"
 /** Maximum length of AT command result code */
 #define WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH   256
 
+/** Maximum length of operator name (HFP 1.9 Sec 4.8)*/
+#define WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH             16+9
+
+
 /* Maximum number of HFP HF connections supported */
 #ifndef WICED_BT_HFP_HF_MAX_CONN
 #define WICED_BT_HFP_HF_MAX_CONN 2	/**< Default Maximum connection supported  */
 #endif
 
 /** SDP SupportedFeatures attribute bit mapping for HF.
-   Table 5.2 of Hand-Free Profile 1.7.1 */
+   Table 5.2 of Hand-Free Profile 1.9 */
 #define WICED_BT_HFP_HF_SDP_FEATURE_ECNR            0x0001  /**< EC and/or NR function (yes:1, no:0) */
 #define WICED_BT_HFP_HF_SDP_FEATURE_3WAY_CALLING    0x0002  /**< Call waiting or three-way calling (yes:1, no:0) */
 #define WICED_BT_HFP_HF_SDP_FEATURE_CLIP            0x0004  /**< CLI presentation capability (yes:1, no:0) */
 #define WICED_BT_HFP_HF_SDP_FEATURE_VRECG           0x0008  /**< Voice recognition activation (yes:1, no:0) */
 #define WICED_BT_HFP_HF_SDP_FEATURE_REMOTE_VOL_CTRL 0x0010  /**< Remote volume control (yes:1, no:0) */
 #define WICED_BT_HFP_HF_SDP_FEATURE_WIDEBAND_SPEECH 0x0020  /**< Wide band speech (yes:1, no:0) */
+#define WICED_BT_HFP_HF_SDP_FEATURE_EVRS            0x0040  /**< Enhanced Voice Recognition Status (yes/no, 1 = yes, 0 = no)  */
+#define WICED_BT_HFP_HF_SDP_FEATURE_VRC_TEXT        0x0080  /**< Voice Recognition Text (yes/no, 1 = yes, 0 = no) */
+#define WICED_BT_HFP_HF_SDP_FEATURE_SWB_SPEECH      0x0100  /**< Super Wide Band Speech (yes/no, 1 = yes, 0 = no) */
 
 /******************************************************************************
 *                    Constants
@@ -82,42 +89,47 @@ typedef char wiced_bt_hfp_hf_caller_num_t[WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENG
 /** HF AT result code */
 typedef char wiced_bt_hfp_hf_at_result_code_t[WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH];
 
+/** HF Operator Name (for COPS) */
+typedef char wiced_bt_hfp_hf_operator_name[WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH];
+
 /******************************************************************************
 *                   Enumerations
 ******************************************************************************/
 
-/** HF device supported feature flags. */
+/** HF device supported feature flags.(for BRSF) */
 typedef enum
 {
-    WICED_BT_HFP_HF_FEATURE_ECNR                         = 0x00000001,	/**< HF feature  Echo Noise Cancellation (ECNR) */
-    WICED_BT_HFP_HF_FEATURE_3WAY_CALLING                 = 0x00000002,	/**< HF feature  Three-way calling */
-    WICED_BT_HFP_HF_FEATURE_CLIP_CAPABILITY              = 0x00000004,	/**< HF feature  Clip capability */
-    WICED_BT_HFP_HF_FEATURE_VOICE_RECOGNITION_ACTIVATION = 0x00000008,	/**< HF feature  Voice recognition activation */
-    WICED_BT_HFP_HF_FEATURE_REMOTE_VOLUME_CONTROL        = 0x00000010,	/**< HF feature  Remote volume control */
-    WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_STATUS         = 0x00000020,	/**< HF feature  Enhanced call status */
-    WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_CONTROL        = 0x00000040,	/**< HF feature  Enhanced call control */
-    WICED_BT_HFP_HF_FEATURE_CODEC_NEGOTIATION            = 0x00000080,	/**< HF feature  Codec negotiation */
-    WICED_BT_HFP_HF_FEATURE_HF_INDICATORS                = 0x00000100,	/**< HF feature  HF indicators */
-    WICED_BT_HFP_HF_FEATURE_ESCO_S4_SETTINGS_SUPPORT  = 0x00000200,	/**< HF feature  eSCO S4 Settings Supported  */
-    WICED_BT_HFP_HF_FEATURE_ENHANCED_VOICE_RECOGNITION   = 0x00000400	/**< HF feature  Enhanced Voice Recognition status */
+    WICED_BT_HFP_HF_FEATURE_ECNR                         = 0x00000001,  /**< HF feature  Echo Noise Cancellation (ECNR) */
+    WICED_BT_HFP_HF_FEATURE_3WAY_CALLING                 = 0x00000002,  /**< HF feature  Three-way calling */
+    WICED_BT_HFP_HF_FEATURE_CLIP_CAPABILITY              = 0x00000004,  /**< HF feature  Clip capability */
+    WICED_BT_HFP_HF_FEATURE_VOICE_RECOGNITION_ACTIVATION = 0x00000008,  /**< HF feature  Voice recognition activation */
+    WICED_BT_HFP_HF_FEATURE_REMOTE_VOLUME_CONTROL        = 0x00000010,  /**< HF feature  Remote volume control */
+    WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_STATUS         = 0x00000020,  /**< HF feature  Enhanced call status */
+    WICED_BT_HFP_HF_FEATURE_ENHANCED_CALL_CONTROL        = 0x00000040,  /**< HF feature  Enhanced call control */
+    WICED_BT_HFP_HF_FEATURE_CODEC_NEGOTIATION            = 0x00000080,  /**< HF feature  Codec negotiation */
+    WICED_BT_HFP_HF_FEATURE_HF_INDICATORS                = 0x00000100,  /**< HF feature  HF indicators */
+    WICED_BT_HFP_HF_FEATURE_ESCO_S4_SETTINGS_SUPPORT     = 0x00000200,  /**< HF feature  eSCO S4 Settings Supported  */
+    WICED_BT_HFP_HF_FEATURE_ENHANCED_VOICE_RECOGNITION   = 0x00000400,  /**< HF feature  Enhanced Voice Recognition status */
+    WICED_BT_HFP_HF_FEATURE_VOICE_RECOGNITION_TEXT       = 0x00000800   /**< HF feature  Voice Recognition Text */
 } wiced_bt_hfp_hf_supported_features_t;
 
-/** AG supported feature flags. */
+/** AG supported feature flags.(for BRSF) */
 typedef enum
 {
-    WICED_BT_HFP_AG_FEATURE_3WAY_CALLING                 = 0x00000001,	/**< AG feature  Three-way calling */
-    WICED_BT_HFP_AG_FEATURE_ECNR                         = 0x00000002,	/**< AG feature  Echo Noise Cancellation (ECNR) */
-    WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_ACTIVATION = 0x00000004,	/**< AG feature  Voice recognition activation */
-    WICED_BT_HFP_AG_FEATURE_INBAND_RING_TONE_CAPABILITY  = 0x00000008,	/**< AG feature  In-band ring tone capability */
-    WICED_BT_HFP_AG_FEATURE_ATTACH_NUMBER_TO_VOICE_TAG   = 0x00000010,	/**< AG feature  Attach a number to voice tag */
-    WICED_BT_HFP_AG_FEATURE_ABILITY_TO_REJECT_CALL       = 0x00000020,	/**< AG feature  Ability to reject a call */
-    WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_STATUS         = 0x00000040,	/**< AG feature  Enhanced call status */
-    WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_CONTROL        = 0x00000080,	/**< AG feature  Enhanced call control */
-    WICED_BT_HFP_AG_FEATURE_EXTENDED_ERROR_RESULT_CODES  = 0x00000100,	/**< AG feature  Extended Error Result Codes */
-    WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION            = 0x00000200,	/**< AG feature  Codec negotiation */
-    WICED_BT_HFP_AG_FEATURE_HF_INDICATORS                = 0x00000400,	/**< AG feature  HF Indicators */
-    WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT  = 0x00000800,	/**< AG featuree SCO S4 Settings Supported */
-    WICED_BT_HFP_AG_FEATURE_ENHANCED_VOICE_RECOGNITION   = 0x00001000	/**< AG featuree  Recognition Status */
+    WICED_BT_HFP_AG_FEATURE_3WAY_CALLING                 = 0x00000001,  /**< AG feature  Three-way calling */
+    WICED_BT_HFP_AG_FEATURE_ECNR                         = 0x00000002,  /**< AG feature  Echo Noise Cancellation (ECNR) */
+    WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_ACTIVATION = 0x00000004,  /**< AG feature  Voice recognition activation */
+    WICED_BT_HFP_AG_FEATURE_INBAND_RING_TONE_CAPABILITY  = 0x00000008,  /**< AG feature  In-band ring tone capability */
+    WICED_BT_HFP_AG_FEATURE_ATTACH_NUMBER_TO_VOICE_TAG   = 0x00000010,  /**< AG feature  Attach a number to voice tag */
+    WICED_BT_HFP_AG_FEATURE_ABILITY_TO_REJECT_CALL       = 0x00000020,  /**< AG feature  Ability to reject a call */
+    WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_STATUS         = 0x00000040,  /**< AG feature  Enhanced call status */
+    WICED_BT_HFP_AG_FEATURE_ENHANCED_CALL_CONTROL        = 0x00000080,  /**< AG feature  Enhanced call control */
+    WICED_BT_HFP_AG_FEATURE_EXTENDED_ERROR_RESULT_CODES  = 0x00000100,  /**< AG feature  Extended Error Result Codes */
+    WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION            = 0x00000200,  /**< AG feature  Codec negotiation */
+    WICED_BT_HFP_AG_FEATURE_HF_INDICATORS                = 0x00000400,  /**< AG feature  HF Indicators */
+    WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT     = 0x00000800,  /**< AG feature SCO S4 Settings Supported */
+    WICED_BT_HFP_AG_FEATURE_ENHANCED_VOICE_RECOGNITION   = 0x00001000,  /**< AG feature  Recognition Status */
+    WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_TEXT       = 0x00002000   /**< AG feature  Voice Recognition Text */
 } wiced_bt_hfp_ag_supported_features_t;
 
 /** HF Events. These are received via wiced_bt_hfp_hf_event_cb_t() callback function.
@@ -127,7 +139,7 @@ typedef enum
     WICED_BT_HFP_HF_CONNECTION_STATE_EVT,   /**< Received on control path connection state change */
     WICED_BT_HFP_HF_AG_FEATURE_SUPPORT_EVT, /**< Indicates HFP features supported in AG */
     WICED_BT_HFP_HF_SERVICE_STATE_EVT,      /**< Indicates AG's cellular network connection state */
-    WICED_BT_HFP_HF_SERVICE_TYPE_EVT,       /**< Indicates whether AG is connected to home or romaing network */
+    WICED_BT_HFP_HF_SERVICE_TYPE_EVT,       /**< Indicates whether AG is connected to home or roaming network */
     WICED_BT_HFP_HF_CALL_SETUP_EVT,         /**< Received when there is a change in call state, e.g., incoming call, call termination */
     WICED_BT_HFP_HF_RING_EVT,               /**< Ring indication (during incoming call) received */
     WICED_BT_HFP_HF_INBAND_RING_STATE_EVT,  /**< Indicates if the AG supports sending the ring-tone to HF over audio connection */
@@ -145,7 +157,7 @@ typedef enum
     WICED_BT_HFP_HF_VOICE_RECOGNITION_EVT,  /**< Received AT+BVRA response */
     WICED_BT_HFP_HF_BIND_EVT,               /**< Indicators Update event */
     WICED_BT_HFP_HF_COPS_EVT,               /**< Received AT+COPS response(current Network Name) */
-
+    WICED_BT_HFP_HF_BTRH_EVT,               /**< Received +BTRH (Hold and response) */
 } wiced_bt_hfp_hf_event_t;
 
 /** HF Control Connection States */
@@ -153,21 +165,21 @@ typedef enum
 {
     WICED_BT_HFP_HF_STATE_DISCONNECTED, /**< HF control connection is closed */
     WICED_BT_HFP_HF_STATE_CONNECTED,    /**< HF control connection established */
-    WICED_BT_HFP_HF_STATE_SLC_CONNECTED /**< HF synchronized with AG's state, ready to send/recive commands/notifications */
+    WICED_BT_HFP_HF_STATE_SLC_CONNECTED /**< HF synchronized with AG's state, ready to send/receive commands/notifications */
 } wiced_bt_hfp_hf_connection_state_t;
 
-/** AG's serivce states */
+/** AG's service states */
 typedef enum
 {
     WICED_BT_HFP_HF_SERVICE_STATE_NOT_AVAILABLE, /**< AG's cellular services not available */
     WICED_BT_HFP_HF_SERVICE_STATE_AVAILABLE      /**< AG is connected to cellular services */
 } wiced_bt_hfp_hf_service_state_t;
 
-/** AG's serivce type */
+/** AG's service type */
 typedef enum
 {
     WICED_BT_HFP_HF_SERVICE_TYPE_HOME,   /**< AG is connected to home network */
-    WICED_BT_HFP_HF_SERVICE_TYPE_ROAMING /**< AG is connected to a romaing network */
+    WICED_BT_HFP_HF_SERVICE_TYPE_ROAMING /**< AG is connected to a roaming network */
 } wiced_bt_hfp_hf_service_type_t;
 
 /** States of a call during setup procedure */
@@ -176,7 +188,7 @@ typedef enum
     WICED_BT_HFP_HF_CALLSETUP_STATE_IDLE,     /**< No call set up in progress */
     WICED_BT_HFP_HF_CALLSETUP_STATE_INCOMING, /**< There is an incoming call */
     WICED_BT_HFP_HF_CALLSETUP_STATE_DIALING,  /**< Outgoing call is being setup up */
-    WICED_BT_HFP_HF_CALLSETUP_STATE_ALERTING, /**< Remote party is being alterted of the call */
+    WICED_BT_HFP_HF_CALLSETUP_STATE_ALERTING, /**< Remote party is being alerted of the call */
     WICED_BT_HFP_HF_CALLSETUP_STATE_WAITING   /**< Incoming call is waiting (received when a call is already active) */
 } wiced_bt_hfp_hf_callsetup_state_t;
 
@@ -210,8 +222,9 @@ typedef enum
 /** Codec for HF profile */
 typedef enum
 {
-    WICED_BT_HFP_HF_CVSD_CODEC  =   1,	/**< Received seleceted codec type CVSD */
-    WICED_BT_HFP_HF_MSBC_CODEC  =   2	/**< Received seleceted codec type mSBC */
+    WICED_BT_HFP_HF_CVSD_CODEC  =   1,  /**< Received selected codec type CVSD */
+    WICED_BT_HFP_HF_MSBC_CODEC  =   2,  /**< Received selected codec type mSBC */
+    WICED_BT_HFP_HF_LC3_CODEC   =   3   /**< Received selected codec type LC3 */
 }wiced_bt_hfp_hf_codec_t;
 
 /** HF Call direction */
@@ -247,6 +260,14 @@ typedef enum
     WICED_BT_HFP_HF_MODE_DATA,		/**< Type of call Data */
     WICED_BT_HFP_HF_MODE_FAX,		/**< Type of call Fax */
 }wiced_bt_hfp_hf_call_mode_t;
+
+/** HF BTRH result codes*/
+typedef enum
+{
+    WICED_BT_HFP_HF_BTRH_CALL_ON_HOLD = 0,      /**< Incoming call is put on hold in the AG */
+    WICED_BT_HFP_HF_BTRH_HELD_CALL_ACCEPTED,    /**< Held incoming call is accepted in the AG */
+    WICED_BT_HFP_HF_BTRH_HELD_CALL_REJECTED,    /**< Held incoming call is rejected in the AG */
+} wiced_bt_hfp_hf_btrh_response_t;
 /******************************************************************************
 *                 Type Definitions
 ******************************************************************************/
@@ -346,6 +367,8 @@ typedef struct
         wiced_bt_hfp_hf_clip_data_t          binp_data;        /**< Payload for WICED_BT_HFP_HF_BINP_EVT */
         uint8_t                              voice_recognition;/**< Payload for WICED_BT_HFP_HF_VOICE_RECOGNITION_EVT */
         wiced_bt_hfp_hf_bind_data_t          bind_data;        /**< Payload for WICED_BT_HFP_HF_BINP_EVT */
+        wiced_bt_hfp_hf_operator_name        cops_data;        /**< Payload for WICED_BT_HFP_HF_COPS_EVT */
+        wiced_bt_hfp_hf_btrh_response_t      btrh_result;      /**< Payload for WICED_BT_HFP_HF_BTRH_EVT */
     };
 }wiced_bt_hfp_hf_event_data_t;
 

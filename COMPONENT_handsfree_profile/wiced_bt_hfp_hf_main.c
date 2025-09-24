@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -53,10 +53,18 @@ void wiced_bt_hfp_hf_api_deinit(wiced_bt_hfp_hf_data_t *p_data)
     for(i=0; i<WICED_BT_HFP_HF_MAX_CONN; i++)
     {
         p_scb = &wiced_bt_hfp_hf_cb.scb[i];
+
+        WICED_BTHFP_TRACE("%s: p_scb->in_use:%x p_scb->is_server = %x \n",
+                          __FUNCTION__,
+                          p_scb->in_use,
+                          p_scb->is_server);
+
         if(p_scb->in_use == TRUE)
         {
             /*TODO: If active client, then issue disconnect. If server, close the server */
         }
+
+        wiced_bt_rfcomm_remove_connection(wiced_rfcomm_server_data[i].server_handle, TRUE);
     }
     wiced_bt_hfp_hf_cb.is_init = FALSE;
 }

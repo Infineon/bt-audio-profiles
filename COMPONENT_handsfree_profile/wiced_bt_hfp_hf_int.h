@@ -5,7 +5,7 @@
 * 	This is a private interface file for the Handsfree profile.
 *
 *//*****************************************************************************
-* Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+* Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
 * SPDX-License-Identifier: Apache-2.0
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,11 +48,12 @@
 #define WICED_BT_HFP_HF_VERSION_1_5 0x0105
 #define WICED_BT_HFP_HF_VERSION_1_6 0x0106
 #define WICED_BT_HFP_HF_VERSION_1_7 0x0107
+#define WICED_BT_HFP_HF_VERSION_1_9 0x0109
 
 /* NOTE If you change the default version here, also change the one in
     bta_ag_api.h, they are meant to be the same. */
 #ifndef WICED_BT_HFP_HF_VERSION
-#define WICED_BT_HFP_HF_VERSION WICED_BT_HFP_HF_VERSION_1_7
+#define WICED_BT_HFP_HF_VERSION WICED_BT_HFP_HF_VERSION_1_9
 #endif
 
 #ifndef WICED_BT_HFP_HF_IND_SUPPORTED
@@ -61,6 +62,10 @@
 
 #ifndef WICED_BT_HFP_HF_WBS_INCLUDED
 #define WICED_BT_HFP_HF_WBS_INCLUDED FALSE
+#endif
+
+#ifndef WICED_BT_HFP_HF_SWBS_INCLUDED
+#define WICED_BT_HFP_HF_SWBS_INCLUDED FALSE
 #endif
 
 /* RFCOMM MTU SIZE */

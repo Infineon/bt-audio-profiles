@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,6 +29,8 @@
 #include "wiced_bt_a2dp_src_int.h"
 #include "wiced_bt_sdp.h"
 #include "wiced_timer.h"
+#include "wiced_bt_a2d.h"
+#include "wiced_bt_a2dp_int.h"
 
 static wiced_timer_t a2dp_src_setconfig_timer;
 
@@ -85,10 +87,11 @@ static const uint8_t wiced_bt_a2dp_source_stream_evt_fail[] = {
 
 wiced_bool_t wiced_bt_a2dp_source_next_gatcap(wiced_bt_a2dp_source_ccb_t *p_ccb,
                 wiced_bt_avdt_sep_info_t *p_sep_info, wiced_bt_avdt_cfg_t *avdt_sep_config );
-extern wiced_bool_t wiced_bt_a2dp_src_sbc_format_check(uint8_t *peer_codec_info,
-                                                       wiced_bt_a2d_sbc_cie_t supported_cap,
-                                                       wiced_bt_a2d_sbc_cie_t *default_cap,
-                                                       wiced_bt_a2d_sbc_cie_t *output_cap);
+
+
+/*Get Codec type from peer codec info. Used when we want to quickly get type without complete parsing*/
+#define GET_CODEC_TYPE_FROM_CODEC_INFO(ARR) (ARR[2])
+
 /*******************************************************************************
 ** Function         wiced_bt_a2dp_source_proc_stream_evt
 ** Description      Utility function to compose stream events.
@@ -158,7 +161,7 @@ static void wiced_bt_a2dp_source_proc_stream_evt(uint8_t handle,
                 break;
 
                 case AVDT_OPEN_CFM_EVT:
-                memcpy(&p_msg->msg.open_cfm, &p_data->open_cfm, sizeof(wiced_bt_avdt_config_t));
+                memcpy(&p_msg->msg.open_cfm, &p_data->open_cfm, sizeof(wiced_bt_avdt_open_t));
                 break;
 
                 case AVDT_CONNECT_IND_EVT:
@@ -273,7 +276,7 @@ void wiced_bt_a2dp_source_sdp_complete_cback(uint16_t sdp_res)
     wiced_bt_sdp_protocol_elem_t     elem;
     wiced_bt_a2dp_source_sdp_res_t     msg;
     uint16_t                         avdt_version;
-    wiced_bt_a2dp_source_global_evt_t source_event = WICED_BT_A2DP_SOURCE_SDP_DISC_FAIL_EVT;
+    wiced_bt_a2dp_source_state_evt_t source_event = WICED_BT_A2DP_SOURCE_SDP_DISC_FAIL_EVT;
     wiced_bt_a2dp_source_scb_t        *p_scb = wiced_bt_a2dp_source_cb.p_scb;
 
     memset(&msg, 0, sizeof(wiced_bt_a2dp_source_sdp_res_t));
@@ -305,7 +308,7 @@ void wiced_bt_a2dp_source_sdp_complete_cback(uint16_t sdp_res)
     }
 
 wiced_a2dp_source_sdp_complete:
-    wiced_bt_a2dp_source_hdl_event(source_event, (wiced_bt_avdt_evt_hdr_t*)&msg.hdr);
+    wiced_bt_a2dp_source_hdl_event((uint8_t)source_event, (wiced_bt_avdt_evt_hdr_t*)&msg.hdr);
 }
 
 /*******************************************************************************
@@ -444,7 +447,7 @@ void wiced_bt_a2dp_source_cleanup(wiced_bt_a2dp_source_ccb_t *p_ccb,
      * should not reach here if there are still some avdt_handles
      * that are non-null otherwise, we will end up deregistering from AVDT itself.
      */
-    if (p_scb->deregistring)
+    if (p_scb && (p_scb->deregistring))
         wiced_bt_a2dp_source_dereg_comp();
 }
 
@@ -809,8 +812,39 @@ void wiced_bt_a2dp_source_do_start(wiced_bt_a2dp_source_ccb_t *p_ccb,
     if (p_scb->started == WICED_FALSE)
     {
         p_scb->role |= WICED_BT_A2DP_SOURCE_ROLE_START_INT;
-
-        if (memcmp(&p_ccb->p_scb->cap_configured, &p_data->start_req.codec_params, sizeof(wiced_bt_a2dp_codec_info_t)))
+        uint8_t configured_equals_requested = (p_ccb->p_scb->cap_configured.codec_id == p_data->start_req.codec_params.codec_id);
+        if (configured_equals_requested)
+        {
+            switch (p_ccb->p_scb->cap_configured.codec_id)
+            {
+            case WICED_BT_A2DP_CODEC_SBC:
+                configured_equals_requested = wiced_bt_a2dp_sbc_are_equal(&p_ccb->p_scb->cap_configured.cie.sbc,
+                    &p_data->start_req.codec_params.cie.sbc);
+                break;
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_M24:
+                configured_equals_requested = wiced_bt_a2dp_m24_are_equal(&p_ccb->p_scb->cap_configured.cie.m24,
+                    &p_data->start_req.codec_params.cie.m24);
+                break;
+#endif //WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_M12:
+                configured_equals_requested = wiced_bt_a2dp_m12_are_equal(&p_ccb->p_scb->cap_configured.cie.m12,
+                    &p_data->start_req.codec_params.cie.m12);
+                break;
+#endif//WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_MDU:
+                configured_equals_requested = wiced_bt_a2dp_mdu_are_equal(&p_ccb->p_scb->cap_configured.cie.mdu,
+                                                                          &p_data->start_req.codec_params.cie.mdu);
+                break;
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
+            default:
+                configured_equals_requested = WICED_FALSE;
+                break;
+            }
+        }
+        if (!configured_equals_requested)
         {
             // if not same, mean reconfig required
             p_scb->recfg_ind = WICED_TRUE;
@@ -818,7 +852,25 @@ void wiced_bt_a2dp_source_do_start(wiced_bt_a2dp_source_ccb_t *p_ccb,
             // Clear SEP record as we will configure it again
             wiced_bt_a2dp_source_clean_sep_record(p_scb->avdt_handle);
 
-            memcpy(&wiced_bt_a2dp_source_cb.p_config_data->default_codec_config, &p_data->start_req.codec_params,sizeof(wiced_bt_a2dp_codec_info_t));
+            for (uint8_t i = 0; i < wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->count; i++) {
+                if (wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[i].codec_id ==
+                    p_data->start_req.codec_params.codec_id)
+                {
+                    memcpy(&wiced_bt_a2dp_source_cb.p_config_data->default_codec_config[i],
+                            &p_data->start_req.codec_params,
+                           sizeof(wiced_bt_a2dp_codec_info_t));
+                    break;
+                }
+            }
+
+            //If the codec cap sent by application in start was not in codec capabilities to being with
+            //Then above loop will come out without finding anything
+            // in that case we will reconfigure with currently configured cap.
+            // This is unlikely as application will not use a new codec at runtime.
+            // In case anyone actually faces this issue, we will need to handle this
+            // situation and do 2 things
+            // 1. send disconnect.
+            // 2. Push error to application.
 
             // Send reconfigure command
             wiced_bt_a2dp_source_ssm_execute(p_ccb, NULL, WICED_BT_A2DP_SOURCE_API_RECONFIG_CMD_EVT);
@@ -948,9 +1000,12 @@ void wiced_bt_a2dp_source_start_ind(wiced_bt_a2dp_source_ccb_t *p_ccb,
     wiced_bt_a2dp_source_scb_t   *p_scb = p_ccb->p_scb;
 
     /* AVDT_START_IND_EVT - start audio */
-    WICED_BTA2DP_SRC_TRACE( "[%s]: handle: %d, lcid %d \n", __FUNCTION__, p_ccb->avdt_handle, p_ccb->p_scb->l2c_cid );
+    WICED_BTA2DP_SRC_TRACE(
+        "[%s]: handle: %d, lcid %d hdr.err_code %d\n",
+        __FUNCTION__, p_ccb->avdt_handle,
+        p_ccb->p_scb->l2c_cid, p_data->str_msg.msg.hdr.err_code);
 
-    start.result = p_data->str_msg.msg.hdr.err_code;
+    start.result = (wiced_result_t)p_data->str_msg.msg.hdr.err_code;
     start.handle = p_scb->avdt_handle;
     start.label  = p_data->str_msg.msg.hdr.label;
 
@@ -1164,6 +1219,16 @@ void av_app_send_setconfiguration(WICED_TIMER_PARAM_TYPE  cb_params)
     wiced_bt_a2dp_source_ssm_execute((wiced_bt_a2dp_source_ccb_t *)cb_params, NULL, WICED_BT_A2DP_SOURCE_API_AVDT_SETCONFIG);
 }
 
+/******************************************************************
+*
+* Function Name: wiced_bt_a2dp_source_sig_str_hdl_getcap_cfm
+*
+*   \brief  This is called when we receive Response for GetCap from peer.
+*
+*   \param  p_ccb:  connection control block
+*   \param  p_data: Event params
+*
+******************************************************************/
 void wiced_bt_a2dp_source_sig_str_hdl_getcap_cfm(wiced_bt_a2dp_source_ccb_t *p_ccb, wiced_bt_a2dp_source_data_t *p_data)
 {
     uint8_t i;
@@ -1178,31 +1243,49 @@ void wiced_bt_a2dp_source_sig_str_hdl_getcap_cfm(wiced_bt_a2dp_source_ccb_t *p_c
         return;
     }
 
+    wiced_bool_t found = WICED_FALSE;
+
     /* Determine if this is one of the codecs we are interested in */
-    for (i=0; i<WICED_BT_A2DP_SOURCE_MAX_NUM_CODECS; i++)
+    for (i = 0; i < WICED_BT_A2DP_SOURCE_NUM_SEPS; i++)
     {
-        if ( ( peer_codec_info[2] == A2D_MEDIA_CT_SBC ) &&
-               ( p_ccb->p_scb->av_sep_info[i].caps_already_updated != WICED_TRUE) )
+        uint8_t seid;
+
+        switch (GET_CODEC_TYPE_FROM_CODEC_INFO(peer_codec_info))
         {
+        case A2D_MEDIA_CT_SBC:
+#if (WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT == TRUE)
+        case A2D_MEDIA_CT_M12:
+#endif//WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
+        case A2D_MEDIA_CT_M24:
+#endif//WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
+        case A2D_MEDIA_CT_MDU:
+#endif//WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
+            if (p_ccb->p_scb->av_sep_info[i].caps_already_updated == WICED_TRUE)
+            {
+                break;
+            }
+            seid = p_ccb->p_scb->sep_info[p_ccb->p_scb->sep_info_idx].seid;
 
-            uint8_t seid = p_ccb->p_scb->sep_info[p_ccb->p_scb->sep_info_idx].seid;
-
-            WICED_BTA2DP_SRC_TRACE( "[%s]: Saving SEID %d information for codec id: %d \n",
-                            __FUNCTION__, seid, A2D_MEDIA_CT_SBC);
+            WICED_BTA2DP_SRC_TRACE("[%s]: Saving SEID %d information for codec id: %d \n",
+                                   __FUNCTION__,
+                                   seid,
+                                   GET_CODEC_TYPE_FROM_CODEC_INFO(peer_codec_info));
 
             p_ccb->p_scb->av_sep_info[i].seid = seid;
             p_ccb->p_scb->av_sep_info[i].caps_already_updated = WICED_TRUE;
 
             /* Save the codec information to the control block */
-            memcpy(&p_ccb->p_scb->av_sep_info[i].peer_caps,
-                    gatcap_cfm->p_cfg,
-                   sizeof(wiced_bt_avdt_cfg_t));
+            memcpy(&p_ccb->p_scb->av_sep_info[i].peer_caps, gatcap_cfm->p_cfg, sizeof(wiced_bt_avdt_cfg_t));
+            found = WICED_TRUE;
+            break;
+
+        default:
             break;
         }
-        else
-        {
-            WICED_BTA2DP_SRC_TRACE( "[%s]: Codec not saved \n", __FUNCTION__);
-        }
+
+        if (found) break;
     }
 
     /* update the index for the next getcap call if any */
@@ -1230,7 +1313,7 @@ wiced_bt_avdt_cfg_t *peercaps_from_seid(wiced_bt_a2dp_source_ccb_t *p_ccb,uint8_
     wiced_bt_avdt_cfg_t *peer_caps = NULL;
     int i;
 
-    for (i=0; i<WICED_BT_A2DP_SOURCE_MAX_NUM_CODECS;i++)
+    for (i = 0; i < WICED_BT_A2DP_SOURCE_NUM_SEPS; i++)
     {
         if (p_ccb->p_scb->av_sep_info[i].seid == seid)
         {
@@ -1369,27 +1452,111 @@ void wiced_bt_a2dp_source_sig_str_hdl_discovery_cfm (wiced_bt_a2dp_source_ccb_t 
     }
 }
 
+/******************************************************************
+*
+* Function Name: wiced_bt_a2dp_source_sig_str_hdl_setconfig
+*
+*   \brief  This is called when we receive SetConfig from peer.
+*
+*   \param  p_ccb:  connection control block
+*   \param  p_data: Event params
+*
+******************************************************************/
 void wiced_bt_a2dp_source_sig_str_hdl_setconfig (wiced_bt_a2dp_source_ccb_t *p_ccb,
         wiced_bt_a2dp_source_data_t *p_data)
 {
     int     result;
-    uint8_t err_code = AVDT_SUCCESS;
-    uint8_t sep_index = p_data->str_msg.msg.config_ind.int_seid - 1;
-    uint8_t codec_index = wiced_bt_a2dp_source_cb.seps[sep_index].codec_cap_index;
+    uint8_t err_code;
+    int sep_index = 0;
+    int codec_index = 0;
 
-    WICED_BTA2DP_SRC_TRACE("[%s] seid: %d error code %d \n", __FUNCTION__, p_data->str_msg.msg.config_ind.int_seid, p_data->str_msg.msg.config_ind.hdr.err_code);
+    p_ccb->p_scb->avdt_handle = p_data->str_msg.handle;
+
+    for(int idx =0 ; idx < WICED_BT_A2DP_SOURCE_MAX_SEPS; idx++)
+    {
+        if(p_ccb->p_scb->avdt_handle == wiced_bt_a2dp_source_cb.seps[idx].av_handle)
+        {
+            sep_index = idx;
+            WICED_BTA2DP_SRC_TRACE("[%s] p_ccb->p_scb->avdt_handle = %d sep_index: %d  found!\n", __FUNCTION__, idx, p_ccb->p_scb->avdt_handle);
+            break;
+        }
+    }
+
+    WICED_BTA2DP_SRC_TRACE("[%s] seid: %d error code %d sep_index: %d \n",
+                           __FUNCTION__,
+                           p_data->str_msg.msg.config_ind.int_seid,
+                           p_data->str_msg.msg.config_ind.hdr.err_code,
+                           sep_index);
 
     if (AVDT_SUCCESS != p_data->str_msg.msg.config_ind.hdr.err_code)
         return;
 
-    result = wiced_bt_a2dp_src_sbc_format_check(p_data->str_msg.msg.config_ind.p_cfg->codec_info,
-                wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[codec_index].cie.sbc,
-                NULL, &p_ccb->p_scb->cap_configured.cie.sbc);
+    codec_index = wiced_bt_a2dp_source_cb.seps[sep_index].codec_cap_index;
+    switch (wiced_bt_a2dp_source_cb.seps[sep_index].codec_type)
+    {
+    case WICED_BT_A2DP_CODEC_SBC:
+        if (0 == (err_code = wiced_bt_a2dp_sbc_cfg_in_cap(
+            p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+            &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[codec_index].cie.sbc)))
+        {
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_SBC;
+            wiced_bt_a2d_pars_sbc_info(&p_ccb->p_scb->cap_configured.cie.sbc,
+                                       p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                                       WICED_FALSE);
+        }
+        //TODO:RAVE
+        //Sink does things related to num_protect when handdling setConfig
+        //from peer wiced_bt_a2dp_sink_cfg_setcfg_ind_handler
+        //Do we need to do something around that here?
+        break;
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
+    case WICED_BT_A2DP_CODEC_M24:
+        if(0 == (err_code = wiced_bt_a2dp_m24_cfg_in_cap(
+            p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                      &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[codec_index].cie.m24)))
+        {
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_M24;
+            wiced_bt_a2d_pars_m24info(&p_ccb->p_scb->cap_configured.cie.m24,
+                                      p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                                      WICED_FALSE);
+        }
+        break;
+#endif //WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT == TRUE)
+    case WICED_BT_A2DP_CODEC_M12:
+        if(0 == (err_code = wiced_bt_a2dp_m12_cfg_in_cap(
+            p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                      &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[codec_index].cie.m12)))
+        {
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_M12;
+            wiced_bt_a2d_pars_m12info(&p_ccb->p_scb->cap_configured.cie.m12,
+                                         p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                                         WICED_FALSE);
+        }
+        break;
+#endif //WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
+    case WICED_BT_A2DP_CODEC_MDU:
+        if (0 == (err_code = wiced_bt_a2dp_mdu_cfg_in_cap(
+                      p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                      &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[codec_index].cie.mdu)))
+        {
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_MDU;
+            wiced_bt_a2d_pars_mdu_info(&p_ccb->p_scb->cap_configured.cie.mdu,
+                                      p_data->str_msg.msg.config_ind.p_cfg->codec_info,
+                                      WICED_FALSE);
+        }
+        break;
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
+    default:
+        err_code = A2D_NS_CODEC_TYPE;
+        break;
+    }
 
-    if (result != WICED_TRUE)
-        err_code = AVDT_ERR_UNSUP_CFG;
-
-    result = wiced_bt_avdt_config_rsp(wiced_bt_a2dp_source_cb.seps[sep_index].av_handle, p_data->str_msg.msg.config_ind.hdr.label, err_code, AVDT_ASC_CODEC);
+    result = wiced_bt_avdt_config_rsp(wiced_bt_a2dp_source_cb.seps[sep_index].av_handle,
+                                      p_data->str_msg.msg.config_ind.hdr.label,
+                                      err_code,
+                                      AVDT_ASC_CODEC);
 
     if ( result == AVDT_SUCCESS )
     {
@@ -1404,7 +1571,7 @@ void wiced_bt_a2dp_source_sig_str_hdl_setconfig (wiced_bt_a2dp_source_ccb_t *p_c
 int wiced_bt_a2dp_soruce_get_free_sep(int codec_index)
 {
     int i = WICED_BT_A2DP_SOURCE_MAX_NUM_CONN;
-    int codec_count = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.count;
+    int codec_count = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->count;
 
     for ( i = 0; i<WICED_BT_A2DP_SOURCE_MAX_NUM_CONN * codec_count; i++)
     {
@@ -1417,72 +1584,110 @@ int wiced_bt_a2dp_soruce_get_free_sep(int codec_index)
     return i;
 }
 
+/******************************************************************
+*
+* Function Name: wiced_bt_a2dp_source_sig_hdl_set_re_config
+*
+*   \brief  This is called when we want to send SetConfig to peer.
+*
+*   \param  p_ccb:  connection control block
+*   \param  p_data: Event params
+*   \param  is_reconfig: True if doing a reconfig
+*
+******************************************************************/
 void wiced_bt_a2dp_source_sig_hdl_set_re_config (wiced_bt_a2dp_source_ccb_t *p_ccb,
         wiced_bt_a2dp_source_data_t *p_data, wiced_bool_t is_reconfig)
 {
-    int i,j,result;
+    int i=0,j,result;
+    uint8_t codec_result = WICED_TRUE;
     wiced_bool_t found = WICED_FALSE;
    // wiced_bt_a2d_sbc_cie_t codec_info;
     wiced_bt_avdt_cfg_t *peercaps= NULL;
 
-    /* determine if one of the sink found will match our format */
-    for ( i = 0; i < p_ccb->p_scb->num_seps; i++ )
+    /*
+    * We wil iterate over codecs provided by application.
+    * If do find a matching sep, we break.
+    * This way we honour app priority.
+    */
+    for (j = 0; j < wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->count; j++)
     {
+        wiced_bt_a2dp_codec_t codec_id = wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[j].codec_id;
 
-        /* find a stream that is a sink, is not in use, and is audio */
-        if ( ( p_ccb->p_scb->sep_info[i].tsep == AVDT_TSEP_SNK ) &&
-             ( p_ccb->p_scb->sep_info[i].in_use == WICED_FALSE) &&
-             ( p_ccb->p_scb->sep_info[i].media_type == p_ccb->p_scb->media_type ) )
+        /*Iterate over Peer SEPS */
+        for (i = 0; i < p_ccb->p_scb->num_seps; i++)
         {
-            peercaps = peercaps_from_seid(p_ccb, p_ccb->p_scb->sep_info[i].seid);
-
-            if (peercaps != NULL)
+            if ((p_ccb->p_scb->sep_info[i].tsep == AVDT_TSEP_SNK) &&
+                (p_ccb->p_scb->sep_info[i].in_use == WICED_FALSE) &&
+                (p_ccb->p_scb->sep_info[i].media_type == p_ccb->p_scb->media_type))
             {
-                /* we will use the first SBC SEP that we find. */
-                WICED_BTA2DP_SRC_TRACE("[%s] check sep: %d seid: %d\n", __FUNCTION__, i, p_ccb->p_scb->sep_info[i].seid);
+                peercaps = peercaps_from_seid(p_ccb, p_ccb->p_scb->sep_info[i].seid);
 
-                for( j = 0; j < wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.count; j++)
+                if (NULL == peercaps) continue;
+
+                if (GET_CODEC_TYPE_FROM_CODEC_INFO(peercaps->codec_info) != codec_id) continue;
+
+                switch (codec_id)
                 {
-                    if (wiced_bt_a2dp_source_cb.p_config_data->default_codec_config.codec_id == wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[j].codec_id)
-                    {
-                        switch(wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[j].codec_id)
-                        {
-                            case WICED_BT_A2DP_CODEC_SBC:
-                                result = wiced_bt_a2dp_src_sbc_format_check(peercaps->codec_info,
-                                        wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities.info[j].cie.sbc,
-                                        &wiced_bt_a2dp_source_cb.p_config_data->default_codec_config.cie.sbc,
-                                        &p_ccb->p_scb->cap_configured.cie.sbc);
-                                if (result == WICED_TRUE)
-                                {
-                                    p_ccb->p_scb->sep_info_idx = i;
-                                    p_ccb->p_scb->configured_sep = wiced_bt_a2dp_soruce_get_free_sep(j);
-                                    found = WICED_TRUE;
-                                    break;
-                                }
-                                break;
-                            case WICED_BT_A2DP_CODEC_M12:
-                            case WICED_BT_A2DP_CODEC_M24:
-                            case WICED_BT_A2DP_CODEC_VENDOR_SPECIFIC:
-                                //Not Supported
-                                break;
-                        }
-                    }
-                }
-                if (found)
+                case WICED_BT_A2DP_CODEC_SBC:
+                    codec_result = wiced_bt_a2dp_sbc_cfg_for_cap(
+                        peercaps->codec_info,
+                        &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[j].cie.sbc,
+                        &wiced_bt_a2dp_source_cb.p_config_data->default_codec_config[j].cie.sbc,
+                        &p_ccb->p_scb->cap_configured.cie.sbc);
                     break;
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
+                case WICED_BT_A2DP_CODEC_M24:
+                    codec_result = wiced_bt_a2dp_m24_cfg_for_cap(
+                        peercaps->codec_info,
+                        &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[j].cie.m24,
+                        &wiced_bt_a2dp_source_cb.p_config_data->default_codec_config[j].cie.m24,
+                        &p_ccb->p_scb->cap_configured.cie.m24);
+                    break;
+#endif//WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT == TRUE)
+                case WICED_BT_A2DP_CODEC_M12:
+                    codec_result = wiced_bt_a2dp_m12_cfg_for_cap(
+                        peercaps->codec_info,
+                        &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[j].cie.m12,
+                        &wiced_bt_a2dp_source_cb.p_config_data->default_codec_config[j].cie.m12,
+                        &p_ccb->p_scb->cap_configured.cie.m12);
+                    break;
+#endif//WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
+                case WICED_BT_A2DP_CODEC_MDU:
+                    codec_result = wiced_bt_a2dp_mdu_cfg_for_cap(
+                        peercaps->codec_info,
+                        &wiced_bt_a2dp_source_cb.p_config_data->codec_capabilities->info[j].cie.mdu,
+                        &wiced_bt_a2dp_source_cb.p_config_data->default_codec_config[j].cie.mdu,
+                        &p_ccb->p_scb->cap_configured.cie.mdu);
+                    break;
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
+                case WICED_BT_A2DP_CODEC_VENDOR_SPECIFIC:
+                    //Not Supported
+                    break;
+
+                default:
+                    //Not Supported
+                    break;
+                }
+
+                if (0 == codec_result)
+                {
+                    p_ccb->p_scb->sep_info_idx = i;
+                    p_ccb->p_scb->configured_sep = wiced_bt_a2dp_soruce_get_free_sep(j);
+                    found = WICED_TRUE;
+                }
             }
-            else
-            {
-                WICED_BTA2DP_SRC_TRACE("\t\t peercaps not found for seid %d!\n", p_ccb->p_scb->sep_info[i].seid);
-            }
+            if (found) break;
         }
+        if (found) break;
     }
 
     if ( (i < p_ccb->p_scb->num_seps) && (found == WICED_TRUE))
     {
         wiced_bt_avdt_cfg_t av_cfg;
 
-        WICED_BTA2DP_SRC_TRACE( "[%s]: found SBC SEP on peer seid: %d... \n", __FUNCTION__, p_ccb->p_scb->sep_info[i].seid );
+        WICED_BTA2DP_SRC_TRACE( "[%s]: found SBC SEP on peer seid: %d... \n", __FUNCTION__, p_ccb->p_scb->sep_info[i].seid);
 
         /* Build the configuration used to open the AVDT/A2DP connection */
 
@@ -1496,9 +1701,35 @@ void wiced_bt_a2dp_source_sig_hdl_set_re_config (wiced_bt_a2dp_source_ccb_t *p_c
             av_cfg.psc_mask &= ( (~AVDT_PSC_DELAY_RPT & 0xFFFF));
         }
 
-        /* Build the config bytes from the configuration */
-        wiced_bt_a2d_bld_sbc_info( AVDT_MEDIA_AUDIO, &p_ccb->p_scb->cap_configured.cie.sbc, av_cfg.codec_info );
-
+        //TODO:RAVE
+        //Could we have done this copy when handling codec in loop itself?
+        switch (GET_CODEC_TYPE_FROM_CODEC_INFO(peercaps->codec_info))
+        {
+        case WICED_BT_A2DP_CODEC_SBC:
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_SBC;
+            wiced_bt_a2d_bld_sbc_info(A2D_MEDIA_TYPE_AUDIO, &p_ccb->p_scb->cap_configured.cie.sbc, av_cfg.codec_info);
+            break;
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
+        case WICED_BT_A2DP_CODEC_M24:
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_M24;
+            wiced_bt_a2d_bld_m24info(A2D_MEDIA_TYPE_AUDIO, &p_ccb->p_scb->cap_configured.cie.m24, av_cfg.codec_info);
+            break;
+#endif//WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT == TRUE)
+        case WICED_BT_A2DP_CODEC_M12:
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_M12;
+            wiced_bt_a2d_bld_m12info(A2D_MEDIA_TYPE_AUDIO, &p_ccb->p_scb->cap_configured.cie.m12, av_cfg.codec_info);
+            break;
+#endif//WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
+        case WICED_BT_A2DP_CODEC_MDU:
+            p_ccb->p_scb->cap_configured.codec_id = WICED_BT_A2DP_CODEC_MDU;
+            wiced_bt_a2d_bld_mdu_info(A2D_MEDIA_TYPE_AUDIO, &p_ccb->p_scb->cap_configured.cie.mdu, av_cfg.codec_info);
+            break;
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
+        default:
+            break;
+        }
 
         if (is_reconfig)
         {

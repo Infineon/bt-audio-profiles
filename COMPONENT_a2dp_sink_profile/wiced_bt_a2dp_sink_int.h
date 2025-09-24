@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,16 +45,13 @@
 
 #define WICED_BTA2DP_SINK_ERROR     WICED_BT_TRACE
 
-/* Maximun number of AVDTP signaling connections */
-/* Maximun number of AVDTP signaling connections */
+/* Maximum number of AVDTP signaling connections */
 #ifndef WICED_BT_A2DP_SINK_MAX_NUM_CONN
-#define WICED_BT_A2DP_SINK_MAX_NUM_CONN     2
+#define WICED_BT_A2DP_SINK_MAX_NUM_CONN         2
 #endif
-#ifndef WICED_BT_A2DP_SINK_MAX_NUM_CODECS
-#define WICED_BT_A2DP_SINK_MAX_NUM_CODECS   2
-#endif
+
 /* Max stream end-points */
-#define WICED_BT_A2DP_SINK_MAX_SEPS     WICED_BT_A2DP_SINK_MAX_NUM_CONN*WICED_BT_A2DP_SINK_MAX_NUM_CODECS
+#define WICED_BT_A2DP_SINK_MAX_SEPS             WICED_BT_A2DP_SINK_MAX_NUM_CONN *WICED_BT_A2DP_SINK_NUM_CODECS
 #define WICED_BT_A2DP_SINK_SEP_MEDIA_TYPE_INDEX 2
 
 /* The timer in milliseconds to guard against link busy and AVDT_CloseReq failed to be sent */
@@ -104,21 +101,32 @@
 #define WICED_BT_A2DP_SINK_ROLE_START_ACP      0x00
 #define WICED_BT_A2DP_SINK_ROLE_START_INT      0x10     /**< Do not change this value */
 
+/* We have to mandatorily support SBC. */
+#if (WICED_BT_A2DP_SINK_NUM_CODECS == 1)
+#undef A2DP_SOURCE_AAC_ENABLED
+#endif //WICED_BT_A2DP_SINK_NUM_CODECS
+
 /* Optional audio codecs are unsupported by default */
 #ifdef A2DP_SINK_AAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT               TRUE
+#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT   TRUE
 #else
-#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT               FALSE
-#endif
+#define WICED_BT_A2DP_SINK_CO_M12_SUPPORT   FALSE
+#endif //A2DP_SINK_AAC_ENABLED
 
 #ifdef A2DP_SINK_AAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT               TRUE
+#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   TRUE
 #else
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT               FALSE
-#endif
+#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   FALSE
+#endif //A2DP_SINK_AAC_ENABLED
+
+#ifdef A2DP_SINK_MD_USAC_ENABLED
+#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   TRUE
+#else
+#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   FALSE
+#endif //A2DP_SINK_MD_USAC_ENABLED
 
 #ifndef WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT
-#define WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT   FALSE
+#define WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT FALSE
 #endif
 
 /*****************************************************************************
@@ -293,14 +301,14 @@ typedef struct
 /* Type for A2DP sink control block */
 typedef struct
 {
-    wiced_bt_a2dp_sink_sep_t         seps[WICED_BT_A2DP_SINK_MAX_SEPS];
+    wiced_bt_a2dp_sink_sep_t        seps[WICED_BT_A2DP_SINK_MAX_SEPS]; /*Local Seps */
     wiced_bt_a2dp_config_data_t     *p_config_data;  /* Configuration data from the application */
-    wiced_bt_a2dp_sink_control_cb_t  control_cb;     /* Application registered control callback function */
-    wiced_bt_a2dp_sink_data_cb_t     data_cb;        /* Application registered data callback function */
-    wiced_bool_t                     is_init;        /* A2DP Sink is initialized or not */
-    wiced_bt_device_address_t        sdp_bd_addr;    /* peer BD address */
-    wiced_bt_a2dp_sink_ccb_t         ccb[WICED_BT_A2DP_SINK_MAX_NUM_CONN]; /* AVDTP connection control block */
-    wiced_bt_a2dp_sink_scb_t         p_scb[WICED_BT_A2DP_SINK_MAX_SEPS];          /* Pointer to a stream control block */
+    wiced_bt_a2dp_sink_control_cb_t control_cb;     /* Application registered control callback function */
+    wiced_bt_a2dp_sink_data_cb_t    data_cb;        /* Application registered data callback function */
+    wiced_bool_t                    is_init;        /* A2DP Sink is initialized or not */
+    wiced_bt_device_address_t       sdp_bd_addr;    /* peer BD address */
+    wiced_bt_a2dp_sink_ccb_t        ccb[WICED_BT_A2DP_SINK_MAX_NUM_CONN]; /* AVDTP connection control block */
+    wiced_bt_a2dp_sink_scb_t        p_scb[WICED_BT_A2DP_SINK_MAX_SEPS];   /* Pointer to a stream control block */
 } wiced_bt_a2dp_sink_cb_t;
 
 /* Type for non state machine action functions */

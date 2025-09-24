@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -346,6 +346,19 @@ uint8_t wiced_bt_avrc_tg_is_peer_absolute_volume_capable( void );
  *
  */
 wiced_result_t wiced_bt_avrc_tg_volume_button_press(uint8_t op_id);
+
+/**
+ * Function         wiced_bt_avrc_tg_set_sdp_on_open
+ *
+ *                  If perform_sdp is True, then TG will initiate SDP on AVRC_OPEN_IND_EVT.
+ *                  Default value for perform_sdp is True.
+ *
+ * @param[in]       perform_sdp : Set True to perform SDP on Open.
+ *
+ * @return          None
+ *
+ */
+void wiced_bt_avrc_tg_set_sdp_on_open(wiced_bool_t perform_sdp);
 
 /**
  * @} wicedbt_avrc_tg

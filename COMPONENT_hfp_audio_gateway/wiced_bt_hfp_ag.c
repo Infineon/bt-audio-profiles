@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,10 +26,10 @@
 extern wiced_result_t hci_control_send_script_event(int type, uint8_t *p_data, uint16_t data_size);
 void hfp_ag_process_open_callback( wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t status );
 
-wiced_timer_t               sdp_timer;               /* wiced bt app sdp timer */
-uint32_t                    ag_features;
-wiced_bt_hfp_ag_session_cb_t         *ag_p_scb = NULL;
-uint8_t                     ag_num_scb;
+wiced_timer_t                   sdp_timer;      /* wiced bt app sdp timer */
+uint32_t                        ag_features;    /* Used in BRSF response */
+wiced_bt_hfp_ag_session_cb_t    *ag_p_scb = NULL;
+uint8_t                         ag_num_scb;
 wiced_bt_hfp_ag_hci_send_ag_event_cback_t hfp_ag_hci_send_ag_event = NULL;
 
 
@@ -86,9 +86,13 @@ void wiced_bt_hfp_ag_startup( wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t num_s
 
     for ( i = 0; i < ag_num_scb; i++, p_scb++ )
     {
-#if (BTM_WBS_INCLUDED == TRUE)
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
         wiced_init_timer(&p_scb->cn_timer, hfp_cn_timeout, (WICED_TIMER_PARAM_TYPE)p_scb, WICED_SECONDS_TIMER);
 #endif
+        //Clear HF indicator
+        p_scb->hf_indicator_hf_support = 0u;
+        //Enable both
+        p_scb->hf_indicator_ag_status = HF_IND_ENHANCED_SAFETY | HF_IND_REM_BATTERY_LEVEL;
 
         p_scb->sco_idx = BTM_INVALID_SCO_INDEX;
 
@@ -193,12 +197,12 @@ void wiced_bt_hfp_ag_audio_open( uint16_t handle )
     if ( p_scb->b_sco_opened )
     {
 
-#if (BTM_WBS_INCLUDED == TRUE)
-        ap_event.audio_open.wbs_supported = p_scb->peer_supports_msbc;
-        ap_event.audio_open.wbs_used = p_scb->msbc_selected;
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
+        ap_event.audio_open.peer_supported_codecs = p_scb->peer_supported_codecs;
+        ap_event.audio_open.local_selected_codec = p_scb->local_selected_codec;
 #else
-        ap_event.audio_open.wbs_supported = WICED_FALSE;
-        ap_event.audio_open.wbs_used = WICED_FALSE;
+        ap_event.audio_open.peer_supported_codecs = WICED_BT_HFP_AG_CODEC_CVSD;
+        ap_event.audio_open.local_selected_codec = WICED_BT_HFP_AG_CODEC_CVSD;
 #endif
         if(hfp_ag_hci_send_ag_event)
             hfp_ag_hci_send_ag_event( WICED_BT_HFP_AG_EVENT_AUDIO_OPEN, handle, (wiced_bt_hfp_ag_event_data_t*)&ap_event );
@@ -212,8 +216,8 @@ void wiced_bt_hfp_ag_audio_open( uint16_t handle )
              (ag_features & HFP_AG_FEAT_VREC) && (p_scb->hf_features & HFP_HF_FEAT_VREC) )
         {
             wiced_bt_hfp_ag_send_BVRA_to_hf( p_scb, TRUE );
-            hfp_ag_sco_create( p_scb, TRUE );
         }
+        hfp_ag_sco_create(p_scb, TRUE);
     }
 }
 
@@ -231,8 +235,11 @@ void wiced_bt_hfp_ag_audio_close( uint16_t handle )
     if ( p_scb->b_sco_opened )
     {
         /* Assume we had brought up the SCO for voice recognition, so send BVRA */
-        if(p_scb->hf_profile_uuid == UUID_SERVCLASS_HF_HANDSFREE)
-            wiced_bt_hfp_ag_send_BVRA_to_hf( p_scb, FALSE );
+        if ((p_scb->hf_profile_uuid == UUID_SERVCLASS_HF_HANDSFREE) && (ag_features & HFP_AG_FEAT_VREC) &&
+            (p_scb->hf_features & HFP_HF_FEAT_VREC))
+        {
+            wiced_bt_hfp_ag_send_BVRA_to_hf(p_scb, FALSE);
+        }
 
         hfp_ag_sco_close( p_scb );
     }

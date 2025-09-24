@@ -1,5 +1,5 @@
 /**
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,6 +35,7 @@
 
 #define APP_AVRC_TEMP_BUF           128
 #define GET_ELMENT_ATTR_HDR         8 /* Attr_id(4)+ charsetID(2) +attr_len(2) */
+#define GET_ITEM_ATTR_HDR           5  /* pdu_id (1)|len(2bytes)|status(1)|no_of_Attr(1) */
 #define BTAVRCP_TRACE_DEBUG
 #define AVRC_TG_PLAYER_ID           1
 #define AVRC_TG_PLAYER_NAME "Player"
@@ -2082,6 +2083,8 @@ void wiced_bt_avrc_tg_handle_get_item_attributes(uint8_t handle, uint8_t label, 
     wiced_bt_avrc_sts_t avrc_status = AVRC_STS_NO_ERROR;
     uint8_t num_attr = 0;
     uint8_t *p_data, *p_start,*p_num, *p_len;
+     /*|pdu_id (1)|len(2bytes)|status(1)|no_of_Attr(1)|attr_id (4)|char_SetID(2)|attrVallen(2)|AttrValue|....... */
+    uint16_t total_len = GET_ITEM_ATTR_HDR;
     memset(&att_entry, 0, sizeof(wiced_bt_avrc_attr_entry_t));
     
     WICED_BTAVRCP_TRACE("[%s] ", __FUNCTION__);
@@ -2089,10 +2092,22 @@ void wiced_bt_avrc_tg_handle_get_item_attributes(uint8_t handle, uint8_t label, 
     {
         avrc_rsp.pdu_id = AVRC_PDU_GET_ITEM_ATTRIBUTES;
         avrc_rsp.status =  AVRC_STS_NO_ERROR;
-        avrc_status = wiced_bt_avrc_build_browse_rsp(&avrc_rsp, p_rsp);
-        if (avrc_status != AVRC_STS_NO_ERROR)
+        total_len += wiced_bt_get_track_info_size();
+
+        if ((*p_rsp = (wiced_bt_avrc_xmit_buf_t *)wiced_bt_get_buffer (total_len + WICED_AVRC_XMIT_BUF_OVERHEAD)) == NULL)
             return;
-        if(p_rsp)
+
+        (*p_rsp)->buffer_size = total_len;
+
+        avrc_status = wiced_bt_avrc_bld_browse_response((wiced_bt_avrc_browse_rsp_t *)&avrc_rsp, *p_rsp);
+
+        if (avrc_status != AVRC_STS_NO_ERROR)
+        {
+            wiced_bt_free_buffer (*p_rsp);
+            *p_rsp = NULL;
+            return;
+        }
+        if(*p_rsp)
         {
             p_start = p_data = (*p_rsp)->payload;
             UINT8_TO_STREAM(p_data, AVRC_PDU_GET_ITEM_ATTRIBUTES);      /* PDU ID      */
@@ -2435,7 +2450,15 @@ void wiced_bt_avrc_tg_ctrl_cback( uint8_t avrc_handle, wiced_bt_avrc_ctrl_evt_t 
         memcpy(wiced_bt_avrc_tg_cb.peer_addr, peer_addr, BD_ADDR_LEN);
 
         /* Get the AVRC sdp record for the remote */
-        wiced_bt_avrc_tg_sdp_find_service( peer_addr );
+        if (wiced_bt_avrc_tg_cb.perform_sdp)
+            wiced_bt_avrc_tg_sdp_find_service( peer_addr );
+        else if (wiced_bt_avrc_tg_cb.p_event_cb)
+        {
+            memcpy(avrc_event.bd_addr, wiced_bt_avrc_tg_cb.peer_addr, BD_ADDR_LEN);
+            avrc_event.handle = wiced_bt_avrc_tg_cb.avrc_handle;
+            avrc_event.attribute_search_completed = WICED_FALSE;
+            (wiced_bt_avrc_tg_cb.p_event_cb)(APP_AVRC_EVENT_DEVICE_CONNECTED, &avrc_event);
+        }
         break;
 
     case AVRC_CLOSE_IND_EVT:
@@ -2507,6 +2530,9 @@ void wiced_bt_avrc_tg_init_app_data(void)
 }
 #endif
 
+    //Default value for TG is to perform SDP on IND_OPEN
+    wiced_bt_avrc_tg_cb.perform_sdp = WICED_TRUE;
+
 }
 
 /*******************************************************************************
@@ -2572,7 +2598,7 @@ void wiced_bt_avrc_tg_deinit()
 *******************************************************************************/
 wiced_result_t wiced_bt_avrc_tg_open(wiced_bt_device_address_t peer_addr)
 {
-    wiced_bt_avrc_config_t avrc_conn_cb;
+    wiced_bt_avrc_config_t avrc_conn_cb = {0};
     uint16_t avrc_status;
     uint8_t  role;
     uint32_t feature_flag;
@@ -2849,3 +2875,14 @@ void wiced_bt_rc_track_changed(void)
     wiced_bt_avrc_tg_complete_notification(AVRC_EVT_TRACK_CHANGE);
 }
 #endif
+
+/*******************************************************************************
+* Function        wiced_bt_avrc_tg_set_sdp_on_open
+
+** Description    If perform_sdp is True, then TG will initiate SDP on AVRC_OPEN_IND_EVT.
+*                 Default value for perform_sdp is True.
+*******************************************************************************/
+void wiced_bt_avrc_tg_set_sdp_on_open(wiced_bool_t perform_sdp)
+{
+    wiced_bt_avrc_tg_cb.perform_sdp = perform_sdp;
+}

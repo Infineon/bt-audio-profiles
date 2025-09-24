@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -195,17 +195,62 @@ wiced_result_t wiced_bt_a2dp_sink_connect(wiced_bt_device_address_t bd_address)
 wiced_result_t wiced_bt_a2dp_set_preferred_codec_config(wiced_bt_a2dp_codec_info_t* codec_config)
 {
     uint8_t itr = 0;
-    wiced_bt_a2d_sbc_cie_t* sbc_cfg = NULL;
     wiced_result_t res = WICED_ERROR;
     for (; itr < wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.count; itr++)
     {
         if (wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].codec_id == codec_config->codec_id)
         {
-            sbc_cfg = &(wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.sbc);
-            WICED_BTA2DP_TRACE("wiced_bt_a2dp_set_preferred_codec_config  %d", sbc_cfg->max_bitpool);
-            memcpy(sbc_cfg, &(codec_config->cie.sbc), sizeof(wiced_bt_a2d_sbc_cie_t));
-            WICED_BTA2DP_TRACE("wiced_bt_a2dp_set_preferred_codec_config updated %d",sbc_cfg->max_bitpool);
-            res = WICED_SUCCESS;
+            switch (codec_config->codec_id)
+            {
+            case WICED_BT_A2DP_CODEC_SBC:
+                WICED_BTA2DP_TRACE(
+                    "wiced_bt_a2dp_set_preferred_codec_config max_bitpool %d",
+                    wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.sbc.max_bitpool);
+                memcpy(&(wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.sbc),
+                       &(codec_config->cie.sbc),
+                       sizeof(wiced_bt_a2d_sbc_cie_t));
+                WICED_BTA2DP_TRACE(
+                    "wiced_bt_a2dp_set_preferred_codec_config updated max_bitpool %d",
+                    wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.sbc.max_bitpool);
+                res = WICED_SUCCESS;
+                break;
+#if(WICED_BT_A2DP_SINK_CO_M12_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_M12:
+                memcpy(&(wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.m12),
+                       &(codec_config->cie.m12),
+                       sizeof(wiced_bt_a2d_m12_cie_t));
+                WICED_BTA2DP_TRACE("wiced_bt_a2dp_set_preferred_codec_config updated bitrate %d",
+                                   wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.m12.bitrate);
+                res = WICED_SUCCESS;
+                break;
+#endif//WICED_BT_A2DP_SINK_CO_M12_SUPPORT
+#if (WICED_BT_A2DP_SINK_CO_M24_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_M24:
+                memcpy(&(wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.m24),
+                       &(codec_config->cie.m24),
+                       sizeof(wiced_bt_a2d_m24_cie_t));
+                WICED_BTA2DP_TRACE("wiced_bt_a2dp_set_preferred_codec_config updated bitrate %d",
+                                   wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.m24.bitrate);
+                res = WICED_SUCCESS;
+                break;
+#endif//WICED_BT_A2DP_SINK_CO_M24_SUPPORT
+#if (WICED_BT_A2DP_SINK_CO_MDU_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_MDU:
+                memcpy(&(wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.mdu),
+                       &(codec_config->cie.mdu),
+                       sizeof(wiced_bt_a2d_mdu_cie_t));
+                WICED_BTA2DP_TRACE("wiced_bt_a2dp_set_preferred_codec_config updated bitrate %d",
+                                   wiced_bt_a2dp_sink_cb.p_config_data->codec_capabilities.info[itr].cie.mdu.bitrate);
+                res = WICED_SUCCESS;
+                break;
+#endif //WICED_BT_A2DP_SINK_CO_MDU_SUPPORT
+#if (WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT == TRUE)
+            case WICED_BT_A2DP_CODEC_VENDOR_SPECIFIC:
+#endif //WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT
+            default:
+                res = WICED_UNSUPPORTED;
+                break;
+            }
             break;
         }
     }

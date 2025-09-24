@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,7 +47,7 @@ enum
 {
     WICED_BT_HFP_HF_AT_SLC_STATE_INIT,
     WICED_BT_HFP_HF_AT_SLC_STATE_BRSF,
-#if (WICED_BT_HFP_HF_WBS_INCLUDED == TRUE)
+#if ((WICED_BT_HFP_HF_WBS_INCLUDED == TRUE) || (WICED_BT_HFP_HF_SWBS_INCLUDED == TRUE))
     WICED_BT_HFP_HF_AT_SLC_STATE_BAC,
 #endif
     WICED_BT_HFP_HF_AT_SLC_STATE_CIND_TEST,
@@ -155,9 +155,9 @@ wiced_bt_hfp_hf_at_res_t wiced_bt_hfp_hf_res[] =
     {"+CIEV:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_NO_EVT},
     {"+BINP:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_BINP_EVT},
     {"+BVRA:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_VOICE_RECOGNITION_EVT},
-    {"+BSIR:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_NO_EVT},
+    {"+BSIR:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_INBAND_RING_STATE_EVT},
     {"+CNUM:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_CNUM_EVT},
-    {"+BTRH:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_NO_EVT},
+    {"+BTRH:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_BTRH_EVT},
     {"+COPS:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_COPS_EVT},
     {"+CLCC:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HFP_ACTIVE_CALL_EVT},
     {"+BIND:"     , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_BIND_EVT},
@@ -168,6 +168,21 @@ wiced_bt_hfp_hf_at_res_t wiced_bt_hfp_hf_res[] =
     {"+BVRA="     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_NO_EVT},
     {"+BRSF:"     , WICED_BT_HFP_HF_AT_FMT_INT , WICED_BT_HFP_HF_AG_FEATURE_SUPPORT_EVT},
     {""           , WICED_BT_HFP_HF_AT_FMT_STR , WICED_BT_HFP_HF_NO_EVT}
+};
+
+/* SLC Sub state
+* As per HF 1.9 (4.2.1.5 Completion of Service Level Connection Initialization)
+* The SLC can happen on -
+* Sending CMER iff 3way and hf indicator are not supported
+* Sending CHLD iff hf indicators are not supported
+* Sending BIND iff hf indicators are supported
+*/
+enum
+{
+    WICED_BT_HFP_HF_SLC_SUB_STATE_INIT, /* Just Started */
+    WICED_BT_HFP_HF_SLC_SUB_STATE_CMER, /* Sent CMER */
+    WICED_BT_HFP_HF_SLC_SUB_STATE_CHLD, /* Sent CHLD */
+    WICED_BT_HFP_HF_SLC_SUB_STATE_BIND, /* Send BIND */
 };
 
 #if (WICED_BT_HFP_HF_VERSION >= WICED_BT_HFP_HF_VERSION_1_7 \
@@ -283,6 +298,67 @@ void wiced_bt_hsp_at_slc( wiced_bt_hfp_hf_scb_t *p_scb )
 
     wiced_bt_hfp_hf_at_send_cmd(p_scb, WICED_BT_HFP_HF_CMD_VGM, WICED_BT_HFP_HF_AT_SET,
             WICED_BT_HFP_HF_AT_FMT_INT, NULL, p_scb->mic_volume);
+
+    wiced_bt_hfp_hf_slc_open(p_scb, NULL);
+}
+
+/*******************************************************************************
+** Function         wiced_bt_hfp_at_send_bac
+** Description      Send AT+BAC command from HF. This will include the
+*                   codecs currently supported by HF.
+*******************************************************************************/
+static void wiced_bt_hfp_at_send_bac(wiced_bt_hfp_hf_scb_t *p_scb)
+{
+    char bac_cmd[] = "1,2,3,";
+    unsigned char i = 2;
+#if (WICED_BT_HFP_HF_WBS_INCLUDED == TRUE)
+    i += 2;
+#endif //WICED_BT_HFP_HF_WBS_INCLUDED
+#if (WICED_BT_HFP_HF_SWBS_INCLUDED == TRUE)
+    bac_cmd[i++] = '3';
+#else
+    i -= 1;
+#endif //WICED_BT_HFP_HF_SWBS_INCLUDED
+    bac_cmd[i] = '\0';
+    wiced_bt_hfp_hf_at_send_cmd(p_scb,
+                                WICED_BT_HFP_HF_CMD_BAC,
+                                WICED_BT_HFP_HF_AT_SET,
+                                WICED_BT_HFP_HF_AT_FMT_STR,
+                                bac_cmd,
+                                0);
+}
+
+/*******************************************************************************
+** Function         _propagate_slc
+** Description      Returns True if SLC done as per current slc sub state.
+*                   As per HF 1.9 (4.2.1.5 Completion of Service Level Connection Initialization)
+*******************************************************************************/
+static wiced_bool_t _propagate_slc(wiced_bt_hfp_hf_scb_t *p_scb, uint8_t slc_sub_state)
+{
+    switch (slc_sub_state) {
+    case WICED_BT_HFP_HF_SLC_SUB_STATE_INIT:
+        return WICED_FALSE;
+    case WICED_BT_HFP_HF_SLC_SUB_STATE_CMER:
+        //We just send CMER
+        if ((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_3WAY_CALLING) &&
+            (p_scb->peer_feature_mask & WICED_BT_HFP_AG_FEATURE_3WAY_CALLING))
+        {
+            return WICED_FALSE;
+        }
+    case WICED_BT_HFP_HF_SLC_SUB_STATE_CHLD:
+#if (WICED_BT_HFP_HF_IND_SUPPORTED == TRUE)
+        if ((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_HF_INDICATORS) &&
+            (p_scb->peer_feature_mask & WICED_BT_HFP_AG_FEATURE_HF_INDICATORS))
+        {
+            return WICED_FALSE;
+        }
+    case WICED_BT_HFP_HF_SLC_SUB_STATE_BIND:
+        break;
+#endif
+    default:
+        break;
+    }
+    return WICED_TRUE;
 }
 
 /*******************************************************************************
@@ -292,7 +368,8 @@ void wiced_bt_hsp_at_slc( wiced_bt_hfp_hf_scb_t *p_scb )
 void wiced_bt_hfp_hf_at_slc(wiced_bt_hfp_hf_scb_t *p_scb)
 {
     /* TODO: add timer also check features */
-
+    WICED_BTHFP_TRACE("%s entry:%d", __FUNCTION__, p_scb->slc_at_init_state);
+    uint8_t slc_sub_state = WICED_BT_HFP_HF_SLC_SUB_STATE_INIT;
     switch(p_scb->slc_at_init_state)
     {
         case WICED_BT_HFP_HF_AT_SLC_STATE_INIT:
@@ -300,13 +377,18 @@ void wiced_bt_hfp_hf_at_slc(wiced_bt_hfp_hf_scb_t *p_scb)
                 WICED_BT_HFP_HF_AT_FMT_INT, NULL, (int16_t) (p_scb->feature_mask));
             break;
         case WICED_BT_HFP_HF_AT_SLC_STATE_BRSF:
-#if (WICED_BT_HFP_HF_WBS_INCLUDED == TRUE)
+#if ((WICED_BT_HFP_HF_WBS_INCLUDED == TRUE) || (WICED_BT_HFP_HF_SWBS_INCLUDED == TRUE))
+            /*
+            * Technically both sides can support codec negotiation even if WB and SWB are not supported
+            * Which means, the correct condition here is simply checking for existence
+            * of codec negotiation on both side i.e. the checks for WB and SWB are not needed
+            * Practically though, if we do not support SWB or WB, then we would also not support
+            * codec negotiation. So this will work almost always.
+            */
             if ((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_CODEC_NEGOTIATION)&&
                 (p_scb->peer_feature_mask & WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION))
             {
-                /* Supporting CVSD and mSBC */
-                wiced_bt_hfp_hf_at_send_cmd(p_scb, WICED_BT_HFP_HF_CMD_BAC, WICED_BT_HFP_HF_AT_SET,
-                    WICED_BT_HFP_HF_AT_FMT_STR, "1,2", 0);
+                wiced_bt_hfp_at_send_bac(p_scb);
                 break;
             }
             else
@@ -328,21 +410,26 @@ void wiced_bt_hfp_hf_at_slc(wiced_bt_hfp_hf_scb_t *p_scb)
         case WICED_BT_HFP_HF_AT_SLC_STATE_CIND_READ:
             wiced_bt_hfp_hf_at_send_cmd(p_scb, WICED_BT_HFP_HF_CMD_CMER, WICED_BT_HFP_HF_AT_SET,
                 WICED_BT_HFP_HF_AT_FMT_STR, "3,0,0,1", 1);
+            slc_sub_state = WICED_BT_HFP_HF_SLC_SUB_STATE_CMER;
             break;
         case WICED_BT_HFP_HF_AT_SLC_STATE_CMER:
+            /* Set this without checking for feature as slc substate handler does the check */
+            slc_sub_state = WICED_BT_HFP_HF_SLC_SUB_STATE_CHLD;
+
             if((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_3WAY_CALLING)&&
                 (p_scb->peer_feature_mask & WICED_BT_HFP_AG_FEATURE_3WAY_CALLING))
             {
                 /* Sent CHLD if local device and peer device support 3 way calling */
                 wiced_bt_hfp_hf_at_send_cmd(p_scb, WICED_BT_HFP_HF_CMD_CHLD, WICED_BT_HFP_HF_AT_TEST,
                     WICED_BT_HFP_HF_AT_FMT_NONE, NULL, 0);
-              break;
+                break;
             }
             else
             {
                 p_scb->slc_at_init_state++;
             }
         case WICED_BT_HFP_HF_AT_SLC_STATE_CHLD:
+            slc_sub_state = WICED_BT_HFP_HF_SLC_SUB_STATE_BIND;
 #if (WICED_BT_HFP_HF_VERSION >= WICED_BT_HFP_HF_VERSION_1_7 \
   && WICED_BT_HFP_HF_IND_SUPPORTED == TRUE)
             if((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_HF_INDICATORS) &&
@@ -421,6 +508,7 @@ void wiced_bt_hfp_hf_at_slc(wiced_bt_hfp_hf_scb_t *p_scb)
                 /* enable Call Wait if application supports it */
                 wiced_bt_hfp_hf_at_send_cmd(p_scb, WICED_BT_HFP_HF_CMD_CCWA, WICED_BT_HFP_HF_AT_SET,
                     WICED_BT_HFP_HF_AT_FMT_INT, NULL, 1);
+                break;
             }
             else
             {
@@ -454,11 +542,13 @@ void wiced_bt_hfp_hf_at_slc(wiced_bt_hfp_hf_scb_t *p_scb)
             break;
     }
     p_scb->slc_at_init_state++;
-    if(WICED_BT_HFP_HF_AT_SLC_STATE_DONE == p_scb->slc_at_init_state)
-    {
-         wiced_bt_hfp_hf_slc_open(p_scb, NULL);
+    WICED_BTHFP_TRACE("%s exit:%d", __FUNCTION__, p_scb->slc_at_init_state);
+    if (_propagate_slc(p_scb, slc_sub_state)) {
+        wiced_bt_hfp_hf_slc_open(p_scb, NULL);
     }
 }
+
+
 
 /*******************************************************************************
 ** Function       wiced_bt_hfp_hf_indicator_event
@@ -668,7 +758,6 @@ static void wiced_bt_hfp_hf_set_indicator_status(wiced_bt_hfp_hf_scb_t *p_scb, c
     pos = p_scb->service_state_ind_id -1;
     if ( wiced_bt_hfp_check_ind_status( ind, pos, WICED_BT_HFP_HF_SERVICE_STATE_AVAILABLE, (uint8_t *)&app_data.service_state ) )
     {
-        p_scb->service_state_ind_id = app_data.service_state;
         wiced_bt_hfp_hf_cb.p_event_cback(WICED_BT_HFP_HF_SERVICE_STATE_EVT, &app_data);
     }
 
@@ -1090,7 +1179,6 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
 
         case WICED_BT_HFP_HF_RES_CCWA:
         case WICED_BT_HFP_HF_RES_CHLD:
-        case WICED_BT_HFP_HF_RES_COPS:
             break;
         case WICED_BT_HFP_HF_RES_CIND:
             if (p_scb->ind_string_received)
@@ -1108,19 +1196,63 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
             break;
 
         case WICED_BT_HFP_HF_RES_BVRA_EQ:
-        case WICED_BT_HFP_HF_RES_BSIR:
+            result = (uint8_t)wiced_bt_hfp_hf_utils_str2int(p_arg);
+            break;
+
         case WICED_BT_HFP_HF_RES_BTRH:
             result = (uint8_t)wiced_bt_hfp_hf_utils_str2int(p_arg);
+            app_data.btrh_result = (wiced_bt_hfp_hf_btrh_response_t)result;
             break;
-#if (WICED_BT_HFP_HF_WBS_INCLUDED == TRUE )
-        case WICED_BT_HFP_HF_RES_BCS:
+
+        case WICED_BT_HFP_HF_RES_BSIR:
             result = (uint8_t)wiced_bt_hfp_hf_utils_str2int(p_arg);
-            app_data.selected_codec = result;
-            // Send AT+BCS=<Codec ID> to AG
-            wiced_bt_hfp_hf_at_send_cmd( p_scb, WICED_BT_HFP_HF_CMD_BCS,
-                                WICED_BT_HFP_HF_AT_SET, WICED_BT_HFP_HF_AT_FMT_INT, NULL, result );
+            app_data.inband_ring = (wiced_bt_hfp_hf_inband_ring_state_t)result;
             break;
-#endif
+
+        case WICED_BT_HFP_HF_RES_BCS:
+            /*
+            * 4.11.3 Codec Connection Setup
+            * If the codec received is supported by HF, then we shall respond with AT+BCS <same_codec_id>
+            * If not supported, then we shall send AT+BAC <supported codec IDs>
+            */
+
+            if ((p_scb->feature_mask & WICED_BT_HFP_HF_FEATURE_CODEC_NEGOTIATION) &&
+                (p_scb->peer_feature_mask & WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION))
+            {
+                result = (uint8_t)wiced_bt_hfp_hf_utils_str2int(p_arg);
+                switch (result)
+                {
+                case WICED_BT_HFP_HF_CVSD_CODEC:
+#if (WICED_BT_HFP_HF_WBS_INCLUDED == TRUE)
+                case WICED_BT_HFP_HF_MSBC_CODEC:
+#endif //WICED_BT_HFP_HF_WBS_INCLUDED
+#if (WICED_BT_HFP_HF_SWBS_INCLUDED == TRUE)
+                case WICED_BT_HFP_HF_LC3_CODEC:
+#endif //WICED_BT_HFP_HF_WBS_INCLUDED
+                    app_data.selected_codec = result;
+                    break;
+                default:
+                    //Set result to a value that selected_codec cannot be equal to
+                    result = 0xFE;
+                    break;
+                }
+            }
+            if (app_data.selected_codec == result)
+            {
+                wiced_bt_hfp_hf_at_send_cmd(p_scb,
+                                            WICED_BT_HFP_HF_CMD_BCS,
+                                            WICED_BT_HFP_HF_AT_SET,
+                                            WICED_BT_HFP_HF_AT_FMT_INT,
+                                            NULL,
+                                            result);
+            }
+            else
+            {
+                // We do not support the codec sent by AG.
+                // send supported codecs to it.
+                wiced_bt_hfp_at_send_bac(p_scb);
+            }
+            break;
 
         case WICED_BT_HFP_HF_RES_BVRA:
             /* If both devices support Voice Recognition */
@@ -1155,8 +1287,9 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
             WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_EXTENDED_ERROR_RESULT_CODES    %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_EXTENDED_ERROR_RESULT_CODES) ? 1 : 0 );
             WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION              %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_CODEC_NEGOTIATION) ? 1 : 0 );
             WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_HF_INDICATORS                  %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_HF_INDICATORS) ? 1 : 0 );
-            WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT    %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT) ? 1 : 0 );
+            WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT       %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_ESCO_S4_SETTINGS_SUPPORT) ? 1 : 0 );
             WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_ENHANCED_VOICE_RECOGNITION     %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_ENHANCED_VOICE_RECOGNITION) ? 1 : 0 );
+            WICED_BTHFP_TRACE("\t WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_TEXT         %d \n", (app_data.ag_feature_flags & WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_TEXT) ? 1 : 0);
             break;
 #if (WICED_BT_HFP_HF_VERSION >= WICED_BT_HFP_HF_VERSION_1_7 \
   && WICED_BT_HFP_HF_IND_SUPPORTED == TRUE)
@@ -1182,12 +1315,35 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
             }
             break;
 #endif
+        case WICED_BT_HFP_HF_RES_COPS:
+            if (strlen(p_arg) > sizeof(app_data.cops_data))
+            {
+                WICED_BTHFP_ERROR("Err: cnum_data too large!!!\n");
+                event = 0;
+            }
+            else
+            {
+                unsigned int len = strlen(p_arg);
+
+                if (len >= WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH)
+                    len = WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH - 1;
+                /* We are currently sending the operator information <mode>, <format>, <operator> to
+                * app as string.
+                * The best way to send this is via a structure that has mode, format, and operator field.
+                * But, so far the app is using this without even needing that info at all
+                * so decided to simply give the whole thing to app as string.
+                * App will need to parse and get operator (if present)
+                */
+                strncpy(app_data.cops_data, p_arg, WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH - 1);
+                app_data.cops_data[len] = '\0';
+            }
+            break;
         default:
             break;
     }
 
     /* If service level connection is not fully established send the next AT command */
-    if((p_scb->slc_at_init_state != WICED_BT_HFP_HF_AT_SLC_STATE_DONE)
+    if((p_scb->slc_at_init_state < WICED_BT_HFP_HF_AT_SLC_STATE_DONE)
         && ((res == WICED_BT_HFP_HF_RES_OK) || (res == WICED_BT_HFP_HF_RES_ERROR))
         && (uuid != UUID_SERVCLASS_HEADSET))
     {
@@ -1209,5 +1365,5 @@ void wiced_bt_hfp_hf_at_err_cback(void *user_data, wiced_bool_t unknown, char *p
 {
     //TODO
     //wiced_bt_hfp_hf_scb_t *p_scb = (wiced_bt_hfp_hf_scb_t *) user_data;
-    //WICED_BT_TRACE("%s: scb:%p", __FUNCTION__, p_scb);
+    WICED_BT_TRACE("%s", __FUNCTION__);
 }

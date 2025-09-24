@@ -1,5 +1,5 @@
 /**
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,9 +109,10 @@ typedef struct
     wiced_bt_avrc_tg_track_attr_t   app_track_attr[APP_AVRC_MAX_ATTR+1];
 #endif
     uint8_t                         conn_role;
-    void* p_avct_buf;
-    void* p_avrc_buf;
-    tDRB *p_browse_drb;
+    void *                          p_avct_buf;
+    void *                          p_avrc_buf;
+    tDRB *                          p_browse_drb;
+    wiced_bool_t                    perform_sdp; /* Application configuration to initiate SDP on AVRC_OPEN_IND_EVT */
 } wiced_bt_avrc_tg_cb_t;
 
 #endif /* WICED_BT_RC_TG_INT_H */

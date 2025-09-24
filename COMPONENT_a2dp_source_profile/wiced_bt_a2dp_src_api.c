@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -77,28 +77,101 @@ int wiced_bt_a2dp_source_utils_bdcmp(const wiced_bt_device_address_t a,
     return 0;
 }
 
-wiced_result_t wiced_bt_a2dp_source_init(wiced_bt_a2dp_source_config_data_t *p_config_data,
-    wiced_bt_a2dp_source_control_cb_t control_cb, wiced_bt_heap_t* heap)
+/******************************************************************************
+*
+* Function Name: wiced_bt_a2dp_source_utils_validate_config_data
+*
+* \brief Validate the config data provided by application. Currently we validte only the codec related information.
+*
+* \details  Validates the conditions and capabilities mandatory for stack and/or compliance.
+*
+*  \param p_config_data[in]    Codec configuration recieved from application.
+*
+*  \return wiced_result_t      WICED_SUCCESS in case of success else error
+*
+******************************************************************************/
+static wiced_result_t wiced_bt_a2dp_source_utils_validate_config_data(wiced_bt_a2dp_source_config_data_ext_t *p_config_data)
 {
-    wiced_result_t ret = WICED_SUCCESS;
+    int8_t j;
 
-    /* Check if already initialized, then just return with error */
-    if(wiced_bt_a2dp_source_cb.is_init == WICED_TRUE)
-    {
-        WICED_BTA2DP_SRC_ERROR("%s: Already initialized \n", __FUNCTION__);
-        return WICED_ALREADY_INITIALIZED;
-    }
-
-    if(p_config_data == NULL)
+    if (NULL == p_config_data)
     {
         WICED_BTA2DP_SRC_ERROR("%s: Config data is not present \n", __FUNCTION__);
         return WICED_BADARG;
     }
 
-    if(p_config_data->codec_capabilities.info == NULL)
+    if (NULL == p_config_data->codec_capabilities)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: codec_capabilities is not present \n", __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    if (NULL == p_config_data->codec_capabilities->info)
     {
         WICED_BTA2DP_SRC_ERROR("%s: codec_capabilities info is not present \n", __FUNCTION__);
         return WICED_BADARG;
+    }
+    if (NULL == p_config_data->default_codec_config)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: default_codec_config is not present \n", __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    if (p_config_data->codec_capabilities->count > WICED_BT_A2DP_SOURCE_NUM_CODECS)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: codec_capabilities count exceeds WICED_BT_A2DP_SOURCE_NUM_CODECS \n", __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    /* SBC is mandatory. Make sure SBC exists in list of supported codecs */
+    for (j = 0; j < p_config_data->codec_capabilities->count; j++)
+    {
+        if (p_config_data->codec_capabilities->info[j].codec_id == WICED_BT_A2DP_CODEC_SBC)
+        {
+            break;
+        }
+    }
+
+    if (j == p_config_data->codec_capabilities->count)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: SBC is mandatory in codec_capabilities. Not Found.\n",
+                               __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    /*
+     * We depend on the order of codecs in default_codec_config and codec_capabilities to be same.
+     */
+    for (j = 0; j < p_config_data->codec_capabilities->count; j++)
+    {
+        if (p_config_data->codec_capabilities->info[j].codec_id != p_config_data->default_codec_config[j].codec_id)
+        {
+            WICED_BTA2DP_SRC_ERROR("%s: Order of codecs in codec_capabilities and default_codec_config needs to match.\n",
+                                   __FUNCTION__);
+            return WICED_BADARG;
+        }
+    }
+
+    return WICED_SUCCESS;
+}
+
+wiced_result_t wiced_bt_a2dp_source_init_ext(wiced_bt_a2dp_source_config_data_ext_t *p_config_data,
+                                             wiced_bt_a2dp_source_control_cb_t control_cb,
+                                             wiced_bt_heap_t *heap)
+{
+    wiced_result_t ret = WICED_SUCCESS;
+
+    /* Check if already initialized, then just return with error */
+    if (wiced_bt_a2dp_source_cb.is_init == WICED_TRUE)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: Already initialized \n", __FUNCTION__);
+        return WICED_ALREADY_INITIALIZED;
+    }
+
+    if (WICED_SUCCESS != (ret = wiced_bt_a2dp_source_utils_validate_config_data(p_config_data)))
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: Invalid p_config_data \n", __FUNCTION__);
+        return ret;
     }
 
     if (heap == NULL)
@@ -108,7 +181,7 @@ wiced_result_t wiced_bt_a2dp_source_init(wiced_bt_a2dp_source_config_data_t *p_c
     }
 
     /* Check if Init of the state machine can be done. If not, then bail-out */
-    if(wiced_bt_a2dp_source_init_state_machine() != WICED_SUCCESS)
+    if (wiced_bt_a2dp_source_init_state_machine() != WICED_SUCCESS)
     {
         return WICED_BADARG;
     }
@@ -124,8 +197,9 @@ wiced_result_t wiced_bt_a2dp_source_init(wiced_bt_a2dp_source_config_data_t *p_c
     //wiced_bt_a2dp_source_cb.data_cb = data_cb;
 
     wiced_bt_a2dp_source_cb.heap = heap;
+
     /* Register with AVDT */
-    if( (ret = wiced_bt_a2dp_source_register()) != WICED_SUCCESS)
+    if ((ret = wiced_bt_a2dp_source_register()) != WICED_SUCCESS)
     {
         WICED_BTA2DP_SRC_ERROR("%s: Register with AVDT failed \n", __FUNCTION__);
         return ret;
@@ -133,6 +207,30 @@ wiced_result_t wiced_bt_a2dp_source_init(wiced_bt_a2dp_source_config_data_t *p_c
 
     wiced_bt_a2dp_source_cb.is_init = WICED_TRUE;
     return WICED_SUCCESS;
+}
+
+wiced_result_t wiced_bt_a2dp_source_init(wiced_bt_a2dp_source_config_data_t *p_config_data,
+                                             wiced_bt_a2dp_source_control_cb_t control_cb,
+                                             wiced_bt_heap_t *heap)
+{
+    if (p_config_data == NULL)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: Config data is not present \n", __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    if (p_config_data->codec_capabilities.count != 1)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: Use wiced_bt_a2dp_source_init_ext for supporting multiple codecs\n", __FUNCTION__);
+        return WICED_BADARG;
+    }
+
+    wiced_bt_a2dp_source_app_config.codec_capabilities = &p_config_data->codec_capabilities;
+    wiced_bt_a2dp_source_app_config.default_codec_config = &p_config_data->default_codec_config;
+    wiced_bt_a2dp_source_app_config.feature_mask = p_config_data->feature_mask;
+
+    return wiced_bt_a2dp_source_init_ext(&wiced_bt_a2dp_source_app_config, control_cb, heap);
+
 }
 
 wiced_result_t wiced_bt_a2dp_source_deinit(void)
@@ -296,5 +394,11 @@ wiced_result_t wiced_bt_a2dp_source_start_streaming(uint8_t handle, uint8_t *p_m
         WICED_BTA2DP_SRC_ERROR("%s: Not initialized \n", __FUNCTION__);
         return WICED_NOTUP;
     }
-    return wiced_bt_avdt_write_req(handle, p_media_buf, buf_len, time_stamp, m_pt, AVDT_DATA_OPT_NONE);
+    uint16_t error = wiced_bt_avdt_write_req(handle, p_media_buf, buf_len, time_stamp, m_pt, AVDT_DATA_OPT_NONE);
+    if(error != AVDT_SUCCESS)
+    {
+        WICED_BTA2DP_SRC_ERROR("%s: wiced_bt_avdt_write_req failed with error code %d \n", __FUNCTION__, error);
+        return WICED_ERROR;
+    }
+    return WICED_SUCCESS;
 }

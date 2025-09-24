@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -229,11 +229,16 @@ wiced_hfp_hf_sdp_complete:
     if( msg.hf_evt == WICED_BT_HFP_HF_SDP_DISC_FAIL_EVT )
     {
 #ifdef WICED_ENABLE_BT_HSP_PROFILE
-        if( wiced_bt_hfp_hf_cb.ag_profile_uuid == UUID_SERVCLASS_AG_HANDSFREE )
+        WICED_BTHFP_TRACE("%s: Starting SDP again\n", __FUNCTION__);
+        if (wiced_bt_hfp_hf_cb.ag_profile_uuid ==  UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY)
         {
-            wiced_bt_hfp_hf_cb.ag_profile_uuid = UUID_SERVCLASS_HEADSET_AUDIO_GATEWAY;
-            memset(p_scb->p_sdp_db,0,WICED_BT_HFP_HF_DISC_BUF_SIZE);
-            wiced_app_event_serialize(wiced_bt_do_sdp_again,(void *)p_scb);
+            wiced_bt_hfp_hf_cb.ag_profile_uuid = UUID_SERVCLASS_AG_HANDSFREE;
+
+            if (p_scb && p_scb->p_sdp_db)
+            {
+                memset(p_scb->p_sdp_db, 0, WICED_BT_HFP_HF_DISC_BUF_SIZE);
+                wiced_bt_do_sdp_again((void *)p_scb);
+            }
         }
         else
         {
@@ -450,7 +455,11 @@ void wiced_bt_hfp_hf_rfc_connected(wiced_bt_hfp_hf_scb_t *p_scb,
     {
         uuid = ( wiced_bt_hfp_hf_cb.ag_profile_uuid == UUID_SERVCLASS_AG_HANDSFREE ) ? UUID_SERVCLASS_HF_HANDSFREE : UUID_SERVCLASS_HEADSET;
     }
-
+    WICED_BTHFP_TRACE("%s: (s:%d) (au:%d) (u:%d)",
+                      __FUNCTION__,
+                      p_scb->is_server,
+                      wiced_bt_hfp_hf_cb.ag_profile_uuid,
+                      uuid);
     /* Set up AT command interpreter */
     p_scb->at_cb.p_user = p_scb;
     p_scb->at_cb.res_max_len = WICED_BT_HFP_HF_AT_MAX_LEN;

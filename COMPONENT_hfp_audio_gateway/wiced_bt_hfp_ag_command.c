@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,8 +33,12 @@
 
 #define BTA_AG_CMD_MAX_VAL      32767       /* Maximum value is signed 16-bit value */
 #define BTA_AG_NUM_INDICATORS    7
-#define BTA_AG_CIND_INFO        "(\"call\",(0,1)),(\"callsetup\",(0-3)),(\"callheld\",(0-2)),(\"service\",(0,1),(\"battchg\",(0-5)),(\"signal\",(0-5)),(\"roam\",(0-1))"
+#define BTA_AG_CIND_INFO        "(\"call\",(0,1)),(\"callsetup\",(0-3)),(\"callheld\",(0-2)),(\"service\",(0,1)),(\"battchg\",(0-5)),(\"signal\",(0-5)),(\"roam\",(0-1))"
 static char  BTA_AG_CIND_VALUES[20] = { '0', ',' , '0' , ',' , '0' , ',' , '1' ,',','5',',' ,'5',',' ,'0'};
+
+#if (BTM_HF_INDICATOR_INCLUDED == TRUE)
+static uint8_t _send_hf_indicator_to_hf(wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t indicator, wiced_bool_t enable);
+#endif //BTM_HF_INDICATOR_INCLUDED
 
 /* enumeration of HFP AT commands matches HFP command interpreter table */
 enum
@@ -87,39 +91,40 @@ static const struct
 
     uint8_t     min;                        /* minimum value for int arg */
     int16_t     max;                        /* maximum value for int arg */
+    uint16_t    mask;                       /* mask for received val. To help with RFU. 0 means no mask */
 
 } bta_ag_hfp_cmd[] =
 {
-    {"A",       BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"D",       (BTA_AG_AT_NONE | BTA_AG_AT_FREE),  BTA_AG_AT_STR,   0,   0},
-    {"+VGS",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,  15},
-    {"+VGM",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,  15},
-    {"+CCWA",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1},
-    {"+CHLD",   (BTA_AG_AT_SET | BTA_AG_AT_TEST),   BTA_AG_AT_STR,   0,   4},
-    {"+CHUP",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"+CIND",   (BTA_AG_AT_READ | BTA_AG_AT_TEST),  BTA_AG_AT_STR,   0,   0},
-    {"+CLIP",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1},
-    {"+CMER",   BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0},
-    {"+VTS",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0},
-    {"+BINP",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   1,   1},
-    {"+BLDN",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"+BVRA",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1},
-    {"+BRSF",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   BTA_AG_CMD_MAX_VAL},
-    {"+NREC",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   0},
-    {"+CNUM",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"+BTRH",   (BTA_AG_AT_READ | BTA_AG_AT_SET),   BTA_AG_AT_INT,   0,   2},
-    {"+CLCC",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"+COPS",   (BTA_AG_AT_READ | BTA_AG_AT_SET),   BTA_AG_AT_STR,   0,   0},
-    {"+CMEE",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1},
-    {"+BIA",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   20},
-    {"+CBC",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   100},
-    {"+BCC",    BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0},
-    {"+BCS",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   BTA_AG_CMD_MAX_VAL},
-    {"+BIND",   BTA_AG_AT_SET | BTA_AG_AT_READ | BTA_AG_AT_TEST , BTA_AG_AT_STR,   0,   0},
-    {"+BIEV",   BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0},
-    {"+BAC",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0},
-    {"+CKPD",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0, 200}, //SC for HSP
-    {"",        BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0}
+    {"A",       BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"D",       (BTA_AG_AT_NONE | BTA_AG_AT_FREE),  BTA_AG_AT_STR,   0,   0,    0},
+    {"+VGS",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,  15,    0},
+    {"+VGM",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,  15,    0},
+    {"+CCWA",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1,    0},
+    {"+CHLD",   (BTA_AG_AT_SET | BTA_AG_AT_TEST),   BTA_AG_AT_STR,   0,   4,    0},
+    {"+CHUP",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"+CIND",   (BTA_AG_AT_READ | BTA_AG_AT_TEST),  BTA_AG_AT_STR,   0,   0,    0},
+    {"+CLIP",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1,    0},
+    {"+CMER",   BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0,    0},
+    {"+VTS",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0,    0},
+    {"+BINP",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   1,   1,    0},
+    {"+BLDN",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"+BVRA",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1,    0},
+    {"+BRSF",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   BTA_AG_CMD_MAX_VAL, 0x0FFFu},
+    {"+NREC",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   0,    0},
+    {"+CNUM",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"+BTRH",   (BTA_AG_AT_READ | BTA_AG_AT_SET),   BTA_AG_AT_INT,   0,   2,    0},
+    {"+CLCC",   BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"+COPS",   (BTA_AG_AT_READ | BTA_AG_AT_SET),   BTA_AG_AT_STR,   0,   0,    0},
+    {"+CMEE",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   1,    0},
+    {"+BIA",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   20,   0},
+    {"+CBC",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   100,  0},
+    {"+BCC",    BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0},
+    {"+BCS",    BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0,   BTA_AG_CMD_MAX_VAL, 0},
+    {"+BIND",   BTA_AG_AT_SET | BTA_AG_AT_READ | BTA_AG_AT_TEST , BTA_AG_AT_STR,   0,   0, 0},
+    {"+BIEV",   BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0,    0},
+    {"+BAC",    BTA_AG_AT_SET,                      BTA_AG_AT_STR,   0,   0,    0},
+    {"+CKPD",   BTA_AG_AT_SET,                      BTA_AG_AT_INT,   0, 200,    0}, //SC for HSP
+    {"",        BTA_AG_AT_NONE,                     BTA_AG_AT_STR,   0,   0,    0}
 };
 
 /* AT result code table element */
@@ -153,6 +158,7 @@ enum
     BTA_AG_RES_VGM,
     BTA_AG_RES_VGS,
     BTA_AG_RES_CLCC,
+    BTA_AG_RES_BIND,
     BTA_AG_RES_MAX,
 };
 
@@ -172,6 +178,7 @@ const tBTA_AG_RESULT bta_ag_result_tbl[] =
     {"+VGM=",   BTA_AG_RES_FMT_INT},
     {"+VGS=",   BTA_AG_RES_FMT_INT},
     {"+CLCC: ", BTA_AG_RES_FMT_STR},
+    {"+BIND: ", BTA_AG_RES_FMT_STR},
     {"",        BTA_AG_RES_FMT_STR}
 };
 
@@ -314,7 +321,7 @@ static void _parse_bia_command (wiced_bt_hfp_ag_session_cb_t *p_scb, char *p_s)
 }
 
 
-#if (BTM_WBS_INCLUDED == TRUE )
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
 /*******************************************************************************
 **
 ** Function         _parse_bac_command
@@ -330,7 +337,7 @@ static void _parse_bac_command (wiced_bt_hfp_ag_session_cb_t *p_scb, char *p_s)
     wiced_bool_t cont = FALSE; /* Continue processing */
     char                *p;
 
-    p_scb->peer_supports_msbc = FALSE;
+    p_scb->peer_supported_codecs = WICED_BT_HFP_AG_CODEC_CVSD;
 
     while (p_s)
     {
@@ -352,9 +359,19 @@ static void _parse_bac_command (wiced_bt_hfp_ag_session_cb_t *p_scb, char *p_s)
         {
             case HFP_CODEC_CVSD:
                 break;
+
+#if (BTM_WBS_INCLUDED == TRUE)
             case HFP_CODEC_MSBC:
-                p_scb->peer_supports_msbc = TRUE;
+                p_scb->peer_supported_codecs |= WICED_BT_HFP_AG_CODEC_MSBC;
                 break;
+#endif //BTM_WBS_INCLUDED
+
+#if (BTM_SWBS_INCLUDED == TRUE)
+            case HFP_CODEC_LC3:
+                p_scb->peer_supported_codecs |= WICED_BT_HFP_AG_CODEC_LC3;
+                break;
+#endif//BTM_SWBS_INCLUDED
+
             default:
                 /* Ignore any proprietary codecs */
                 WICED_BT_TRACE ("Unknown Codec UUID(%d) received", codec);
@@ -369,6 +386,71 @@ static void _parse_bac_command (wiced_bt_hfp_ag_session_cb_t *p_scb, char *p_s)
 }
 #endif
 
+#if (BTM_HF_INDICATOR_INCLUDED == TRUE)
+/*******************************************************************************
+**
+** Function         _parse_biev_command
+**
+** Description      Parse AT+BIEV parameter string.
+**
+** Returns          Returns True if parsed successfully. ind and val are out params
+**
+*******************************************************************************/
+static wiced_bool_t _parse_biev_command(char *p_s, uint8_t *ind, uint8_t *val)
+{
+    uint8_t state = 0;//0-> ind, 1->val
+    *ind = 0;
+    *val = 0;
+
+    while (*p_s) {
+        if (*p_s == ' ') {
+            p_s++; // skip space
+            continue;
+        }
+
+        if (*p_s == ',') {
+            p_s++;
+            state+=1;
+            continue;
+        }
+
+        if (*p_s < '0' || *p_s > '9') {
+            WICED_BT_TRACE("_parse_biev_command: non int char received");
+            return WICED_FALSE;
+        }
+
+        //convert to int and add to ind or val
+        if (state == 0) {
+            *ind = (*ind * 10) + (*p_s - '0'); // add to indicator
+        }
+        else if (state == 1) {
+            *val = (*val * 10) + (*p_s - '0'); // add to value
+        }
+        else {
+            WICED_BT_TRACE("_parse_biev_command: reached invalid state");
+            break;
+        }
+        p_s++;
+    }
+
+    return state == 1;
+}
+
+static void _handle_biev_cmd(wiced_bt_hfp_ag_session_cb_t *p_scb, char *p_arg)
+{
+    uint8_t ind, val;
+    if (WICED_FALSE == _parse_biev_command(p_arg, &ind, &val)) {
+        _send_error_to_hf(p_scb, BTA_AG_ERR_OP_NOT_SUPPORTED);
+        return;
+    }
+    if (ind < HF_IND_ENHANCED_SAFETY || ind > HF_IND_REM_BATTERY_LEVEL) {
+        _send_error_to_hf(p_scb, BTA_AG_ERR_OP_NOT_SUPPORTED);
+        return;
+    }
+    WICED_BT_TRACE("_handle_biev_cmd: (ind,val): (%d,%d)\n", ind,val);
+    _send_OK_to_hf(p_scb); /* send OK */
+}
+#endif //BTM_HF_INDICATOR_INCLUDED
 
 /*******************************************************************************
 **
@@ -389,6 +471,7 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
             if (arg_type == BTA_AG_AT_NONE)
                 _send_OK_to_hf(p_scb);                          /* send OK */
             break;
+
         case BTA_AG_HF_CMD_A:
         case BTA_AG_HF_CMD_VGS:
         case BTA_AG_HF_CMD_VGM:
@@ -398,12 +481,20 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
         case BTA_AG_HF_CMD_CCWA:
         case BTA_AG_HF_CMD_CMEE:
         case BTA_AG_HF_CMD_VTS:
-            _send_OK_to_hf(p_scb);                          /* send OK */
+            _send_OK_to_hf(p_scb); /* send OK */
             break;
+
+#if (BTM_HF_INDICATOR_INCLUDED == TRUE)
+        case BTA_AG_HF_CMD_BIEV:
+            _handle_biev_cmd(p_scb, p_arg);
+            break;
+#endif //BTM_HF_INDICATOR_INCLUDED
+
         case BTA_AG_HF_CMD_BIA:
             _parse_bia_command(p_scb, p_arg);
             _send_OK_to_hf(p_scb);                          /* send OK */
             break;
+
         case BTA_AG_HF_CMD_CKPD:                            /* for HSP */
             _send_OK_to_hf(p_scb);                          /* send OK */
 
@@ -425,12 +516,18 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
                 }
             }
             break;
+
         case BTA_AG_HF_CMD_CLCC:
             if(hfp_ag_hci_send_ag_event)
                 hfp_ag_hci_send_ag_event( WICED_BT_HFP_AG_EVENT_CLCC_REQ, p_scb->app_handle, NULL );
             break;
-        case BTA_AG_HF_CMD_BINP:
+
         case BTA_AG_HF_CMD_NREC:
+            if (hfp_ag_hci_send_ag_event)
+                hfp_ag_hci_send_ag_event(WICED_BT_HFP_AG_EVENT_NREC_CMD, p_scb->app_handle, NULL);
+            break;
+
+        case BTA_AG_HF_CMD_BINP:
         case BTA_AG_HF_CMD_BTRH:
             _send_error_to_hf (p_scb, BTA_AG_ERR_OP_NOT_SUPPORTED);
             break;
@@ -474,6 +571,49 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
             _send_OK_to_hf(p_scb);
             break;
 
+#if (BTM_HF_INDICATOR_INCLUDED == TRUE)
+        case BTA_AG_HF_CMD_BIND:
+            if (arg_type == BTA_AG_AT_SET)
+            {
+                /* AT+BIND=<>,<> from HF. If we support we need to send OK */
+                //p_arg has 1,2 or 1 or 2
+                uint8_t i = 0;
+                uint8_t i_max = (uint8_t)strlen(p_arg);
+                while (i++ < i_max)
+                {
+                    while ((*p_arg == ' ') || (*p_arg == ','))
+                    {
+                        p_arg++;
+                        continue;
+                    }
+                    p_scb->hf_indicator_hf_support |= (*p_arg - '0');
+                    p_arg++;
+                }
+            }
+            else if (arg_type == BTA_AG_AT_TEST)
+            {
+                /* AT+BIND=? from HF. We need to send +BIND: <>,<> i.e all supported indicators */
+                _send_result_to_hf(p_scb, BTA_AG_RES_BIND, "(1,2)", 0);
+            }
+            else if (arg_type == BTA_AG_AT_READ)
+            {
+                /* AT+BIND? from HF.We need to send  1 BIND command for each indicator
+                supported. Then send OK.*/
+
+                //We support 2 indicators
+                _send_hf_indicator_to_hf(p_scb,
+                                         HF_IND_ENHANCED_SAFETY,
+                                         p_scb->hf_indicator_ag_status & HF_IND_ENHANCED_SAFETY);
+                _send_hf_indicator_to_hf(p_scb,
+                                         HF_IND_REM_BATTERY_LEVEL,
+                                         p_scb->hf_indicator_ag_status & HF_IND_REM_BATTERY_LEVEL);
+                hfp_ag_service_level_up(p_scb);
+            }
+
+            _send_OK_to_hf(p_scb);
+            break;
+#endif //BTM_HF_INDICATOR_INCLUDED
+
         case BTA_AG_HF_CMD_CLIP:
             /* store setting, send OK */
             p_scb->clip_enabled = (wiced_bool_t)int_arg;
@@ -481,20 +621,31 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
             break;
 
         case BTA_AG_HF_CMD_BVRA:
+            /*If AG supports voice reco, then send ok and proceed with audio conn. Else send Error (sec 4.25, HFP1.9)*/
+            if (!(ag_features & HFP_AG_FEAT_VREC))
+            {
+                _send_error_to_hf(p_scb, BTA_AG_ERR_OP_NOT_SUPPORTED);
+                return;
+            }
+
             _send_OK_to_hf (p_scb);
             if (arg_type == BTA_AG_AT_SET)
             {
                 if ((int_arg == 1) && (!p_scb->b_sco_opened))
                     hfp_ag_sco_create (p_scb, TRUE);
+                /* Spec says disable voice reco and we are treating this as sco close. I'm disabling this code
+                See section 4.25.3 Voice Recognition Deactivation , HFP 1.9 */
+                #if 0
                 else if ((int_arg == 0) && (p_scb->b_sco_opened))
                     hfp_ag_sco_close (p_scb);
+                #endif
             }
             break;
 
         case BTA_AG_HF_CMD_BRSF:
             /* store peer features */
             p_scb->hf_features = (uint16_t) int_arg;
-            WICED_BT_TRACE ("BRSF HF : 0x%x , phone : 0x%x", p_scb->hf_features, ag_features);
+            WICED_BT_TRACE ("BRSF peer(HF): 0x%x , local(AG): 0x%x", p_scb->hf_features, ag_features);
 
             /* send BRSF, send OK */
             _send_result_to_hf(p_scb, BTA_AG_RES_BRSF, NULL, (int16_t)ag_features);
@@ -518,7 +669,15 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
             if (p_arg[6] == '1')
             {
                 p_scb->cmer_enabled = WICED_TRUE;
-                hfp_ag_service_level_up (p_scb);
+                if ((!((ag_features & HFP_AG_FEAT_HF_IND) && (p_scb->hf_features & HFP_HF_FEAT_HF_IND))) &&
+                    (!((ag_features & HFP_AG_FEAT_3WAY) && (p_scb->hf_features & HFP_HF_FEAT_3WAY))))
+                {
+                    /* SLC condition:
+                    * This case shall apply when the "Call waiting and 3-way calling" bit
+                    * is not set in the supported features bitmap for either the HF or the AG, and when the "HF Indicators"
+                    * bit is not set in the supported features bitmap for either the HF or the AG as exchanged via +BRSF  command */
+                    hfp_ag_service_level_up(p_scb);
+                }
             }
             else if (p_arg[6] == '0')
             {
@@ -526,28 +685,59 @@ static void _handle_command_from_hf (wiced_bt_hfp_ag_session_cb_t *p_scb, uint16
             }
             break;
 
-#if (BTM_WBS_INCLUDED == TRUE )
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
         case BTA_AG_HF_CMD_BAC:
             _send_OK_to_hf(p_scb);
 
             /* parse codecs and set a flag if peer supports mSBC */
+            p_scb->codec_conn_state = CODEC_CONN_STATE_BAC_REC;
             _parse_bac_command (p_scb, p_arg);
+            WICED_BT_TRACE("peer(HF) supported codec: 0x%x", p_scb->peer_supported_codecs);
             break;
 
-        case BTA_AG_HF_CMD_BCS:
-            _send_OK_to_hf(p_scb);
-
+        case BTA_AG_HF_CMD_BCS: {
+            wiced_bool_t send_ok = WICED_TRUE;
             /* stop cn timer */
             wiced_stop_timer(&p_scb->cn_timer);
 
-            if (int_arg == HFP_CODEC_MSBC)
-                p_scb->msbc_selected = WICED_TRUE;
-            else
-                p_scb->msbc_selected = WICED_FALSE;
+            switch (int_arg)
+            {
+#if (BTM_WBS_INCLUDED == TRUE)
+            case HFP_CODEC_MSBC:
+                p_scb->local_selected_codec = WICED_BT_HFP_AG_CODEC_MSBC;
+                break;
+#endif //BTM_WBS_INCLUDED
 
-            hfp_ag_sco_create (p_scb, TRUE);
+#if (BTM_SWBS_INCLUDED == TRUE)
+            case HFP_CODEC_LC3:
+                p_scb->local_selected_codec = WICED_BT_HFP_AG_CODEC_LC3;
+                break;
+#endif //BTM_SWBS_INCLUDED
+
+            case HFP_CODEC_CVSD:
+                p_scb->local_selected_codec = WICED_BT_HFP_AG_CODEC_CVSD;
+                break;
+
+            default:
+                //Send Error
+                send_ok = WICED_FALSE;
+                break;
+            }
+            WICED_BT_TRACE("local(AG) selected codec: %d", p_scb->local_selected_codec);
+            if (send_ok)
+            {
+                p_scb->codec_conn_state = CODEC_CONN_STATE_BCS_RES_RECVD;
+                _send_OK_to_hf(p_scb);
+                hfp_ag_sco_create(p_scb, TRUE);
+            }
+            else {
+                p_scb->codec_conn_state = CODEC_CONN_STATE_BAC_REC;
+                //There is no better error for the case where peer sends a codec that is unsupported by local
+                //So we will go ahead and send NOTSUPPORTED error
+                _send_error_to_hf(p_scb, BTA_AG_ERR_OP_NOT_SUPPORTED);
+            }
             break;
-
+        }
         case BTA_AG_HF_CMD_BCC:
             _send_OK_to_hf(p_scb);
             hfp_ag_sco_create (p_scb, TRUE);
@@ -630,7 +820,7 @@ void wiced_bt_hfp_ag_set_cind(char *cind_val, uint8_t length)
         memcpy(BTA_AG_CIND_VALUES, cind_val, length);
 }
 
-#if (BTM_WBS_INCLUDED == TRUE )
+#if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
 /*******************************************************************************
 **
 ** Function         wiced_bt_hfp_ag_send_BCS_to_hf
@@ -642,16 +832,28 @@ void wiced_bt_hfp_ag_set_cind(char *cind_val, uint8_t length)
 *******************************************************************************/
 void wiced_bt_hfp_ag_send_BCS_to_hf (wiced_bt_hfp_ag_session_cb_t *p_scb)
 {
-    int16_t codec_uuid;
+    int16_t codec_uuid = HFP_CODEC_CVSD;
 
-    /* Try to use mSBC if the peer supports it */
-    if (p_scb->peer_supports_msbc)
-        codec_uuid = HFP_CODEC_MSBC;
+    /* Try to use LC3 if supported by both, else mSBC */
+#if (BTM_SWBS_INCLUDED == TRUE)
+    if (p_scb->peer_supported_codecs & WICED_BT_HFP_AG_CODEC_LC3)
+    {
+        codec_uuid = HFP_CODEC_LC3;
+    }
+#if (BTM_WBS_INCLUDED == TRUE)
     else
-        codec_uuid = HFP_CODEC_CVSD;
+#endif //BTM_WBS_INCLUDED
+#endif //BTM_SWBS_INCLUDED
+#if (BTM_WBS_INCLUDED == TRUE)
+    if (p_scb->peer_supported_codecs & WICED_BT_HFP_AG_CODEC_MSBC)
+    {
+        codec_uuid = HFP_CODEC_MSBC;
+    }
+#endif //BTM_WBS_INCLUDED
 
     /* send +BCS */
     WICED_BT_TRACE ("send +BCS codec is %d", codec_uuid);
+    p_scb->codec_conn_state = CODEC_CONN_STATE_BCS_SENT;
 
     _send_result_to_hf (p_scb, BTA_AG_RES_BCS, NULL, codec_uuid);
 }
@@ -750,6 +952,10 @@ void hfp_ag_parse_AT_command (wiced_bt_hfp_ag_session_cb_t *p_scb)
             {
                 int_arg = utl_str2int(p_arg);
 
+                if (bta_ag_hfp_cmd[idx].mask) {
+                    int_arg &= bta_ag_hfp_cmd[idx].mask;
+                }
+
                 if (int_arg < (int16_t) bta_ag_hfp_cmd[idx].min || int_arg > (int16_t) bta_ag_hfp_cmd[idx].max)
                 {
                     WICED_BT_TRACE ("arg out of range: value: %u\n", int_arg);
@@ -780,3 +986,60 @@ void hfp_ag_parse_AT_command (wiced_bt_hfp_ag_session_cb_t *p_scb)
         hfp_ag_hci_send_ag_event(WICED_BT_HFP_AG_EVENT_AT_CMD, p_scb->app_handle, (wiced_bt_hfp_ag_event_data_t *)&at_cmd);
     p_scb->res_len = 0;
 }
+
+#if (BTM_HF_INDICATOR_INCLUDED == TRUE)
+
+static uint8_t _is_hf_indicator_supported_by_both(wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t indicator)
+{
+    /* AG supports enhanced safety and batter level */
+    return (((indicator == HF_IND_ENHANCED_SAFETY) || (indicator == HF_IND_REM_BATTERY_LEVEL)) &&
+            p_scb->hf_indicator_hf_support & indicator);
+}
+
+static void _get_indicator_string(char *ind_str, uint8_t indicator, wiced_bool_t enable)
+{
+    *ind_str = '1' + (indicator - 1);
+    *(ind_str + 1) = ',';
+    *(ind_str + 2) = enable ? '1' : '0';
+    *(ind_str + 3) = '\0';
+}
+
+static uint8_t _send_hf_indicator_to_hf(wiced_bt_hfp_ag_session_cb_t *p_scb, uint8_t indicator, wiced_bool_t enable)
+{
+    char bind_data[6];
+    _get_indicator_string(bind_data, indicator, enable);
+    return _send_result_to_hf(p_scb, BTA_AG_RES_BIND, bind_data, 0);
+}
+
+uint8_t wiced_bt_hfp_ag_change_hf_ind_status(uint16_t handle, uint8_t indicator, wiced_bool_t enable)
+{
+    wiced_bt_hfp_ag_session_cb_t *p_scb = hfp_ag_find_scb_by_app_handle(handle);
+
+    if (p_scb == NULL) return WICED_FALSE;
+    /* 1. IF indicator is not supported by both sides, send error.
+    * 2. Set HF indicator local status to = enable
+    * 3. If SLC is up, send +BIND
+    */
+
+    /* HF indicator supported by both sides? */
+    if (!_is_hf_indicator_supported_by_both(p_scb, indicator))
+    {
+        return WICED_FALSE;
+    }
+
+    /* Setting new status same as old status? */
+    if (!((p_scb->hf_indicator_ag_status & indicator) ^ (enable << (indicator - 1))))
+    {
+        return WICED_FALSE;
+    }
+
+    if (p_scb->b_slc_is_up && !_send_hf_indicator_to_hf(p_scb, indicator, enable))
+    {
+        return WICED_FALSE;
+    }
+
+    //toggle local state
+    p_scb->hf_indicator_ag_status ^= (1 << (indicator - 1));
+    return WICED_TRUE;
+}
+#endif //BTM_HF_INDICATOR_INCLUDED
