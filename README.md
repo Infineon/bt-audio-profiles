@@ -14,4 +14,4 @@ Applications working with any of the above profiles are expected to include the 
 
 [Bluetooth Classic Audio Profiles release notes](./RELEASE.md)
 
-For Bluetooth Classic Audio Profile APIs, refer to the [Profiles API reference manual] [https://infineon.github.io/bt-audio-profiles/docs/audio/classic/api_reference_manual/html/index.html].
+For Bluetooth Classic Audio Profile APIs, refer to the [Profiles API reference manual] [https://infineon.github.io/bt-audio-profiles/Audio/classic/api_reference_manual/html/index.html].

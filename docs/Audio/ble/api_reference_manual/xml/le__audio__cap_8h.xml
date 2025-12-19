@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="29" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="29" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="29" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__cap_1gaa75cc727ea3c51efbf5bbdf48854e88e" prot="public" static="no">
         <name>WICED_BT_CAP_DIRECTION_SINK</name>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="30" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="30" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="30" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga671b2ca079d4d5fd7db21843f07e081e" prot="public" static="no">
         <name>MAX_NUM_ASE_ID</name>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="32" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="32" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="32" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga5830cdfaac08407f6d92681e0531c8e1" prot="public" static="no">
         <name>CAP_TRACE</name>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="34" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="34" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="34" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__cap_1ga896e3433f62fb89f9d6133a7d63520b4" prot="public" static="no">
         <name>CAP_TRACE_CRIT</name>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="35" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="35" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="35" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="41" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="40" bodyend="44"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="41" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="40" bodyend="44"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="46" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="46" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="46" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__cap_1gacdc5e30c66939214ab97d740ab67fc88" prot="public" static="no">
         <type>void</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="155" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="155" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="155" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="167" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="167" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa32d4598314d5949f149268640bca6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="183" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="183" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabc65947482723662cdb92cbb9e308166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="198" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="198" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6775544502e8248e7a75290d0d6becde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="216" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga382b368d8dbac029020ccb767fb0e872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="234" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="234" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gac54654dcde8007158c2a3fca3c134f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -442,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="247" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="247" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga6aea91721237e3f65a239b8c65d685a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -484,7 +484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="261" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="261" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a3002049d56210ed9d75070be3042de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -526,7 +526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="273" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="273" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga52e326e7d5c45c62bbf935b8a7aca017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -568,7 +568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="285" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="285" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gabfa5dfb5d1d86b9c1f0430678d4f0964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -622,7 +622,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="299" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="299" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga9134b417c1742334d73b65cb0a38fa48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -676,7 +676,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="314" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="314" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gad4ecf2a7f67e5e955d484fc980fc1602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -778,7 +778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="330" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="330" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga3dc441e2b869a24647398f86c63184cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -880,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="353" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="353" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga468ebc2ebd245bb3afc0efd1393b2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -994,7 +994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="376" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="376" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaa724caa1254b4781b5fd0ec9ca408314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1024,7 +1024,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="394" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="394" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63bec4d6fae8b357c42a7cbbd5ae9902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1066,7 +1066,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="405" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="405" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga63d92238de0f82d9205ee0a2e347d721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1108,7 +1108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="417" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="417" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga88be8d0ac98333b153c78e5520ef4d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1138,7 +1138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="426" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="426" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaeaa69076e7194dcdc67b23c436a2d381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1168,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="437" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="437" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gaf8ce26116612b7edf2b0aecfe6c0a2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -1210,7 +1210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="448" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="448" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga0c4d4279a6c8e880eccf84f0e50a20d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1268,7 +1268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="460" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="460" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga8a093580cc84d584ddf9f469bb1f5f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -1334,7 +1334,7 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="479" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="479" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1gae924cd3eef04a284603ffa37209bd00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1376,7 +1376,7 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="494" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="494" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga736758fec97e65efd017dbaed64a90c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1442,7 +1442,7 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="509" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="509" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__cap_1ga1ad02667a5586ddf817feca927bc011a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1508,7 +1508,7 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="526" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h" line="526" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1549,7 +1549,7 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
 <codeline lineno="51" refid="structle__audio__cap__device__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>conn_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*pacs_data;<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*p_pacs_data;<sp/></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_ase;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_notification_count;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__ase__t" kindref="compound">wiced_bt_ga_ascs_ase_t</ref><sp/>*ascs_data[<ref refid="group__wiced__bt__ga__cap_1ga671b2ca079d4d5fd7db21843f07e081e" kindref="member">MAX_NUM_ASE_ID</ref>];<sp/></highlight></codeline>
@@ -1719,6 +1719,6 @@ Note : User should allocate (ccid_count + 2) bytes and update pointer metadata-&
 <codeline lineno="530"><highlight class="normal"></highlight></codeline>
 <codeline lineno="534"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_CAP_H__</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/le_audio_cap.h"/>
   </compounddef>
 </doxygen>

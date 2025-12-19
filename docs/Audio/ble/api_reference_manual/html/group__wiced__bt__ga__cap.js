@@ -2,7 +2,7 @@ var group__wiced__bt__ga__cap =
 [
     [ "le_audio_cap_device_data_t", "structle__audio__cap__device__data__t.html", [
       [ "conn_id", "structle__audio__cap__device__data__t.html#a97ba8a78a76697fa3c69397717538e78", null ],
-      [ "pacs_data", "structle__audio__cap__device__data__t.html#aa38e2fddb3e1d4f713b125c0b8a9d387", null ],
+      [ "p_pacs_data", "structle__audio__cap__device__data__t.html#a51f571c5ca542ed324b18fbb61a377ce", null ],
       [ "num_ase", "structle__audio__cap__device__data__t.html#a95c4c6e3c59b83c3865e265205c2aef1", null ],
       [ "ase_notification_count", "structle__audio__cap__device__data__t.html#a77c00d29425025c48f75da5cb79281f2", null ],
       [ "ascs_data", "structle__audio__cap__device__data__t.html#a90a618de41a73ca933f3d79bd1d6903f", null ],

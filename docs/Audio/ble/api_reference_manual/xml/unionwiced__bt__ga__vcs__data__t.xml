@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="90" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="90" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="90" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__vcs__data__t_1a7c8233554e3ba444c1474ee4fef302ab" prot="public" static="no" mutable="no">
         <type><ref refid="group___generic___structures_1ga586763db26059b7048666921829f9b59" kindref="member">wiced_bt_ga_volume_flag_val_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="91" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="91" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="91" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__vcs__data__t_1a8570739095ef92f6c8880aa1e6442613" prot="public" static="no" mutable="no">
         <type><ref refid="structvcs__included__t" kindref="compound">vcs_included_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="92" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="92" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="92" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -124,7 +124,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="89" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="89" bodyend="93"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="89" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="89" bodyend="93"/>
     <listofallmembers>
       <member refid="unionwiced__bt__ga__vcs__data__t_1a386ed91a6d44daf3967188f5e525a53b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_data_t</scope><name>control_point_data</name></member>
       <member refid="unionwiced__bt__ga__vcs__data__t_1a7c8233554e3ba444c1474ee4fef302ab" prot="public" virt="non-virtual"><scope>wiced_bt_ga_vcs_data_t</scope><name>volume_flag</name></member>

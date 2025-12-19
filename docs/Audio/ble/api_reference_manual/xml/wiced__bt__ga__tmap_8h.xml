@@ -11,6 +11,12 @@
       <node id="108">
         <label>gatt_interface.h</label>
       </node>
+      <node id="107">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="106">
+        <label>wiced_bt_ble.h</label>
+      </node>
       <node id="104">
         <label>wiced_bt_ga_tmap.h</label>
         <link refid="wiced__bt__ga__tmap_8h"/>
@@ -22,12 +28,6 @@
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-      </node>
-      <node id="107">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="106">
-        <label>wiced_bt_ble.h</label>
       </node>
       <node id="105">
         <label>wiced_bt_dev.h</label>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="14" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="14" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="14" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a767709635189cf4d32760b8098058b4d" prot="public" static="no">
         <name>TMAP_ROLE_CALL_TERMINAL</name>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="15" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="15" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="15" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a3c5b199670825df3c1581518405382d5" prot="public" static="no">
         <name>TMAP_ROLE_UNICAST_MEDIA_SENDER</name>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="16" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="16" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="16" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a02bacce87b5d66ac89960602019f252f" prot="public" static="no">
         <name>TMAP_ROLE_UNICAST_MEDIA_RECEIVER</name>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="17" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="17" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="17" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1a2ae2f5f6bea903194f2ad91ea5e16f13" prot="public" static="no">
         <name>TMAP_ROLE_BROADCAST_MEDIA_SENDER</name>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="18" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="18" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="18" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__tmap_8h_1abb3d9015730b1dd1f07e50e459b1b2f3" prot="public" static="no">
         <name>TMAP_ROLE_BROADCAST_MEDIA_RECEIVER</name>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="19" column="9" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="19" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="19" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="21" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="21" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="21" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="37" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__ga__tmap_8h_1aca5c95d3a5a33e523d7b17ad198c9dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="40" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="40" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__ga__tmap_8h_1a3f95d8d8cf093d2e9f78e0f46a4f6d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="43" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h" line="43" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -239,6 +239,6 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__WICED_BT_GA_TMAS_H__</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_tmap.h"/>
   </compounddef>
 </doxygen>

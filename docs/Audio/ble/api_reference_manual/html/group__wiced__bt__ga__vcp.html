@@ -97,9 +97,9 @@ $(document).ready(function(){initNavTree('group__wiced__bt__ga__vcp.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3bf85bc96371f6446cd26d4276626d1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__ga__vcp.html#ga3bf85bc96371f6446cd26d4276626d1c">wiced_bt_ga_vcp_set_change_counter</a> (uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t change_counter)</td></tr>
-<tr class="memdesc:ga3bf85bc96371f6446cd26d4276626d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change local change_counter value.  <a href="#ga3bf85bc96371f6446cd26d4276626d1c">More...</a><br /></td></tr>
-<tr class="separator:ga3bf85bc96371f6446cd26d4276626d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bd74aabb4d6d6a4b50254675a56eb12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__ga__vcp.html#ga1bd74aabb4d6d6a4b50254675a56eb12">wiced_bt_ga_vcp_set_change_counter</a> (gatt_intf_service_object_t *p_service, uint8_t change_counter)</td></tr>
+<tr class="memdesc:ga1bd74aabb4d6d6a4b50254675a56eb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change local change_counter value.  <a href="#ga1bd74aabb4d6d6a4b50254675a56eb12">More...</a><br /></td></tr>
+<tr class="separator:ga1bd74aabb4d6d6a4b50254675a56eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga373e4a0b7678105ae5855dfcd3bd7837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__wiced__bt__ga__vcp.html#ga373e4a0b7678105ae5855dfcd3bd7837">wiced_bt_ga_vcp_vocs_set_change_counter</a> (gatt_intf_service_object_t *p_service, uint8_t vocs_index, uint8_t change_counter)</td></tr>
 <tr class="memdesc:ga373e4a0b7678105ae5855dfcd3bd7837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change vocs change_counter value.  <a href="#ga373e4a0b7678105ae5855dfcd3bd7837">More...</a><br /></td></tr>
 <tr class="separator:ga373e4a0b7678105ae5855dfcd3bd7837"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,8 +136,8 @@ gatt_intf_service_methods_t&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="separator:ga13ac194dc71c2f8bb09afda6ebf5c461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga3bf85bc96371f6446cd26d4276626d1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3bf85bc96371f6446cd26d4276626d1c">&#9670;&nbsp;</a></span>wiced_bt_ga_vcp_set_change_counter()</h2>
+<a id="ga1bd74aabb4d6d6a4b50254675a56eb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bd74aabb4d6d6a4b50254675a56eb12">&#9670;&nbsp;</a></span>wiced_bt_ga_vcp_set_change_counter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,12 +145,6 @@ gatt_intf_service_methods_t&#160;</td><td class="memItemRight" valign="bottom"><
         <tr>
           <td class="memname">void wiced_bt_ga_vcp_set_change_counter </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>conn_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">gatt_intf_service_object_t *&#160;</td>
           <td class="paramname"><em>p_service</em>, </td>
         </tr>
@@ -172,7 +166,6 @@ gatt_intf_service_methods_t&#160;</td><td class="memItemRight" valign="bottom"><
 <p>Sets the local change counter value</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_id</td><td>: GATT Connection ID </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_service</td><td>: Instance of the volume control client </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">change_counter</td><td>: Change counter for VCS </td></tr>
   </table>

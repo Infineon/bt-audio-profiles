@@ -45,7 +45,7 @@
   </compound>
   <compound refid="structle__audio__cap__device__data__t" kind="struct"><name>le_audio_cap_device_data_t</name>
     <member refid="structle__audio__cap__device__data__t_1a97ba8a78a76697fa3c69397717538e78" kind="variable"><name>conn_id</name></member>
-    <member refid="structle__audio__cap__device__data__t_1aa38e2fddb3e1d4f713b125c0b8a9d387" kind="variable"><name>pacs_data</name></member>
+    <member refid="structle__audio__cap__device__data__t_1a51f571c5ca542ed324b18fbb61a377ce" kind="variable"><name>p_pacs_data</name></member>
     <member refid="structle__audio__cap__device__data__t_1a95c4c6e3c59b83c3865e265205c2aef1" kind="variable"><name>num_ase</name></member>
     <member refid="structle__audio__cap__device__data__t_1a77c00d29425025c48f75da5cb79281f2" kind="variable"><name>ase_notification_count</name></member>
     <member refid="structle__audio__cap__device__data__t_1a90a618de41a73ca933f3d79bd1d6903f" kind="variable"><name>ascs_data</name></member>
@@ -1091,7 +1091,7 @@
     <member refid="group__wiced__bt__ga__bass_1ga4a9be92845594304582f86ef9a8661d7" kind="function"><name>wiced_bt_ga_bass_enable_server</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga4ca790ecadccbf5047c574465594ea95" kind="function"><name>wiced_bt_ga_bass_enable_client</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga7d2570dbc250c2345d8b1ad1d9be9b37" kind="function"><name>wiced_bt_ga_bass_enable_notifications_all</name></member>
-    <member refid="group__wiced__bt__ga__bass_1ga28004a0e42360d198b833e6b1f9d68f0" kind="function"><name>wiced_bt_ga_bass_discovery_in_progress</name></member>
+    <member refid="group__wiced__bt__ga__bass_1gaba8d1e672a33909c8aef291fa078927b" kind="function"><name>wiced_bt_ga_bass_discovery_in_progress</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga0a75b7d4a4839021cd4a86deacca810d" kind="function"><name>wiced_bt_ga_bass_parse_receive_state_char_header</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga329c72c88f757dcde9e2080512728eb0" kind="function"><name>wiced_bt_ga_bass_parse_sub_group_data</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga97751bff5f7b506a91fc077b87d5260a" kind="function"><name>wiced_bt_ga_bass_parse_control_point_data</name></member>
@@ -1455,7 +1455,7 @@
   </compound>
   <compound refid="wiced__bt__ga__vcp_8h" kind="file"><name>wiced_bt_ga_vcp.h</name>
     <member refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kind="variable"><name>vcs_methods</name></member>
-    <member refid="group__wiced__bt__ga__vcp_1ga3bf85bc96371f6446cd26d4276626d1c" kind="function"><name>wiced_bt_ga_vcp_set_change_counter</name></member>
+    <member refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kind="function"><name>wiced_bt_ga_vcp_set_change_counter</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kind="function"><name>wiced_bt_ga_vcp_vocs_set_change_counter</name></member>
     <member refid="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" kind="function"><name>wiced_bt_ga_vcp_set_volume_offset</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" kind="function"><name>wiced_bt_ga_vcp_set_audio_location</name></member>
@@ -1886,7 +1886,7 @@
     <member refid="group__wiced__bt__ga__bass_1ga4a9be92845594304582f86ef9a8661d7" kind="function"><name>wiced_bt_ga_bass_enable_server</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga4ca790ecadccbf5047c574465594ea95" kind="function"><name>wiced_bt_ga_bass_enable_client</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga7d2570dbc250c2345d8b1ad1d9be9b37" kind="function"><name>wiced_bt_ga_bass_enable_notifications_all</name></member>
-    <member refid="group__wiced__bt__ga__bass_1ga28004a0e42360d198b833e6b1f9d68f0" kind="function"><name>wiced_bt_ga_bass_discovery_in_progress</name></member>
+    <member refid="group__wiced__bt__ga__bass_1gaba8d1e672a33909c8aef291fa078927b" kind="function"><name>wiced_bt_ga_bass_discovery_in_progress</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga0a75b7d4a4839021cd4a86deacca810d" kind="function"><name>wiced_bt_ga_bass_parse_receive_state_char_header</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga329c72c88f757dcde9e2080512728eb0" kind="function"><name>wiced_bt_ga_bass_parse_sub_group_data</name></member>
     <member refid="group__wiced__bt__ga__bass_1ga97751bff5f7b506a91fc077b87d5260a" kind="function"><name>wiced_bt_ga_bass_parse_control_point_data</name></member>
@@ -2193,7 +2193,7 @@
   </compound>
   <compound refid="group__wiced__bt__ga__vcp" kind="group"><name>Wiced_bt_ga_vcp</name>
     <member refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kind="variable"><name>vcs_methods</name></member>
-    <member refid="group__wiced__bt__ga__vcp_1ga3bf85bc96371f6446cd26d4276626d1c" kind="function"><name>wiced_bt_ga_vcp_set_change_counter</name></member>
+    <member refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kind="function"><name>wiced_bt_ga_vcp_set_change_counter</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kind="function"><name>wiced_bt_ga_vcp_vocs_set_change_counter</name></member>
     <member refid="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" kind="function"><name>wiced_bt_ga_vcp_set_volume_offset</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" kind="function"><name>wiced_bt_ga_vcp_set_audio_location</name></member>

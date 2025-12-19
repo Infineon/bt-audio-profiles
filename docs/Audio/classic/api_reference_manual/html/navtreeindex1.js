@@ -58,6 +58,7 @@ var NAVTREEINDEX1 =
 "structwiced__bt__hfp__ag__session__cb__t.html#a0ad09539659e3ef7b7c2fc31216f2f12":[1,4,0,21],
 "structwiced__bt__hfp__ag__session__cb__t.html#a0e124e4cc617677bfde535dfc936ff61":[1,4,0,19],
 "structwiced__bt__hfp__ag__session__cb__t.html#a0f8fe5049849b7a9f8d79f43c5e819f0":[1,4,0,26],
+"structwiced__bt__hfp__ag__session__cb__t.html#a0f9610ef3cdd180b4b1868e651ba4e2b":[1,4,0,28],
 "structwiced__bt__hfp__ag__session__cb__t.html#a18950225263650acedf0ddbb9b0c21a5":[1,4,0,23],
 "structwiced__bt__hfp__ag__session__cb__t.html#a2bfa76d3ad8c6e005ace5d4c1d946cc0":[1,4,0,15],
 "structwiced__bt__hfp__ag__session__cb__t.html#a2e9f7fd633a03233861dadf17ff6fbab":[1,4,0,12],

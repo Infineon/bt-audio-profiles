@@ -1,6 +1,6 @@
 var group__wiced__bt__ga__vcp =
 [
-    [ "wiced_bt_ga_vcp_set_change_counter", "group__wiced__bt__ga__vcp.html#ga3bf85bc96371f6446cd26d4276626d1c", null ],
+    [ "wiced_bt_ga_vcp_set_change_counter", "group__wiced__bt__ga__vcp.html#ga1bd74aabb4d6d6a4b50254675a56eb12", null ],
     [ "wiced_bt_ga_vcp_vocs_set_change_counter", "group__wiced__bt__ga__vcp.html#ga373e4a0b7678105ae5855dfcd3bd7837", null ],
     [ "wiced_bt_ga_vcp_set_volume_offset", "group__wiced__bt__ga__vcp.html#gadcf90178b8a408f97f6049bdf32ce042", null ],
     [ "wiced_bt_ga_vcp_set_audio_location", "group__wiced__bt__ga__vcp.html#ga22627da6d680b2eb06b43cbb4b3a9a2d", null ],

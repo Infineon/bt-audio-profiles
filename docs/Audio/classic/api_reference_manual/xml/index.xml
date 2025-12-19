@@ -163,6 +163,7 @@
     <member refid="structwiced__bt__hfp__ag__session__cb__t_1a89c325632ab5f55c337416b49e951690" kind="variable"><name>indicator_bit_map</name></member>
     <member refid="structwiced__bt__hfp__ag__session__cb__t_1a0f8fe5049849b7a9f8d79f43c5e819f0" kind="variable"><name>hf_indicator_hf_support</name></member>
     <member refid="structwiced__bt__hfp__ag__session__cb__t_1a8cbab76499139a952e28cb2f89459668" kind="variable"><name>hf_indicator_ag_status</name></member>
+    <member refid="structwiced__bt__hfp__ag__session__cb__t_1a0f9610ef3cdd180b4b1868e651ba4e2b" kind="variable"><name>sco_pending</name></member>
   </compound>
   <compound refid="structwiced__bt__hfp__hf__active__call__t" kind="struct"><name>wiced_bt_hfp_hf_active_call_t</name>
     <member refid="structwiced__bt__hfp__hf__active__call__t_1ad399877f6434a2027aa9bcfcb9ce7f6a" kind="variable"><name>idx</name></member>

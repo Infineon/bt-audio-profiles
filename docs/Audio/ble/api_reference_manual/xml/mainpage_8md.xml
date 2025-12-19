@@ -61,6 +61,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>A<sp/>broadcast<sp/>Audio<sp/>Stream<sp/>that<sp/>uses<sp/>a<sp/>High<sp/>Quality<sp/>Public<sp/>Broadcast<sp/>Audio<sp/>Stream<sp/>configuration</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>The<sp/>Public<sp/>Broadcast<sp/>Announcement<sp/>also<sp/>indicates<sp/>whether<sp/>the<sp/>broadcast<sp/>Audio<sp/>Streams<sp/>in<sp/>the<sp/>Broadcast<sp/>Isochronous<sp/>Group<sp/>(BIG)<sp/>are<sp/>encrypted<sp/>or<sp/>not.<sp/>If<sp/>the<sp/>Public<sp/>Broadcast<sp/>Announcement<sp/>indicates<sp/>that<sp/>the<sp/>broadcast<sp/>Audio<sp/>Streams<sp/>are<sp/>encrypted,<sp/>a<sp/>Broadcast<sp/>Sink<sp/>must<sp/>use<sp/>a<sp/>Broadcast_Code<sp/>to<sp/>decrypt<sp/>them</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/docs/Audio/ble/mainpage.md"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/docs/Audio/ble/mainpage.md"/>
   </compounddef>
 </doxygen>

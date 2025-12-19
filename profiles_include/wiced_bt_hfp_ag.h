@@ -189,7 +189,7 @@ typedef struct
     /* TODO : for now fifo size if fixed, need to update the required max memory for rfcomm_fifo */
     uint8_t rfcomm_fifo[400];
 #endif
-
+    wiced_bool_t sco_pending; /* set to True if SCO request is sent out but response is pending from controller.*/
 } wiced_bt_hfp_ag_session_cb_t;
 
 /* HS settings */

@@ -28,7 +28,8 @@ var group__wicedbt__ag =
       [ "codec_conn_state", "structwiced__bt__hfp__ag__session__cb__t.html#a35b3de52c51dd277969cd365ddb543cd", null ],
       [ "indicator_bit_map", "structwiced__bt__hfp__ag__session__cb__t.html#a89c325632ab5f55c337416b49e951690", null ],
       [ "hf_indicator_hf_support", "structwiced__bt__hfp__ag__session__cb__t.html#a0f8fe5049849b7a9f8d79f43c5e819f0", null ],
-      [ "hf_indicator_ag_status", "structwiced__bt__hfp__ag__session__cb__t.html#a8cbab76499139a952e28cb2f89459668", null ]
+      [ "hf_indicator_ag_status", "structwiced__bt__hfp__ag__session__cb__t.html#a8cbab76499139a952e28cb2f89459668", null ],
+      [ "sco_pending", "structwiced__bt__hfp__ag__session__cb__t.html#a0f9610ef3cdd180b4b1868e651ba4e2b", null ]
     ] ],
     [ "wiced_bt_hci_control_ag_settings_t", "structwiced__bt__hci__control__ag__settings__t.html", [
       [ "spk_vol", "structwiced__bt__hci__control__ag__settings__t.html#a5b1facc48f9896e7dc3c75ffdb5fed28", null ],

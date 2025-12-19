@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="126" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="126" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="126" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1aa63d25ca72abb0fcc2a2e350fcf7f3b3" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__bass__modify__source__t" kindref="compound">wiced_bt_ga_bass_modify_source_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="127" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="127" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="127" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1a4edf75509bee14149ccedad6fa4ed06a" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__bass__set__broadcast__code__t" kindref="compound">wiced_bt_ga_bass_set_broadcast_code_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="128" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="128" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="128" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__bass__operation__data__t_1a4d51edcad8f192a6ba44c2bcf30f15af" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="129" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="129" bodyend="-1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="129" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -117,7 +117,7 @@
         <link refid="structwiced__bt__ga__bap__metadata__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="125" column="1" bodyfile="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="124" bodyend="130"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="125" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="124" bodyend="130"/>
     <listofallmembers>
       <member refid="unionwiced__bt__ga__bass__operation__data__t_1a539431c824f8c57944090c55bae78cbc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>add_source_param</name></member>
       <member refid="unionwiced__bt__ga__bass__operation__data__t_1aa63d25ca72abb0fcc2a2e350fcf7f3b3" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_data_t</scope><name>modify_source_param</name></member>

@@ -310,7 +310,7 @@ wiced_bt_hfp_ag_session_cb_t *hfp_ag_find_scb_by_app_handle( uint16_t app_handle
 
     for ( i = 0; i < ag_num_scb; i++, p_scb++ )
     {
-        if ( ( app_handle == p_scb->app_handle ) )
+        if ( app_handle == p_scb->app_handle )
             return ( p_scb );
     }
 

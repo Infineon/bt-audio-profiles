@@ -89,7 +89,7 @@ var group__wiced__bt__ga__bass =
     [ "wiced_bt_ga_bass_enable_server", "group__wiced__bt__ga__bass.html#ga4a9be92845594304582f86ef9a8661d7", null ],
     [ "wiced_bt_ga_bass_enable_client", "group__wiced__bt__ga__bass.html#ga4ca790ecadccbf5047c574465594ea95", null ],
     [ "wiced_bt_ga_bass_enable_notifications_all", "group__wiced__bt__ga__bass.html#ga7d2570dbc250c2345d8b1ad1d9be9b37", null ],
-    [ "wiced_bt_ga_bass_discovery_in_progress", "group__wiced__bt__ga__bass.html#ga28004a0e42360d198b833e6b1f9d68f0", null ],
+    [ "wiced_bt_ga_bass_discovery_in_progress", "group__wiced__bt__ga__bass.html#gaba8d1e672a33909c8aef291fa078927b", null ],
     [ "wiced_bt_ga_bass_parse_receive_state_char_header", "group__wiced__bt__ga__bass.html#ga0a75b7d4a4839021cd4a86deacca810d", null ],
     [ "wiced_bt_ga_bass_parse_sub_group_data", "group__wiced__bt__ga__bass.html#ga329c72c88f757dcde9e2080512728eb0", null ],
     [ "wiced_bt_ga_bass_parse_control_point_data", "group__wiced__bt__ga__bass.html#ga97751bff5f7b506a91fc077b87d5260a", null ],

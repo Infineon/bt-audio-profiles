@@ -122,6 +122,12 @@ void hfp_ag_sco_create(wiced_bt_hfp_ag_session_cb_t *p_scb, wiced_bool_t is_orig
                    __FUNCTION__,
                    p_scb->retry_with_sco_only,
                    p_scb->codec_conn_state);
+    if (p_scb->sco_pending)
+    {
+        WICED_BT_TRACE("%s previous SCO is already pending \n", __FUNCTION__);
+        return;
+    }
+
     /* remove listening SCO */
     if ( p_scb->sco_idx != BTM_INVALID_SCO_INDEX )
         wiced_bt_sco_remove( p_scb->sco_idx );
@@ -148,12 +154,15 @@ void hfp_ag_sco_create(wiced_bt_hfp_ag_session_cb_t *p_scb, wiced_bool_t is_orig
             p_scb->retry_with_sco_only = WICED_TRUE;
         }
         status = wiced_bt_sco_create_as_initiator( p_scb->hf_addr, &p_scb->sco_idx, &params);
+        if (status == WICED_BT_PENDING)
+            p_scb->sco_pending = WICED_TRUE;
     }
     else
     {
         p_scb->retry_with_sco_only = WICED_FALSE;
         status = wiced_bt_sco_create_as_acceptor_ex(p_scb->hf_addr, (uint16_t *) &p_scb->sco_idx);
     }
+
 
     WICED_BT_TRACE( "hfp_ag_sco_create  is_orig: %u   sco_idx: 0x%0x  status:0x%x retry_with_sco_only: %u\n",
                     is_orig, p_scb->sco_idx, status, p_scb->retry_with_sco_only );
@@ -200,6 +209,7 @@ void wiced_bt_hfp_ag_sco_management_callback( wiced_bt_management_evt_t event, w
             {
                 p_scb->retry_with_sco_only        = WICED_FALSE;
                 p_scb->b_sco_opened               = WICED_TRUE;
+                p_scb->sco_pending = WICED_FALSE;
 #if ((BTM_WBS_INCLUDED == TRUE) || (BTM_SWBS_INCLUDED == TRUE))
                 /* call app callback */
                 ap_event.audio_open.peer_supported_codecs = p_scb->peer_supported_codecs;
@@ -219,6 +229,7 @@ void wiced_bt_hfp_ag_sco_management_callback( wiced_bt_management_evt_t event, w
             if ( ( p_scb = hfp_ag_find_scb_by_sco_index( p_event_data->sco_disconnected.sco_index ) ) != NULL )
             {
                 p_scb->sco_idx = BTM_INVALID_SCO_INDEX;
+                p_scb->sco_pending = WICED_FALSE;
                 if ( p_scb->state == HFP_AG_STATE_CLOSING )
                 {
                     hfp_ag_rfcomm_do_close( p_scb );
@@ -283,6 +294,9 @@ void hfp_cn_timeout(WICED_TIMER_PARAM_TYPE scb)
 
     /*  We do not want to go for codec neg again and would rather just send conn req with CVSD */
     p_scb->codec_conn_state = CODEC_CONN_STATE_NOT_STARTED;
+
+    // Reset SCO pending flag to make sure it allow next SCO connection
+    p_scb->sco_pending = WICED_FALSE;
 
     hfp_ag_sco_create ( p_scb, WICED_TRUE );
 }

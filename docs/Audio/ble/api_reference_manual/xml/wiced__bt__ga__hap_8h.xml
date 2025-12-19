@@ -7,6 +7,15 @@
     <includes local="yes">wiced_bt_gatt.h</includes>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
     <incdepgraph>
+      <node id="71">
+        <label>wiced_bt_gatt.h</label>
+      </node>
+      <node id="69">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="70">
+        <label>wiced_bt_dev.h</label>
+      </node>
       <node id="68">
         <label>wiced_bt_ga_hap.h</label>
         <link refid="wiced__bt__ga__hap_8h"/>
@@ -16,15 +25,6 @@
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
-      </node>
-      <node id="71">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="69">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="70">
-        <label>wiced_bt_dev.h</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -47,6 +47,6 @@
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_HAP_H__</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_hap.h"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_hap.h"/>
   </compounddef>
 </doxygen>

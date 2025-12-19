@@ -1024,6 +1024,9 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
     uint8_t                      result = 0;
     wiced_bt_hfp_hf_scb_t       *p_scb = (wiced_bt_hfp_hf_scb_t *) user_data;
     uint16_t uuid;
+    unsigned int p_arg_len = 0;
+    if(p_arg != NULL)
+        p_arg_len = strlen(p_arg);
 
     if( p_scb->is_server)
     {
@@ -1103,18 +1106,32 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
                 // p_arg have caller number and type separated by ','
 
                 //Copy number
-                for (i=0;i<strlen(p_arg) && p_arg[i]!=',';i++)
+                for (i=0;i<p_arg_len && p_arg[i]!=',';i++)
                 {
+                    // Overflow check for token as its size is WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH
                     if(i == (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1))
+                    {
+                        WICED_BTHFP_ERROR("Truncates call number, length (%d) is greater than buffer size (%d)",
+                                i, (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1));
                         break;
+                    }
                     token[i]=p_arg[i];
                 }
                 token[i++] = '\0';
 
                 strncpy(app_data.clip.caller_num, token, WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH);
                 //Copy type
-                for (;i<strlen(p_arg);i++,j++)
+                for (j=0;i<p_arg_len && p_arg[i]!=',';i++,j++)
+                {
+                    // Overflow check for token as its size is WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH
+                    if(j == (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1))
+                    {
+                        WICED_BTHFP_ERROR("Truncates call type, length (%d) is greater than buffer size (%d)",
+                                j, (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1));
+                        break;
+                    }
                     token[j]=p_arg[i];
+                }
                 token[j] = '\0';
                 app_data.clip.type = (uint8_t) wiced_bt_hfp_hf_utils_str2int(token);
             }
@@ -1133,14 +1150,21 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
                app_data.active_call.mode = p_arg[i++] - '0'; i++;
                app_data.active_call.is_conference = p_arg[i++] - '0'; i++;
 
-               if ( i < strlen(p_arg) )
+               if ( i < p_arg_len )
                {
                    // Skip other symbols
                    for(; p_arg[i]<'0' || p_arg[i]>'9'; i++);
 
                    //Copy number
-                   for (j=0; i<strlen(p_arg) && ( p_arg[i]>='0' && p_arg[i]<='9') ; i++)
+                   for (j=0; i<p_arg_len && ( p_arg[i]>='0' && p_arg[i]<='9') ; i++)
                    {
+                       // Overflow check for token as its size is WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH
+                       if(j == (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1))
+                       {
+                           WICED_BTHFP_ERROR("Truncates call number, length (%d) is greater than buffer size (%d)",
+                                   j, (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1));
+                           break;
+                       }
                        token[j++] = p_arg[i];
                    }
                    token[j++] = '\0';
@@ -1150,8 +1174,15 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
                    for(; p_arg[i]<'0' || p_arg[i]>'9';i++);
 
                    //Copy type
-                   for (j=0; i<strlen(p_arg) && ( p_arg[i]>='0' && p_arg[i]<='9' ); i++)
+                   for (j=0; i<p_arg_len && ( p_arg[i]>='0' && p_arg[i]<='9' ); i++)
                    {
+                       // Overflow check for token as its size is WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH
+                       if(i == (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1))
+                       {
+                           WICED_BTHFP_ERROR("Truncates call type, length (%d) is greater than buffer size (%d)",
+                                   j, (WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH -1));
+                           break;
+                       }
                        token[j++] = p_arg[i];
                    }
                    token[j++] = '\0';
@@ -1160,20 +1191,18 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
             }
             break;
         case WICED_BT_HFP_HF_RES_CNUM:
-            if (strlen(p_arg) > sizeof(app_data.cnum_data))
+            if (p_arg_len > sizeof(app_data.cnum_data))
             {
                 WICED_BTHFP_ERROR("Err: cnum_data too large!!!\n");
                 event = 0;
             }
             else
             {
-                unsigned int len = strlen(p_arg);
-
-                if (len >= WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH)
-                    len = WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH - 1;
+                if (p_arg_len >= WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH)
+                    p_arg_len = WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH - 1;
 
                 strncpy(app_data.cnum_data, p_arg, WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH - 1);
-                 app_data.cnum_data[len] = '\0';
+                 app_data.cnum_data[p_arg_len] = '\0';
             }
             break;
 
@@ -1316,17 +1345,15 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
             break;
 #endif
         case WICED_BT_HFP_HF_RES_COPS:
-            if (strlen(p_arg) > sizeof(app_data.cops_data))
+            if (p_arg_len > sizeof(app_data.cops_data))
             {
                 WICED_BTHFP_ERROR("Err: cnum_data too large!!!\n");
                 event = 0;
             }
             else
             {
-                unsigned int len = strlen(p_arg);
-
-                if (len >= WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH)
-                    len = WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH - 1;
+                if (p_arg_len >= WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH)
+                    p_arg_len = WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH - 1;
                 /* We are currently sending the operator information <mode>, <format>, <operator> to
                 * app as string.
                 * The best way to send this is via a structure that has mode, format, and operator field.
@@ -1335,7 +1362,7 @@ void wiced_bt_hfp_hf_at_cback(void *user_data, uint16_t res, char *p_arg)
                 * App will need to parse and get operator (if present)
                 */
                 strncpy(app_data.cops_data, p_arg, WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH - 1);
-                app_data.cops_data[len] = '\0';
+                app_data.cops_data[p_arg_len] = '\0';
             }
             break;
         default:

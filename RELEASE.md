@@ -2,6 +2,10 @@
 
 ## Changelog
 =============
+## v2.0.1
+- Warning fixes.
+- Fixed docs URL on github.
+- HFP fix for corner case of both sides trying to setup connection simultaneously.
 
 ## v2.0.0
 - Updated A2DP to support 1.4

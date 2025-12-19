@@ -10,18 +10,6 @@
     <includes refid="wiced__bt__ga__aics_8h" local="yes">wiced_bt_ga_aics.h</includes>
     <includedby refid="le__audio__cap_8h" local="yes">le_audio_cap.h</includedby>
     <incdepgraph>
-      <node id="90">
-        <label>wiced_bt_ga_mics.h</label>
-        <link refid="wiced__bt__ga__mics_8h"/>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="92" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
-        </childnode>
-      </node>
       <node id="94">
         <label>gatt_interface.h</label>
       </node>
@@ -33,6 +21,18 @@
       </node>
       <node id="91">
         <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="90">
+        <label>wiced_bt_ga_mics.h</label>
+        <link refid="wiced__bt__ga__mics_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="structmics__included__t" prot="public">mics_included_t</innerclass>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -185,6 +185,6 @@
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_GA_MICS_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h"/>
+    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h"/>
   </compounddef>
 </doxygen>

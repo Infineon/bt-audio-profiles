@@ -16,19 +16,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="36" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="36" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga3bf85bc96371f6446cd26d4276626d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void wiced_bt_ga_vcp_set_change_counter</definition>
-        <argsstring>(uint16_t conn_id, gatt_intf_service_object_t *p_service, uint8_t change_counter)</argsstring>
+        <argsstring>(gatt_intf_service_object_t *p_service, uint8_t change_counter)</argsstring>
         <name>wiced_bt_ga_vcp_set_change_counter</name>
-        <param>
-          <type>uint16_t</type>
-          <declname>conn_id</declname>
-        </param>
         <param>
           <type>gatt_intf_service_object_t *</type>
           <declname>p_service</declname>
@@ -43,14 +39,6 @@
         <detaileddescription>
 <para>Sets the local change counter value</para>
 <para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername direction="in">conn_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>: GATT Connection ID </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
 <parameternamelist>
 <parametername direction="in">p_service</parametername>
 </parameternamelist>
@@ -71,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="46" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="45" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -124,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="56" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -191,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="70" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -258,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="83" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga3884d688f45641044eed759dca049969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -325,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="96" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gacb234ccce1db7cbd300da89751da675f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -392,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="110" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="109" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac236f1f5aabf2df3d030b1c6514b3ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -459,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="124" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="123" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac4db587ae1562875a9fe722bb19c5438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -526,7 +514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="138" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="137" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -593,7 +581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="151" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="150" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -646,7 +634,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/zQnokTWtF/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="161" column="1"/>
+        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="160" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
