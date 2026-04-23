@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q" kind="group">
     <compoundname>BAP_SUPPORTED_SAMPLING_FREQ</compoundname>
     <title>BAP_SUPPORTED_SAMPLING_FREQ</title>
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="122" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="122" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="174" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gafff6770f8b5a0e8757726118b0874f60" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_11_025_KHZ</name>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="123" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="123" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="175" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga088346baa1a470793a1521633e29ec34" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_16_KHZ</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="124" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="124" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="176" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae2d8e9e404059a3c85d2c8fbed5a4aa2" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_22_050_KHZ</name>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="125" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="125" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="177" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga6ede6d0414e4b714449b15b3747541d5" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_24_KHZ</name>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="126" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="126" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="178" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gabd8d7165ff862b32d1dac35f115021f2" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_32_KHZ</name>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="127" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="127" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="179" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga7a571d64283a8825e506befcf0c3f161" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_44_1_KHZ</name>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="128" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="128" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="180" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga0edcf217ec6bd8d1131cc12d1962eb68" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_48_KHZ</name>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="129" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="129" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="181" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gac5e6ac1a2cd6f75ddd0383d8f56e3fdb" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_88_200_KHZ</name>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="130" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="130" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="182" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga8539bedb8fec01a3a244a17a2fe2aa62" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_96_KHZ</name>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="131" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="131" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="183" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae89103c74b0c9acfa5a2e29e24b5e5d6" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_176_400_KHZ</name>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="132" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="132" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="184" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1gae3e96597a3036d46c70afed31a481759" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_192_KHZ</name>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="133" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="133" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="185" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q_1ga8fda6222636656eecffb8938be630513" prot="public" static="no">
         <name>BAP_SUPPORTED_SAMPLING_FREQ_384_KHZ</name>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="134" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="134" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="186" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['telephone_5fbearer_5fservice_5fapis',['Telephone_Bearer_Service_APIs',['../group___telephone___bearer___service___a_p_is.html',1,'']]]
+  ['stream_5fcontrol_5fapis_0',['Stream_Control_APIs',['../group___stream___control___a_p_is.html',1,'']]]
 ];

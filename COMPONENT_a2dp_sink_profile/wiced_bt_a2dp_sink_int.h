@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2016-2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -112,18 +112,6 @@
 #else
 #define WICED_BT_A2DP_SINK_CO_M12_SUPPORT   FALSE
 #endif //A2DP_SINK_AAC_ENABLED
-
-#ifdef A2DP_SINK_AAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   TRUE
-#else
-#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   FALSE
-#endif //A2DP_SINK_AAC_ENABLED
-
-#ifdef A2DP_SINK_MD_USAC_ENABLED
-#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   TRUE
-#else
-#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   FALSE
-#endif //A2DP_SINK_MD_USAC_ENABLED
 
 #ifndef WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT
 #define WICED_BT_A2DP_SINK_CO_VENDOR_SPECIFIC_SUPPORT FALSE

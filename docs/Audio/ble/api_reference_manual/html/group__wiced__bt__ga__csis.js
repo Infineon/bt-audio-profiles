@@ -1,6 +1,6 @@
 var group__wiced__bt__ga__csis =
 [
-    [ "wiced_bt_ga_csis_generate_psri", "group__wiced__bt__ga__csis.html#ga92814a4aed200728adff74e7563e4009", null ],
+    [ "wiced_bt_ga_csis_generate_psri", "group__wiced__bt__ga__csis.html#gac7e09be747314c865aac0232a85db0b4", null ],
     [ "wiced_bt_ga_csis_get_adv_data", "group__wiced__bt__ga__csis.html#ga5b0e0141e9270b6bd93b883c4c8a225e", null ],
     [ "wiced_bt_ga_csis_set_lock_timeout_value", "group__wiced__bt__ga__csis.html#gae6357ccc8389ffa9cb62c4284e38cb9b", null ],
     [ "wiced_bt_ga_csis_is_operation_allowed", "group__wiced__bt__ga__csis.html#gada435c588af01e18910bf3928acca1e2", null ],

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__ga__bap__codec__id__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_ga_bap_codec_id_t</compoundname>
     <includes local="no">wiced_bt_ga_bap.h</includes>
@@ -9,6 +9,7 @@
         <definition>uint8_t wiced_bt_ga_bap_codec_id_t::coding_format</definition>
         <argsstring></argsstring>
         <name>coding_format</name>
+        <qualifiedname>wiced_bt_ga_bap_codec_id_t::coding_format</qualifiedname>
         <briefdescription>
 <para>0xFF if vendor specific </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="224" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="224" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="280" column="13" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__bap__codec__id__t_1aeeda89d7e0cca16edb288cb7ce7bf057" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_ga_bap_codec_id_t::company_id</definition>
         <argsstring></argsstring>
         <name>company_id</name>
+        <qualifiedname>wiced_bt_ga_bap_codec_id_t::company_id</qualifiedname>
         <briefdescription>
 <para>company ID values if coding format is 0xFF otherwise 0 </para>
         </briefdescription>
@@ -30,13 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="225" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="225" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="281" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="281" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__bap__codec__id__t_1a4772c78a356b090460b1a57c6741aa1f" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_ga_bap_codec_id_t::vendor_specific_codec_id</definition>
         <argsstring></argsstring>
         <name>vendor_specific_codec_id</name>
+        <qualifiedname>wiced_bt_ga_bap_codec_id_t::vendor_specific_codec_id</qualifiedname>
         <briefdescription>
 <para>vendor specific codec id if codec format is 0xFF otherwise 0 </para>
         </briefdescription>
@@ -44,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="226" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="226" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="282" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +55,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="223" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="222" bodyend="227"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="278" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="279" bodyend="283"/>
     <listofallmembers>
       <member refid="structwiced__bt__ga__bap__codec__id__t_1a0bf1bb3fbb4763c70ae2305c70aa4154" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_codec_id_t</scope><name>coding_format</name></member>
       <member refid="structwiced__bt__ga__bap__codec__id__t_1aeeda89d7e0cca16edb288cb7ce7bf057" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bap_codec_id_t</scope><name>company_id</name></member>

@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,6 +21,9 @@
  */
 #include "wiced_bt_types.h"
 #include "wiced_bt_a2d.h"
+#include "wiced_bt_a2dp_int.h"
+
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
 #include "wiced_bt_a2d_mdu.h"
 
 
@@ -285,3 +288,4 @@ wiced_bool_t wiced_bt_a2dp_mdu_are_equal(wiced_bt_a2d_mdu_cie_t *cap_1, wiced_bt
            (cap_1->samp_freq == cap_2->samp_freq) && (cap_1->vbr == cap_2->vbr);
 
 }
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT

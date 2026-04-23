@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__ascs_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_ascs.h</compoundname>
     <includes refid="wiced__bt__ga__bap_8h" local="yes">wiced_bt_ga_bap.h</includes>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="33" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="33" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="33" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__ascs_1gac5243637fc5f75047ec6be6c494e8e72" prot="public" static="no">
         <name>PRESENTATION_DELAY_LENGTH</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="34" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="34" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="34" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__ascs_1ga7132ed6125bb7bf3cd7dca87db8a738d" prot="public" static="no">
         <name>WICED_BT_ASCS_VALID_PHY_MASK</name>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="154" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="154" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="154" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="41" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="40" bodyend="57"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="40" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="41" bodyend="57"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga43d4b221db4d0499c22ccb7b22222537" prot="public" static="no" strong="no">
         <type></type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="64" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="63" bodyend="76"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="63" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="64" bodyend="76"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" prot="public" static="no" strong="no">
         <type></type>
@@ -386,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="82" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="81" bodyend="94"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="81" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="82" bodyend="94"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" prot="public" static="no" strong="no">
         <type></type>
@@ -394,7 +394,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50af21fa87a32ebddc700a9e2c482259980" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_IDLE</name>
           <briefdescription>
-<para>ASE state is idle. </para>
+<para>ASE state is idle <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -402,7 +403,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a33a7dfcdb227b35c04d3b526124fd0ea" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_CODEC_CONFIGURED</name>
           <briefdescription>
-<para>ASE state is codec configured. </para>
+<para>ASE state is codec configured <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -410,7 +412,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a14e359af9294ea81c0571ab31f0b5ab8" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_QOS_CONFIGURED</name>
           <briefdescription>
-<para>ASE state is qos configured. </para>
+<para>ASE state is qos configured <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -462,7 +465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="102" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="101" bodyend="111"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="101" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="102" bodyend="111"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gad52f399a18a2c6e8020c871560229829" prot="public" static="no" strong="no">
         <type></type>
@@ -498,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="120" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="119" bodyend="124"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="119" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="120" bodyend="124"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gae1d8691a300a5657fb7c0448d15910ec" prot="public" static="no" strong="no">
         <type></type>
@@ -543,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="133" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="132" bodyend="138"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="132" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="133" bodyend="138"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga9db7e09ceb7a3561eadb7b5550fa6ffb" prot="public" static="no" strong="no">
         <type></type>
@@ -571,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="147" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="146" bodyend="150"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="146" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="147" bodyend="150"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -587,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="96" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="96" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="96" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" prot="public" static="no">
         <type>uint8_t</type>
@@ -601,7 +604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="113" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="113" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="113" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" prot="public" static="no">
         <type>uint8_t</type>
@@ -615,7 +618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="126" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="126" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="126" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" prot="public" static="no">
         <type>uint8_t</type>
@@ -629,7 +632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="140" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="140" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="140" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1gab4ef636784573897c2e5e000804f53ab" prot="public" static="no">
         <type>uint8_t</type>
@@ -643,37 +646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="152" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="152" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="var">
-      <memberdef kind="variable" id="group__wiced__bt__ga__ascs_1ga43523ac797afad701a5905357e1574cd" prot="public" static="no" mutable="no">
-        <type>const char *</type>
-        <definition>const char* ascs_opcode_str[]</definition>
-        <argsstring>[]</argsstring>
-        <name>ascs_opcode_str</name>
-        <briefdescription>
-<para>ASCS Opcode String. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="336" column="1"/>
-      </memberdef>
-      <memberdef kind="variable" id="group__wiced__bt__ga__ascs_1gae89618dc19c25df5c3597a188a874e27" prot="public" static="no" mutable="no">
-        <type>const char *</type>
-        <definition>const char* ascs_state_str[]</definition>
-        <argsstring>[]</argsstring>
-        <name>ascs_state_str</name>
-        <briefdescription>
-<para>ASCS State String. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="337" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="152" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -715,7 +688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="283" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="283" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="283" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -732,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="288" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="288" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="288" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -749,7 +722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="292" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="292" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="292" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -825,7 +798,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="304" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="304" column="5" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="304" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -877,7 +850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="319" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="319" column="5" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="319" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -941,7 +914,91 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="331" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="331" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="331" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1gad89a80227a13e0f62bc2a7cbab7ca423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ascs_lib_get_state_string</definition>
+        <argsstring>(wiced_bt_ga_ascs_state_t ascs_state)</argsstring>
+        <name>ascs_lib_get_state_string</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref></type>
+          <declname>ascs_state</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs state string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" kindref="member">wiced_bt_ga_ascs_state_e</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+return A valid string or &quot;unknown&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="343" column="13" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="343" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga9369e7802809e68ac5a601b8b5da2f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ascs_lib_get_opcode_string</definition>
+        <argsstring>(wiced_bt_ga_ascs_opcode_t ascs_opcode)</argsstring>
+        <name>ascs_lib_get_opcode_string</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref></type>
+          <declname>ascs_opcode</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs opcode string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" kindref="member">wiced_bt_ga_ascs_opcode_e</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+return A valid string or &quot;unknown&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="352" column="13" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="352" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga1590ed8e88c0b33cc4f5b734c40d8699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * ascs_lib_get_characteristic_name</definition>
+        <argsstring>(ascs_characteristics_t char_type)</argsstring>
+        <name>ascs_lib_get_characteristic_name</name>
+        <param>
+          <type>ascs_characteristics_t</type>
+          <declname>char_type</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs characteristic name string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see ascs_characteristics_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="360" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="360" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -954,15 +1011,15 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_ASCS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_ASCS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_ASCS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_bap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="preprocessor">#define<sp/>SDU_INTERVAL_LENGTH<sp/>3<sp/></highlight></codeline>
-<codeline lineno="34"><highlight class="preprocessor">#define<sp/>PRESENTATION_DELAY_LENGTH<sp/>3<sp/></highlight></codeline>
-<codeline lineno="40"><highlight class="preprocessor">typedef<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDU_INTERVAL_LENGTH<sp/>3<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRESENTATION_DELAY_LENGTH<sp/>3<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga6f448c51359fc19766bf7998f304b9c0a2375c52364056d1fceaff961d5bd3cd0" kindref="member">WICED_BT_GA_ASCS_RESPONSE_SUCCESS</ref>,<sp/></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga6f448c51359fc19766bf7998f304b9c0a4169c2371341e963252918991446ae27" kindref="member">WICED_BT_GA_ASCS_RESPONSE_UNSUPPORTED_OPCODE</ref>,<sp/></highlight></codeline>
@@ -981,7 +1038,7 @@
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga6f448c51359fc19766bf7998f304b9c0a15f92c5923f1fa368111313042d16d12" kindref="member">WICED_BT_GA_ASCS_RESPONSE_UNSPECIFIED_ERROR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="57"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__ascs_1ga6f448c51359fc19766bf7998f304b9c0" kindref="member">wiced_bt_ga_ascs_cp_response_code_t</ref>;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga43d4b221db4d0499c22ccb7b22222537a8bb8322b811f6975fb92847fb4f7dcbc" kindref="member">WICED_BT_GA_ASCS_REASON_NOT_APPLICABLE</ref>,<sp/></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga43d4b221db4d0499c22ccb7b22222537ab40cd1f8ed82277204dc8a27037216ed" kindref="member">WICED_BT_GA_ASCS_REASON_CODEC_ID</ref>,<sp/></highlight></codeline>
@@ -996,7 +1053,7 @@
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga43d4b221db4d0499c22ccb7b22222537ae8962be3b2f12b5621d791bf3558769e" kindref="member">WICED_BT_GA_ASCS_REASON_INVALID_ASE_CIS_MAPPING</ref>,</highlight></codeline>
 <codeline lineno="76"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__ascs_1ga43d4b221db4d0499c22ccb7b22222537" kindref="member">wiced_bt_ga_ascs_cp_err_reason_t</ref>;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" kindref="member">wiced_bt_ga_ascs_opcode_e</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" kindref="member">wiced_bt_ga_ascs_opcode_e</ref></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga2fbbc399dc6037ab12ceacfbbdec3cd6a265295b0cc7a03090404c068af674244" kindref="member">WICED_BT_GA_ASCS_OPCODE_INVALID</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga2fbbc399dc6037ab12ceacfbbdec3cd6a6cd2dcb5ddb4aa9de29952650cda0b1e" kindref="member">WICED_BT_GA_ASCS_OPCODE_CONFIG_CODEC</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
@@ -1012,7 +1069,7 @@
 <codeline lineno="94"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="101"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" kindref="member">wiced_bt_ga_ascs_state_e</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" kindref="member">wiced_bt_ga_ascs_state_e</ref></highlight></codeline>
 <codeline lineno="102"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50af21fa87a32ebddc700a9e2c482259980" kindref="member">WICED_BT_GA_ASCS_STATE_IDLE</ref>,<sp/></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a33a7dfcdb227b35c04d3b526124fd0ea" kindref="member">WICED_BT_GA_ASCS_STATE_CODEC_CONFIGURED</ref>,<sp/></highlight></codeline>
@@ -1025,7 +1082,7 @@
 <codeline lineno="111"><highlight class="normal">}<sp/>;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="119"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gad52f399a18a2c6e8020c871560229829" kindref="member">wiced_bt_ga_ascs_framing_e</ref></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gad52f399a18a2c6e8020c871560229829" kindref="member">wiced_bt_ga_ascs_framing_e</ref></highlight></codeline>
 <codeline lineno="120"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggad52f399a18a2c6e8020c871560229829a1b7b715752389c1c9c67710779fe268a" kindref="member">WICED_BT_ASCS_UNFRAMED</ref>,<sp/></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggad52f399a18a2c6e8020c871560229829afa05a51388b01cd04e232c8727729e35" kindref="member">WICED_BT_ASCS_FRAMED</ref>,<sp/><sp/><sp/></highlight></codeline>
@@ -1033,7 +1090,7 @@
 <codeline lineno="124"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" kindref="member">wiced_bt_ga_ascs_framing_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="132"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gae1d8691a300a5657fb7c0448d15910ec" kindref="member">wiced_bt_ga_ascs_phy_e</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gae1d8691a300a5657fb7c0448d15910ec" kindref="member">wiced_bt_ga_ascs_phy_e</ref></highlight></codeline>
 <codeline lineno="133"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggae1d8691a300a5657fb7c0448d15910ecaff40c3ae15f59c0647739746c11a2ccf" kindref="member">WICED_BT_ASCS_PHY_1M</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ggae1d8691a300a5657fb7c0448d15910eca6cbbcecd04b755a0f6a35e9d6b6a35ed" kindref="member">WICED_BT_ASCS_PHY_2M</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1042,15 +1099,15 @@
 <codeline lineno="138"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" kindref="member">wiced_bt_ga_ascs_phy_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="146"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga9db7e09ceb7a3561eadb7b5550fa6ffb" kindref="member">wiced_bt_ga_ascs_announcement_type_e</ref></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga9db7e09ceb7a3561eadb7b5550fa6ffb" kindref="member">wiced_bt_ga_ascs_announcement_type_e</ref></highlight></codeline>
 <codeline lineno="147"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga9db7e09ceb7a3561eadb7b5550fa6ffba811f408e4b640827bb850c640983848c" kindref="member">WICED_BT_ASCS_GENERAL_ANNOUNCEMENT</ref>,<sp/></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gga9db7e09ceb7a3561eadb7b5550fa6ffba7e595d5f3b9eb2c5a16148baeb457230" kindref="member">WICED_BT_ASCS_TARGETED_ANNOUNCEMENT</ref>,<sp/></highlight></codeline>
 <codeline lineno="150"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__ascs_1gab4ef636784573897c2e5e000804f53ab" kindref="member">wiced_bt_ga_ascs_announcement_type_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="154"><highlight class="preprocessor">#define<sp/>WICED_BT_ASCS_VALID_PHY_MASK<sp/>~(WICED_BT_ASCS_PHY_1M<sp/>|<sp/>WICED_BT_ASCS_PHY_2M<sp/>|<sp/>WICED_BT_ASCS_PHY_CODED)<sp/></highlight></codeline>
-<codeline lineno="159" refid="structwiced__bt__ga__ascs__config__codec__args__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_ASCS_VALID_PHY_MASK<sp/>~(WICED_BT_ASCS_PHY_1M<sp/>|<sp/>WICED_BT_ASCS_PHY_2M<sp/>|<sp/>WICED_BT_ASCS_PHY_CODED)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="structwiced__bt__ga__ascs__config__codec__args__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__codec__id__t" kindref="compound">wiced_bt_ga_bap_codec_id_t</ref><sp/>codec_id;<sp/></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>target_latency;<sp/></highlight></codeline>
@@ -1058,7 +1115,7 @@
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__csc__t" kindref="compound">wiced_bt_ga_bap_csc_t</ref><sp/>csc;<sp/></highlight></codeline>
 <codeline lineno="165"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref>;</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172" refid="structwiced__bt__ga__ascs__config__qos__args__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="structwiced__bt__ga__ascs__config__qos__args__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>cig_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>cis_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1071,7 +1128,7 @@
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>presentation_delay;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="183"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__config__qos__args__t" kindref="compound">wiced_bt_ga_ascs_config_qos_args_t</ref>;</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189" refid="structwiced__bt__ga__ascs__cp__params__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="structwiced__bt__ga__ascs__cp__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_id;<sp/></highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
@@ -1082,28 +1139,28 @@
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="198"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__cp__params__t" kindref="compound">wiced_bt_ga_ascs_cp_params_t</ref>;</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203" refid="structwiced__bt__ga__ascs__cp__cmd__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="structwiced__bt__ga__ascs__cp__cmd__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref><sp/>opcode;<sp/></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_of_ase;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__cp__params__t" kindref="compound">wiced_bt_ga_ascs_cp_params_t</ref><sp/>*p_cp_params;<sp/></highlight></codeline>
 <codeline lineno="208"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__cp__cmd__t" kindref="compound">wiced_bt_ga_ascs_cp_cmd_t</ref>;</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213" refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_id;<sp/></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga6f448c51359fc19766bf7998f304b9c0" kindref="member">wiced_bt_ga_ascs_cp_response_code_t</ref><sp/>response_code;<sp/></highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga43d4b221db4d0499c22ccb7b22222537" kindref="member">wiced_bt_ga_ascs_cp_err_reason_t</ref><sp/>reason;<sp/></highlight></codeline>
 <codeline lineno="218"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" kindref="compound">wiced_bt_ga_ascs_cp_cmd_sts_t</ref>;</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223" refid="structwiced__bt__ga__ascs__cp__notif__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="structwiced__bt__ga__ascs__cp__notif__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="224"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref><sp/>opcode;<sp/></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_of_ase;<sp/></highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" kindref="compound">wiced_bt_ga_ascs_cp_cmd_sts_t</ref><sp/>*p_status;<sp/></highlight></codeline>
 <codeline lineno="228"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__cp__notif__t" kindref="compound">wiced_bt_ga_ascs_cp_notif_t</ref>;</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
-<codeline lineno="234" refid="structwiced__bt__ga__ascs__ase__preferences__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="structwiced__bt__ga__ascs__ase__preferences__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" kindref="member">wiced_bt_ga_ascs_framing_t</ref><sp/>framing;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" kindref="member">wiced_bt_ga_ascs_phy_t</ref><sp/>preferred_phy;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1115,7 +1172,7 @@
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>preferred_presentation_delay_in_us_max;<sp/></highlight></codeline>
 <codeline lineno="244"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__ase__preferences__t" kindref="compound">wiced_bt_ga_ascs_ase_preferences_t</ref>;</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"></highlight></codeline>
-<codeline lineno="250" refid="structwiced__bt__ga__ascs__ase__info__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="structwiced__bt__ga__ascs__ase__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="251"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1123,7 +1180,7 @@
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__ase__preferences__t" kindref="compound">wiced_bt_ga_ascs_ase_preferences_t</ref><sp/>ascs_data;<sp/></highlight></codeline>
 <codeline lineno="256"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__ase__info__t" kindref="compound">wiced_bt_ga_ascs_ase_info_t</ref>;</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight></codeline>
-<codeline lineno="261" refid="structwiced__bt__ga__ascs__ase__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="structwiced__bt__ga__ascs__ase__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="262"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__ase__info__t" kindref="compound">wiced_bt_ga_ascs_ase_info_t</ref><sp/>*p_ase_info;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref><sp/>ase_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1132,7 +1189,7 @@
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref><sp/>metadata;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="268"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__ascs__ase__t" kindref="compound">wiced_bt_ga_ascs_ase_t</ref>;</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight></codeline>
-<codeline lineno="271" refid="structwiced__bt__ga__ascs__init__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="structwiced__bt__ga__ascs__init__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="272"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_snk_ase_spt;<sp/></highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_src_ase_spt;<sp/></highlight></codeline>
@@ -1140,28 +1197,32 @@
 <codeline lineno="276"><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__ascs_1gad371c0816740dda2cb4c59214bb4d955" kindref="member">wiced_bt_ga_ascs_init</ref>(uint8_t<sp/>num_instances,<sp/><ref refid="structwiced__bt__ga__ascs__init__data__t" kindref="compound">wiced_bt_ga_ascs_init_data_t</ref><sp/>*pv_ini);</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
-<codeline lineno="288"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" kindref="member">wiced_bt_ga_ascs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="292"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" kindref="member">wiced_bt_ga_ascs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" kindref="member">wiced_bt_ga_ascs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" kindref="member">wiced_bt_ga_ascs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"></highlight></codeline>
 <codeline lineno="294"><highlight class="normal"></highlight></codeline>
-<codeline lineno="304"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" kindref="member">wiced_bt_ga_ascs_parse_data</ref>(<ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref><sp/>opcode,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" kindref="member">wiced_bt_ga_ascs_parse_data</ref>(<ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref><sp/>opcode,</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*data_stream,</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__cp__params__t" kindref="compound">wiced_bt_ga_ascs_cp_params_t</ref><sp/>*parsed_data,</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__ascs__cp__cmd__sts__t" kindref="compound">wiced_bt_ga_ascs_cp_cmd_sts_t</ref><sp/>*status);</highlight></codeline>
 <codeline lineno="309"><highlight class="normal"></highlight></codeline>
 <codeline lineno="310"><highlight class="normal"></highlight></codeline>
-<codeline lineno="319"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" kindref="member">wiced_bt_ga_ascs_get_cp_header</ref>(uint8_t<sp/>*data,<sp/>uint8_t<sp/>*opcode,<sp/>uint8_t<sp/>*num_of_ase);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" kindref="member">wiced_bt_ga_ascs_get_cp_header</ref>(uint8_t<sp/>*data,<sp/>uint8_t<sp/>*opcode,<sp/>uint8_t<sp/>*num_of_ase);</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"></highlight></codeline>
-<codeline lineno="331"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" kindref="member">wiced_bt_ga_ascs_send_receiver_start_stop_ready</ref>(uint16_t<sp/>conn_id,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" kindref="member">wiced_bt_ga_ascs_send_receiver_start_stop_ready</ref>(uint16_t<sp/>conn_id,</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>ase_id,</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wiced_bool_t<sp/>is_start_ready);</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
-<codeline lineno="336"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__wiced__bt__ga__ascs_1ga43523ac797afad701a5905357e1574cd" kindref="member">ascs_opcode_str</ref>[];<sp/></highlight></codeline>
-<codeline lineno="337"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__wiced__bt__ga__ascs_1gae89618dc19c25df5c3597a188a874e27" kindref="member">ascs_state_str</ref>[];<sp/><sp/></highlight></codeline>
-<codeline lineno="342"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_ASCS_H__</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__wiced__bt__ga__ascs_1gad89a80227a13e0f62bc2a7cbab7ca423" kindref="member">ascs_lib_get_state_string</ref>(<ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref><sp/>ascs_state);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__wiced__bt__ga__ascs_1ga9369e7802809e68ac5a601b8b5da2f22" kindref="member">ascs_lib_get_opcode_string</ref>(<ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref><sp/>ascs_opcode);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__wiced__bt__ga__ascs_1ga1590ed8e88c0b33cc4f5b734c40d8699" kindref="member">ascs_lib_get_characteristic_name</ref>(ascs_characteristics_t<sp/>char_type);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_ASCS_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h"/>
   </compounddef>
 </doxygen>

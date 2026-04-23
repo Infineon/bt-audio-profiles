@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structvocs__opcode__t" kind="struct" language="C++" prot="public">
     <compoundname>vocs_opcode_t</compoundname>
     <includes local="no">wiced_bt_ga_vocs.h</includes>
@@ -9,6 +9,7 @@
         <definition>wiced_bt_ga_vocs_opcode_t vocs_opcode_t::opcode</definition>
         <argsstring></argsstring>
         <name>opcode</name>
+        <qualifiedname>vocs_opcode_t::opcode</qualifiedname>
         <briefdescription>
 <para>VOCS opcode. </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="37" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="37" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="37" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structvocs__opcode__t_1aeb333c417f66b99abaf3ec311e945650" prot="public" static="no" mutable="no">
         <type>int16_t</type>
         <definition>int16_t vocs_opcode_t::volume_offset</definition>
         <argsstring></argsstring>
         <name>volume_offset</name>
+        <qualifiedname>vocs_opcode_t::volume_offset</qualifiedname>
         <briefdescription>
 <para>VOCS offset value. </para>
         </briefdescription>
@@ -30,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="38" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="38" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="38" column="13" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +40,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="36" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="36" bodyend="39"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" line="36" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vocs.h" bodystart="36" bodyend="39"/>
     <listofallmembers>
       <member refid="structvocs__opcode__t_1a78cb0e46d1c2232c0e4f584e0fb192a1" prot="public" virt="non-virtual"><scope>vocs_opcode_t</scope><name>opcode</name></member>
       <member refid="structvocs__opcode__t_1aeb333c417f66b99abaf3ec311e945650" prot="public" virt="non-virtual"><scope>vocs_opcode_t</scope><name>volume_offset</name></member>

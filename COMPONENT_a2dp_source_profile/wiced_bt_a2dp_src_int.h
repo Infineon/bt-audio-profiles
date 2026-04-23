@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,6 +28,7 @@
 #include "wiced_bt_avrc.h"
 #include "wiced_memory.h"
 #include "wiced_bt_trace.h"
+#include "wiced_bt_a2dp_int.h"
 
 /*****************************************************************************
 **  Constants
@@ -45,18 +46,6 @@
 #else
 #define WICED_BT_A2DP_SOURCE_CO_M12_SUPPORT FALSE
 #endif //A2DP_SOURCE_AAC_ENABLED
-
-#ifdef A2DP_SOURCE_AAC_ENABLED
-#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT TRUE
-#else
-#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT FALSE
-#endif //A2DP_SOURCE_AAC_ENABLED
-
-#ifdef A2DP_SOURCE_MD_USAC_ENABLED
-#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT TRUE
-#else
-#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT FALSE
-#endif //A2DP_SOURCE_MD_USAC_ENABLED
 
 /* We don't have support for vendor specific codec in source */
 #define WICED_BT_A2DP_SOURCE_CO_VENDOR_SPECIFIC_SUPPORT FALSE

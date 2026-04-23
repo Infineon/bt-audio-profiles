@@ -5,7 +5,7 @@
 * 	This is a private interface file for the Handsfree profile.
 *
 *//*****************************************************************************
-* Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+* Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
 * SPDX-License-Identifier: Apache-2.0
 * 
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -192,6 +192,8 @@ enum
 	WICED_BT_HFP_HF_CMD_UNAT
 };
 
+/** No. of retry if SDP fails */
+#define SDP_RETRY_COUNT 1
 
 /******************************************************************************
 *  Data types
@@ -359,6 +361,7 @@ typedef struct
     uint8_t                      call_ind_val;
     uint8_t                      call_setup_ind_val;
     uint8_t                      callheld_ind_val;
+    uint8_t                      sdp_retry_count;                     /* SDP retry count */
 #if (WICED_BT_HFP_HF_VERSION >= WICED_BT_HFP_HF_VERSION_1_7 \
   && WICED_BT_HFP_HF_IND_SUPPORTED == TRUE)
     wiced_bt_hfp_hf_peer_indicator_t peer_ind[WICED_BT_HFP_HF_MAX_NUM_PEER_IND]; /* Peer HF indicator status */

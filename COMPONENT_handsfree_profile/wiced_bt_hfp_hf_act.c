@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -165,19 +165,8 @@ void wiced_bt_hfp_hf_sdp_complete_cback(uint16_t sdp_res)
     memset(&elem,0,sizeof(wiced_bt_sdp_protocol_elem_t));
 
     WICED_BTHFP_TRACE("%s status: %d\n", __FUNCTION__, sdp_res);
-
-    if (sdp_res != WICED_BT_SDP_SUCCESS)
-    {
-        msg.hf_evt= WICED_BT_HFP_HF_SDP_DISC_FAIL_EVT;
-        p_scb = wiced_bt_hfp_hf_get_scb_by_bd_addr(wiced_bt_hfp_hf_cb.sdp_bd_addr);
-        if (p_scb == NULL)
-        {
-            WICED_BTHFP_ERROR("%s No SCB found\n", __FUNCTION__);
-        }
-        goto wiced_hfp_hf_sdp_complete;
-    }
-
     p_scb = wiced_bt_hfp_hf_get_scb_by_bd_addr(wiced_bt_hfp_hf_cb.sdp_bd_addr);
+
     if (p_scb == NULL)
     {
         WICED_BTHFP_ERROR("%s No SCB found\n", __FUNCTION__);
@@ -186,6 +175,24 @@ void wiced_bt_hfp_hf_sdp_complete_cback(uint16_t sdp_res)
         wiced_bt_hfp_hf_cb.ag_profile_uuid = 0;
         wiced_bt_hfp_hf_hdl_event((wiced_bt_hfp_hf_data_t*)&msg);
         return;
+    }
+
+    if (sdp_res != WICED_BT_SDP_SUCCESS)
+    {
+        // Retry
+        if (sdp_res == WICED_BT_SDP_CONN_FAILED)
+        {
+            if (p_scb->sdp_retry_count && p_scb->p_sdp_db)
+            {
+                WICED_BTHFP_TRACE("%s: Starting SDP again\n", __FUNCTION__);
+                memset(p_scb->p_sdp_db, 0, WICED_BT_HFP_HF_DISC_BUF_SIZE);
+                p_scb->sdp_retry_count--;
+                wiced_bt_do_sdp_again((void *)p_scb);
+                return;
+            }
+        }
+        msg.hf_evt= WICED_BT_HFP_HF_SDP_DISC_FAIL_EVT;
+        goto wiced_hfp_hf_sdp_complete;
     }
 
     /* Check if service is available */

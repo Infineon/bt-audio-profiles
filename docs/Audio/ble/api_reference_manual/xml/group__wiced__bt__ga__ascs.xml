@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="group__wiced__bt__ga__ascs" kind="group">
-    <compoundname>Wiced_bt_ga_ascs</compoundname>
+    <compoundname>wiced_bt_ga_ascs</compoundname>
     <title>Wiced_bt_ga_ascs</title>
     <innerclass refid="structwiced__bt__ga__ascs__config__codec__args__t" prot="public">wiced_bt_ga_ascs_config_codec_args_t</innerclass>
     <innerclass refid="structwiced__bt__ga__ascs__config__qos__args__t" prot="public">wiced_bt_ga_ascs_config_qos_args_t</innerclass>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="41" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="40" bodyend="57"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="40" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="41" bodyend="57"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga43d4b221db4d0499c22ccb7b22222537" prot="public" static="no" strong="no">
         <type></type>
@@ -244,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="64" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="63" bodyend="76"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="63" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="64" bodyend="76"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" prot="public" static="no" strong="no">
         <type></type>
@@ -346,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="82" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="81" bodyend="94"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="81" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="82" bodyend="94"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" prot="public" static="no" strong="no">
         <type></type>
@@ -354,7 +354,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50af21fa87a32ebddc700a9e2c482259980" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_IDLE</name>
           <briefdescription>
-<para>ASE state is idle. </para>
+<para>ASE state is idle <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -362,7 +363,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a33a7dfcdb227b35c04d3b526124fd0ea" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_CODEC_CONFIGURED</name>
           <briefdescription>
-<para>ASE state is codec configured. </para>
+<para>ASE state is codec configured <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -370,7 +372,8 @@
         <enumvalue id="group__wiced__bt__ga__ascs_1ggabaf80fdc44bc782154304f83f2a39d50a14e359af9294ea81c0571ab31f0b5ab8" prot="public">
           <name>WICED_BT_GA_ASCS_STATE_QOS_CONFIGURED</name>
           <briefdescription>
-<para>ASE state is qos configured. </para>
+<para>ASE state is qos configured <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -422,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="102" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="101" bodyend="111"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="101" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="102" bodyend="111"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gad52f399a18a2c6e8020c871560229829" prot="public" static="no" strong="no">
         <type></type>
@@ -458,7 +461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="120" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="119" bodyend="124"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="119" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="120" bodyend="124"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1gae1d8691a300a5657fb7c0448d15910ec" prot="public" static="no" strong="no">
         <type></type>
@@ -503,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="133" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="132" bodyend="138"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="132" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="133" bodyend="138"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__ascs_1ga9db7e09ceb7a3561eadb7b5550fa6ffb" prot="public" static="no" strong="no">
         <type></type>
@@ -531,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="147" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="146" bodyend="150"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="146" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="147" bodyend="150"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -547,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="96" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="96" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="96" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" prot="public" static="no">
         <type>uint8_t</type>
@@ -561,7 +564,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="113" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="113" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="113" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" prot="public" static="no">
         <type>uint8_t</type>
@@ -575,7 +578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="126" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="126" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="126" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" prot="public" static="no">
         <type>uint8_t</type>
@@ -589,7 +592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="140" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="140" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="140" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wiced__bt__ga__ascs_1gab4ef636784573897c2e5e000804f53ab" prot="public" static="no">
         <type>uint8_t</type>
@@ -603,37 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="152" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="152" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="var">
-      <memberdef kind="variable" id="group__wiced__bt__ga__ascs_1ga43523ac797afad701a5905357e1574cd" prot="public" static="no" mutable="no">
-        <type>const char *</type>
-        <definition>const char* ascs_opcode_str[]</definition>
-        <argsstring>[]</argsstring>
-        <name>ascs_opcode_str</name>
-        <briefdescription>
-<para>ASCS Opcode String. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="336" column="1"/>
-      </memberdef>
-      <memberdef kind="variable" id="group__wiced__bt__ga__ascs_1gae89618dc19c25df5c3597a188a874e27" prot="public" static="no" mutable="no">
-        <type>const char *</type>
-        <definition>const char* ascs_state_str[]</definition>
-        <argsstring>[]</argsstring>
-        <name>ascs_state_str</name>
-        <briefdescription>
-<para>ASCS State String. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="337" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="152" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -675,7 +648,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="283" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="283" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="283" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -692,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="288" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="288" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="288" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -709,7 +682,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="292" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="292" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="292" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -785,7 +758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="304" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="304" column="5" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="304" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -837,7 +810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="319" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="319" column="5" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="319" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -901,7 +874,91 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="331" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="331" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="331" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1gad89a80227a13e0f62bc2a7cbab7ca423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ascs_lib_get_state_string</definition>
+        <argsstring>(wiced_bt_ga_ascs_state_t ascs_state)</argsstring>
+        <name>ascs_lib_get_state_string</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref></type>
+          <declname>ascs_state</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs state string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="group__wiced__bt__ga__ascs_1gabaf80fdc44bc782154304f83f2a39d50" kindref="member">wiced_bt_ga_ascs_state_e</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+return A valid string or &quot;unknown&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="343" column="13" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="343" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga9369e7802809e68ac5a601b8b5da2f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ascs_lib_get_opcode_string</definition>
+        <argsstring>(wiced_bt_ga_ascs_opcode_t ascs_opcode)</argsstring>
+        <name>ascs_lib_get_opcode_string</name>
+        <param>
+          <type><ref refid="group__wiced__bt__ga__ascs_1gaaa5b3519831930b34fad38da9974c4a0" kindref="member">wiced_bt_ga_ascs_opcode_t</ref></type>
+          <declname>ascs_opcode</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs opcode string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see <ref refid="group__wiced__bt__ga__ascs_1ga2fbbc399dc6037ab12ceacfbbdec3cd6" kindref="member">wiced_bt_ga_ascs_opcode_e</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+return A valid string or &quot;unknown&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="352" column="13" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="352" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wiced__bt__ga__ascs_1ga1590ed8e88c0b33cc4f5b734c40d8699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * ascs_lib_get_characteristic_name</definition>
+        <argsstring>(ascs_characteristics_t char_type)</argsstring>
+        <name>ascs_lib_get_characteristic_name</name>
+        <param>
+          <type>ascs_characteristics_t</type>
+          <declname>char_type</declname>
+        </param>
+        <briefdescription>
+<para>Return a printable ascs characteristic name string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ascs_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: see ascs_characteristics_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="360" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" declline="360" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -915,7 +972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="33" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="33" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="33" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__ascs_1gac5243637fc5f75047ec6be6c494e8e72" prot="public" static="no">
         <name>PRESENTATION_DELAY_LENGTH</name>
@@ -927,7 +984,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="34" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="34" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="34" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__ascs_1ga7132ed6125bb7bf3cd7dca87db8a738d" prot="public" static="no">
         <name>WICED_BT_ASCS_VALID_PHY_MASK</name>
@@ -939,7 +996,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="154" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="154" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="154" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

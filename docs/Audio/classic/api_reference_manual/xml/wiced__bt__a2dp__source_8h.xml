@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__a2dp__source_8h" kind="file" language="C++">
     <compoundname>wiced_bt_a2dp_source.h</compoundname>
     <includes local="yes">wiced_bt_types.h</includes>
@@ -11,48 +11,48 @@
     <includes local="yes">wiced_bt_a2dp_defs.h</includes>
     <includes local="yes">wiced_memory.h</includes>
     <incdepgraph>
-      <node id="12">
-        <label>wiced_bt_types.h</label>
-      </node>
-      <node id="17">
-        <label>wiced_bt_a2d_m24.h</label>
-      </node>
-      <node id="19">
-        <label>wiced_memory.h</label>
-      </node>
-      <node id="14">
-        <label>wiced_bt_a2d.h</label>
-      </node>
-      <node id="11">
+      <node id="1">
         <label>wiced_bt_a2dp_source.h</label>
         <link refid="wiced__bt__a2dp__source_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="4">
+        <label>wiced_bt_a2d.h</label>
+      </node>
+      <node id="6">
         <label>wiced_bt_a2d_m12.h</label>
       </node>
-      <node id="18">
-        <label>wiced_bt_a2dp_defs.h</label>
+      <node id="7">
+        <label>wiced_bt_a2d_m24.h</label>
       </node>
-      <node id="15">
+      <node id="5">
         <label>wiced_bt_a2d_sbc.h</label>
       </node>
-      <node id="13">
+      <node id="8">
+        <label>wiced_bt_a2dp_defs.h</label>
+      </node>
+      <node id="2">
+        <label>wiced_bt_types.h</label>
+      </node>
+      <node id="9">
+        <label>wiced_memory.h</label>
+      </node>
+      <node id="3">
         <label>wiced_result.h</label>
       </node>
     </incdepgraph>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga28113bee5470bcff086d9c02325b6d3a" prot="public" static="no">
         <name>WICED_BT_A2DP_SOURCE_NUM_SEPS</name>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="95" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="94" bodyend="104"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="94" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="95" bodyend="104"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga2b2ea8e292c6162dbece732d060c1e07" prot="public" static="no" strong="no">
         <type></type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="109" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="108" bodyend="112"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="108" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="109" bodyend="112"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="218" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -327,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="234" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="243" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga484c0b6eaa8b1e4bf73b4e131d89eeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -377,7 +377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="252" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gadbd6a259d7be9441f3385e432ad1d75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -407,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="261" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga39b26b04f3ace9751414828fe5c202cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -449,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="272" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga22bbe0c4cc3a5bc2ed0e67f17e76b383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -503,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="282" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga3e06972c21d81492d1f12f003cecfbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="292" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga83372db916adc5b4fbef423a844bc8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -611,7 +611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="305" declcolumn="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -670,7 +670,7 @@
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_memory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="68"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants</highlight></codeline>
 <codeline lineno="69"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
@@ -680,7 +680,7 @@
 <codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_BT_A2DP_SOURCE_NUM_CODECS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_A2DP_SOURCE_NUM_CODECS<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//WICED_BT_A2DP_SOURCE_NUM_CODECS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//WICED_BT_A2DP_SOURCE_NUM_CODECS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="80"><highlight class="comment"><sp/>*<sp/>Maximum<sp/>number<sp/>of<sp/>Remote<sp/>SEPS<sp/>in<sp/>stream<sp/>discovery<sp/>results.</highlight></codeline>
@@ -689,7 +689,7 @@
 <codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_BT_A2DP_SOURCE_NUM_SEPS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_A2DP_SOURCE_NUM_SEPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//WICED_BT_A2DP_SOURCE_NUM_SEPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//WICED_BT_A2DP_SOURCE_NUM_SEPS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="89"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Enumerations</highlight></codeline>
@@ -794,7 +794,7 @@
 <codeline lineno="188"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Callback<sp/>Type<sp/>Definitions</highlight></codeline>
 <codeline lineno="189"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref>)(<sp/>wiced_bt_a2dp_source_event_t<sp/>event,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kindref="member">wiced_bt_a2dp_source_control_cb_t</ref>)(<sp/>wiced_bt_a2dp_source_event_t<sp/>event,</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__a2dp__source__event__data__t" kindref="compound">wiced_bt_a2dp_source_event_data_t</ref>*<sp/>p_data<sp/>);</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
@@ -833,6 +833,6 @@
 <codeline lineno="311"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_WICED_BT_A2DP_SOURCE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h"/>
   </compounddef>
 </doxygen>

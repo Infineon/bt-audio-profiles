@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__mcs_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_mcs.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -8,29 +8,29 @@
     <includes local="yes">gatt_interface.h</includes>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
     <incdepgraph>
-      <node id="88">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="87">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="86">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="84">
+      <node id="1">
         <label>wiced_bt_ga_mcs.h</label>
         <link refid="wiced__bt__ga__mcs_8h"/>
-        <childnode refid="85" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="5">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="3">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="2">
         <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="unionwiced__bt__ga__mcs__operation__data__t" prot="public">wiced_bt_ga_mcs_operation_data_t</innerclass>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="21" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="21" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="21" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga761fac3fbd9596f8f59dfa14ca2f7c9a" prot="public" static="no">
         <name>MAX_MEDIA_TRACK_TITLE_LEN</name>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="22" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="22" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="22" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga1bbdb04f88856d2660a8a933731d33e7" prot="public" static="no">
         <name>MAX_MEDIA_EVENT_DATA_LENGTH</name>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="23" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="23" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="23" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga05f60e58d791b675100a10b9f207aa17" prot="public" static="no">
         <name>MIN_MEDIA_PLAYBACK_SPEED</name>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="24" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="24" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="24" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaed41256ee349acbea87d62e211055cf0" prot="public" static="no">
         <name>MAX_MEDIA_PLAYBACK_SPEED</name>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="25" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="25" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="25" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gada42638707803e3c30e7e9cfef5b5fd5" prot="public" static="no">
         <name>MCS_SINGLE_ONCE_PLAYING_ORDER_MASK</name>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="48" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="48" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="48" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gad3bf3c5d272bf72d9f8833a5122b5dc3" prot="public" static="no">
         <name>MCS_SINGLE_REPEAT_PLAYING_ORDER_MASK</name>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="49" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="49" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="49" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga04f128692ac659c234b8fa2fa92c3833" prot="public" static="no">
         <name>MCS_IN_ORDER_ONCE_PLAYING_ORDER_MASK</name>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="50" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="50" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="50" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaf90f01e2046d287cf192dcb1ff1a00de" prot="public" static="no">
         <name>MCS_IN_ORDER_REPEAT_PLAYING_ORDER_MASK</name>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="51" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="51" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="51" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga9d1a8872889e232f470db9dc39d66c4a" prot="public" static="no">
         <name>MCS_OLDEST_ONCE_PLAYING_ORDER_MASK</name>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="52" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="52" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="52" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gad3544f1b51db0b946c379b088a0e427a" prot="public" static="no">
         <name>MCS_OLDEST_REPEAT_PLAYING_ORDER_MASK</name>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="53" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="53" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="53" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gac30a18f01416c2595ec1457d9d7fb1c3" prot="public" static="no">
         <name>MCS_NEWEST_ONCE_PLAYING_ORDER_MASK</name>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="54" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="54" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="54" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga1324e6a7e716199619011652ba5da31f" prot="public" static="no">
         <name>MCS_NEWEST_REPEAT_PLAYING_ORDER_MASK</name>
@@ -191,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="55" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="55" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="55" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga3aa61b22d5fab93db27a2680c680c931" prot="public" static="no">
         <name>MCS_SHUFFLE_ONCE_PLAYING_ORDER_MASK</name>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="56" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="56" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="56" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga8ab5d0d5caaa621ed01bfd0d0726744b" prot="public" static="no">
         <name>MCS_SHUFFLE_REPEAT_PLAYING_ORDER_MASK</name>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="57" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="57" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="57" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gac7859df610d4eb977ba9406ab61fbc7e" prot="public" static="no">
         <name>MCS_PLAY_OPCODE_SUPPORTED_MASK</name>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="119" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="119" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="119" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaa7b8b44e85932706d69d69915668e76f" prot="public" static="no">
         <name>MCS_PAUSE_OPCODE_SUPPORTED_MASK</name>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="120" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="120" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="120" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga186ffda99672418455b53fcd0391b47e" prot="public" static="no">
         <name>MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK</name>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="121" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="121" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="121" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga92a41712286bde17b6c84da0fbc83c7c" prot="public" static="no">
         <name>MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK</name>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="122" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="122" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="122" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga240e0e471e5d479bdc0a1bbf1beb7c93" prot="public" static="no">
         <name>MCS_STOP_OPCODE_SUPPORTED_MASK</name>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="123" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="123" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="123" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga339d8ed6e34e4847684dd3d6e0f6b022" prot="public" static="no">
         <name>MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK</name>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="124" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="124" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="124" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga7160a5bba10bbe79ab9954d54a516b45" prot="public" static="no">
         <name>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK</name>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="125" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="125" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="125" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga039495b02b1f3b2bdf8b5ec3346391da" prot="public" static="no">
         <name>MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK</name>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="126" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="126" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="126" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga01a60ea9e6c23158ce9c58411fbfa8e5" prot="public" static="no">
         <name>MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK</name>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="127" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="127" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="127" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaec58b5793befd4a1103e6346117ac400" prot="public" static="no">
         <name>MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK</name>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="128" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="128" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="128" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga51001d86be0870e40f29406d9e23f739" prot="public" static="no">
         <name>MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK</name>
@@ -348,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="129" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="129" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="129" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaac6e6a616fe6244f893bb1d2b10e3032" prot="public" static="no">
         <name>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK</name>
@@ -360,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="130" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="130" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="130" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga1d2a278ca0e236c28f03bc924f315298" prot="public" static="no">
         <name>MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK</name>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="131" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="131" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="131" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gad2bcaa8544723e5717d456c2fd19cb25" prot="public" static="no">
         <name>MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK</name>
@@ -384,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="132" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="132" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="132" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaaa033cddd1a36d77ca54222ae47a5374" prot="public" static="no">
         <name>MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK</name>
@@ -396,7 +396,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="133" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="133" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="133" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1gaba043e3483154d55f4aced2dbb881254" prot="public" static="no">
         <name>MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK</name>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="134" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="134" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="134" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga9ecbf606d8ec2e69a0594ce2efa911a4" prot="public" static="no">
         <name>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK</name>
@@ -420,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="135" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="135" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="135" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga289046c071c0f8588c409534b705af5f" prot="public" static="no">
         <name>MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK</name>
@@ -432,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="136" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="136" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="136" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga5791361d3b105785b7d6c21ee253d60f" prot="public" static="no">
         <name>MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK</name>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="137" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="137" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="137" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga201d0aa07b3fcc43f0da1246db4cce8a" prot="public" static="no">
         <name>MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK</name>
@@ -456,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="138" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="138" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="138" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga06cecc9d254c8fedd8f7d6ca5bf2d3d7" prot="public" static="no">
         <name>MCS_GOTO_GROUP_OPCODE_SUPPORTED_MASK</name>
@@ -468,11 +468,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="139" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="139" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="139" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga836a4b208c12bf90ea5ec81b0e6d542a" prot="public" static="no">
         <name>MCS_BASIC_OPCODES_SUPPORTED</name>
-        <initializer>( <ref refid="group___media___control___a_p_is_1gac7859df610d4eb977ba9406ab61fbc7e" kindref="member">MCS_PLAY_OPCODE_SUPPORTED_MASK</ref> | \
+        <initializer>                                        ( <ref refid="group___media___control___a_p_is_1gac7859df610d4eb977ba9406ab61fbc7e" kindref="member">MCS_PLAY_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1gaa7b8b44e85932706d69d69915668e76f" kindref="member">MCS_PAUSE_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga186ffda99672418455b53fcd0391b47e" kindref="member">MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK</ref>  | \
                                         <ref refid="group___media___control___a_p_is_1ga92a41712286bde17b6c84da0fbc83c7c" kindref="member">MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK</ref> | \
@@ -485,11 +485,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="144" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="144" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="144" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga50603ef09d6a599949d2bec42761db57" prot="public" static="no">
         <name>MCS_SEGMENT_OPCODES_SUPPORTED</name>
-        <initializer>( <ref refid="group___media___control___a_p_is_1ga7160a5bba10bbe79ab9954d54a516b45" kindref="member">MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
+        <initializer>                                        ( <ref refid="group___media___control___a_p_is_1ga7160a5bba10bbe79ab9954d54a516b45" kindref="member">MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga039495b02b1f3b2bdf8b5ec3346391da" kindref="member">MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga01a60ea9e6c23158ce9c58411fbfa8e5" kindref="member">MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK</ref>  | \
                                         <ref refid="group___media___control___a_p_is_1gaec58b5793befd4a1103e6346117ac400" kindref="member">MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK</ref> | \
@@ -501,11 +501,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="154" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="154" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="154" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga202922205b67a855e2a9ba271e07b10e" prot="public" static="no">
         <name>MCS_TRACK_OPCODES_SUPPORTED</name>
-        <initializer>( <ref refid="group___media___control___a_p_is_1gaac6e6a616fe6244f893bb1d2b10e3032" kindref="member">MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
+        <initializer>                                        ( <ref refid="group___media___control___a_p_is_1gaac6e6a616fe6244f893bb1d2b10e3032" kindref="member">MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga1d2a278ca0e236c28f03bc924f315298" kindref="member">MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1gad2bcaa8544723e5717d456c2fd19cb25" kindref="member">MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK</ref>  | \
                                         <ref refid="group___media___control___a_p_is_1gaaa033cddd1a36d77ca54222ae47a5374" kindref="member">MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK</ref> | \
@@ -517,11 +517,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="163" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="163" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="163" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___media___control___a_p_is_1ga6c26845154fd50ff8895df417bc4cde1" prot="public" static="no">
         <name>MCS_GROUP_OPCODES_SUPPORTED</name>
-        <initializer>( <ref refid="group___media___control___a_p_is_1ga9ecbf606d8ec2e69a0594ce2efa911a4" kindref="member">MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
+        <initializer>                                        ( <ref refid="group___media___control___a_p_is_1ga9ecbf606d8ec2e69a0594ce2efa911a4" kindref="member">MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga289046c071c0f8588c409534b705af5f" kindref="member">MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
                                         <ref refid="group___media___control___a_p_is_1ga5791361d3b105785b7d6c21ee253d60f" kindref="member">MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK</ref>  | \
                                         <ref refid="group___media___control___a_p_is_1ga201d0aa07b3fcc43f0da1246db4cce8a" kindref="member">MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK</ref> | \
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="172" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="172" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="172" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -637,7 +637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="31" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="30" bodyend="42"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="30" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="31" bodyend="42"/>
       </memberdef>
       <memberdef kind="enum" id="group___media___control___a_p_is_1ga21fefbca714bb3ed4cf2a4efd43380ab" prot="public" static="no" strong="no">
         <type></type>
@@ -685,7 +685,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="64" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="63" bodyend="69"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="63" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="64" bodyend="69"/>
       </memberdef>
       <memberdef kind="enum" id="group___media___control___a_p_is_1ga42c8c4b2656da4e0835d5dd6eaf58677" prot="public" static="no" strong="no">
         <type></type>
@@ -895,7 +895,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="76" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="75" bodyend="99"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="75" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="76" bodyend="99"/>
       </memberdef>
       <memberdef kind="enum" id="group___media___control___a_p_is_1ga336d0e4e80aa0c7de47887bdaa35914d" prot="public" static="no" strong="no">
         <type></type>
@@ -943,7 +943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="107" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="106" bodyend="112"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="106" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="107" bodyend="112"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -959,7 +959,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="43" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="43" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="43" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___media___control___a_p_is_1gae95e0e5fbadbecf2de223458c514b42a" prot="public" static="no">
         <type>uint8_t</type>
@@ -973,7 +973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="70" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="70" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="70" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___media___control___a_p_is_1gaba609f9b3ca60bbaec1ab1ad0e1c4d41" prot="public" static="no">
         <type>uint8_t</type>
@@ -987,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="100" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="100" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="100" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___media___control___a_p_is_1ga96b76b5d97440009aedccaa5f1e2a7d6" prot="public" static="no">
         <type>uint8_t</type>
@@ -1001,7 +1001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="113" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="113" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="113" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1043,7 +1043,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="220" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="220" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="220" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1ga36c4daa2445a02521b7a2aa2d2b55b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1083,7 +1083,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="228" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="228" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="228" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1gae5b58fb74983a14e8da0320c644923cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1100,7 +1100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="233" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="233" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="233" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1ga3425f8dda3ce55e36b7923996c6f8062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1117,7 +1117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="238" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="238" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="238" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1ga8f9bf6bd5b1148e8927ded8f2115b82d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1134,7 +1134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="243" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="243" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="243" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1gafebb2f0522ba7082ce171a75319ce2a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1151,7 +1151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="248" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="248" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="248" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___media___control___a_p_is_1ga4449990275cfaf1a145e4a652642a220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1191,7 +1191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="255" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="255" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" declline="255" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1210,13 +1210,13 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight></codeline>
-<codeline lineno="21"><highlight class="preprocessor">#define<sp/>MAX_MEDIA_PLAYER_NAME_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="22"><highlight class="preprocessor">#define<sp/>MAX_MEDIA_TRACK_TITLE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/></highlight></codeline>
-<codeline lineno="23"><highlight class="preprocessor">#define<sp/>MAX_MEDIA_EVENT_DATA_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="preprocessor">#define<sp/>MIN_MEDIA_PLAYBACK_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-128)<sp/></highlight></codeline>
-<codeline lineno="25"><highlight class="preprocessor">#define<sp/>MAX_MEDIA_PLAYBACK_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(127)<sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="preprocessor">enum<sp/>wiced_bt_ga_media_control_playing_order_e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MEDIA_PLAYER_NAME_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MEDIA_TRACK_TITLE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MEDIA_EVENT_DATA_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_MEDIA_PLAYBACK_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-128)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MEDIA_PLAYBACK_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(127)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1gad836b7c1d6af67e63ed2ec28fb6d905e" kindref="member">wiced_bt_ga_media_control_playing_order_e</ref></highlight></codeline>
 <codeline lineno="31"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea79ad584b8959077b858cdf9305d78a92" kindref="member">WICED_BT_GA_MCS_SINGLE_ONCE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905eab23d61f1e484d71e960db4a8c46c4d46" kindref="member">WICED_BT_GA_MCS_SINGLE_REPEAT</ref><sp/><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1230,20 +1230,20 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1ggad836b7c1d6af67e63ed2ec28fb6d905ea656c59938e794624c64f4ad87b837db2" kindref="member">WICED_BT_GA_MCS_SHUFFLE_REPEAT</ref><sp/><sp/>=<sp/>0x0A,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="42"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___media___control___a_p_is_1gaf916a125663a55c59a306f3a4908c28b" kindref="member">wiced_bt_ga_media_control_playing_order_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="45"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="46"><highlight class="comment">*<sp/>@brief<sp/>Media<sp/>Playing<sp/>order<sp/>Supported<sp/>(Media<sp/>Control<sp/>Service<sp/>Section<sp/>3.16<sp/>Playing<sp/>Order<sp/>Supported)</highlight></codeline>
 <codeline lineno="47"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SINGLE_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="preprocessor">#define<sp/>MCS_SINGLE_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="50"><highlight class="preprocessor">#define<sp/>MCS_IN_ORDER_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="51"><highlight class="preprocessor">#define<sp/>MCS_IN_ORDER_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="preprocessor">#define<sp/>MCS_OLDEST_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;4)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="53"><highlight class="preprocessor">#define<sp/>MCS_OLDEST_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="preprocessor">#define<sp/>MCS_NEWEST_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;6)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="preprocessor">#define<sp/>MCS_NEWEST_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;7)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="56"><highlight class="preprocessor">#define<sp/>MCS_SHUFFLE_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;8)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="preprocessor">#define<sp/>MCS_SHUFFLE_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;9)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="preprocessor">enum<sp/>wiced_bt_ga_media_control_state_e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SINGLE_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SINGLE_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_IN_ORDER_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_IN_ORDER_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_OLDEST_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;4)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_OLDEST_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_NEWEST_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;6)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_NEWEST_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;7)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SHUFFLE_ONCE_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;8)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SHUFFLE_REPEAT_PLAYING_ORDER_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;9)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga21fefbca714bb3ed4cf2a4efd43380ab" kindref="member">wiced_bt_ga_media_control_state_e</ref></highlight></codeline>
 <codeline lineno="64"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380abaea6084a45819ef7f247287dc1fbea18c" kindref="member">WICED_BT_GA_MCS_MEDIA_INACTIVE</ref><sp/>=<sp/>0x00,<sp/></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380aba6a50684ac557e0ae6ee4c569942052cc" kindref="member">WICED_BT_GA_MCS_MEDIA_PLAYING</ref><sp/>=<sp/>0x01,<sp/><sp/></highlight></codeline>
@@ -1251,7 +1251,7 @@
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga21fefbca714bb3ed4cf2a4efd43380abae177f131f7cd7ece7797e0f661eb5227" kindref="member">WICED_BT_GA_MCS_MEDIA_SEEKING</ref><sp/>=<sp/>0x03,<sp/><sp/></highlight></codeline>
 <codeline lineno="69"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___media___control___a_p_is_1gae95e0e5fbadbecf2de223458c514b42a" kindref="member">wiced_bt_ga_media_control_state_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga42c8c4b2656da4e0835d5dd6eaf58677" kindref="member">wiced_bt_ga_mcp_media_control_operation_e</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga42c8c4b2656da4e0835d5dd6eaf58677" kindref="member">wiced_bt_ga_mcp_media_control_operation_e</ref></highlight></codeline>
 <codeline lineno="76"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a3b7cb1b832f568fa78148de77300dec1" kindref="member">WICED_BT_GA_MCS_INVALID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677a50a081093a163f6aa11f2cc585c14404" kindref="member">WICED_BT_GA_MCS_PLAY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1277,7 +1277,7 @@
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga42c8c4b2656da4e0835d5dd6eaf58677adb964b4adc88fd633a613ecb40d4645f" kindref="member">WICED_BT_GA_MCS_GOTO_GROUP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x44,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="99"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___media___control___a_p_is_1gaba609f9b3ca60bbaec1ab1ad0e1c4d41" kindref="member">wiced_bt_ga_mcp_media_control_operation_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="106"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga336d0e4e80aa0c7de47887bdaa35914d" kindref="member">wiced_bt_ga_mcp_result_e</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga336d0e4e80aa0c7de47887bdaa35914d" kindref="member">wiced_bt_ga_mcp_result_e</ref></highlight></codeline>
 <codeline lineno="107"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da4c88726820ccc09b3009bb5448542b6d" kindref="member">WICED_BT_GA_MCS_SUCCESS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da954c7e7b80c7642c15630fe9fb4224e6" kindref="member">WICED_BT_GA_MCS_OPCODE_NOT_SUPPORTED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1285,47 +1285,47 @@
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gga336d0e4e80aa0c7de47887bdaa35914da1ff7696596a9b4a0f58a63a22be514d2" kindref="member">WICED_BT_GA_MCS_COMMAND_CANNOT_BE_COMPLETED</ref><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="112"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group___media___control___a_p_is_1ga96b76b5d97440009aedccaa5f1e2a7d6" kindref="member">wiced_bt_ga_mcp_result_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="119"><highlight class="preprocessor">#define<sp/>MCS_PLAY_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="120"><highlight class="preprocessor">#define<sp/>MCS_PAUSE_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="121"><highlight class="preprocessor">#define<sp/>MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="122"><highlight class="preprocessor">#define<sp/>MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="123"><highlight class="preprocessor">#define<sp/>MCS_STOP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="124"><highlight class="preprocessor">#define<sp/>MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="125"><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;6)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="126"><highlight class="preprocessor">#define<sp/>MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="127"><highlight class="preprocessor">#define<sp/>MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="128"><highlight class="preprocessor">#define<sp/>MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="129"><highlight class="preprocessor">#define<sp/>MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;10)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="130"><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;11)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="131"><highlight class="preprocessor">#define<sp/>MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;12)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="132"><highlight class="preprocessor">#define<sp/>MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;13)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="133"><highlight class="preprocessor">#define<sp/>MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;14)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="134"><highlight class="preprocessor">#define<sp/>MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;15)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="135"><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;16)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="136"><highlight class="preprocessor">#define<sp/>MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;17)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="137"><highlight class="preprocessor">#define<sp/>MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;18)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="138"><highlight class="preprocessor">#define<sp/>MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;19)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="139"><highlight class="preprocessor">#define<sp/>MCS_GOTO_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;20)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="144"><highlight class="preprocessor">#define<sp/>MCS_BASIC_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PLAY_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_PLAY_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_PAUSE_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_STOP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;6)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;10)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;11)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;12)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;13)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;14)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;15)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;16)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;17)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;18)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;19)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_GOTO_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;20)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_BASIC_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PLAY_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="145"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_PAUSE_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_FAST_REWIND_OPCODE_SUPPORTED_MASK<sp/><sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="147"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_FAST_FORWARD_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="148"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_STOP_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="149"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_MOVE_RELATIVE_OPCODE_SUPPORTED_MASK<sp/>)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="preprocessor">#define<sp/>MCS_SEGMENT_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_SEGMENT_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_SEGMENT_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_NEXT_SEGMENT_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="156"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_FIRST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/><sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="157"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_LAST_SEGMENT_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="158"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_GOTO_SEGMENT_OPCODE_SUPPORTED_MASK<sp/>)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="preprocessor">#define<sp/>MCS_TRACK_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_TRACK_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_TRACK_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="164"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_NEXT_TRACK_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="165"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_FIRST_TRACK_OPCODE_SUPPORTED_MASK<sp/><sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="166"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_LAST_TRACK_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="167"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_GOTO_TRACK_OPCODE_SUPPORTED_MASK<sp/>)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="preprocessor">#define<sp/>MCS_GROUP_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCS_GROUP_OPCODES_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>MCS_PREVIOUS_GROUP_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="173"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_NEXT_GROUP_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="174"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_FIRST_GROUP_OPCODE_SUPPORTED_MASK<sp/><sp/>|<sp/>\</highlight></codeline>
 <codeline lineno="175"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MCS_LAST_GROUP_OPCODE_SUPPORTED_MASK<sp/>|<sp/>\</highlight></codeline>
@@ -1333,7 +1333,7 @@
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181" refid="unionwiced__bt__ga__mcs__operation__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="unionwiced__bt__ga__mcs__operation__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/>move_relative_offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/>track_number;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1341,14 +1341,14 @@
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><sp/><sp/>group_number;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="187"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__mcs__operation__data__t" kindref="compound">wiced_bt_ga_mcs_operation_data_t</ref>;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190" refid="structwiced__bt__ga__mcs__operation__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="structwiced__bt__ga__mcs__operation__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1gaba609f9b3ca60bbaec1ab1ad0e1c4d41" kindref="member">wiced_bt_ga_mcp_media_control_operation_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__ga__mcs__operation__data__t" kindref="compound">wiced_bt_ga_mcs_operation_data_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___media___control___a_p_is_1ga96b76b5d97440009aedccaa5f1e2a7d6" kindref="member">wiced_bt_ga_mcp_result_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="195"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__mcs__operation__t" kindref="compound">wiced_bt_ga_mcs_operation_t</ref>;</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198" refid="unionwiced__bt__ga__mcs__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="unionwiced__bt__ga__mcs__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/>media_player_name;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref><sp/><sp/><sp/><sp/>track_title;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1368,19 +1368,18 @@
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>
 <codeline lineno="228"><highlight class="normal">wiced_result_t<sp/><ref refid="group___media___control___a_p_is_1ga36c4daa2445a02521b7a2aa2d2b55b7d" kindref="member">wiced_bt_ga_mcs_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1gae5b58fb74983a14e8da0320c644923cc" kindref="member">wiced_bt_ga_mcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1gae5b58fb74983a14e8da0320c644923cc" kindref="member">wiced_bt_ga_mcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
-<codeline lineno="238"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga3425f8dda3ce55e36b7923996c6f8062" kindref="member">wiced_bt_ga_mcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga3425f8dda3ce55e36b7923996c6f8062" kindref="member">wiced_bt_ga_mcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga8f9bf6bd5b1148e8927ded8f2115b82d" kindref="member">wiced_bt_ga_gmcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga8f9bf6bd5b1148e8927ded8f2115b82d" kindref="member">wiced_bt_ga_gmcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="248"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1gafebb2f0522ba7082ce171a75319ce2a1" kindref="member">wiced_bt_ga_gmcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1gafebb2f0522ba7082ce171a75319ce2a1" kindref="member">wiced_bt_ga_gmcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga4449990275cfaf1a145e4a652642a220" kindref="member">wiced_bt_ga_mcs_media_track_selected</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>wiced_bool_t<sp/>is_track_selected);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___media___control___a_p_is_1ga4449990275cfaf1a145e4a652642a220" kindref="member">wiced_bt_ga_mcs_media_track_selected</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>wiced_bool_t<sp/>is_track_selected);</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__WICED_BT_GA_MCS_H__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__WICED_BT_GA_MCS_H__</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__hap_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_hap.h</compoundname>
     <includes local="yes">wiced_bt_ble.h</includes>
@@ -7,24 +7,24 @@
     <includes local="yes">wiced_bt_gatt.h</includes>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
     <incdepgraph>
-      <node id="71">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="69">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="70">
-        <label>wiced_bt_dev.h</label>
-      </node>
-      <node id="68">
+      <node id="1">
         <label>wiced_bt_ga_hap.h</label>
         <link refid="wiced__bt__ga__hap_8h"/>
-        <childnode refid="69" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="70" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="71" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="3">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -45,8 +45,8 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_HAP_H__</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_HAP_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_hap.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_hap.h"/>
   </compounddef>
 </doxygen>

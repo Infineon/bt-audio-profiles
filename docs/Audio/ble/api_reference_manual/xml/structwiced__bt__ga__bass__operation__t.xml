@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__ga__bass__operation__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_ga_bass_operation_t</compoundname>
     <includes local="no">wiced_bt_ga_bass.h</includes>
@@ -9,6 +9,7 @@
         <definition>wiced_bt_ga_bass_opcode_t wiced_bt_ga_bass_operation_t::opcode</definition>
         <argsstring></argsstring>
         <name>opcode</name>
+        <qualifiedname>wiced_bt_ga_bass_operation_t::opcode</qualifiedname>
         <briefdescription>
 <para>BASS Control Opcode. </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="151" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="151" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="151" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__bass__operation__t_1aafc70646983ce8e38de6415fa1bc9f05" prot="public" static="no" mutable="no">
         <type><ref refid="unionwiced__bt__ga__bass__operation__data__t" kindref="compound">wiced_bt_ga_bass_operation_data_t</ref></type>
         <definition>wiced_bt_ga_bass_operation_data_t wiced_bt_ga_bass_operation_t::data</definition>
         <argsstring></argsstring>
         <name>data</name>
+        <qualifiedname>wiced_bt_ga_bass_operation_t::data</qualifiedname>
         <briefdescription>
 <para>BASS Control Operation data. </para>
         </briefdescription>
@@ -30,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="152" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="152" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="152" column="39" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -39,64 +41,64 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="198">
-        <label>wiced_bt_ga_bass_modify_source_t</label>
-        <link refid="structwiced__bt__ga__bass__modify__source__t"/>
-        <childnode refid="199" relation="usage">
-          <edgelabel>src_data</edgelabel>
-        </childnode>
-      </node>
-      <node id="196">
-        <label>wiced_bt_ga_bass_operation_data_t</label>
-        <link refid="unionwiced__bt__ga__bass__operation__data__t"/>
-        <childnode refid="197" relation="usage">
-          <edgelabel>set_broadcast_param</edgelabel>
-        </childnode>
-        <childnode refid="198" relation="usage">
-          <edgelabel>modify_source_param</edgelabel>
-        </childnode>
-        <childnode refid="202" relation="usage">
-          <edgelabel>add_source_param</edgelabel>
-        </childnode>
-      </node>
-      <node id="200">
-        <label>wiced_bt_ga_bass_sub_group_data_t</label>
-        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
-        <childnode refid="201" relation="usage">
-          <edgelabel>meta_data</edgelabel>
-        </childnode>
-      </node>
-      <node id="197">
-        <label>wiced_bt_ga_bass_set_broadcast_code_t</label>
-        <link refid="structwiced__bt__ga__bass__set__broadcast__code__t"/>
-      </node>
-      <node id="195">
-        <label>wiced_bt_ga_bass_operation_t</label>
-        <link refid="structwiced__bt__ga__bass__operation__t"/>
-        <childnode refid="196" relation="usage">
-          <edgelabel>data</edgelabel>
-        </childnode>
-      </node>
-      <node id="199">
-        <label>wiced_bt_ga_bass_common_source_data_t</label>
-        <link refid="structwiced__bt__ga__bass__common__source__data__t"/>
-        <childnode refid="200" relation="usage">
-          <edgelabel>sub_group_data</edgelabel>
-        </childnode>
-      </node>
-      <node id="202">
-        <label>wiced_bt_ga_bass_add_source_t</label>
-        <link refid="structwiced__bt__ga__bass__add__source__t"/>
-        <childnode refid="199" relation="usage">
-          <edgelabel>src_data</edgelabel>
-        </childnode>
-      </node>
-      <node id="201">
+      <node id="6">
         <label>wiced_bt_ga_bap_metadata_t</label>
         <link refid="structwiced__bt__ga__bap__metadata__t"/>
       </node>
+      <node id="3">
+        <label>wiced_bt_ga_bass_add_source_t</label>
+        <link refid="structwiced__bt__ga__bass__add__source__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>src_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>wiced_bt_ga_bass_common_source_data_t</label>
+        <link refid="structwiced__bt__ga__bass__common__source__data__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>sub_group_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>wiced_bt_ga_bass_modify_source_t</label>
+        <link refid="structwiced__bt__ga__bass__modify__source__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>src_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wiced_bt_ga_bass_operation_data_t</label>
+        <link refid="unionwiced__bt__ga__bass__operation__data__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>add_source_param</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>modify_source_param</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_broadcast_param</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>wiced_bt_ga_bass_operation_t</label>
+        <link refid="structwiced__bt__ga__bass__operation__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>wiced_bt_ga_bass_set_broadcast_code_t</label>
+        <link refid="structwiced__bt__ga__bass__set__broadcast__code__t"/>
+      </node>
+      <node id="5">
+        <label>wiced_bt_ga_bass_sub_group_data_t</label>
+        <link refid="structwiced__bt__ga__bass__sub__group__data__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>meta_data</edgelabel>
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="150" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="149" bodyend="153"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" line="149" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bass.h" bodystart="150" bodyend="153"/>
     <listofallmembers>
       <member refid="structwiced__bt__ga__bass__operation__t_1aafc70646983ce8e38de6415fa1bc9f05" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_t</scope><name>data</name></member>
       <member refid="structwiced__bt__ga__bass__operation__t_1a3b0fc69935c0417e38a4f34754c166f5" prot="public" virt="non-virtual"><scope>wiced_bt_ga_bass_operation_t</scope><name>opcode</name></member>

@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "lvw",
   5: "lvw",
   6: "btvw",
-  7: "bcfgmpstvw",
+  7: "bcfglmpstvw",
   8: "o"
 };
 

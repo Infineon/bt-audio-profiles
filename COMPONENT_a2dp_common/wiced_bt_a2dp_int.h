@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,34 @@
 #include "wiced_bt_a2d_sbc.h"
 #include "wiced_bt_a2d_m12.h"
 #include "wiced_bt_a2d_m24.h"
+
+#ifdef A2DP_SOURCE_AAC_ENABLED
+#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT TRUE
+#else
+#define WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT FALSE
+#endif //A2DP_SOURCE_AAC_ENABLED
+
+#ifdef A2DP_SINK_AAC_ENABLED
+#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   TRUE
+#else
+#define WICED_BT_A2DP_SINK_CO_M24_SUPPORT   FALSE
+#endif //A2DP_SINK_AAC_ENABLED
+
+#ifdef A2DP_SINK_MD_USAC_ENABLED
+#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   TRUE
+#else
+#define WICED_BT_A2DP_SINK_CO_MDU_SUPPORT   FALSE
+#endif //A2DP_SINK_MD_USAC_ENABLED
+
+#ifdef A2DP_SOURCE_MD_USAC_ENABLED
+#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT TRUE
+#else
+#define WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT FALSE
+#endif //A2DP_SOURCE_MD_USAC_ENABLED
+
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
 #include "wiced_bt_a2d_mdu.h"
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
 
 /* Codec related functions */
 uint8_t wiced_bt_a2dp_sbc_cfg_for_cap(uint8_t *p_peer,
@@ -48,12 +75,15 @@ uint8_t wiced_bt_a2dp_m24_cfg_for_cap(uint8_t *p_peer,
                                              wiced_bt_a2d_m24_cie_t *output_cap);
 uint8_t wiced_bt_a2dp_m24_cfg_in_cap(uint8_t *p_cfg, wiced_bt_a2d_m24_cie_t *p_cap);
 
+#if (WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT == TRUE)
 uint8_t wiced_bt_a2dp_mdu_cfg_for_cap(uint8_t *p_peer,
                                       wiced_bt_a2d_mdu_cie_t *p_cap,
                                       wiced_bt_a2d_mdu_cie_t *p_pref,
                                       wiced_bt_a2d_mdu_cie_t *output_cap);
 uint8_t wiced_bt_a2dp_mdu_cfg_in_cap(uint8_t *p_cfg, wiced_bt_a2d_mdu_cie_t *p_cap);
 
+wiced_bool_t wiced_bt_a2dp_mdu_are_equal(wiced_bt_a2d_mdu_cie_t *cap_1, wiced_bt_a2d_mdu_cie_t *cap_2);
+#endif //WICED_BT_A2DP_SOURCE_CO_MDU_SUPPORT
 
 wiced_bool_t wiced_bt_a2dp_m24_are_equal(wiced_bt_a2d_m24_cie_t *cap_1, wiced_bt_a2d_m24_cie_t *cap_2);
 
@@ -61,4 +91,3 @@ wiced_bool_t wiced_bt_a2dp_m12_are_equal(wiced_bt_a2d_m12_cie_t *cap_1, wiced_bt
 
 wiced_bool_t wiced_bt_a2dp_sbc_are_equal(wiced_bt_a2d_sbc_cie_t *cap_1, wiced_bt_a2d_sbc_cie_t *cap_2);
 
-wiced_bool_t wiced_bt_a2dp_mdu_are_equal(wiced_bt_a2d_mdu_cie_t *cap_1, wiced_bt_a2d_mdu_cie_t *cap_2);

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__pacs_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_pacs.h</compoundname>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="19" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="19" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="19" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___published___audio___capability___service___a_p_is_1ga23d487dc4e491206cc10e9151b7f2c10" prot="public" static="no">
         <name>MAX_METADATA_LENGTH</name>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="20" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="20" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="20" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="68" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="68" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="68" column="18" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="99" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="99" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" declline="99" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1gabe420ed21acf9abf16301ae0c374b6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="102" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="102" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" declline="102" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1ga307d9bc665da399be8c591eee3c8b753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="105" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="105" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" declline="105" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___published___audio___capability___service___a_p_is_1ga0e0bd2f5814a3b35627011cfcd4ef0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="115" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="115" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" declline="115" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -198,16 +198,16 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_bap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="preprocessor">#define<sp/>MAX_CODEC_SPECIFIC_CAPABILITIES_LENGTH<sp/>128<sp/></highlight></codeline>
-<codeline lineno="20"><highlight class="preprocessor">#define<sp/>MAX_METADATA_LENGTH<sp/>128<sp/></highlight></codeline>
-<codeline lineno="27" refid="structwiced__bt__ga__pacs__codec__id__t" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_CODEC_SPECIFIC_CAPABILITIES_LENGTH<sp/>128<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_METADATA_LENGTH<sp/>128<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structwiced__bt__ga__pacs__codec__id__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coding_format;<sp/></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>company_id;<sp/><sp/></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>vendor_specific_codec_id;<sp/></highlight></codeline>
 <codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__pacs__codec__id__t" kindref="compound">wiced_bt_ga_pacs_codec_id_t</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="structwiced__bt__ga__pacs__record__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structwiced__bt__ga__pacs__record__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__codec__id__t" kindref="compound">wiced_bt_ga_pacs_codec_id_t</ref><sp/>codec_id;<sp/></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>codec_specific_capabilities_length;<sp/></highlight></codeline>
@@ -216,13 +216,13 @@
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>metadata[<ref refid="group___published___audio___capability___service___a_p_is_1ga23d487dc4e491206cc10e9151b7f2c10" kindref="member">MAX_METADATA_LENGTH</ref>];<sp/></highlight></codeline>
 <codeline lineno="45"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__pacs__record__t" kindref="compound">wiced_bt_ga_pacs_record_t</ref>;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="structwiced__bt__ga__pacs__char__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structwiced__bt__ga__pacs__char__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_of_records;<sp/></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__record__t" kindref="compound">wiced_bt_ga_pacs_record_t</ref><sp/>*record_list;<sp/></highlight></codeline>
 <codeline lineno="55"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__pacs__char__data__t" kindref="compound">wiced_bt_ga_pacs_char_data_t</ref>;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="structwiced__bt__ga__pacs__audio__contexts__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structwiced__bt__ga__pacs__audio__contexts__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref><sp/>source_contexts;<sp/></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga04e39ed555e547f5879c5e3bef7576f6" kindref="member">wiced_bt_ga_bap_context_type_t</ref><sp/>sink_contexts;<sp/></highlight></codeline>
@@ -230,7 +230,7 @@
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga70772385e966cd83b7c59d342d5ca176" kindref="member">wiced_bt_ga_pacs_audio_location_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="74" refid="structwiced__bt__ga__pacs__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structwiced__bt__ga__pacs__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>char_instance;<sp/></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__char__data__t" kindref="compound">wiced_bt_ga_pacs_char_data_t</ref><sp/>source_pac_list;<sp/></highlight></codeline>
@@ -241,7 +241,7 @@
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__audio__contexts__t" kindref="compound">wiced_bt_ga_pacs_audio_contexts_t</ref><sp/>available;<sp/></highlight></codeline>
 <codeline lineno="83"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref>;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86" refid="structwiced__bt__ga__pacs__init__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structwiced__bt__ga__pacs__init__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_snk_caps_spt;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_src_caps_spt;<sp/></highlight></codeline>
@@ -249,16 +249,15 @@
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal">wiced_result_t<sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga8425069839f885e7ba3019e44ef5ade5" kindref="member">wiced_bt_ga_pacs_init</ref>(uint8_t<sp/>num_instances,<sp/><ref refid="structwiced__bt__ga__pacs__init__data__t" kindref="compound">wiced_bt_ga_pacs_init_data_t</ref><sp/>*p_ini);</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1gabe420ed21acf9abf16301ae0c374b6a9" kindref="member">wiced_bt_ga_pacs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1gabe420ed21acf9abf16301ae0c374b6a9" kindref="member">wiced_bt_ga_pacs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga307d9bc665da399be8c591eee3c8b753" kindref="member">wiced_bt_ga_pacs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga307d9bc665da399be8c591eee3c8b753" kindref="member">wiced_bt_ga_pacs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga0e0bd2f5814a3b35627011cfcd4ef0ab" kindref="member">wiced_bt_ga_pacs_notify_all_characteristics</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___published___audio___capability___service___a_p_is_1ga0e0bd2f5814a3b35627011cfcd4ef0ab" kindref="member">wiced_bt_ga_pacs_notify_all_characteristics</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t<sp/>*p_service,</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__pacs__data__t" kindref="compound">wiced_bt_ga_pacs_data_t</ref><sp/>*p_notification);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__WICED_BT_GA_PACS_H__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__WICED_BT_GA_PACS_H__</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h"/>
   </compounddef>
 </doxygen>

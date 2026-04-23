@@ -32,7 +32,7 @@ var group__wiced__bt__ga__bap__broadcast =
     ] ],
     [ "le_audio_bap_broadcast_is_broadcast_announcement", "group__wiced__bt__ga__bap__broadcast.html#ga2d6319c4935f8c9544c41ef1dab09d99", null ],
     [ "le_audio_bap_broadcast_configure", "group__wiced__bt__ga__bap__broadcast.html#gabc5f0ef429b76129873884363c7b22f2", null ],
-    [ "le_audio_bap_broadcast_is_basic_announcement", "group__wiced__bt__ga__bap__broadcast.html#ga77312fdfb5eb4891fd7b1feb1f70a17e", null ],
+    [ "le_audio_bap_broadcast_is_basic_announcement", "group__wiced__bt__ga__bap__broadcast.html#ga1ee484411c34928e6a30c49960ee9dbc", null ],
     [ "le_audio_bap_broadcast_parse_base_info", "group__wiced__bt__ga__bap__broadcast.html#ga3d0a9bdd83774b90be933a8c29d90ffd", null ],
     [ "le_audio_bap_broadcast_reconfigure", "group__wiced__bt__ga__bap__broadcast.html#gabf73098b81c4ce62816ba7352622ef40", null ],
     [ "le_audio_bap_broadcast_update_metadata", "group__wiced__bt__ga__bap__broadcast.html#ga099e14d3624a0cf50d3e663658784ff7", null ],

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__vcp_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_vcp.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -8,24 +8,24 @@
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
     <includes refid="wiced__bt__ga__aics_8h" local="yes">wiced_bt_ga_aics.h</includes>
     <incdepgraph>
-      <node id="110">
+      <node id="1">
         <label>wiced_bt_ga_vcp.h</label>
         <link refid="wiced__bt__ga__vcp_8h"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="113">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="112">
+      <node id="3">
         <label>wiced_bt_ble.h</label>
       </node>
-      <node id="111">
+      <node id="2">
         <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="36" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="36" column="36" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="36" declcolumn="36"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="45" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="45" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="45" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="55" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="55" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="55" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="69" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="69" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="69" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga22627da6d680b2eb06b43cbb4b3a9a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="82" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="82" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="82" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga3884d688f45641044eed759dca049969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="95" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="95" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="95" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gacb234ccce1db7cbd300da89751da675f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -405,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="109" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="109" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="109" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac236f1f5aabf2df3d030b1c6514b3ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -472,7 +472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="123" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="123" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="123" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gac4db587ae1562875a9fe722bb19c5438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -539,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="137" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="137" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="137" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -606,7 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="150" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="150" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="150" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -659,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="160" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" line="160" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h" declline="160" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -672,7 +672,7 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
@@ -687,11 +687,11 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_aics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gatt_intf_service_methods_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kindref="member">vcs_methods</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gatt_intf_service_methods_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kindref="member">vcs_methods</ref>;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kindref="member">wiced_bt_ga_vcp_set_change_counter</ref><sp/>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kindref="member">wiced_bt_ga_vcp_set_change_counter</ref><sp/>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kindref="member">wiced_bt_ga_vcp_vocs_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kindref="member">wiced_bt_ga_vcp_vocs_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1gadcf90178b8a408f97f6049bdf32ce042" kindref="member">wiced_bt_ga_vcp_set_volume_offset</ref><sp/>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>vocs_index,<sp/>int16_t<sp/>volume_offset);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
@@ -707,16 +707,15 @@
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal">wiced_bt_gatt_status_t<sp/><ref refid="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" kindref="member">wiced_bt_ga_vcp_set_audio_description</ref>(uint16_t<sp/>conn_id,<sp/>gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*audio_desc);</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" kindref="member">wiced_bt_ga_vcp_aics_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" kindref="member">wiced_bt_ga_vcp_aics_set_change_counter</ref>(gatt_intf_service_object_t*<sp/>p_service,<sp/>uint8_t<sp/>aics_index,<sp/>uint8_t<sp/>change_counter);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_VCP_H__</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_VCP_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcp.h"/>
   </compounddef>
 </doxygen>

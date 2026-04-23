@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga.h</compoundname>
     <includes local="yes">gatt_interface.h</includes>
-    <includedby refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includedby>
     <includedby refid="wiced__bt__ga__bap_8h" local="yes">wiced_bt_ga_bap.h</includedby>
+    <includedby refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includedby>
     <includedby refid="wiced__bt__ga__has_8h" local="yes">wiced_bt_ga_has.h</includedby>
     <incdepgraph>
-      <node id="27">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="26">
+      <node id="1">
         <label>wiced_bt_ga.h</label>
         <link refid="wiced__bt__ga_8h"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>gatt_interface.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="40" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="40" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="40" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="18" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="18" bodyend="26"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="18" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="18" bodyend="26"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
         <type></type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="31" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="30" bodyend="37"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="30" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="31" bodyend="37"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
         <type></type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="43" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="43" bodyend="48"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="43" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="43" bodyend="48"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1abc6126af1d45847bc59afa0aa3216b04" prot="public" static="no" strong="no">
         <type></type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="52" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="51" bodyend="55"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="51" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
         <type></type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="58" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="58" bodyend="83"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="58" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="58" bodyend="83"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no" strong="no">
         <type></type>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="87" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="86" bodyend="105"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="86" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="87" bodyend="105"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a726ca809ffd3d67ab4b8476646f26635" prot="public" static="no" strong="no">
         <type></type>
@@ -554,7 +554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="109" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="108" bodyend="115"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="108" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="109" bodyend="115"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a0411cd49bb5b71852cecd93bcbf0ca2d" prot="public" static="no" strong="no">
         <type></type>
@@ -600,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="119" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="118" bodyend="125"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="118" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="119" bodyend="125"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1abed82baf7f470b522273a3e37c24c600" prot="public" static="no" strong="no">
         <type></type>
@@ -647,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="129" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="128" bodyend="135"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="128" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="129" bodyend="135"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1ab04a0655cd1e3bcac5e8f48c18df1a57" prot="public" static="no" strong="no">
         <type></type>
@@ -715,7 +715,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="139" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="138" bodyend="148"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="138" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="139" bodyend="148"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a385c44f6fb256e5716a2302a5b940388" prot="public" static="no" strong="no">
         <type></type>
@@ -755,7 +755,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="152" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="151" bodyend="157"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="151" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="152" bodyend="157"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1abc5c98fcc1211af2b80116dd6e0a035d" prot="public" static="no" strong="no">
         <type></type>
@@ -780,7 +780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="161" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="160" bodyend="164"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="160" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="161" bodyend="164"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1ac36f475ca5b446f4fde4c9b90bec77c8" prot="public" static="no" strong="no">
         <type></type>
@@ -819,7 +819,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="168" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="167" bodyend="173"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="167" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="168" bodyend="173"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a05589fbab0657f08285ebdfe93f5ec9e" prot="public" static="no" strong="no">
         <type></type>
@@ -844,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="177" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="176" bodyend="180"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="176" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="177" bodyend="180"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4d" prot="public" static="no" strong="no">
         <type></type>
@@ -904,7 +904,60 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="184" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="183" bodyend="192"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="183" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="184" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="enum" id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@15</name>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a4454ec5c8397d4842586ab5973040083" prot="public">
+          <name>GMAP_ROLE_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a8b74f98ffde8ff901df4ca553e61f995" prot="public">
+          <name>GMAP_UGG_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25aa3524ce2b9e8a8090c5921fefb8e1dd8" prot="public">
+          <name>GMAP_UGT_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25abb578d97a4426f43f9a0bd483d99bb23" prot="public">
+          <name>GMAP_BGS_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a840bcd0f1ab97c4388c24033ec052e01" prot="public">
+          <name>GMAP_BGR_FEATURES_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a6c27e0287b9ae48017a1c4481594b002" prot="public">
+          <name>GMAP_MAX_CHARACTERISTIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="195" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="196" bodyend="203"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -919,7 +972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="27" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="27" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="27" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1afcf4e009f88def1eb905beed714de284" prot="public" static="no">
         <type>uint8_t</type>
@@ -932,7 +985,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="38" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="38" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="38" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a5f33c67ff7dacd98af33f16855ddcf5d" prot="public" static="no">
         <type>uint8_t</type>
@@ -945,7 +998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="49" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="49" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="49" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a7286a1bff7c144b1f38738aaaed79a3d" prot="public" static="no">
         <type>uint8_t</type>
@@ -958,7 +1011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="56" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="56" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="56" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1aa980a94d752f75bb4fa2a8ea5311f3f9" prot="public" static="no">
         <type>uint8_t</type>
@@ -971,7 +1024,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="84" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="84" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="84" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a12a75a79b3c8e44000b3658a08db1520" prot="public" static="no">
         <type>uint8_t</type>
@@ -984,7 +1037,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="106" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="106" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="106" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a3214cd561945a2fc0283c1bc4800023b" prot="public" static="no">
         <type>uint8_t</type>
@@ -997,7 +1050,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="116" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="116" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="116" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a1a7e64aafe0a3d6573083439fe62ad30" prot="public" static="no">
         <type>uint8_t</type>
@@ -1010,7 +1063,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="126" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="126" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="126" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1aca8d3c41b2af7b2a9a7c603eefb298a3" prot="public" static="no">
         <type>uint8_t</type>
@@ -1023,7 +1076,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="136" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="136" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="136" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a2cedcd0e1fbf5ce3b375157a0d0e1e18" prot="public" static="no">
         <type>uint8_t</type>
@@ -1036,7 +1089,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="149" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="149" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="149" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a3d3a718a15feef78724dc3c09ed1e2e8" prot="public" static="no">
         <type>uint8_t</type>
@@ -1049,7 +1102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="158" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="158" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="158" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a0577a3674f8308f1121cacfbed74db14" prot="public" static="no">
         <type>uint8_t</type>
@@ -1062,7 +1115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="165" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="165" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="165" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a79dbe6998c7e25043acb571825a934fc" prot="public" static="no">
         <type>uint8_t</type>
@@ -1075,7 +1128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="174" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="174" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="174" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a262597fe04a7a2b40a5cf86d29fd1848" prot="public" static="no">
         <type>uint8_t</type>
@@ -1088,7 +1141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="181" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="181" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="181" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga_8h_1a0c193e452ce6958ed9f1bbe837d75d90" prot="public" static="no">
         <type>uint8_t</type>
@@ -1101,7 +1154,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="193" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="193" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="193" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wiced__bt__ga_8h_1ae960f9ab789d90dda6a7cc1065c594cf" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t gmap_characteristics_t</definition>
+        <argsstring></argsstring>
+        <name>gmap_characteristics_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="204" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" bodystart="204" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -1116,7 +1182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="195" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="206" column="30" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" declline="206" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__ga_8h_1a234a33af23a42bef55d3bc8f2e564c52" prot="public" static="no" mutable="no">
         <type>const wiced_bt_uuid_t</type>
@@ -1129,7 +1195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="197" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="208" column="30" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" declline="208" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__ga_8h_1ab5716504592c4d959ade916716c6deb2" prot="public" static="no" mutable="no">
         <type>const wiced_bt_uuid_t</type>
@@ -1142,7 +1208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="203" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="214" column="30" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" declline="214" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__ga_8h_1a693b592f22a2df2beb7622d172ef255a" prot="public" static="no" mutable="no">
         <type>const wiced_bt_uuid_t</type>
@@ -1155,7 +1221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="204" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="215" column="30" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" declline="215" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="wiced__bt__ga_8h_1a52d1d3b0ff4d5e33263dd60413a815e2" prot="public" static="no" mutable="no">
         <type>const wiced_bt_uuid_t</type>
@@ -1168,7 +1234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="205" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" line="216" column="30" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h" declline="216" declcolumn="30"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1183,8 +1249,8 @@
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"><sp/></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
-<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment"><sp/>/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -1340,50 +1406,61 @@
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_FEATURES_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_PRESET_CONTROL_POINT_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_ACTIVE_PRESET_INDEX_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_MAX_CHARACTERISTIC,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_HEARING_AID_PRESET_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_ACTIVE_PRESET_INDEX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>HAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>has_characteristics_t;</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="177"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_ALERT_LEVEL_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_MAX_CHARACTERISTIC,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_ALERT_LEVEL_CHARACTERISTIC,<sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>IAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="180"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>ias_characteristics_t;</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_FEATURES_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_REAL_TIME_RANGING_DATA_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_ON_DEMAND_RANGING_DATA_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_CONTROL_POINT_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_READY_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_OVERWRITTEN_CHARACTERISTIC,</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_MAX_CHARACTERISTIC,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_REAL_TIME_RANGING_DATA_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_ON_DEMAND_RANGING_DATA_CHARACTERISTIC,<sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_CONTROL_POINT_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_READY_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_RANGING_DATA_OVERWRITTEN_CHARACTERISTIC,<sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>RAS_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//6</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="192"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>ras_characteristics_t;</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_vcs;</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mics;</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tbs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gtbs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gmcs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_pacs;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ascs;</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_bass;</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_csis;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tmap;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_has;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ias;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ras;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_ROLE_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_UGG_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_UGT_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_BGS_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_BGR_FEATURES_CHARACTERISTIC,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>GMAP_MAX_CHARACTERISTIC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>gmap_characteristics_t;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_vcs;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mics;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tbs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gtbs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_mcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_gmcs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_pacs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ascs;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_bass;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_csis;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_tmap;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_has;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ias;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//extern<sp/>const<sp/>wiced_bt_uuid_t<sp/>ga_service_uuid_ras;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga.h"/>
   </compounddef>
 </doxygen>

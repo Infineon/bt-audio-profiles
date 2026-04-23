@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="group__wiced__bt__ga__mics" kind="group">
-    <compoundname>Wiced_bt_ga_mics</compoundname>
+    <compoundname>wiced_bt_ga_mics</compoundname>
     <title>Wiced_bt_ga_mics</title>
     <innerclass refid="structmics__included__t" prot="public">mics_included_t</innerclass>
     <innerclass refid="unionwiced__bt__ga__mics__data__t" prot="public">wiced_bt_ga_mics_data_t</innerclass>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="82" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="85" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="88" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="mainpage_8md" kind="file" language="Markdown">
     <compoundname>mainpage.md</compoundname>
     <briefdescription>
@@ -33,6 +33,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mechanism.<sp/>It<sp/>also<sp/>provides<sp/>some<sp/>remote<sp/>control<sp/>means<sp/>to<sp/>phone<sp/>call<sp/>functionality.</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>HFP<sp/>profile<sp/>library<sp/>CVSD,<sp/>Wide<sp/>band<sp/>speech<sp/>(WBS)<sp/>as<sp/>well<sp/>as<sp/>SWB<sp/>(Super<sp/>Wide<sp/>Band)<sp/>codec.</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/docs/Audio/classic/mainpage.md"/>
+    <location file="/builds/repo/bluetooth_apps/docs/Audio/classic/mainpage.md"/>
   </compounddef>
 </doxygen>

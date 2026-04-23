@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
   <compound refid="structwiced__bt__a2dp__codec__info__list__t" kind="struct"><name>wiced_bt_a2dp_codec_info_list_t</name>
     <member refid="structwiced__bt__a2dp__codec__info__list__t_1abe5ae844b353fc250d13886b317d61aa" kind="variable"><name>count</name></member>
     <member refid="structwiced__bt__a2dp__codec__info__list__t_1a149860312476f05cd51e22d4eb94c585" kind="variable"><name>info</name></member>
@@ -35,46 +35,46 @@
     <member refid="structwiced__bt__a2dp__sink__status__t_1a83ad422239f92cd9df20de39b5bb6315" kind="variable"><name>handle</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__codec__info__list__t" kind="struct"><name>wiced_bt_a2dp_source_codec_info_list_t</name>
-    <member refid="structwiced__bt__a2dp__source__codec__info__list__t_1a284a81150bd2bb49c13eb6608685d3b9" kind="variable"><name>count</name></member>
-    <member refid="structwiced__bt__a2dp__source__codec__info__list__t_1a7b983fdbbb0bd7d64d940c16e0e51ff4" kind="variable"><name>info</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga284a81150bd2bb49c13eb6608685d3b9" kind="variable"><name>count</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga7b983fdbbb0bd7d64d940c16e0e51ff4" kind="variable"><name>info</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__config__data__ext__t" kind="struct"><name>wiced_bt_a2dp_source_config_data_ext_t</name>
-    <member refid="structwiced__bt__a2dp__source__config__data__ext__t_1abbaf82574fcb3e95f6df729e6717def6" kind="variable"><name>feature_mask</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__data__ext__t_1a88625d75868502deb0c63fc3e9899625" kind="variable"><name>codec_capabilities</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__data__ext__t_1ac9789abd746faaeda0e266d04fa74195" kind="variable"><name>default_codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gabbaf82574fcb3e95f6df729e6717def6" kind="variable"><name>feature_mask</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga88625d75868502deb0c63fc3e9899625" kind="variable"><name>codec_capabilities</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gac9789abd746faaeda0e266d04fa74195" kind="variable"><name>default_codec_config</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__config__data__t" kind="struct"><name>wiced_bt_a2dp_source_config_data_t</name>
-    <member refid="structwiced__bt__a2dp__source__config__data__t_1a5c19a069c8f70651761a6555eabe409d" kind="variable"><name>feature_mask</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__data__t_1a628d051548af901cb331830da2bc8a99" kind="variable"><name>codec_capabilities</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__data__t_1a7af00c22bdfe48e52b50109398ef4012" kind="variable"><name>default_codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga5c19a069c8f70651761a6555eabe409d" kind="variable"><name>feature_mask</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga628d051548af901cb331830da2bc8a99" kind="variable"><name>codec_capabilities</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga7af00c22bdfe48e52b50109398ef4012" kind="variable"><name>default_codec_config</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__config__t" kind="struct"><name>wiced_bt_a2dp_source_config_t</name>
-    <member refid="structwiced__bt__a2dp__source__config__t_1a50c0833c6354449959157d5bb6e30e8a" kind="variable"><name>result</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__t_1aacf950def42e963fb6e282f6c595f8e9" kind="variable"><name>handle</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__t_1a2a228956e7647155514ba98c25b6c2f8" kind="variable"><name>cp_type</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__t_1acf2ee021e04b333a0d158b2fc84657d6" kind="variable"><name>codec_config</name></member>
-    <member refid="structwiced__bt__a2dp__source__config__t_1a2feff5afba952ffd3fcc699b85c00a1a" kind="variable"><name>stream_mtu</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga50c0833c6354449959157d5bb6e30e8a" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaacf950def42e963fb6e282f6c595f8e9" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga2a228956e7647155514ba98c25b6c2f8" kind="variable"><name>cp_type</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gacf2ee021e04b333a0d158b2fc84657d6" kind="variable"><name>codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga2feff5afba952ffd3fcc699b85c00a1a" kind="variable"><name>stream_mtu</name></member>
   </compound>
   <compound refid="unionwiced__bt__a2dp__source__event__data__t" kind="union"><name>wiced_bt_a2dp_source_event_data_t</name>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1a23a10a479bd89e04bb127edc985d601f" kind="variable"><name>connect</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1aaccdfeb3629a44f7c4103791bfc09d52" kind="variable"><name>disconnect</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1aa82357ce3336240fc737375616292d12" kind="variable"><name>start_ind</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1a4f7804643d7b185944699863f3140e7f" kind="variable"><name>start_cfm</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1aad77e8e27d0cba7caae2d4373fb608ea" kind="variable"><name>suspend</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1a1844ca735d506f1e7df62f328cc4149b" kind="variable"><name>set_config</name></member>
-    <member refid="unionwiced__bt__a2dp__source__event__data__t_1ad98eb9c9a220a3a4ce17fcfdcce91b28" kind="variable"><name>delay_ms</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga23a10a479bd89e04bb127edc985d601f" kind="variable"><name>connect</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaaccdfeb3629a44f7c4103791bfc09d52" kind="variable"><name>disconnect</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaa82357ce3336240fc737375616292d12" kind="variable"><name>start_ind</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga4f7804643d7b185944699863f3140e7f" kind="variable"><name>start_cfm</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaad77e8e27d0cba7caae2d4373fb608ea" kind="variable"><name>suspend</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga1844ca735d506f1e7df62f328cc4149b" kind="variable"><name>set_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gad98eb9c9a220a3a4ce17fcfdcce91b28" kind="variable"><name>delay_ms</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__start__t" kind="struct"><name>wiced_bt_a2dp_source_start_t</name>
-    <member refid="structwiced__bt__a2dp__source__start__t_1a5229a9b35c8b0ed5a9f6c5dde6c93c88" kind="variable"><name>result</name></member>
-    <member refid="structwiced__bt__a2dp__source__start__t_1a9a9b4ea4d9acc71769a74ef5b3b71d9d" kind="variable"><name>label</name></member>
-    <member refid="structwiced__bt__a2dp__source__start__t_1a42035ae356699ac3b6e68e2992bdd7f2" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga5229a9b35c8b0ed5a9f6c5dde6c93c88" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga9a9b4ea4d9acc71769a74ef5b3b71d9d" kind="variable"><name>label</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga42035ae356699ac3b6e68e2992bdd7f2" kind="variable"><name>handle</name></member>
   </compound>
   <compound refid="structwiced__bt__a2dp__source__status__t" kind="struct"><name>wiced_bt_a2dp_source_status_t</name>
-    <member refid="structwiced__bt__a2dp__source__status__t_1ae2fc2d9e3b4e66cbfbdd11059ee59579" kind="variable"><name>result</name></member>
-    <member refid="structwiced__bt__a2dp__source__status__t_1a70380652430717e5e6e0dd22341def7b" kind="variable"><name>bd_addr</name></member>
-    <member refid="structwiced__bt__a2dp__source__status__t_1ae38fa24b70812c2cac899a454779084d" kind="variable"><name>handle</name></member>
-    <member refid="structwiced__bt__a2dp__source__status__t_1ac08d2bd611e87faa19a79b49d10e21cd" kind="variable"><name>lcid</name></member>
-    <member refid="structwiced__bt__a2dp__source__status__t_1a131b8d00ba64409c1e2611c7eb93f6b0" kind="variable"><name>is_accepter</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gae2fc2d9e3b4e66cbfbdd11059ee59579" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga70380652430717e5e6e0dd22341def7b" kind="variable"><name>bd_addr</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gae38fa24b70812c2cac899a454779084d" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gac08d2bd611e87faa19a79b49d10e21cd" kind="variable"><name>lcid</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga131b8d00ba64409c1e2611c7eb93f6b0" kind="variable"><name>is_accepter</name></member>
   </compound>
   <compound refid="structwiced__bt__avrc__ct__features__abs__vol__t" kind="struct"><name>wiced_bt_avrc_ct_features_abs_vol_t</name>
     <member refid="group__wicedbt__avrc__ct_1ga4aaab434c3a57b5038ca0f6bab94325d" kind="variable"><name>handle</name></member>
@@ -674,6 +674,34 @@
     <member refid="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07aa1d66047d783eac57e73844ee2f85627" kind="enumvalue"><name>WICED_BT_A2DP_SOURCE_FEAT_PROTECT</name></member>
     <member refid="group__wicedbt__a2dp__src_1gga2b2ea8e292c6162dbece732d060c1e07a2560ffa4a5c0739fc79a15caea490097" kind="enumvalue"><name>WICED_BT_A2DP_SOURCE_FEAT_DELAY_RPT</name></member>
     <member refid="group__wicedbt__a2dp__src_1ga22f588ca4c064b44b1f0d712ac4a6e31" kind="typedef"><name>wiced_bt_a2dp_source_control_cb_t</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga284a81150bd2bb49c13eb6608685d3b9" kind="variable"><name>count</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga7b983fdbbb0bd7d64d940c16e0e51ff4" kind="variable"><name>info</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga5c19a069c8f70651761a6555eabe409d" kind="variable"><name>feature_mask</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga628d051548af901cb331830da2bc8a99" kind="variable"><name>codec_capabilities</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga7af00c22bdfe48e52b50109398ef4012" kind="variable"><name>default_codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gabbaf82574fcb3e95f6df729e6717def6" kind="variable"><name>feature_mask</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga88625d75868502deb0c63fc3e9899625" kind="variable"><name>codec_capabilities</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gac9789abd746faaeda0e266d04fa74195" kind="variable"><name>default_codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gae2fc2d9e3b4e66cbfbdd11059ee59579" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga70380652430717e5e6e0dd22341def7b" kind="variable"><name>bd_addr</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gae38fa24b70812c2cac899a454779084d" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gac08d2bd611e87faa19a79b49d10e21cd" kind="variable"><name>lcid</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga131b8d00ba64409c1e2611c7eb93f6b0" kind="variable"><name>is_accepter</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga5229a9b35c8b0ed5a9f6c5dde6c93c88" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga9a9b4ea4d9acc71769a74ef5b3b71d9d" kind="variable"><name>label</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga42035ae356699ac3b6e68e2992bdd7f2" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga50c0833c6354449959157d5bb6e30e8a" kind="variable"><name>result</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaacf950def42e963fb6e282f6c595f8e9" kind="variable"><name>handle</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga2a228956e7647155514ba98c25b6c2f8" kind="variable"><name>cp_type</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gacf2ee021e04b333a0d158b2fc84657d6" kind="variable"><name>codec_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga2feff5afba952ffd3fcc699b85c00a1a" kind="variable"><name>stream_mtu</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga23a10a479bd89e04bb127edc985d601f" kind="variable"><name>connect</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaaccdfeb3629a44f7c4103791bfc09d52" kind="variable"><name>disconnect</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaa82357ce3336240fc737375616292d12" kind="variable"><name>start_ind</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga4f7804643d7b185944699863f3140e7f" kind="variable"><name>start_cfm</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gaad77e8e27d0cba7caae2d4373fb608ea" kind="variable"><name>suspend</name></member>
+    <member refid="group__wicedbt__a2dp__src_1ga1844ca735d506f1e7df62f328cc4149b" kind="variable"><name>set_config</name></member>
+    <member refid="group__wicedbt__a2dp__src_1gad98eb9c9a220a3a4ce17fcfdcce91b28" kind="variable"><name>delay_ms</name></member>
     <member refid="group__wicedbt__a2dp__src_1ga64e646849124fda257b1e142df1ec59d" kind="function"><name>wiced_bt_a2dp_source_init</name></member>
     <member refid="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" kind="function"><name>wiced_bt_a2dp_source_init_ext</name></member>
     <member refid="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" kind="function"><name>wiced_bt_a2dp_source_deinit</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
   <compound refid="structle__audio__bap__broadcast__base__t" kind="struct"><name>le_audio_bap_broadcast_base_t</name>
     <member refid="structle__audio__bap__broadcast__base__t_1a70c0124f3eaae262431448c972fc2be6" kind="variable"><name>broadcast_id</name></member>
     <member refid="structle__audio__bap__broadcast__base__t_1adbe814f602f9d55aff1be941477151ab" kind="variable"><name>presentation_delay</name></member>
@@ -103,13 +103,13 @@
   <compound refid="structmics__included__t" kind="struct"><name>mics_included_t</name>
     <member refid="structmics__included__t_1ae5bc88bc0c527ba6049df1d5f71750b1" kind="variable"><name>index</name></member>
     <member refid="structmics__included__t_1ac2ec7a2b34ee3aabf8c085b273c581f0" kind="variable"><name>p_aics</name></member>
-    <member refid="structmics__included__t_1adc066a2cf5062fe0180df4d727e3cdab" kind="variable"><name>@22</name></member>
+    <member refid="structmics__included__t_1a398bce9fbd307abe8863ee5996ee6bfb" kind="variable"><name>@23</name></member>
   </compound>
   <compound refid="structvcs__included__t" kind="struct"><name>vcs_included_t</name>
     <member refid="structvcs__included__t_1aae5aa2e2328141068f4923c16be28926" kind="variable"><name>index</name></member>
     <member refid="structvcs__included__t_1a7cd837c55aaec79ab7df3a8a0bfc99e7" kind="variable"><name>p_vocs</name></member>
     <member refid="structvcs__included__t_1a39415c6814ee29c825adae8c0ad458fc" kind="variable"><name>p_aics</name></member>
-    <member refid="structvcs__included__t_1ada868a8181a43dc6ea31343a51583cf8" kind="variable"><name>@26</name></member>
+    <member refid="structvcs__included__t_1af66ea612547b1c98ef0f84570e59f5a9" kind="variable"><name>@27</name></member>
   </compound>
   <compound refid="structvocs__opcode__t" kind="struct"><name>vocs_opcode_t</name>
     <member refid="structvocs__opcode__t_1a78cb0e46d1c2232c0e4f584e0fb192a1" kind="variable"><name>opcode</name></member>
@@ -197,7 +197,7 @@
     <member refid="structwiced__bt__ga__ascs__cp__params__t_1afbab8272fa113f3ee66b8ca80787557e" kind="variable"><name>config_codec_params</name></member>
     <member refid="structwiced__bt__ga__ascs__cp__params__t_1a5d9e3f10704f2cfa3d8cf3cc8637f544" kind="variable"><name>config_qos_params</name></member>
     <member refid="structwiced__bt__ga__ascs__cp__params__t_1a10a083190bc72679ccf867977e9688ba" kind="variable"><name>metadata</name></member>
-    <member refid="structwiced__bt__ga__ascs__cp__params__t_1a63d61c9fdb5f57e6df90d09b9131775b" kind="variable"><name>@16</name></member>
+    <member refid="structwiced__bt__ga__ascs__cp__params__t_1a3fbd600596a1c7b64183d2f5fa7f4357" kind="variable"><name>@17</name></member>
   </compound>
   <compound refid="structwiced__bt__ga__ascs__init__data__t" kind="struct"><name>wiced_bt_ga_ascs_init_data_t</name>
     <member refid="structwiced__bt__ga__ascs__init__data__t_1a0403dc02499e00d370447f8137906532" kind="variable"><name>max_snk_ase_spt</name></member>
@@ -299,12 +299,19 @@
     <member refid="structwiced__bt__ga__csis__sirk__data__t_1a57a7fe06b3fea8db199bdd6fbbaaa266" kind="variable"><name>sirk_type</name></member>
     <member refid="structwiced__bt__ga__csis__sirk__data__t_1a6e8f09e85a68786743728c73209e8751" kind="variable"><name>is_oob</name></member>
   </compound>
+  <compound refid="unionwiced__bt__ga__gmap__data__t" kind="union"><name>wiced_bt_ga_gmap_data_t</name>
+    <member refid="unionwiced__bt__ga__gmap__data__t_1a675e891fe31b72afa1dead29cdce5ea4" kind="variable"><name>gmap_role</name></member>
+    <member refid="unionwiced__bt__ga__gmap__data__t_1a16f4d9ae4934ac48108367d94f74f1b4" kind="variable"><name>ugg_features</name></member>
+    <member refid="unionwiced__bt__ga__gmap__data__t_1a0e1ee81cbfcd946c61152326f27a132c" kind="variable"><name>ugt_features</name></member>
+    <member refid="unionwiced__bt__ga__gmap__data__t_1af9fd0864c60bf5b392ee0fa16e866c3f" kind="variable"><name>bgs_feature</name></member>
+    <member refid="unionwiced__bt__ga__gmap__data__t_1acd854bfd4b200c32f7a05218fb7c70bb" kind="variable"><name>bgr_feature</name></member>
+  </compound>
   <compound refid="structwiced__bt__ga__has__control__point__t" kind="struct"><name>wiced_bt_ga_has_control_point_t</name>
     <member refid="structwiced__bt__ga__has__control__point__t_1a2b8afaefdd228a7906ef1f9ad745c99f" kind="variable"><name>opcode</name></member>
     <member refid="structwiced__bt__ga__has__control__point__t_1a16abb9dbc6e891a18cabfdd1295168a9" kind="variable"><name>read_preset</name></member>
     <member refid="structwiced__bt__ga__has__control__point__t_1ac56af79debcab4623480db2ff8161d8e" kind="variable"><name>preset_index</name></member>
     <member refid="structwiced__bt__ga__has__control__point__t_1a0c10637cab7aa39ea57d0813137bad70" kind="variable"><name>preset_rec</name></member>
-    <member refid="structwiced__bt__ga__has__control__point__t_1abf683f98e48410151605f992f92c06ed" kind="variable"><name>@18</name></member>
+    <member refid="structwiced__bt__ga__has__control__point__t_1aec3d085e35f776dbbf4abd7491e73648" kind="variable"><name>@19</name></member>
   </compound>
   <compound refid="structwiced__bt__ga__has__cp__read__preset__t" kind="struct"><name>wiced_bt_ga_has_cp_read_preset_t</name>
     <member refid="structwiced__bt__ga__has__cp__read__preset__t_1a98c34658aca178522cd1082410aefe7c" kind="variable"><name>start_index</name></member>
@@ -327,7 +334,7 @@
     <member refid="structwiced__bt__ga__has__evt__data__t_1ac5063e8bcc17880807a46b30ada2b1bc" kind="variable"><name>active_preset_index</name></member>
     <member refid="structwiced__bt__ga__has__evt__data__t_1a6b8d72f41fb7535ad4fc3178c2184fcc" kind="variable"><name>read_rsp_prest</name></member>
     <member refid="structwiced__bt__ga__has__evt__data__t_1a2298d36c8308029ea5567f9a5e9df5fd" kind="variable"><name>preset_changed</name></member>
-    <member refid="structwiced__bt__ga__has__evt__data__t_1aa6c9b2b819397860775321a06f3095a1" kind="variable"><name>@20</name></member>
+    <member refid="structwiced__bt__ga__has__evt__data__t_1a56cf3bb6b6c23d7867bd7ccf9593fac8" kind="variable"><name>@21</name></member>
   </compound>
   <compound refid="structwiced__bt__ga__has__preset__records__t" kind="struct"><name>wiced_bt_ga_has_preset_records_t</name>
     <member refid="structwiced__bt__ga__has__preset__records__t_1a124abdf2a63656297cf6e1acc6f38333" kind="variable"><name>preset_index</name></member>
@@ -418,7 +425,7 @@
     <member refid="structwiced__bt__ga__tbs__call__control__point__t_1ad20dcd53d7406af7de7e4fbe496fcd48" kind="variable"><name>place_call_uri</name></member>
     <member refid="structwiced__bt__ga__tbs__call__control__point__t_1a83396d61d62bcac66f55a012f7083bcc" kind="variable"><name>call_op_resp</name></member>
     <member refid="structwiced__bt__ga__tbs__call__control__point__t_1ad5804f4c6ce1e9e32357d92c6e40f7b5" kind="variable"><name>termination_data</name></member>
-    <member refid="structwiced__bt__ga__tbs__call__control__point__t_1a45f83d3a4620009d3ec68de9ddfed53d" kind="variable"><name>@24</name></member>
+    <member refid="structwiced__bt__ga__tbs__call__control__point__t_1afb154dbb3fba23f493aeff5087510c21" kind="variable"><name>@25</name></member>
   </compound>
   <compound refid="structwiced__bt__ga__tbs__call__operation__response__t" kind="struct"><name>wiced_bt_ga_tbs_call_operation_response_t</name>
     <member refid="structwiced__bt__ga__tbs__call__operation__response__t_1aceb42a16c8a4b801470dceab4a726b71" kind="variable"><name>call_id</name></member>
@@ -509,6 +516,8 @@
     <member refid="unionwiced__bt__ga__vocs__data__t_1a8d59cdc947ba3438fde8680b9397d571" kind="variable"><name>description</name></member>
     <member refid="unionwiced__bt__ga__vocs__data__t_1abc46320a2f65cdd9a0aa7379351b6fa5" kind="variable"><name>control_point</name></member>
   </compound>
+  <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
+  </compound>
   <compound refid="audio__driver_8h" kind="file"><name>audio_driver.h</name>
     <member refid="audio__driver_8h_1a3c37523cdfeeb97ce5f1e2b232f94adc" kind="function"><name>audio_driver_init</name></member>
     <member refid="audio__driver_8h_1ad91b0e3e916ef85626549d64f08f1ad9" kind="function"><name>audio_driver_deinit</name></member>
@@ -530,7 +539,7 @@
     <member refid="csis__psri__key_8h_1ab6269adabb431ec6fa2c30cd6edda0fc" kind="define"><name>CSIS_PRAND_MAX_RANDOM</name></member>
     <member refid="csis__psri__key_8h_1a7bbecee4de0a6ede52753d036d7735f1" kind="function"><name>ga_csis_calc_hash</name></member>
     <member refid="csis__psri__key_8h_1a6278d31a93ce3079080e94d6a74b05c0" kind="function"><name>ga_csis_generate_prand</name></member>
-    <member refid="csis__psri__key_8h_1ad4129ad16866b51c0ce3ee8a15f31fbc" kind="function"><name>ga_csis_generate_psri</name></member>
+    <member refid="csis__psri__key_8h_1aa54a45bf154d2d5540e047337532181b" kind="function"><name>ga_csis_generate_psri</name></member>
     <member refid="csis__psri__key_8h_1a12f8bfd2d54358611f58a887b28326f8" kind="function"><name>ga_csis_sirk_encyption_func</name></member>
     <member refid="csis__psri__key_8h_1a99fedbe452156ac887d7c77f9f612035" kind="function"><name>ga_csis_sirk_decryption_func</name></member>
   </compound>
@@ -547,7 +556,7 @@
     <member refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3257c89bfc79dab86e4be7e64073f933" kind="enumvalue"><name>BAP_BROADCAST_STATE_STREAMING</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga2d6319c4935f8c9544c41ef1dab09d99" kind="function"><name>le_audio_bap_broadcast_is_broadcast_announcement</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gabc5f0ef429b76129873884363c7b22f2" kind="function"><name>le_audio_bap_broadcast_configure</name></member>
-    <member refid="group__wiced__bt__ga__bap__broadcast_1ga77312fdfb5eb4891fd7b1feb1f70a17e" kind="function"><name>le_audio_bap_broadcast_is_basic_announcement</name></member>
+    <member refid="group__wiced__bt__ga__bap__broadcast_1ga1ee484411c34928e6a30c49960ee9dbc" kind="function"><name>le_audio_bap_broadcast_is_basic_announcement</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga3d0a9bdd83774b90be933a8c29d90ffd" kind="function"><name>le_audio_bap_broadcast_parse_base_info</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gabf73098b81c4ce62816ba7352622ef40" kind="function"><name>le_audio_bap_broadcast_reconfigure</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga099e14d3624a0cf50d3e663658784ff7" kind="function"><name>le_audio_bap_broadcast_update_metadata</name></member>
@@ -638,8 +647,6 @@
     <member refid="le__audio__rpc_8h_1a641bdb215bfa4def7c1724b02ca9cdb5" kind="function"><name>le_audio_rpc_send_advertisement_state</name></member>
     <member refid="le__audio__rpc_8h_1a57c910e95c2f29f55bf14833f47850ed" kind="function"><name>nvram_memory_read</name></member>
     <member refid="le__audio__rpc_8h_1a91f6163b469375cafad1376a83f0f4ed" kind="function"><name>nvram_memory_write</name></member>
-  </compound>
-  <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
   </compound>
   <compound refid="wiced__bt__ga_8h" kind="file"><name>wiced_bt_ga.h</name>
     <member refid="wiced__bt__ga_8h_1a4d544bb9b33b0298f36408f470878ee6" kind="define"><name>INCLUDED_SERVICE_NONE</name></member>
@@ -759,6 +766,13 @@
     <member refid="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da98c61cbba515a968a9e823a3d48caec4" kind="enumvalue"><name>RAS_RANGING_DATA_READY_CHARACTERISTIC</name></member>
     <member refid="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da9da52d10093137b9163d236744f633ca" kind="enumvalue"><name>RAS_RANGING_DATA_OVERWRITTEN_CHARACTERISTIC</name></member>
     <member refid="wiced__bt__ga_8h_1a16af7b253440dadd46a80a4b9fddba4da40099e97a7d1e48d6c0c16dc88613a10" kind="enumvalue"><name>RAS_MAX_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25" kind="enum"><name>@15</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a4454ec5c8397d4842586ab5973040083" kind="enumvalue"><name>GMAP_ROLE_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a8b74f98ffde8ff901df4ca553e61f995" kind="enumvalue"><name>GMAP_UGG_FEATURES_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25aa3524ce2b9e8a8090c5921fefb8e1dd8" kind="enumvalue"><name>GMAP_UGT_FEATURES_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25abb578d97a4426f43f9a0bd483d99bb23" kind="enumvalue"><name>GMAP_BGS_FEATURES_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a840bcd0f1ab97c4388c24033ec052e01" kind="enumvalue"><name>GMAP_BGR_FEATURES_CHARACTERISTIC</name></member>
+    <member refid="wiced__bt__ga_8h_1aba01db17f4a2bfbc3db60dc172972a25a6c27e0287b9ae48017a1c4481594b002" kind="enumvalue"><name>GMAP_MAX_CHARACTERISTIC</name></member>
     <member refid="wiced__bt__ga_8h_1ace369eb47e61b850c5979dcaa1f4dda4" kind="typedef"><name>aics_characteristics_t</name></member>
     <member refid="wiced__bt__ga_8h_1afcf4e009f88def1eb905beed714de284" kind="typedef"><name>vocs_characteristics_t</name></member>
     <member refid="wiced__bt__ga_8h_1a5f33c67ff7dacd98af33f16855ddcf5d" kind="typedef"><name>vcs_characteristics_t</name></member>
@@ -774,6 +788,7 @@
     <member refid="wiced__bt__ga_8h_1a79dbe6998c7e25043acb571825a934fc" kind="typedef"><name>has_characteristics_t</name></member>
     <member refid="wiced__bt__ga_8h_1a262597fe04a7a2b40a5cf86d29fd1848" kind="typedef"><name>ias_characteristics_t</name></member>
     <member refid="wiced__bt__ga_8h_1a0c193e452ce6958ed9f1bbe837d75d90" kind="typedef"><name>ras_characteristics_t</name></member>
+    <member refid="wiced__bt__ga_8h_1ae960f9ab789d90dda6a7cc1065c594cf" kind="typedef"><name>gmap_characteristics_t</name></member>
     <member refid="wiced__bt__ga_8h_1aff58dadc158c0920c2ed59df2a3fd150" kind="variable"><name>ga_service_uuid_vcs</name></member>
     <member refid="wiced__bt__ga_8h_1a234a33af23a42bef55d3bc8f2e564c52" kind="variable"><name>ga_service_uuid_mics</name></member>
     <member refid="wiced__bt__ga_8h_1ab5716504592c4d959ade916716c6deb2" kind="variable"><name>ga_service_uuid_ascs</name></member>
@@ -884,14 +899,15 @@
     <member refid="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" kind="typedef"><name>wiced_bt_ga_ascs_framing_t</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" kind="typedef"><name>wiced_bt_ga_ascs_phy_t</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gab4ef636784573897c2e5e000804f53ab" kind="typedef"><name>wiced_bt_ga_ascs_announcement_type_t</name></member>
-    <member refid="group__wiced__bt__ga__ascs_1ga43523ac797afad701a5905357e1574cd" kind="variable"><name>ascs_opcode_str</name></member>
-    <member refid="group__wiced__bt__ga__ascs_1gae89618dc19c25df5c3597a188a874e27" kind="variable"><name>ascs_state_str</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gad371c0816740dda2cb4c59214bb4d955" kind="function"><name>wiced_bt_ga_ascs_init</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" kind="function"><name>wiced_bt_ga_ascs_enable_server</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" kind="function"><name>wiced_bt_ga_ascs_enable_client</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" kind="function"><name>wiced_bt_ga_ascs_parse_data</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" kind="function"><name>wiced_bt_ga_ascs_get_cp_header</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" kind="function"><name>wiced_bt_ga_ascs_send_receiver_start_stop_ready</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1gad89a80227a13e0f62bc2a7cbab7ca423" kind="function"><name>ascs_lib_get_state_string</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1ga9369e7802809e68ac5a601b8b5da2f22" kind="function"><name>ascs_lib_get_opcode_string</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1ga1590ed8e88c0b33cc4f5b734c40d8699" kind="function"><name>ascs_lib_get_characteristic_name</name></member>
   </compound>
   <compound refid="wiced__bt__ga__bap_8h" kind="file"><name>wiced_bt_ga_bap.h</name>
     <member refid="group__wiced__bt__ga__bap_1ga90b44a48835a5580f30ebe073e04e799" kind="define"><name>CHECK_FOR_NULL_AND_RETURN_VALUE</name></member>
@@ -914,6 +930,7 @@
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga2dc64fc704394416e71dcf7415af394e" kind="define"><name>BAP_CONTEXT_TYPE_TV</name></member>
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaa07b88a6637b305d145a6572e788d283" kind="define"><name>VALID_CONTEXT_TYPE_MASK</name></member>
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ecea6b8ba858be0caabea55f1a21815" kind="define"><name>INVALID_CONTEXT_TYPE_MASK</name></member>
+    <member refid="group___l_c3___p_l_u_s_1ga121fd413322ec005a9fc1a13a5fb2f33" kind="define"><name>VENDOR_SPECIFIC_CODING_FORMAT</name></member>
     <member refid="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga60815dcdb71650bf2fb61e1d0f41f939" kind="define"><name>BAP_AUDIO_LOCATION_NOT_ALLOWED</name></member>
     <member refid="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga9155a26b8c6958cd385b195334a2e076" kind="define"><name>BAP_AUDIO_LOCATION_FRONT_LEFT</name></member>
     <member refid="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga8bbf10be0076ffe5e2737ddb1ab08c13" kind="define"><name>BAP_AUDIO_LOCATION_FRONT_RIGHT</name></member>
@@ -1043,15 +1060,15 @@
     <member refid="group__wiced__bt__ga__bap_1gae0cdaca69053f685e1ba06266dbd4788" kind="typedef"><name>wiced_bt_bap_broadcast_code_t</name></member>
     <member refid="group__wiced__bt__ga__bap_1gaba4867263bf1acca873ee9e681a1eff9" kind="function"><name>wiced_bt_ga_bap_is_state_transition_valid</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga60de5d2346717f69cec93bc57ebd5d85" kind="function"><name>wiced_bt_ga_bap_update_ltv</name></member>
-    <member refid="group__wiced__bt__ga__bap_1ga1f87083815d078de68f966d6b2cd59de" kind="function"><name>wiced_bt_ga_bap_fill_csc</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga8908384208b9c28efd8951dd073b024f" kind="function"><name>wiced_bt_ga_bap_fill_csc</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga0feb4bfbf9cc5732e1a1b8cc0ff42261" kind="function"><name>wiced_bt_ga_bap_parse_csc</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga69f8cb30461ce08a052f3efbf9b71079" kind="function"><name>wiced_bt_ga_bap_get_metadata</name></member>
-    <member refid="group__wiced__bt__ga__bap_1gae1cbb78ce6123bc020e1c13ed997f25f" kind="function"><name>wiced_bt_ga_bap_fill_metadata</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga67c835667ca654400a8f149c7fb5c3c3" kind="function"><name>wiced_bt_ga_bap_fill_metadata</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga81988e702f4721e61a4518078bcd259e" kind="function"><name>wiced_bt_ga_bap_get_sampling_freq_index</name></member>
     <member refid="group__wiced__bt__ga__bap_1gad221282845fc4ab58b72492d1d08fd9b" kind="function"><name>wiced_bt_ga_bap_get_fram_duration_index</name></member>
     <member refid="group__wiced__bt__ga__bap_1gaad022eecd61d56af7f16e04460ae4e41" kind="function"><name>wiced_bt_ga_bap_get_unicast_stream_config</name></member>
     <member refid="group__wiced__bt__ga__bap_1gacddb365d7bb354f44063156404f3e840" kind="function"><name>wiced_bt_ga_bap_get_broadcast_stream_config</name></member>
-    <member refid="group__wiced__bt__ga__bap_1ga67c075b6c9e6158a6664c7e5f6e1ae13" kind="function"><name>wiced_bt_ga_bap_get_decoded_data_size</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga2444afc122a1056019b2b2103c4c7b5d" kind="function"><name>wiced_bt_ga_bap_get_decoded_data_size</name></member>
   </compound>
   <compound refid="wiced__bt__ga__bass_8h" kind="file"><name>wiced_bt_ga_bass.h</name>
     <member refid="group__wiced__bt__ga__bass_1ga209010bb283ed951cc89ad7f078ce8bc" kind="define"><name>WICED_BT_GA_BASS_MAX_SUBGROUP_COUNT</name></member>
@@ -1152,18 +1169,18 @@
     <member refid="wiced__bt__ga__csip_8h_1a5523ca8095c0de13f3a9ba2418e8001f" kind="define"><name>CSIP_TRACE_CRIT</name></member>
     <member refid="wiced__bt__ga__csip_8h_1a17974db8d1642501b9784d4b7975a093" kind="define"><name>CSIP_TRACE_ARRAY</name></member>
     <member refid="group__wiced__bt__ga__csip_1gadadd09c000ca942d62ecf0296eca85f1" kind="define"><name>WICED_BT_GA_CSIP_SET_MEMBER_DISCOVERY_TIMEOUT_IN_SEC</name></member>
-    <member refid="group__wiced__bt__ga__csip_1ga47141af4b4a0a6bedaa79b7c3f36eed0" kind="typedef"><name>wiced_bt_ordered_access_procedure_cmpl_cb</name></member>
-    <member refid="group__wiced__bt__ga__csip_1ga3d2979902b115d643255eb6a2ab2aed0" kind="typedef"><name>wiced_bt_lock_procedure_cmpl_cb</name></member>
+    <member refid="group__wiced__bt__ga__csip_1gaf99a18b86149b1e8b40483ca83a29d1c" kind="typedef"><name>wiced_bt_ordered_access_procedure_cmpl_cb</name></member>
+    <member refid="group__wiced__bt__ga__csip_1ga3462af3e15c8ac9574b8451a0a4a3666" kind="typedef"><name>wiced_bt_lock_procedure_cmpl_cb</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga61a414ec1fbfebe896e803e398ebda9c" kind="function"><name>wiced_bt_ga_csip_check_if_belongs_to_coordinated_set</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga72facf625a3b0346e11ff09018f3fb0a" kind="function"><name>wiced_bt_ga_csip_read_set_identity_resolving_key</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga8a4a4cfb4788dc039111e444120eb7e8" kind="function"><name>wiced_bt_ga_csip_read_lock_value</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga1e705b087fdea85ef34da3f0d7dbcbc3" kind="function"><name>wiced_bt_ga_csip_request_lock</name></member>
-    <member refid="group__wiced__bt__ga__csip_1ga638ccd875dac64d736a118b196ec26b7" kind="function"><name>wiced_bt_ga_csip_start_lock_procedure</name></member>
-    <member refid="group__wiced__bt__ga__csip_1gad6cdd2f17ae770c7819ab4f9208b21e4" kind="function"><name>wiced_bt_ga_csip_start_ordered_access_procedure</name></member>
+    <member refid="group__wiced__bt__ga__csip_1gac40634a80c8fca5fd3702c073cd85cc0" kind="function"><name>wiced_bt_ga_csip_start_lock_procedure</name></member>
+    <member refid="group__wiced__bt__ga__csip_1ga6e36395619dd9d6921671f9d29615046" kind="function"><name>wiced_bt_ga_csip_start_ordered_access_procedure</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga9a808d74d2a4ae78097e7df1b15b0fa7" kind="function"><name>wiced_bt_ga_csip_is_lock_procedure_in_progress</name></member>
   </compound>
   <compound refid="wiced__bt__ga__csis_8h" kind="file"><name>wiced_bt_ga_csis.h</name>
-    <member refid="group__wiced__bt__ga__csis_1ga92814a4aed200728adff74e7563e4009" kind="function"><name>wiced_bt_ga_csis_generate_psri</name></member>
+    <member refid="group__wiced__bt__ga__csis_1gac7e09be747314c865aac0232a85db0b4" kind="function"><name>wiced_bt_ga_csis_generate_psri</name></member>
     <member refid="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" kind="function"><name>wiced_bt_ga_csis_get_adv_data</name></member>
     <member refid="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" kind="function"><name>wiced_bt_ga_csis_set_lock_timeout_value</name></member>
     <member refid="group__wiced__bt__ga__csis_1gada435c588af01e18910bf3928acca1e2" kind="function"><name>wiced_bt_ga_csis_is_operation_allowed</name></member>
@@ -1186,6 +1203,16 @@
     <member refid="group__wiced__bt__ga__csis__common_1ga8eae2ee0178d1734895d2deb7bfe7b4e" kind="typedef"><name>wiced_bt_ga_csis_psri_t</name></member>
     <member refid="group__wiced__bt__ga__csis__common_1ga1710461f12a7630b4f5667924addc423" kind="typedef"><name>wiced_bt_ga_csis_lock_val_t</name></member>
     <member refid="group__wiced__bt__ga__csis__common_1ga7d33adfe1e48b4c3a812c1330d09b119" kind="typedef"><name>wiced_bt_ga_csis_sirk_type_t</name></member>
+  </compound>
+  <compound refid="wiced__bt__ga__gmap_8h" kind="file"><name>wiced_bt_ga_gmap.h</name>
+    <member refid="wiced__bt__ga__gmap_8h_1a2f0e45a511aaa32f118b20884425d0a8" kind="define"><name>GMAP_ROLE_UNICAST_GAME_GATEWAY</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1aae357321c096877d489a5a8516a5cfa4" kind="define"><name>GMAP_ROLE_UNICAST_GAME_TERMINAL</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1ac738d5adb85a8017804d1deff3b9d503" kind="define"><name>GMAP_ROLE_BROADCAST_GAME_SENDER</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1ab6ce43dfd752bf4898bb2a02dbf26276" kind="define"><name>GMAP_ROLE_BROADCAST_GAME_RECEIVER</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1abf2094640856db7e2cc2589f75062d48" kind="typedef"><name>gmap_role_t</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1a9f4f2a1f6cd96b1d03fe8cbd752cbe96" kind="function"><name>wiced_bt_ga_gmap_init</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1ab2c3335b9facca21bad62a1c978a41ba" kind="function"><name>wiced_bt_ga_gmap_enable_server</name></member>
+    <member refid="wiced__bt__ga__gmap_8h_1a2472a022f344341fdf8ef583c1a29cfa" kind="function"><name>wiced_bt_ga_gmap_enable_client</name></member>
   </compound>
   <compound refid="wiced__bt__ga__hap_8h" kind="file"><name>wiced_bt_ga_hap.h</name>
   </compound>
@@ -1496,14 +1523,14 @@
   </compound>
   <compound refid="group___stream___control___a_p_is" kind="group"><name>Stream_Control_APIs</name>
   </compound>
-  <compound refid="group__wiced__bt__ga__bap__broadcast" kind="group"><name>Wiced_bt_ga_bap_broadcast</name>
+  <compound refid="group__wiced__bt__ga__bap__broadcast" kind="group"><name>wiced_bt_ga_bap_broadcast</name>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga28eb47f382086bc9788de69633bd43d1" kind="enum"><name>le_audio_bap_broadcast_state_t</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1aef5294324435782ee93a10802cec9715" kind="enumvalue"><name>BAP_BROADCAST_STATE_IDLE</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3ba583f41aaa27f05c4650e12bbc6199" kind="enumvalue"><name>BAP_BROADCAST_STATE_CONFIGURED</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gga28eb47f382086bc9788de69633bd43d1a3257c89bfc79dab86e4be7e64073f933" kind="enumvalue"><name>BAP_BROADCAST_STATE_STREAMING</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga2d6319c4935f8c9544c41ef1dab09d99" kind="function"><name>le_audio_bap_broadcast_is_broadcast_announcement</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gabc5f0ef429b76129873884363c7b22f2" kind="function"><name>le_audio_bap_broadcast_configure</name></member>
-    <member refid="group__wiced__bt__ga__bap__broadcast_1ga77312fdfb5eb4891fd7b1feb1f70a17e" kind="function"><name>le_audio_bap_broadcast_is_basic_announcement</name></member>
+    <member refid="group__wiced__bt__ga__bap__broadcast_1ga1ee484411c34928e6a30c49960ee9dbc" kind="function"><name>le_audio_bap_broadcast_is_basic_announcement</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga3d0a9bdd83774b90be933a8c29d90ffd" kind="function"><name>le_audio_bap_broadcast_parse_base_info</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gabf73098b81c4ce62816ba7352622ef40" kind="function"><name>le_audio_bap_broadcast_reconfigure</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga099e14d3624a0cf50d3e663658784ff7" kind="function"><name>le_audio_bap_broadcast_update_metadata</name></member>
@@ -1517,7 +1544,7 @@
     <member refid="group__wiced__bt__ga__bap__broadcast_1ga08100f864fc71ef444a1b3546c969447" kind="define"><name>BAP_BROADCAST_TRACE</name></member>
     <member refid="group__wiced__bt__ga__bap__broadcast_1gac9ee6b09bdbe46c543abdfbb98eba599" kind="define"><name>BAP_BROADCAST_TRACE_CRIT</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__cap" kind="group"><name>Wiced_bt_ga_cap</name>
+  <compound refid="group__wiced__bt__ga__cap" kind="group"><name>wiced_bt_ga_cap</name>
     <member refid="group__wiced__bt__ga__cap_1gaee2ae8284a72f214c5db20cb772e9f3c" kind="enum"><name>le_audio_cap_event_t</name></member>
     <member refid="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3cae53a431ce52a2a6026c35b8e38f4cad8" kind="enumvalue"><name>WICED_BT_GA_CAP_STATE_CHANGED_EVENT</name></member>
     <member refid="group__wiced__bt__ga__cap_1ggaee2ae8284a72f214c5db20cb772e9f3caa5382f997834ba652a118287f4175e47" kind="enumvalue"><name>WICED_BT_GA_CAP_ERROR_EVENT</name></member>
@@ -1572,7 +1599,7 @@
   </compound>
   <compound refid="group___volume___and___gain___control___a_p_is" kind="group"><name>Volume_And_Gain_Control_APIs</name>
   </compound>
-  <compound refid="group__wiced__bt__ga__aics" kind="group"><name>Wiced_bt_ga_aics</name>
+  <compound refid="group__wiced__bt__ga__aics" kind="group"><name>wiced_bt_ga_aics</name>
     <member refid="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" kind="enum"><name>wiced_bt_ga_aics_opcode_t</name></member>
     <member refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda193e33eadfa9558b59bf4220f04e2552" kind="enumvalue"><name>WICED_BT_GA_AICS_OPCODE_SET_GAIN_SETTINGS</name></member>
     <member refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda1cf99790c3099ee6d86469b400f51cba" kind="enumvalue"><name>WICED_BT_GA_AICS_OPCODE_SET_UNMUTE</name></member>
@@ -1606,7 +1633,7 @@
     <member refid="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" kind="function"><name>wiced_bt_ga_aics_enable_server</name></member>
     <member refid="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" kind="function"><name>wiced_bt_ga_aics_enable_client</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__ascs" kind="group"><name>Wiced_bt_ga_ascs</name>
+  <compound refid="group__wiced__bt__ga__ascs" kind="group"><name>wiced_bt_ga_ascs</name>
     <member refid="group__wiced__bt__ga__ascs_1ga6f448c51359fc19766bf7998f304b9c0" kind="enum"><name>wiced_bt_ga_ascs_cp_response_code_t</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gga6f448c51359fc19766bf7998f304b9c0a2375c52364056d1fceaff961d5bd3cd0" kind="enumvalue"><name>WICED_BT_GA_ASCS_RESPONSE_SUCCESS</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gga6f448c51359fc19766bf7998f304b9c0a4169c2371341e963252918991446ae27" kind="enumvalue"><name>WICED_BT_GA_ASCS_RESPONSE_UNSUPPORTED_OPCODE</name></member>
@@ -1673,19 +1700,20 @@
     <member refid="group__wiced__bt__ga__ascs_1ga99c8eb613af867fa724376bdb9aa38b9" kind="typedef"><name>wiced_bt_ga_ascs_framing_t</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga9923db7099317f333d9a3ffa558f1bc3" kind="typedef"><name>wiced_bt_ga_ascs_phy_t</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gab4ef636784573897c2e5e000804f53ab" kind="typedef"><name>wiced_bt_ga_ascs_announcement_type_t</name></member>
-    <member refid="group__wiced__bt__ga__ascs_1ga43523ac797afad701a5905357e1574cd" kind="variable"><name>ascs_opcode_str</name></member>
-    <member refid="group__wiced__bt__ga__ascs_1gae89618dc19c25df5c3597a188a874e27" kind="variable"><name>ascs_state_str</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gad371c0816740dda2cb4c59214bb4d955" kind="function"><name>wiced_bt_ga_ascs_init</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga366d55a26eac07a7d4bc70fdc4fe04b1" kind="function"><name>wiced_bt_ga_ascs_enable_server</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga69c79b75dacb73a45c7c8c6e6c8dca08" kind="function"><name>wiced_bt_ga_ascs_enable_client</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gae4b0033e8aa59266e059bf2aad4cf6a1" kind="function"><name>wiced_bt_ga_ascs_parse_data</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga010b2bf44205e29aedba5b7fae6e062a" kind="function"><name>wiced_bt_ga_ascs_get_cp_header</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga12f47cea7084955768879fba3e676357" kind="function"><name>wiced_bt_ga_ascs_send_receiver_start_stop_ready</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1gad89a80227a13e0f62bc2a7cbab7ca423" kind="function"><name>ascs_lib_get_state_string</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1ga9369e7802809e68ac5a601b8b5da2f22" kind="function"><name>ascs_lib_get_opcode_string</name></member>
+    <member refid="group__wiced__bt__ga__ascs_1ga1590ed8e88c0b33cc4f5b734c40d8699" kind="function"><name>ascs_lib_get_characteristic_name</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga3ec74b27205c8f8cba2c105b5d0d6ad3" kind="define"><name>SDU_INTERVAL_LENGTH</name></member>
     <member refid="group__wiced__bt__ga__ascs_1gac5243637fc5f75047ec6be6c494e8e72" kind="define"><name>PRESENTATION_DELAY_LENGTH</name></member>
     <member refid="group__wiced__bt__ga__ascs_1ga7132ed6125bb7bf3cd7dca87db8a738d" kind="define"><name>WICED_BT_ASCS_VALID_PHY_MASK</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__bap" kind="group"><name>Wiced_bt_ga_bap</name>
+  <compound refid="group__wiced__bt__ga__bap" kind="group"><name>wiced_bt_ga_bap</name>
     <member refid="group__wiced__bt__ga__bap_1gab4174b478bc9c1bb8b35777b2772464c" kind="enum"><name>wiced_bt_ga_bap_codec_capabilities_type_t</name></member>
     <member refid="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca53e142c89971cddd26061a4636ead153" kind="enumvalue"><name>BAP_CODEC_CAPABILITIES_INVALID_TYPE</name></member>
     <member refid="group__wiced__bt__ga__bap_1ggab4174b478bc9c1bb8b35777b2772464ca0f10eeb35bc6ac6cc0b00061c9286015" kind="enumvalue"><name>BAP_CODEC_CAPABILITIES_SUPPORTED_SAMPLING_FREQUENCIES_TYPE</name></member>
@@ -1750,15 +1778,15 @@
     <member refid="group__wiced__bt__ga__bap_1gae0cdaca69053f685e1ba06266dbd4788" kind="typedef"><name>wiced_bt_bap_broadcast_code_t</name></member>
     <member refid="group__wiced__bt__ga__bap_1gaba4867263bf1acca873ee9e681a1eff9" kind="function"><name>wiced_bt_ga_bap_is_state_transition_valid</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga60de5d2346717f69cec93bc57ebd5d85" kind="function"><name>wiced_bt_ga_bap_update_ltv</name></member>
-    <member refid="group__wiced__bt__ga__bap_1ga1f87083815d078de68f966d6b2cd59de" kind="function"><name>wiced_bt_ga_bap_fill_csc</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga8908384208b9c28efd8951dd073b024f" kind="function"><name>wiced_bt_ga_bap_fill_csc</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga0feb4bfbf9cc5732e1a1b8cc0ff42261" kind="function"><name>wiced_bt_ga_bap_parse_csc</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga69f8cb30461ce08a052f3efbf9b71079" kind="function"><name>wiced_bt_ga_bap_get_metadata</name></member>
-    <member refid="group__wiced__bt__ga__bap_1gae1cbb78ce6123bc020e1c13ed997f25f" kind="function"><name>wiced_bt_ga_bap_fill_metadata</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga67c835667ca654400a8f149c7fb5c3c3" kind="function"><name>wiced_bt_ga_bap_fill_metadata</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga81988e702f4721e61a4518078bcd259e" kind="function"><name>wiced_bt_ga_bap_get_sampling_freq_index</name></member>
     <member refid="group__wiced__bt__ga__bap_1gad221282845fc4ab58b72492d1d08fd9b" kind="function"><name>wiced_bt_ga_bap_get_fram_duration_index</name></member>
     <member refid="group__wiced__bt__ga__bap_1gaad022eecd61d56af7f16e04460ae4e41" kind="function"><name>wiced_bt_ga_bap_get_unicast_stream_config</name></member>
     <member refid="group__wiced__bt__ga__bap_1gacddb365d7bb354f44063156404f3e840" kind="function"><name>wiced_bt_ga_bap_get_broadcast_stream_config</name></member>
-    <member refid="group__wiced__bt__ga__bap_1ga67c075b6c9e6158a6664c7e5f6e1ae13" kind="function"><name>wiced_bt_ga_bap_get_decoded_data_size</name></member>
+    <member refid="group__wiced__bt__ga__bap_1ga2444afc122a1056019b2b2103c4c7b5d" kind="function"><name>wiced_bt_ga_bap_get_decoded_data_size</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga90b44a48835a5580f30ebe073e04e799" kind="define"><name>CHECK_FOR_NULL_AND_RETURN_VALUE</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga5fac8e5f52575dcca58377af08d5f3e0" kind="define"><name>CHECK_FOR_NULL_AND_RETURN</name></member>
     <member refid="group__wiced__bt__ga__bap_1ga394d9b8cd7f10f57d2b0b0ad7ba7fd8d" kind="define"><name>BAP_BROADCAST_CODE_SIZE</name></member>
@@ -1786,6 +1814,9 @@
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga2dc64fc704394416e71dcf7415af394e" kind="define"><name>BAP_CONTEXT_TYPE_TV</name></member>
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1gaa07b88a6637b305d145a6572e788d283" kind="define"><name>VALID_CONTEXT_TYPE_MASK</name></member>
     <member refid="group___b_a_p___c_o_n_t_e_x_t___t_y_p_e_1ga8ecea6b8ba858be0caabea55f1a21815" kind="define"><name>INVALID_CONTEXT_TYPE_MASK</name></member>
+  </compound>
+  <compound refid="group___l_c3___p_l_u_s" kind="group"><name>LC3_PLUS</name>
+    <member refid="group___l_c3___p_l_u_s_1ga121fd413322ec005a9fc1a13a5fb2f33" kind="define"><name>VENDOR_SPECIFIC_CODING_FORMAT</name></member>
   </compound>
   <compound refid="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s" kind="group"><name>BAP_AUDIO_LOCATIONS</name>
     <member refid="group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s_1ga60815dcdb71650bf2fb61e1d0f41f939" kind="define"><name>BAP_AUDIO_LOCATION_NOT_ALLOWED</name></member>
@@ -1855,7 +1886,7 @@
     <member refid="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1ga2e13abcccfc426031070f8bbb29eae70" kind="define"><name>BAP_FRAME_DURATION_8163</name></member>
     <member refid="group___f_r_a_m_e___d_u_r_a_t_i_o_n_1gab8af1b1dcb5a07d0f6a77320401e7e5c" kind="define"><name>BAP_FRAME_DURATION_10884</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__bass" kind="group"><name>Wiced_bt_ga_bass</name>
+  <compound refid="group__wiced__bt__ga__bass" kind="group"><name>wiced_bt_ga_bass</name>
     <member refid="group__wiced__bt__ga__bass_1gaafd0ca787e3ac9d4d7185923a7225f74" kind="enum"><name>wiced_bt_ga_bass_pa_sync_state_e</name></member>
     <member refid="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a2c1f8c6495bfad0bbebc0863f7fed786" kind="enumvalue"><name>WICED_BT_GA_BASS_PA_NOT_SYNC</name></member>
     <member refid="group__wiced__bt__ga__bass_1ggaafd0ca787e3ac9d4d7185923a7225f74a806250443ae1fad2f866ed7d92eed2fc" kind="enumvalue"><name>WICED_BT_GA_BASS_PA_SYNC_INFO_REQUEST</name></member>
@@ -1951,20 +1982,20 @@
   </compound>
   <compound refid="group___coordinate___set___a_p_is" kind="group"><name>Coordinate_Set_APIs</name>
   </compound>
-  <compound refid="group__wiced__bt__ga__csip" kind="group"><name>Wiced_bt_ga_csip</name>
-    <member refid="group__wiced__bt__ga__csip_1ga47141af4b4a0a6bedaa79b7c3f36eed0" kind="typedef"><name>wiced_bt_ordered_access_procedure_cmpl_cb</name></member>
-    <member refid="group__wiced__bt__ga__csip_1ga3d2979902b115d643255eb6a2ab2aed0" kind="typedef"><name>wiced_bt_lock_procedure_cmpl_cb</name></member>
+  <compound refid="group__wiced__bt__ga__csip" kind="group"><name>wiced_bt_ga_csip</name>
+    <member refid="group__wiced__bt__ga__csip_1gaf99a18b86149b1e8b40483ca83a29d1c" kind="typedef"><name>wiced_bt_ordered_access_procedure_cmpl_cb</name></member>
+    <member refid="group__wiced__bt__ga__csip_1ga3462af3e15c8ac9574b8451a0a4a3666" kind="typedef"><name>wiced_bt_lock_procedure_cmpl_cb</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga61a414ec1fbfebe896e803e398ebda9c" kind="function"><name>wiced_bt_ga_csip_check_if_belongs_to_coordinated_set</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga72facf625a3b0346e11ff09018f3fb0a" kind="function"><name>wiced_bt_ga_csip_read_set_identity_resolving_key</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga8a4a4cfb4788dc039111e444120eb7e8" kind="function"><name>wiced_bt_ga_csip_read_lock_value</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga1e705b087fdea85ef34da3f0d7dbcbc3" kind="function"><name>wiced_bt_ga_csip_request_lock</name></member>
-    <member refid="group__wiced__bt__ga__csip_1ga638ccd875dac64d736a118b196ec26b7" kind="function"><name>wiced_bt_ga_csip_start_lock_procedure</name></member>
-    <member refid="group__wiced__bt__ga__csip_1gad6cdd2f17ae770c7819ab4f9208b21e4" kind="function"><name>wiced_bt_ga_csip_start_ordered_access_procedure</name></member>
+    <member refid="group__wiced__bt__ga__csip_1gac40634a80c8fca5fd3702c073cd85cc0" kind="function"><name>wiced_bt_ga_csip_start_lock_procedure</name></member>
+    <member refid="group__wiced__bt__ga__csip_1ga6e36395619dd9d6921671f9d29615046" kind="function"><name>wiced_bt_ga_csip_start_ordered_access_procedure</name></member>
     <member refid="group__wiced__bt__ga__csip_1ga9a808d74d2a4ae78097e7df1b15b0fa7" kind="function"><name>wiced_bt_ga_csip_is_lock_procedure_in_progress</name></member>
     <member refid="group__wiced__bt__ga__csip_1gadadd09c000ca942d62ecf0296eca85f1" kind="define"><name>WICED_BT_GA_CSIP_SET_MEMBER_DISCOVERY_TIMEOUT_IN_SEC</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__csis" kind="group"><name>Wiced_bt_ga_csis</name>
-    <member refid="group__wiced__bt__ga__csis_1ga92814a4aed200728adff74e7563e4009" kind="function"><name>wiced_bt_ga_csis_generate_psri</name></member>
+  <compound refid="group__wiced__bt__ga__csis" kind="group"><name>wiced_bt_ga_csis</name>
+    <member refid="group__wiced__bt__ga__csis_1gac7e09be747314c865aac0232a85db0b4" kind="function"><name>wiced_bt_ga_csis_generate_psri</name></member>
     <member refid="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" kind="function"><name>wiced_bt_ga_csis_get_adv_data</name></member>
     <member refid="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" kind="function"><name>wiced_bt_ga_csis_set_lock_timeout_value</name></member>
     <member refid="group__wiced__bt__ga__csis_1gada435c588af01e18910bf3928acca1e2" kind="function"><name>wiced_bt_ga_csis_is_operation_allowed</name></member>
@@ -1972,7 +2003,7 @@
     <member refid="group__wiced__bt__ga__csis_1gad5cf3fe1b8e4e80fe0fd307f30675eed" kind="function"><name>wiced_bt_ga_csis_enable_server</name></member>
     <member refid="group__wiced__bt__ga__csis_1ga3af7c32f13471fee0b4499e683e202bf" kind="function"><name>wiced_bt_ga_csis_enable_client</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__csis__common" kind="group"><name>Wiced_bt_ga_csis_common</name>
+  <compound refid="group__wiced__bt__ga__csis__common" kind="group"><name>wiced_bt_ga_csis_common</name>
     <member refid="group__wiced__bt__ga__csis__common_1ga259e18b167793b1775559e69af6d51aa" kind="enum"><name>wiced_bt_ga_csis_lock_val_e</name></member>
     <member refid="group__wiced__bt__ga__csis__common_1gga259e18b167793b1775559e69af6d51aaa93d242c5ec33c9404ce1281b7f207b18" kind="enumvalue"><name>WICED_BT_GA_CSIS_UNLOCKED</name></member>
     <member refid="group__wiced__bt__ga__csis__common_1gga259e18b167793b1775559e69af6d51aaa013f5301bc626d06e2ec66c96d2d5161" kind="enumvalue"><name>WICED_BT_GA_CSIS_LOCKED</name></member>
@@ -2085,7 +2116,7 @@
     <member refid="group___media___control___a_p_is_1ga202922205b67a855e2a9ba271e07b10e" kind="define"><name>MCS_TRACK_OPCODES_SUPPORTED</name></member>
     <member refid="group___media___control___a_p_is_1ga6c26845154fd50ff8895df417bc4cde1" kind="define"><name>MCS_GROUP_OPCODES_SUPPORTED</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__mics" kind="group"><name>Wiced_bt_ga_mics</name>
+  <compound refid="group__wiced__bt__ga__mics" kind="group"><name>wiced_bt_ga_mics</name>
     <member refid="group__wiced__bt__ga__mics_1ga2bbcf7a629aaff09417c2f628667f5f1" kind="function"><name>wiced_bt_ga_mics_init</name></member>
     <member refid="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" kind="function"><name>wiced_bt_ga_mics_enable_server</name></member>
     <member refid="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" kind="function"><name>wiced_bt_ga_mics_enable_client</name></member>
@@ -2191,7 +2222,7 @@
     <member refid="group___telephone___bearer___service___a_p_is_1gafdafbb92da043844690ec6d13fb9087d" kind="function"><name>wiced_bt_ga_gtbs_enable_server</name></member>
     <member refid="group___telephone___bearer___service___a_p_is_1ga41ad1a81f4673d9673bdec9195f8a010" kind="function"><name>wiced_bt_ga_gtbs_enable_client</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__vcp" kind="group"><name>Wiced_bt_ga_vcp</name>
+  <compound refid="group__wiced__bt__ga__vcp" kind="group"><name>wiced_bt_ga_vcp</name>
     <member refid="group__wiced__bt__ga__vcp_1ga13ac194dc71c2f8bb09afda6ebf5c461" kind="variable"><name>vcs_methods</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga1bd74aabb4d6d6a4b50254675a56eb12" kind="function"><name>wiced_bt_ga_vcp_set_change_counter</name></member>
     <member refid="group__wiced__bt__ga__vcp_1ga373e4a0b7678105ae5855dfcd3bd7837" kind="function"><name>wiced_bt_ga_vcp_vocs_set_change_counter</name></member>
@@ -2204,7 +2235,7 @@
     <member refid="group__wiced__bt__ga__vcp_1ga5836b767f7814510d7b2da86dc3c1a1e" kind="function"><name>wiced_bt_ga_vcp_set_audio_description</name></member>
     <member refid="group__wiced__bt__ga__vcp_1gae6386cfb4ba5eeb168e4b7d8dc377b8e" kind="function"><name>wiced_bt_ga_vcp_aics_set_change_counter</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__vcs" kind="group"><name>Wiced_bt_ga_vcs</name>
+  <compound refid="group__wiced__bt__ga__vcs" kind="group"><name>wiced_bt_ga_vcs</name>
     <member refid="group__wiced__bt__ga__vcs_1ga3a3ccbdcb3adc274d360133d9c088601" kind="enum"><name>volume_control_opcodes_e</name></member>
     <member refid="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601aba612f125f702b634a487eef927b0332" kind="enumvalue"><name>VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_DOWN</name></member>
     <member refid="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a65d84b2a1098cb9b863f8cba0eec7427" kind="enumvalue"><name>VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_UP</name></member>
@@ -2222,7 +2253,7 @@
     <member refid="group__wiced__bt__ga__vcs_1ga164e1918889d940e0686e18415621341" kind="define"><name>WICED_BT_GA_VCS_MUTED</name></member>
     <member refid="group__wiced__bt__ga__vcs_1ga2ab9b2d7570be6a77c6cd6379c082f41" kind="define"><name>WICED_BT_GA_VCS_NOT_MUTED</name></member>
   </compound>
-  <compound refid="group__wiced__bt__ga__vocs" kind="group"><name>Wiced_bt_ga_vocs</name>
+  <compound refid="group__wiced__bt__ga__vocs" kind="group"><name>wiced_bt_ga_vocs</name>
     <member refid="group__wiced__bt__ga__vocs_1ga59814e2e50ea309ef56dd83c044447e5" kind="enum"><name>wiced_bt_ga_vocs_opcode_t</name></member>
     <member refid="group__wiced__bt__ga__vocs_1gga59814e2e50ea309ef56dd83c044447e5ab4310fd6fde0648dd4a21b6d9506d31a" kind="enumvalue"><name>WICED_BT_GA_VOCS_OPCODE_SET_VOLUME_OFFSET</name></member>
     <member refid="group__wiced__bt__ga__vocs_1ga242ae62612826525c74b76cc5980600f" kind="variable"><name>vocs_methods</name></member>

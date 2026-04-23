@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"structwiced__bt__ga__vcs__init__data__t.html#ae3b224c8541ef7c73ecd3d9a44ce9411":[1,2,3,4,0],
+"structwiced__bt__ga__vcs__volume__state__t.html":[1,2,3,0],
 "structwiced__bt__ga__vcs__volume__state__t.html#a4844e69c7550a18fca6793586d7b6f9b":[1,2,3,0,1],
 "structwiced__bt__ga__vcs__volume__state__t.html#a4f6e9c0abbb4c974bfd8e61f0e117704":[1,2,3,0,0],
 "unionwiced__bt__ga__aics__data__t.html":[1,2,0,3],

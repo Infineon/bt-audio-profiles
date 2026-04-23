@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="mainpage_8md" kind="file" language="Markdown">
     <compoundname>mainpage.md</compoundname>
     <briefdescription>
@@ -61,6 +61,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>A<sp/>broadcast<sp/>Audio<sp/>Stream<sp/>that<sp/>uses<sp/>a<sp/>High<sp/>Quality<sp/>Public<sp/>Broadcast<sp/>Audio<sp/>Stream<sp/>configuration</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>The<sp/>Public<sp/>Broadcast<sp/>Announcement<sp/>also<sp/>indicates<sp/>whether<sp/>the<sp/>broadcast<sp/>Audio<sp/>Streams<sp/>in<sp/>the<sp/>Broadcast<sp/>Isochronous<sp/>Group<sp/>(BIG)<sp/>are<sp/>encrypted<sp/>or<sp/>not.<sp/>If<sp/>the<sp/>Public<sp/>Broadcast<sp/>Announcement<sp/>indicates<sp/>that<sp/>the<sp/>broadcast<sp/>Audio<sp/>Streams<sp/>are<sp/>encrypted,<sp/>a<sp/>Broadcast<sp/>Sink<sp/>must<sp/>use<sp/>a<sp/>Broadcast_Code<sp/>to<sp/>decrypt<sp/>them</highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/docs/Audio/ble/mainpage.md"/>
+    <location file="/builds/repo/bluetooth_apps/docs/Audio/ble/mainpage.md"/>
   </compounddef>
 </doxygen>

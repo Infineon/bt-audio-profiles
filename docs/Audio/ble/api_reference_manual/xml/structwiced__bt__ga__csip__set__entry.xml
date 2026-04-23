@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__ga__csip__set__entry" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_ga_csip_set_entry</compoundname>
     <includes local="no">wiced_bt_ga_csip.h</includes>
@@ -9,6 +9,7 @@
         <definition>uint16_t wiced_bt_ga_csip_set_entry::conn_id</definition>
         <argsstring></argsstring>
         <name>conn_id</name>
+        <qualifiedname>wiced_bt_ga_csip_set_entry::conn_id</qualifiedname>
         <briefdescription>
 <para>GATT Connection ID. </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="51" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="51" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="51" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__csip__set__entry_1a7391009f007965a3697b5f54fdb3a920" prot="public" static="no" mutable="no">
         <type>gatt_intf_service_object_t *</type>
         <definition>gatt_intf_service_object_t* wiced_bt_ga_csip_set_entry::p_service</definition>
         <argsstring></argsstring>
         <name>p_service</name>
+        <qualifiedname>wiced_bt_ga_csip_set_entry::p_service</qualifiedname>
         <briefdescription>
 <para>instance of the coordinated set identification client </para>
         </briefdescription>
@@ -30,15 +32,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="52" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="52" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="52" column="32" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>CSIP set entry per set memeber. </para>
+<para>CSIP set entry per set member. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="50" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="50" bodyend="53"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" line="50" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csip.h" bodystart="50" bodyend="53"/>
     <listofallmembers>
       <member refid="structwiced__bt__ga__csip__set__entry_1a50003d1058629a967d8f59a694438dcc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csip_set_entry</scope><name>conn_id</name></member>
       <member refid="structwiced__bt__ga__csip__set__entry_1a7391009f007965a3697b5f54fdb3a920" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csip_set_entry</scope><name>p_service</name></member>

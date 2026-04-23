@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__csis_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_csis.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -10,35 +10,35 @@
     <includes refid="wiced__bt__ga__csis__common_8h" local="yes">wiced_bt_ga_csis_common.h</includes>
     <includedby refid="csis__psri__key_8h" local="yes">csis_psri_key.h</includedby>
     <incdepgraph>
-      <node id="64">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="63">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="62">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="61">
-        <label>wiced_bt_dev.h</label>
-      </node>
-      <node id="60">
+      <node id="1">
         <label>wiced_bt_ga_csis.h</label>
         <link refid="wiced__bt__ga__csis_8h"/>
-        <childnode refid="61" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="3">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="2">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga92814a4aed200728adff74e7563e4009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__wiced__bt__ga__csis_1gac7e09be747314c865aac0232a85db0b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref> *</type>
-        <definition>PSRI* wiced_bt_ga_csis_generate_psri</definition>
+        <definition>PSRI * wiced_bt_ga_csis_generate_psri</definition>
         <argsstring>(SIRK *sirk)</argsstring>
         <name>wiced_bt_ga_csis_generate_psri</name>
         <param>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="45" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="45" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="45" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="54" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="54" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="54" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="64" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="64" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="64" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1gada435c588af01e18910bf3928acca1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bool_t</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="73" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="73" column="14" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="73" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1gaadbddb91b44efdb86f03ef1258d54b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="80" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="80" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="80" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1gad5cf3fe1b8e4e80fe0fd307f30675eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="83" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="83" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="83" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__csis_1ga3af7c32f13471fee0b4499e683e202bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="86" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" line="86" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h" declline="86" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -267,7 +267,7 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_CSIS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_CSIS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_CSIS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
@@ -282,26 +282,26 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_csis_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref><sp/>*<ref refid="group__wiced__bt__ga__csis_1ga92814a4aed200728adff74e7563e4009" kindref="member">wiced_bt_ga_csis_generate_psri</ref>(<ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref><sp/>*sirk);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref><sp/>*<ref refid="group__wiced__bt__ga__csis_1gac7e09be747314c865aac0232a85db0b4" kindref="member">wiced_bt_ga_csis_generate_psri</ref>(<ref refid="group__wiced__bt__ga__csis__common_1ga3f2e86d97c8c71b494e3e7a8b3f80819" kindref="member">SIRK</ref><sp/>*sirk);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" kindref="member">wiced_bt_ga_csis_get_adv_data</ref>(<ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref><sp/>*psri,<sp/>wiced_bt_ble_advert_elem_t<sp/>*adv_elem);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1ga5b0e0141e9270b6bd93b883c4c8a225e" kindref="member">wiced_bt_ga_csis_get_adv_data</ref>(<ref refid="group__wiced__bt__ga__csis__common_1gaa2a837b724013e29df8ef1aea5448081" kindref="member">PSRI</ref><sp/>*psri,<sp/>wiced_bt_ble_advert_elem_t<sp/>*adv_elem);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" kindref="member">wiced_bt_ga_csis_set_lock_timeout_value</ref>(gatt_intf_service_object_t<sp/>*p_service,<sp/>uint8_t<sp/>timeout_in_sec);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1gae6357ccc8389ffa9cb62c4284e38cb9b" kindref="member">wiced_bt_ga_csis_set_lock_timeout_value</ref>(gatt_intf_service_object_t<sp/>*p_service,<sp/>uint8_t<sp/>timeout_in_sec);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal">wiced_bool_t<sp/><ref refid="group__wiced__bt__ga__csis_1gada435c588af01e18910bf3928acca1e2" kindref="member">wiced_bt_ga_csis_is_operation_allowed</ref>(uint16_t<sp/>conn_id);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__csis_1gaadbddb91b44efdb86f03ef1258d54b1d" kindref="member">wiced_bt_ga_csis_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1gad5cf3fe1b8e4e80fe0fd307f30675eed" kindref="member">wiced_bt_ga_csis_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1gad5cf3fe1b8e4e80fe0fd307f30675eed" kindref="member">wiced_bt_ga_csis_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1ga3af7c32f13471fee0b4499e683e202bf" kindref="member">wiced_bt_ga_csis_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__csis_1ga3af7c32f13471fee0b4499e683e202bf" kindref="member">wiced_bt_ga_csis_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_CSIS_H__</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_CSIS_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis.h"/>
   </compounddef>
 </doxygen>

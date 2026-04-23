@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="dir_7a204285c9c6be0b141afe2122513828" kind="dir">
     <compoundname>PROFILES_LE</compoundname>
     <innerdir refid="dir_7c45aee659336a24f7f6f7a861d79179">temp_include_dir</innerdir>
@@ -7,6 +7,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/"/>
   </compounddef>
 </doxygen>

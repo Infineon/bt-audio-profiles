@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="unionwiced__bt__ga__csis__data__t" kind="union" language="C++" prot="public">
     <compoundname>wiced_bt_ga_csis_data_t</compoundname>
     <includes local="no">wiced_bt_ga_csis_common.h</includes>
@@ -9,6 +9,7 @@
         <definition>wiced_bt_ga_csis_sirk_data_t wiced_bt_ga_csis_data_t::sirk_data</definition>
         <argsstring></argsstring>
         <name>sirk_data</name>
+        <qualifiedname>wiced_bt_ga_csis_data_t::sirk_data</qualifiedname>
         <briefdescription>
 <para>set identity resolving key </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="72" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="72" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="72" column="34" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__csis__data__t_1a4f02b6163cf56638b40541b62ce2b0b7" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_ga_csis_data_t::size</definition>
         <argsstring></argsstring>
         <name>size</name>
+        <qualifiedname>wiced_bt_ga_csis_data_t::size</qualifiedname>
         <briefdescription>
 <para>number of devices in the coordinated set values from 0x02 to 0xFF. </para>
         </briefdescription>
@@ -31,13 +33,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="73" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="73" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="73" column="34" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__csis__data__t_1a0098577dce8996addf53230d439bb28f" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_ga_csis_data_t::rank</definition>
         <argsstring></argsstring>
         <name>rank</name>
+        <qualifiedname>wiced_bt_ga_csis_data_t::rank</qualifiedname>
         <briefdescription>
 <para>rank of the device in the coordinated set </para>
         </briefdescription>
@@ -45,13 +48,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="74" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="74" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="74" column="34" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__csis__data__t_1a8b83ec550e88c8de7b1673ecfae4893a" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__ga__csis__common_1ga1710461f12a7630b4f5667924addc423" kindref="member">wiced_bt_ga_csis_lock_val_t</ref></type>
         <definition>wiced_bt_ga_csis_lock_val_t wiced_bt_ga_csis_data_t::lock_val</definition>
         <argsstring></argsstring>
         <name>lock_val</name>
+        <qualifiedname>wiced_bt_ga_csis_data_t::lock_val</qualifiedname>
         <briefdescription>
 <para>lock value </para>
         </briefdescription>
@@ -59,13 +63,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="75" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="75" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="75" column="34" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__csis__data__t_1ac7fe796ffc8fceacb428f523b5ab5ecf" prot="public" static="no" mutable="no">
         <type>wiced_bt_gatt_status_t</type>
         <definition>wiced_bt_gatt_status_t wiced_bt_ga_csis_data_t::status</definition>
         <argsstring></argsstring>
         <name>status</name>
+        <qualifiedname>wiced_bt_ga_csis_data_t::status</qualifiedname>
         <briefdescription>
 <para>procedure status </para>
         </briefdescription>
@@ -73,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="76" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="76" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="76" column="34" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,19 +87,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="215">
+      <node id="1">
         <label>wiced_bt_ga_csis_data_t</label>
         <link refid="unionwiced__bt__ga__csis__data__t"/>
-        <childnode refid="216" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>sirk_data</edgelabel>
         </childnode>
       </node>
-      <node id="216">
+      <node id="2">
         <label>wiced_bt_ga_csis_sirk_data_t</label>
         <link refid="structwiced__bt__ga__csis__sirk__data__t"/>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="71" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="70" bodyend="77"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" line="70" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_csis_common.h" bodystart="71" bodyend="77"/>
     <listofallmembers>
       <member refid="unionwiced__bt__ga__csis__data__t_1a8b83ec550e88c8de7b1673ecfae4893a" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csis_data_t</scope><name>lock_val</name></member>
       <member refid="unionwiced__bt__ga__csis__data__t_1a0098577dce8996addf53230d439bb28f" prot="public" virt="non-virtual"><scope>wiced_bt_ga_csis_data_t</scope><name>rank</name></member>

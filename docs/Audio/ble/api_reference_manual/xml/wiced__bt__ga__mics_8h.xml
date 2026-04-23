@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__mics_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_mics.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -10,29 +10,29 @@
     <includes refid="wiced__bt__ga__aics_8h" local="yes">wiced_bt_ga_aics.h</includes>
     <includedby refid="le__audio__cap_8h" local="yes">le_audio_cap.h</includedby>
     <incdepgraph>
-      <node id="94">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="93">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="92">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="91">
-        <label>wiced_bt_dev.h</label>
-      </node>
-      <node id="90">
+      <node id="1">
         <label>wiced_bt_ga_mics.h</label>
         <link refid="wiced__bt__ga__mics_8h"/>
-        <childnode refid="91" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="3">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="2">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structmics__included__t" prot="public">mics_included_t</innerclass>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="82" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="82" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="85" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="85" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" line="88" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h" declline="88" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -142,25 +142,25 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_aics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="structmics__included__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="structmics__included__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>index;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__ga__aics__data__t" kindref="compound">wiced_bt_ga_aics_data_t</ref>*<sp/>p_aics;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}<sp/><ref refid="structmics__included__t" kindref="compound">mics_included_t</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="unionwiced__bt__ga__mics__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44" refid="unionwiced__bt__ga__mics__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mute_val;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmics__included__t" kindref="compound">mics_included_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mics_included;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="47"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__mics__data__t" kindref="compound">wiced_bt_ga_mics_data_t</ref>;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="structwiced__bt__ga__microphone__state__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structwiced__bt__ga__microphone__state__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/><sp/>mute_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__microphone__state__data__t" kindref="compound">wiced_bt_ga_microphone_state_data_t</ref>;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="unionwiced__bt__ga__microphone__control__client__status__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="unionwiced__bt__ga__microphone__control__client__status__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mute_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>error_status;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -175,16 +175,15 @@
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__mics_1ga2bbcf7a629aaff09417c2f628667f5f1" kindref="member">wiced_bt_ga_mics_init</ref>(uint8_t<sp/>num_instances,<sp/><ref refid="structwiced__bt__ga__mics__init__data__t" kindref="compound">wiced_bt_ga_mics_init_data_t</ref><sp/>*p_ini);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" kindref="member">wiced_bt_ga_mics_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__mics_1gaf7beefe84ac29d210bf337d10009f1e4" kindref="member">wiced_bt_ga_mics_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" kindref="member">wiced_bt_ga_mics_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__mics_1ga51c0fc2ce8f39cc6f752b96eec433f88" kindref="member">wiced_bt_ga_mics_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_GA_MICS_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__WICED_BT_GA_MICS_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mics.h"/>
   </compounddef>
 </doxygen>

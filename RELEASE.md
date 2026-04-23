@@ -2,6 +2,13 @@
 
 ## Changelog
 =============
+## v2.0.3
+- Bug fixes.
+
+## v2.0.2
+- Bug fixes.
+- Macro reorganised while bringing in audio classic profiles to btsdk-audio.
+
 ## v2.0.1
 - Warning fixes.
 - Fixed docs URL on github.

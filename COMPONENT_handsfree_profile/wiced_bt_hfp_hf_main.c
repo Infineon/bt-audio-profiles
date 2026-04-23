@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -276,7 +276,7 @@ wiced_bool_t wiced_bt_hfp_open_rfcomm_server_port()
         if( wiced_rfcomm_server_data[index].server_handle == 0 )
         {
            // wiced_app_event_serialize(wiced_bt_hfp_serialize_hf_register, &(wiced_rfcomm_server_data[index].scn));
-        	//Replaced to wiced_app_event_serialize
+            //Replaced to wiced_app_event_serialize
             wiced_bt_hfp_serialize_hf_register(&wiced_rfcomm_server_data[index].scn);
             return WICED_TRUE;
         }
@@ -343,6 +343,7 @@ static wiced_bt_hfp_hf_scb_t *wiced_bt_hfp_hf_get_scb(uint16_t event,
         p_scb = wiced_bt_hfp_hf_scb_alloc();
         if(p_scb != NULL)
         {
+            p_scb->sdp_retry_count = SDP_RETRY_COUNT;
             wiced_bt_hfp_hf_utils_bdcpy(p_scb->peer_addr, p_data->api_data.bd_address);
         }
         break;

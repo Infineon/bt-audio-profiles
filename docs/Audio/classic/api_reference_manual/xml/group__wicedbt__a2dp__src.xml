@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="group__wicedbt__a2dp__src" kind="group">
     <compoundname>wicedbt_a2dp_src</compoundname>
     <title>Advanced Audio Distribution Profile (A2DP) Source</title>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="95" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="94" bodyend="104"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="94" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="95" bodyend="104"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__a2dp__src_1ga2b2ea8e292c6162dbece732d060c1e07" prot="public" static="no" strong="no">
         <type></type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="109" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="108" bodyend="112"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="108" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="109" bodyend="112"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -139,7 +139,401 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="198" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga284a81150bd2bb49c13eb6608685d3b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_a2dp_source_codec_info_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>wiced_bt_a2dp_source_codec_info_list_t::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="127" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga7b983fdbbb0bd7d64d940c16e0e51ff4" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t *</type>
+        <definition>wiced_bt_a2dp_codec_info_t* wiced_bt_a2dp_source_codec_info_list_t::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <qualifiedname>wiced_bt_a2dp_source_codec_info_list_t::info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="128" column="32" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga5c19a069c8f70651761a6555eabe409d" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_source_feature_mask_t</type>
+        <definition>wiced_bt_a2dp_source_feature_mask_t wiced_bt_a2dp_source_config_data_t::feature_mask</definition>
+        <argsstring></argsstring>
+        <name>feature_mask</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_t::feature_mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="134" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga628d051548af901cb331830da2bc8a99" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref></type>
+        <definition>wiced_bt_a2dp_source_codec_info_list_t wiced_bt_a2dp_source_config_data_t::codec_capabilities</definition>
+        <argsstring></argsstring>
+        <name>codec_capabilities</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_t::codec_capabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="135" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga7af00c22bdfe48e52b50109398ef4012" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t</type>
+        <definition>wiced_bt_a2dp_codec_info_t wiced_bt_a2dp_source_config_data_t::default_codec_config</definition>
+        <argsstring></argsstring>
+        <name>default_codec_config</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_t::default_codec_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="136" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gabbaf82574fcb3e95f6df729e6717def6" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_source_feature_mask_t</type>
+        <definition>wiced_bt_a2dp_source_feature_mask_t wiced_bt_a2dp_source_config_data_ext_t::feature_mask</definition>
+        <argsstring></argsstring>
+        <name>feature_mask</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_ext_t::feature_mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="141" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga88625d75868502deb0c63fc3e9899625" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__codec__info__list__t" kindref="compound">wiced_bt_a2dp_source_codec_info_list_t</ref> *</type>
+        <definition>wiced_bt_a2dp_source_codec_info_list_t* wiced_bt_a2dp_source_config_data_ext_t::codec_capabilities</definition>
+        <argsstring></argsstring>
+        <name>codec_capabilities</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_ext_t::codec_capabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="142" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gac9789abd746faaeda0e266d04fa74195" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t *</type>
+        <definition>wiced_bt_a2dp_codec_info_t* wiced_bt_a2dp_source_config_data_ext_t::default_codec_config</definition>
+        <argsstring></argsstring>
+        <name>default_codec_config</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_data_ext_t::default_codec_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="143" column="49" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gae2fc2d9e3b4e66cbfbdd11059ee59579" prot="public" static="no" mutable="no">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_status_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>wiced_bt_a2dp_source_status_t::result</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="149" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga70380652430717e5e6e0dd22341def7b" prot="public" static="no" mutable="no">
+        <type>wiced_bt_device_address_t</type>
+        <definition>wiced_bt_device_address_t wiced_bt_a2dp_source_status_t::bd_addr</definition>
+        <argsstring></argsstring>
+        <name>bd_addr</name>
+        <qualifiedname>wiced_bt_a2dp_source_status_t::bd_addr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="150" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gae38fa24b70812c2cac899a454779084d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_status_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <qualifiedname>wiced_bt_a2dp_source_status_t::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="151" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gac08d2bd611e87faa19a79b49d10e21cd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_status_t::lcid</definition>
+        <argsstring></argsstring>
+        <name>lcid</name>
+        <qualifiedname>wiced_bt_a2dp_source_status_t::lcid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="152" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga131b8d00ba64409c1e2611c7eb93f6b0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_a2dp_source_status_t::is_accepter</definition>
+        <argsstring></argsstring>
+        <name>is_accepter</name>
+        <qualifiedname>wiced_bt_a2dp_source_status_t::is_accepter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="153" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga5229a9b35c8b0ed5a9f6c5dde6c93c88" prot="public" static="no" mutable="no">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_start_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>wiced_bt_a2dp_source_start_t::result</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="159" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga9a9b4ea4d9acc71769a74ef5b3b71d9d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t wiced_bt_a2dp_source_start_t::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>wiced_bt_a2dp_source_start_t::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="160" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga42035ae356699ac3b6e68e2992bdd7f2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_start_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <qualifiedname>wiced_bt_a2dp_source_start_t::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="161" column="31" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga50c0833c6354449959157d5bb6e30e8a" prot="public" static="no" mutable="no">
+        <type>wiced_result_t</type>
+        <definition>wiced_result_t wiced_bt_a2dp_source_config_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_t::result</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="167" column="20" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gaacf950def42e963fb6e282f6c595f8e9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_config_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_t::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="168" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga2a228956e7647155514ba98c25b6c2f8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_config_t::cp_type</definition>
+        <argsstring></argsstring>
+        <name>cp_type</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_t::cp_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="169" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gacf2ee021e04b333a0d158b2fc84657d6" prot="public" static="no" mutable="no">
+        <type>wiced_bt_a2dp_codec_info_t *</type>
+        <definition>wiced_bt_a2dp_codec_info_t* wiced_bt_a2dp_source_config_t::codec_config</definition>
+        <argsstring></argsstring>
+        <name>codec_config</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_t::codec_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="170" column="32" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga2feff5afba952ffd3fcc699b85c00a1a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_config_t::stream_mtu</definition>
+        <argsstring></argsstring>
+        <name>stream_mtu</name>
+        <qualifiedname>wiced_bt_a2dp_source_config_t::stream_mtu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="171" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga23a10a479bd89e04bb127edc985d601f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref></type>
+        <definition>wiced_bt_a2dp_source_status_t wiced_bt_a2dp_source_event_data_t::connect</definition>
+        <argsstring></argsstring>
+        <name>connect</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::connect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="178" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gaaccdfeb3629a44f7c4103791bfc09d52" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref></type>
+        <definition>wiced_bt_a2dp_source_status_t wiced_bt_a2dp_source_event_data_t::disconnect</definition>
+        <argsstring></argsstring>
+        <name>disconnect</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::disconnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="179" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gaa82357ce3336240fc737375616292d12" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__start__t" kindref="compound">wiced_bt_a2dp_source_start_t</ref></type>
+        <definition>wiced_bt_a2dp_source_start_t wiced_bt_a2dp_source_event_data_t::start_ind</definition>
+        <argsstring></argsstring>
+        <name>start_ind</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::start_ind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="180" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga4f7804643d7b185944699863f3140e7f" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref></type>
+        <definition>wiced_bt_a2dp_source_status_t wiced_bt_a2dp_source_event_data_t::start_cfm</definition>
+        <argsstring></argsstring>
+        <name>start_cfm</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::start_cfm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="181" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gaad77e8e27d0cba7caae2d4373fb608ea" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__status__t" kindref="compound">wiced_bt_a2dp_source_status_t</ref></type>
+        <definition>wiced_bt_a2dp_source_status_t wiced_bt_a2dp_source_event_data_t::suspend</definition>
+        <argsstring></argsstring>
+        <name>suspend</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::suspend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="182" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1ga1844ca735d506f1e7df62f328cc4149b" prot="public" static="no" mutable="no">
+        <type><ref refid="structwiced__bt__a2dp__source__config__t" kindref="compound">wiced_bt_a2dp_source_config_t</ref></type>
+        <definition>wiced_bt_a2dp_source_config_t wiced_bt_a2dp_source_event_data_t::set_config</definition>
+        <argsstring></argsstring>
+        <name>set_config</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::set_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="183" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__wicedbt__a2dp__src_1gad98eb9c9a220a3a4ce17fcfdcce91b28" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t wiced_bt_a2dp_source_event_data_t::delay_ms</definition>
+        <argsstring></argsstring>
+        <name>delay_ms</name>
+        <qualifiedname>wiced_bt_a2dp_source_event_data_t::delay_ms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="184" column="43" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -196,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="218" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="218" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gaf76285c3f3c36bea183f2cd05d343b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -250,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="234" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="234" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gae424889596c4bf6ecba3e9719669c35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -270,7 +664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="243" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="243" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga484c0b6eaa8b1e4bf73b4e131d89eeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -300,7 +694,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="252" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="252" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1gadbd6a259d7be9441f3385e432ad1d75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -330,7 +724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="261" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="261" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga39b26b04f3ace9751414828fe5c202cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -372,7 +766,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="272" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="272" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga22bbe0c4cc3a5bc2ed0e67f17e76b383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -426,7 +820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="282" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="282" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga3e06972c21d81492d1f12f003cecfbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -456,7 +850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="292" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="292" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__a2dp__src_1ga83372db916adc5b4fbef423a844bc8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -534,7 +928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="305" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" declline="305" declcolumn="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -547,7 +941,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="76" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__a2dp__src_1ga28113bee5470bcff086d9c02325b6d3a" prot="public" static="no">
         <name>WICED_BT_A2DP_SOURCE_NUM_SEPS</name>
@@ -558,7 +952,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" line="85" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_a2dp_source.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

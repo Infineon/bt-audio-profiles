@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__hfp__hf_8h" kind="file" language="C++">
     <compoundname>wiced_bt_hfp_hf.h</compoundname>
     <includes local="yes">wiced_bt_types.h</includes>
     <includes local="yes">wiced_result.h</includes>
     <incdepgraph>
-      <node id="38">
-        <label>wiced_bt_types.h</label>
-      </node>
-      <node id="37">
+      <node id="1">
         <label>wiced_bt_hfp_hf.h</label>
         <link refid="wiced__bt__hfp__hf_8h"/>
-        <childnode refid="38" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="2">
+        <label>wiced_bt_types.h</label>
+      </node>
+      <node id="3">
         <label>wiced_result.h</label>
       </node>
     </incdepgraph>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="37" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="37" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="37" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gaaa5d83feb25077d0e18b378e66cb8cfb" prot="public" static="no">
         <name>WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH</name>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="40" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="40" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="40" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gae05ba5dbb01aefd93969522c002fda5e" prot="public" static="no">
         <name>WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH</name>
@@ -64,19 +64,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="43" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="43" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="43" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga88d92968f905786196082c629da02bbb" prot="public" static="no">
         <name>WICED_BT_HFP_HF_MAX_CONN</name>
         <initializer>2</initializer>
         <briefdescription>
-<para>Default Maximum connection supported. </para>
+<para>Default Maximum connection supported <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="48" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="48" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="48" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gac040c8497b03eeec1784e6b90d7531c3" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_ECNR</name>
@@ -89,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="53" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="53" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="53" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gaba713802239ed49c4d8fc0d8fc5490ce" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_3WAY_CALLING</name>
@@ -101,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="54" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="54" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="54" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga214701601af52c33882e08a393d41800" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_CLIP</name>
@@ -113,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="55" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="55" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="55" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gaad6354e60df1a2d2dbf0234ccea7e48b" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_VRECG</name>
@@ -125,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="56" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="56" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="56" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga9c5dca9615be23a08144456bec4cf91a" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_REMOTE_VOL_CTRL</name>
@@ -137,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="57" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="57" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="57" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gab9683646bf6952d5c4a026059786b190" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_WIDEBAND_SPEECH</name>
@@ -149,19 +150,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="58" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="58" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="58" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga22c2850a499f64a119c87c415d8a805d" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_EVRS</name>
         <initializer>0x0040</initializer>
         <briefdescription>
-<para>Enhanced Voice Recognition Status (yes/no, 1 = yes, 0 = no) </para>
+<para>Enhanced Voice Recognition Status (yes/no, 1 = yes, 0 = no) <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="59" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="59" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="59" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gae78230166c5ff879b1e62343610d839a" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_VRC_TEXT</name>
@@ -173,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="60" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="60" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="60" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1gaeeb0389cdd55c0bc978c0d9e3093741d" prot="public" static="no">
         <name>WICED_BT_HFP_HF_SDP_FEATURE_SWB_SPEECH</name>
@@ -185,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="61" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="61" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="61" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga9d8daf4c2ead185de60da6f95e692c54" prot="public" static="no">
         <name>WICED_BT_HFP_HF_IND_ID_ENHANCED_SAFETY</name>
@@ -198,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="67" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="67" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="67" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wicedbt__hfp_1ga466b52580fad3ce00e47f6af49f65ef7" prot="public" static="no">
         <name>WICED_BT_HFP_HF_IND_ID_BATTERY</name>
@@ -210,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="68" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="68" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="68" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -302,7 +304,8 @@
           <name>WICED_BT_HFP_HF_FEATURE_ESCO_S4_SETTINGS_SUPPORT</name>
           <initializer>= 0x00000200</initializer>
           <briefdescription>
-<para>HF feature eSCO S4 Settings Supported. </para>
+<para>HF feature eSCO S4 Settings Supported <linebreak/>
+ </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -333,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="88" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="87" bodyend="101"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="87" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="88" bodyend="101"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga698ff5e28045678d476c6ac3e1c3a9d2" prot="public" static="no" strong="no">
         <type></type>
@@ -472,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="105" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="104" bodyend="120"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="104" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="105" bodyend="120"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga4fe00fa848152020909729f50ee07504" prot="public" static="no" strong="no">
         <type></type>
@@ -661,7 +664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="125" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="124" bodyend="148"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="124" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="125" bodyend="148"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gace33c1c1188090c4d1ece1ce9123a1c7" prot="public" static="no" strong="no">
         <type></type>
@@ -697,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="152" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="151" bodyend="156"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="151" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="152" bodyend="156"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga5becf2b81ab9966b180f2ae1a8526872" prot="public" static="no" strong="no">
         <type></type>
@@ -725,7 +728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="160" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="159" bodyend="163"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="159" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="160" bodyend="163"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga31769d2412c71d378f690799a3cb82ec" prot="public" static="no" strong="no">
         <type></type>
@@ -753,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="167" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="166" bodyend="170"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="166" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="167" bodyend="170"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga1a6a3f746c4ba8c515caf93a03ea91ef" prot="public" static="no" strong="no">
         <type></type>
@@ -805,7 +808,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="174" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="173" bodyend="180"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="173" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="174" bodyend="180"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gaefc3137ceb787ec502a62411336f1aef" prot="public" static="no" strong="no">
         <type></type>
@@ -833,7 +836,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="184" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="183" bodyend="187"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="183" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="184" bodyend="187"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" prot="public" static="no" strong="no">
         <type></type>
@@ -861,7 +864,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="191" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="190" bodyend="194"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="190" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="191" bodyend="194"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" prot="public" static="no" strong="no">
         <type></type>
@@ -937,7 +940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="198" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="197" bodyend="207"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="197" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="198" bodyend="207"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga68111fa7a4a27221e466b90f7d70c19b" prot="public" static="no" strong="no">
         <type></type>
@@ -976,7 +979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="211" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="210" bodyend="215"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="210" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="211" bodyend="215"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gaea206862853455a8555156fced1cee57" prot="public" static="no" strong="no">
         <type></type>
@@ -1006,7 +1009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="219" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="218" bodyend="222"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="218" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="219" bodyend="222"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gaa75ffb28d6cac2b6c831b02849eb0068" prot="public" static="no" strong="no">
         <type></type>
@@ -1034,7 +1037,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="226" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="225" bodyend="229"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="225" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="226" bodyend="229"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1ga43dc756446e509de775ca9f769f1e1d3" prot="public" static="no" strong="no">
         <type></type>
@@ -1103,7 +1106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="233" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="232" bodyend="241"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="232" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="233" bodyend="241"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gaf643397accceeb473e4e36c4518de2cb" prot="public" static="no" strong="no">
         <type></type>
@@ -1140,7 +1143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="245" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="244" bodyend="249"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="244" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="245" bodyend="249"/>
       </memberdef>
       <memberdef kind="enum" id="group__wicedbt__hfp_1gab2066e9cbcdba2bca1a4fffd0bce9cf7" prot="public" static="no" strong="no">
         <type></type>
@@ -1177,7 +1180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="253" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="252" bodyend="257"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="252" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="253" bodyend="257"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1193,7 +1196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="74" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="74" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="74" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" prot="public" static="no">
         <type>char</type>
@@ -1207,7 +1210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="77" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="77" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="77" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wicedbt__hfp_1gac6ee0ce03112fee33e032ccda1165968" prot="public" static="no">
         <type>char</type>
@@ -1221,7 +1224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="80" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="80" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="80" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" prot="public" static="no">
         <type>void(*</type>
@@ -1256,7 +1259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="374" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="374" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="374" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" bodystart="374" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1304,7 +1307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="394" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="394" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="394" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1ga58fb1fd2f5fc4fd61075117a251c4755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1327,7 +1330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="406" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="406" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="406" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1ga0df9b2e9221bc93bd5064f1015d3c068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1361,7 +1364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="421" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="421" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="421" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1ga30ac6d15769ad2a3823796815f3fc834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1395,7 +1398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="436" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="436" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="436" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1ga18aae95521e74259e36f4ad54774b307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1454,7 +1457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="457" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="457" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="457" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1gaeb2701ba2246c70f8571f77c7205b1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1512,7 +1515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="475" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="475" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="475" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1gaf3e2a9013409efe182c5697e11ad020c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1558,7 +1561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="493" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="493" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="493" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1gac8e00418e5924aa627dfee2af4eb77bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1605,7 +1608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="511" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="511" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="511" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wicedbt__hfp_1ga2a679bd6ae16601d21b3c95b2026efa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -1652,7 +1655,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="527" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" line="527" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h" declline="527" declcolumn="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1665,7 +1668,7 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -1675,51 +1678,49 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_result.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="34"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
-<codeline lineno="35"><highlight class="comment">******************************************************************************/</highlight></codeline>
-<codeline lineno="37"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH<sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH<sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16+9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16+9</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Maximum<sp/>number<sp/>of<sp/>HFP<sp/>HF<sp/>connections<sp/>supported<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WICED_BT_HFP_HF_MAX_CONN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_MAX_CONN<sp/>2<sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_MAX_CONN<sp/>2<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_ECNR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001<sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_3WAY_CALLING<sp/><sp/><sp/><sp/>0x0002<sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_CLIP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004<sp/><sp/></highlight></codeline>
-<codeline lineno="56"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_VRECG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008<sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_REMOTE_VOL_CTRL<sp/>0x0010<sp/><sp/></highlight></codeline>
-<codeline lineno="58"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_WIDEBAND_SPEECH<sp/>0x0020<sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_EVRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0040<sp/><sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_VRC_TEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0080<sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_SWB_SPEECH<sp/><sp/><sp/><sp/><sp/><sp/>0x0100<sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_ECNR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_3WAY_CALLING<sp/><sp/><sp/><sp/>0x0002<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_CLIP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_VRECG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_REMOTE_VOL_CTRL<sp/>0x0010<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_WIDEBAND_SPEECH<sp/>0x0020<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_EVRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0040<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_VRC_TEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0080<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_SDP_FEATURE_SWB_SPEECH<sp/><sp/><sp/><sp/><sp/><sp/>0x0100<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="64"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants</highlight></codeline>
-<codeline lineno="65"><highlight class="comment">******************************************************************************/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_IND_ID_ENHANCED_SAFETY<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="68"><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_IND_ID_BATTERY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_IND_ID_ENHANCED_SAFETY<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_HFP_HF_IND_ID_BATTERY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="71"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Typedefs</highlight></codeline>
-<codeline lineno="72"><highlight class="comment">******************************************************************************/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gab3c8daddf8f59cd6ea66e44f3819465f" kindref="member">wiced_bt_hfp_hf_caller_num_t</ref>[<ref refid="group__wicedbt__hfp_1ga4c91fbb612d8f72d2aa4544c20f6cbd6" kindref="member">WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gab3c8daddf8f59cd6ea66e44f3819465f" kindref="member">wiced_bt_hfp_hf_caller_num_t</ref>[<ref refid="group__wicedbt__hfp_1ga4c91fbb612d8f72d2aa4544c20f6cbd6" kindref="member">WICED_BT_HFP_HF_CALLER_NUMBER_MAX_LENGTH</ref>];</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" kindref="member">wiced_bt_hfp_hf_at_result_code_t</ref>[<ref refid="group__wicedbt__hfp_1gaaa5d83feb25077d0e18b378e66cb8cfb" kindref="member">WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" kindref="member">wiced_bt_hfp_hf_at_result_code_t</ref>[<ref refid="group__wicedbt__hfp_1gaaa5d83feb25077d0e18b378e66cb8cfb" kindref="member">WICED_BT_HFP_HF_AT_CMD_RESULT_CODE_MAX_LENGTH</ref>];</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gac6ee0ce03112fee33e032ccda1165968" kindref="member">wiced_bt_hfp_hf_operator_name</ref>[<ref refid="group__wicedbt__hfp_1gae05ba5dbb01aefd93969522c002fda5e" kindref="member">WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="group__wicedbt__hfp_1gac6ee0ce03112fee33e032ccda1165968" kindref="member">wiced_bt_hfp_hf_operator_name</ref>[<ref refid="group__wicedbt__hfp_1gae05ba5dbb01aefd93969522c002fda5e" kindref="member">WICED_BT_HFP_HF_OPS_NAME_MAX_LENGTH</ref>];</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="83"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Enumerations</highlight></codeline>
 <codeline lineno="84"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a9cab54f147da17bde1f4bd250e50c700" kindref="member">WICED_BT_HFP_HF_FEATURE_ECNR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00000001,<sp/><sp/></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a7ada2938c3659b4703319ce5dc3989b3" kindref="member">WICED_BT_HFP_HF_FEATURE_3WAY_CALLING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00000002,<sp/><sp/></highlight></codeline>
@@ -1735,7 +1736,7 @@
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggad467072c49f3bb8dcf0bc935ffa5d941a98b5f9445c50d2ba52c6eeba2cdea2ff" kindref="member">WICED_BT_HFP_HF_FEATURE_VOICE_RECOGNITION_TEXT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00000800<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="101"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1gad467072c49f3bb8dcf0bc935ffa5d941" kindref="member">wiced_bt_hfp_hf_supported_features_t</ref>;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2a21562e5799313e9f1b578519b472a77f" kindref="member">WICED_BT_HFP_AG_FEATURE_3WAY_CALLING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00000001,<sp/><sp/></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2af499b3aaf831fe7747403b0b802829f4" kindref="member">WICED_BT_HFP_AG_FEATURE_ECNR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00000002,<sp/><sp/></highlight></codeline>
@@ -1753,7 +1754,7 @@
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga698ff5e28045678d476c6ac3e1c3a9d2abd9b9f3fbd8b4bd05023dd357be8804b" kindref="member">WICED_BT_HFP_AG_FEATURE_VOICE_RECOGNITION_TEXT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00002000<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="120"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga698ff5e28045678d476c6ac3e1c3a9d2" kindref="member">wiced_bt_hfp_ag_supported_features_t</ref>;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504a600fd993e0b9597a10fae183ee9533ea" kindref="member">WICED_BT_HFP_HF_CONNECTION_STATE_EVT</ref>,<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504af9f10ded2dd0240df3b3f81cc2094aef" kindref="member">WICED_BT_HFP_HF_AG_FEATURE_SUPPORT_EVT</ref>,<sp/></highlight></codeline>
@@ -1779,26 +1780,26 @@
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga4fe00fa848152020909729f50ee07504ab1c9783588dbfe0413a56a90ef9f9bc0" kindref="member">WICED_BT_HFP_HF_BTRH_EVT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="148"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga4fe00fa848152020909729f50ee07504" kindref="member">wiced_bt_hfp_hf_event_t</ref>;</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7acf16364c217222012531819dc9e19b8f" kindref="member">WICED_BT_HFP_HF_STATE_DISCONNECTED</ref>,<sp/></highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7accb0a8464dba232296ba4586a5779955" kindref="member">WICED_BT_HFP_HF_STATE_CONNECTED</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggace33c1c1188090c4d1ece1ce9123a1c7a284494ea5787581d276e416ea10bcdb5" kindref="member">WICED_BT_HFP_HF_STATE_SLC_CONNECTED</ref><sp/></highlight></codeline>
 <codeline lineno="156"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1gace33c1c1188090c4d1ece1ce9123a1c7" kindref="member">wiced_bt_hfp_hf_connection_state_t</ref>;</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga5becf2b81ab9966b180f2ae1a8526872a183d76617de449cf5b7420cd251b6992" kindref="member">WICED_BT_HFP_HF_SERVICE_STATE_NOT_AVAILABLE</ref>,<sp/></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga5becf2b81ab9966b180f2ae1a8526872a6a158f2ab7f268e9848696f84db4d554" kindref="member">WICED_BT_HFP_HF_SERVICE_STATE_AVAILABLE</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="163"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga5becf2b81ab9966b180f2ae1a8526872" kindref="member">wiced_bt_hfp_hf_service_state_t</ref>;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="167"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga31769d2412c71d378f690799a3cb82eca2a9350f1a395fb6d5a8ada608d36703b" kindref="member">WICED_BT_HFP_HF_SERVICE_TYPE_HOME</ref>,<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga31769d2412c71d378f690799a3cb82eca654206c70154afe96f4d15719fab93a8" kindref="member">WICED_BT_HFP_HF_SERVICE_TYPE_ROAMING</ref><sp/></highlight></codeline>
 <codeline lineno="170"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga31769d2412c71d378f690799a3cb82ec" kindref="member">wiced_bt_hfp_hf_service_type_t</ref>;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efac9b0182b54e0581562d340dfb8bb0626" kindref="member">WICED_BT_HFP_HF_CALLSETUP_STATE_IDLE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efa2e1a4adcfa363a6f41d42dfc028f5506" kindref="member">WICED_BT_HFP_HF_CALLSETUP_STATE_INCOMING</ref>,<sp/></highlight></codeline>
@@ -1807,19 +1808,19 @@
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga1a6a3f746c4ba8c515caf93a03ea91efa19f0960af368227f4dc1cea9d0f65ebc" kindref="member">WICED_BT_HFP_HF_CALLSETUP_STATE_WAITING</ref><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="180"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga1a6a3f746c4ba8c515caf93a03ea91ef" kindref="member">wiced_bt_hfp_hf_callsetup_state_t</ref>;</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaefc3137ceb787ec502a62411336f1aefa0474592dbf4bba4e1e588fafb619facf" kindref="member">WICED_BT_HFP_HF_INBAND_RING_DISABLED</ref>,<sp/></highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaefc3137ceb787ec502a62411336f1aefa702079954e9a5246fee02b6014d9bbd5" kindref="member">WICED_BT_HFP_HF_INBAND_RING_ENABLED</ref><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="187"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1gaefc3137ceb787ec502a62411336f1aef" kindref="member">wiced_bt_hfp_hf_inband_ring_state_t</ref>;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga27a6ebcebe6385d6d89b5dcb8dd9f08ca302ec11e8dd9a3637005b99496944e92" kindref="member">WICED_BT_HFP_HF_SPEAKER</ref>,<sp/></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga27a6ebcebe6385d6d89b5dcb8dd9f08caca66be846459f10ba7a2c33ae86f3230" kindref="member">WICED_BT_HFP_HF_MIC</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="194"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" kindref="member">wiced_bt_hfp_hf_volume_type_t</ref>;</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886acf61488bed518cca9db5a1178bd8b42a" kindref="member">WICED_BT_HFP_HF_CALL_ACTION_DIAL</ref>,<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886ace9210dd6586e160565620ba893b1bb3" kindref="member">WICED_BT_HFP_HF_CALL_ACTION_ANSWER</ref>,<sp/></highlight></codeline>
@@ -1831,26 +1832,26 @@
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaeebed2d8b4e824634c470ceb3fba3886a7e41d3685b380eac5d6793ffbc5e7515" kindref="member">WICED_BT_HFP_HF_CALL_ACTION_HOLD_4</ref>,<sp/></highlight></codeline>
 <codeline lineno="207"><highlight class="normal">}<sp/><ref refid="group__wicedbt__hfp_1gaeebed2d8b4e824634c470ceb3fba3886" kindref="member">wiced_bt_hfp_hf_call_action_t</ref>;</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="211"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga68111fa7a4a27221e466b90f7d70c19ba1ca564489cfb6e0221faa3b185ba4891" kindref="member">WICED_BT_HFP_HF_CVSD_CODEC</ref><sp/><sp/>=<sp/><sp/><sp/>1,<sp/><sp/></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga68111fa7a4a27221e466b90f7d70c19baa425d0daf89f60ad033872ddc550fd1f" kindref="member">WICED_BT_HFP_HF_MSBC_CODEC</ref><sp/><sp/>=<sp/><sp/><sp/>2,<sp/><sp/></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga68111fa7a4a27221e466b90f7d70c19bafc40a173073088941c9e46ad25d5b4b3" kindref="member">WICED_BT_HFP_HF_LC3_CODEC</ref><sp/><sp/><sp/>=<sp/><sp/><sp/>3<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="215"><highlight class="normal">}<ref refid="group__wicedbt__hfp_1ga68111fa7a4a27221e466b90f7d70c19b" kindref="member">wiced_bt_hfp_hf_codec_t</ref>;</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaea206862853455a8555156fced1cee57a5bc18e730254d8352334b58876da862c" kindref="member">WICED_BT_HFP_HF_OUTGOING</ref><sp/><sp/>=<sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaea206862853455a8555156fced1cee57a696b2d110098b4906c249578cb508768" kindref="member">WICED_BT_HFP_HF_INCOMING</ref><sp/><sp/>=<sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="222"><highlight class="normal">}<ref refid="group__wicedbt__hfp_1gaea206862853455a8555156fced1cee57" kindref="member">wiced_bt_hfp_hf_call_dir_t</ref>;</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaa75ffb28d6cac2b6c831b02849eb0068a9a3f62c2aa492027583b0cbd51dbef32" kindref="member">WICED_BT_HFP_PROFILE</ref>,<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaa75ffb28d6cac2b6c831b02849eb0068a3ac9e9735c37df7e49eae7fc79d4bbe9" kindref="member">WICED_BT_HSP_PROFILE</ref><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="229"><highlight class="normal">}<ref refid="group__wicedbt__hfp_1gaa75ffb28d6cac2b6c831b02849eb0068" kindref="member">wiced_bt_profile_type_t</ref>;</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="232"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="233"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a41d1ef64e90677d0fd161db50ac547ba" kindref="member">WICED_BT_HFP_HF_CALL_ACTIVE</ref><sp/><sp/>=<sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a799c0140d846861e1801fd009121e996" kindref="member">WICED_BT_HFP_HF_CALL_HELD</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1861,14 +1862,14 @@
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gga43dc756446e509de775ca9f769f1e1d3a378922aa58684a2413977f49e0efedd4" kindref="member">WICED_BT_HFP_HF_CALL_HELD_BY_RSP_HOLD</ref><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="241"><highlight class="normal">}<ref refid="group__wicedbt__hfp_1ga43dc756446e509de775ca9f769f1e1d3" kindref="member">wiced_bt_hfp_hf_call_status_t</ref>;</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="244"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="245"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cbafdf6ab973d9d6a77b1e2ca1bd86a2767" kindref="member">WICED_BT_HFP_HF_MODE_VOICE</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cba84f5a4b36e58fc9c07799dcbe82bbd47" kindref="member">WICED_BT_HFP_HF_MODE_DATA</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggaf643397accceeb473e4e36c4518de2cba7da986fda84afcdd3f2e7983af1c177f" kindref="member">WICED_BT_HFP_HF_MODE_FAX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="249"><highlight class="normal">}<ref refid="group__wicedbt__hfp_1gaf643397accceeb473e4e36c4518de2cb" kindref="member">wiced_bt_hfp_hf_call_mode_t</ref>;</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="253"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggab2066e9cbcdba2bca1a4fffd0bce9cf7a9c21418177194fa73c5befd91fd94b8f" kindref="member">WICED_BT_HFP_HF_BTRH_CALL_ON_HOLD</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ggab2066e9cbcdba2bca1a4fffd0bce9cf7ae261d61c2ca8984ab44cf962dcfade20" kindref="member">WICED_BT_HFP_HF_BTRH_HELD_CALL_ACCEPTED</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1882,20 +1883,20 @@
 <codeline lineno="263"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Structures</highlight></codeline>
 <codeline lineno="264"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight></codeline>
-<codeline lineno="267" refid="structwiced__bt__hfp__hf__call__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="structwiced__bt__hfp__hf__call__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="268"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ga1a6a3f746c4ba8c515caf93a03ea91ef" kindref="member">wiced_bt_hfp_hf_callsetup_state_t</ref><sp/>setup_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>held_call_present;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bool_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>active_call_present;<sp/></highlight></codeline>
 <codeline lineno="272"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__call__data__t" kindref="compound">wiced_bt_hfp_hf_call_data_t</ref>;</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"></highlight></codeline>
-<codeline lineno="275" refid="structwiced__bt__hfp__hf__volume__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="structwiced__bt__hfp__hf__volume__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="276"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1ga27a6ebcebe6385d6d89b5dcb8dd9f08c" kindref="member">wiced_bt_hfp_hf_volume_type_t</ref><sp/>type;<sp/><sp/></highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>level;<sp/></highlight></codeline>
 <codeline lineno="279"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__volume__data__t" kindref="compound">wiced_bt_hfp_hf_volume_data_t</ref>;</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"></highlight></codeline>
-<codeline lineno="282" refid="structwiced__bt__hfp__hf__config__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="structwiced__bt__hfp__hf__config__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>mic_volume;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>speaker_volume;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1905,27 +1906,27 @@
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>uuid[<ref refid="group__wicedbt__hfp_1ga88d92968f905786196082c629da02bbb" kindref="member">WICED_BT_HFP_HF_MAX_CONN</ref>];<sp/></highlight></codeline>
 <codeline lineno="290"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__config__data__t" kindref="compound">wiced_bt_hfp_hf_config_data_t</ref>;</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"></highlight></codeline>
-<codeline lineno="293" refid="structwiced__bt__hfp__hf__clip__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="structwiced__bt__hfp__hf__clip__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="294"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gab3c8daddf8f59cd6ea66e44f3819465f" kindref="member">wiced_bt_hfp_hf_caller_num_t</ref><sp/>caller_num;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="297"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__clip__data__t" kindref="compound">wiced_bt_hfp_hf_clip_data_t</ref>;</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"></highlight></codeline>
-<codeline lineno="300" refid="structwiced__bt__hfp__hf__at__result__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="structwiced__bt__hfp__hf__at__result__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="301"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gac5d8d1e0a4813afc504792aaa919238b" kindref="member">wiced_bt_hfp_hf_at_result_code_t</ref><sp/>arg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="305"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__at__result__t" kindref="compound">wiced_bt_hfp_hf_at_result_t</ref>;</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308" refid="structwiced__bt__hfp__hf__connection__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="structwiced__bt__hfp__hf__connection__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="309"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>wiced_bt_device_address_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remote_address;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gace33c1c1188090c4d1ece1ce9123a1c7" kindref="member">wiced_bt_hfp_hf_connection_state_t</ref><sp/><sp/>conn_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gaa75ffb28d6cac2b6c831b02849eb0068" kindref="member">wiced_bt_profile_type_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connected_profile;<sp/></highlight></codeline>
 <codeline lineno="313"><highlight class="normal">}<sp/><ref refid="structwiced__bt__hfp__hf__connection__data__t" kindref="compound">wiced_bt_hfp_hf_connection_data_t</ref>;</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight></codeline>
-<codeline lineno="316" refid="structwiced__bt__hfp__hf__active__call__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="structwiced__bt__hfp__hf__active__call__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="317"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gaea206862853455a8555156fced1cee57" kindref="member">wiced_bt_hfp_hf_call_dir_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -1936,13 +1937,13 @@
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="325"><highlight class="normal">}<ref refid="structwiced__bt__hfp__hf__active__call__t" kindref="compound">wiced_bt_hfp_hf_active_call_t</ref>;</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight></codeline>
-<codeline lineno="328" refid="structwiced__bt__hfp__hf__bind__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="structwiced__bt__hfp__hf__bind__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="329"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ind_id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ind_value;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="332"><highlight class="normal">}<ref refid="structwiced__bt__hfp__hf__bind__data__t" kindref="compound">wiced_bt_hfp_hf_bind_data_t</ref>;</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"></highlight></codeline>
-<codeline lineno="335" refid="structwiced__bt__hfp__hf__event__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="structwiced__bt__hfp__hf__event__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="336"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
@@ -1971,13 +1972,13 @@
 <codeline lineno="361"><highlight class="normal"></highlight></codeline>
 <codeline lineno="362"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="363"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Callback<sp/>Type<sp/>Definitions</highlight></codeline>
-<codeline lineno="364"><highlight class="comment">******************************************************************************/</highlight></codeline>
-<codeline lineno="374"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" kindref="member">wiced_bt_hfp_hf_event_cb_t</ref>)(<sp/><ref refid="group__wicedbt__hfp_1ga4fe00fa848152020909729f50ee07504" kindref="member">wiced_bt_hfp_hf_event_t</ref><sp/>event,</highlight></codeline>
+<codeline lineno="364"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" kindref="member">wiced_bt_hfp_hf_event_cb_t</ref>)(<sp/><ref refid="group__wicedbt__hfp_1ga4fe00fa848152020909729f50ee07504" kindref="member">wiced_bt_hfp_hf_event_t</ref><sp/>event,</highlight></codeline>
 <codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__hfp__hf__event__data__t" kindref="compound">wiced_bt_hfp_hf_event_data_t</ref>*<sp/>p_data);</highlight></codeline>
 <codeline lineno="376"><highlight class="normal"></highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
 <codeline lineno="378"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
-<codeline lineno="379"><highlight class="comment">******************************************************************************/</highlight></codeline>
+<codeline lineno="379"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="394"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__hfp_1ga5ac7509eeaf7a91fe45da31185e482e8" kindref="member">wiced_bt_hfp_hf_init</ref>(<sp/><ref refid="structwiced__bt__hfp__hf__config__data__t" kindref="compound">wiced_bt_hfp_hf_config_data_t</ref><sp/>*p_config_data,</highlight></codeline>
 <codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wicedbt__hfp_1gaa05f2aafaa51393f9b75ad641199ec0d" kindref="member">wiced_bt_hfp_hf_event_cb_t</ref><sp/>event_cb<sp/>);</highlight></codeline>
 <codeline lineno="396"><highlight class="normal"></highlight></codeline>
@@ -1999,12 +2000,12 @@
 <codeline lineno="512"><highlight class="normal"></highlight></codeline>
 <codeline lineno="527"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wicedbt__hfp_1ga2a679bd6ae16601d21b3c95b2026efa8" kindref="member">wiced_bt_hfp_hf_lrac_switch_set</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_opaque,<sp/>uint16_t<sp/>sync_data_len);</highlight></codeline>
 <codeline lineno="528"><highlight class="normal"></highlight></codeline>
-<codeline lineno="532"><highlight class="comment">/*<sp/>end<sp/>of<sp/>hfp_hf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>hfp_hf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="533"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="534"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="535"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="536"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_WICED_BT_HFP_HF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_hfp_hf.h"/>
   </compounddef>
 </doxygen>

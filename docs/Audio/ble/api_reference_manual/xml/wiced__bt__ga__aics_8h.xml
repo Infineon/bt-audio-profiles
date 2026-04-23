@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__aics_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_aics.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -7,34 +7,34 @@
     <includes local="yes">wiced_bt_gatt.h</includes>
     <includes local="yes">gatt_interface.h</includes>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
-    <includedby refid="wiced__bt__ga__mics_8h" local="yes">wiced_bt_ga_mics.h</includedby>
-    <includedby refid="wiced__bt__ga__vcs_8h" local="yes">wiced_bt_ga_vcs.h</includedby>
     <includedby refid="le__audio__rpc_8h" local="yes">le_audio_rpc.h</includedby>
+    <includedby refid="wiced__bt__ga__mics_8h" local="yes">wiced_bt_ga_mics.h</includedby>
     <includedby refid="wiced__bt__ga__vcp_8h" local="yes">wiced_bt_ga_vcp.h</includedby>
+    <includedby refid="wiced__bt__ga__vcs_8h" local="yes">wiced_bt_ga_vcs.h</includedby>
     <incdepgraph>
-      <node id="33">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="29">
+      <node id="1">
         <label>wiced_bt_ga_aics.h</label>
         <link refid="wiced__bt__ga__aics_8h"/>
-        <childnode refid="30" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="32">
-        <label>wiced_bt_gatt.h</label>
+      <node id="5">
+        <label>gatt_interface.h</label>
       </node>
-      <node id="31">
+      <node id="3">
         <label>wiced_bt_ble.h</label>
       </node>
-      <node id="30">
+      <node id="2">
         <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structwiced__bt__ga__aics__gain__settings__params__t" prot="public">wiced_bt_ga_aics_gain_settings_params_t</innerclass>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="33" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="33" bodyend="39"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="33" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="33" bodyend="39"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" prot="public" static="no" strong="no">
         <type></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="43" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="42" bodyend="47"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="42" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="43" bodyend="47"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" prot="public" static="no" strong="no">
         <type></type>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="51" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="50" bodyend="56"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="50" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="51" bodyend="56"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga9a38bda1f6509159385a04c56a243302" prot="public" static="no" strong="no">
         <type></type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="60" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="59" bodyend="68"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="59" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="60" bodyend="68"/>
       </memberdef>
       <memberdef kind="enum" id="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" prot="public" static="no" strong="no">
         <type></type>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="72" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="71" bodyend="75"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="71" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="72" bodyend="75"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="205" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="30" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="30" column="22" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -356,7 +356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="117" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="117" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" declline="117" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__aics_1ga6b9d7cda08593f715725eb440ddfd986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_bt_gatt_status_t</type>
@@ -420,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="130" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="130" column="24" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" declline="130" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__aics_1gad07a610eaeb51a5576b5e98a6a4b8df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wiced_result_t</type>
@@ -460,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="141" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="141" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" declline="141" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -477,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="144" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="144" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" declline="144" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -494,7 +494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="147" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" line="147" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h" declline="147" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -507,17 +507,17 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_dev.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_gatt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gatt_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight></codeline>
-<codeline lineno="30"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">aics_t_<sp/><ref refid="group__wiced__bt__ga__aics_1gac58b5a2ad8fce5ab4ed5b6affd05d033" kindref="member">wiced_bt_ga_aics_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">aics_t_<sp/><ref refid="group__wiced__bt__ga__aics_1gac58b5a2ad8fce5ab4ed5b6affd05d033" kindref="member">wiced_bt_ga_aics_t</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda193e33eadfa9558b59bf4220f04e2552" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_GAIN_SETTINGS</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda1cf99790c3099ee6d86469b400f51cba" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_UNMUTE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6166e60350e8f68bcf07f23aa1361885" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_MUTE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
@@ -525,14 +525,14 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga22a93e5c7ea79911e3d2e37062bf45cda6990775807f3a0b2d7c7b41869aae32d" kindref="member">WICED_BT_GA_AICS_OPCODE_SET_AUTO_GAIN_MODE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" kindref="member">wiced_bt_ga_aics_opcode_t</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a6a2c203bac6f4a44ba2dfadd63af1759" kindref="member">WICED_BT_GA_AICS_UNMUTE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259a00911ab8eb04cb2e98a2e4fbb4393d95" kindref="member">WICED_BT_GA_AICS_MUTE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga47ea2366abaae05a06b80e13509cf259afff9bcafb5e4602a70479a656e36d47a" kindref="member">WICED_BT_GA_AICS_MUTE_DISABLED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="47"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref>;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679a1059afb277e575fd357efa82f3dd771d" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_MANUAL_ONLY</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679afb19e9eb01bffc766338a6f768f1216b" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_AUTO_ONLY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -540,7 +540,7 @@
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ggadfb91edbc7ad523454a00232570f4679af4ecc1a56946434267b22ae3c249d971" kindref="member">WICED_BT_GA_AICS_GAIN_MODE_AUTO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref>;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a27318acf25f0b9b4146347835c27446d" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_UNSPECIFIED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a8112c56e26407d2294b70463b89cf358" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_BLUETOOTH</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -551,30 +551,30 @@
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga9a38bda1f6509159385a04c56a243302a792f940ada2692417fcb1ed5f3ad49f6" kindref="member">WICED_BT_GA_AICS_INPUT_TYPE_STREAMING</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="68"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga9a38bda1f6509159385a04c56a243302" kindref="member">wiced_bt_ga_aics_input_type_t</ref>;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa7d3013e0f939a8628f1d8c3b035b31fe" kindref="member">WICED_BT_GA_AICS_INPUT_STATUS_INACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gga4bdd0e4f2d1444c05980d894de77eb6aa3bd542adfbfc9096ba9e7e2b022b0d42" kindref="member">WICED_BT_GA_AICS_INPUT_STATUS_ACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="75"><highlight class="normal">}<sp/><ref refid="group__wiced__bt__ga__aics_1ga4bdd0e4f2d1444c05980d894de77eb6a" kindref="member">wiced_bt_ga_aics_input_status_t</ref>;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="structwiced__bt__ga__aics__gain__settings__params__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78" refid="structwiced__bt__ga__aics__gain__settings__params__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/>gain_setting_units;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/>max_gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/>min_gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__gain__settings__params__t" kindref="compound">wiced_bt_ga_aics_gain_settings_params_t</ref>;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="structwiced__bt__ga__aics__input__state__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85" refid="structwiced__bt__ga__aics__input__state__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ga47ea2366abaae05a06b80e13509cf259" kindref="member">wiced_bt_ga_aics_mute_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mute_mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1gadfb91edbc7ad523454a00232570f4679" kindref="member">wiced_bt_ga_aics_gain_mode_t</ref><sp/><sp/><sp/>gain_mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="89"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref>;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92" refid="structwiced__bt__ga__aics__control__point__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92" refid="structwiced__bt__ga__aics__control__point__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__aics_1ga22a93e5c7ea79911e3d2e37062bf45cd" kindref="member">wiced_bt_ga_aics_opcode_t</ref><sp/><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref><sp/>input_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__aics__control__point__t" kindref="compound">wiced_bt_ga_aics_control_point_t</ref>;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98" refid="unionwiced__bt__ga__aics__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98" refid="unionwiced__bt__ga__aics__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__input__state__t" kindref="compound">wiced_bt_ga_aics_input_state_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__aics__gain__settings__params__t" kindref="compound">wiced_bt_ga_aics_gain_settings_params_t</ref><sp/>gain_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -595,12 +595,12 @@
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__aics_1gad07a610eaeb51a5576b5e98a6a4b8df5" kindref="member">wiced_bt_ga_aics_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" kindref="member">wiced_bt_ga_aics_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1ga20bbcca569df6b52e3246a9965206b75" kindref="member">wiced_bt_ga_aics_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" kindref="member">wiced_bt_ga_aics_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__aics_1gafe4abe5a7e16fa650bfe7eca67b63566" kindref="member">wiced_bt_ga_aics_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_AICS_H__</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_AICS_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_aics.h"/>
   </compounddef>
 </doxygen>

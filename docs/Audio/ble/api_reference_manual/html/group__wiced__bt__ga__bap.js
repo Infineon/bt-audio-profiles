@@ -1,6 +1,7 @@
 var group__wiced__bt__ga__bap =
 [
     [ "BAP_CONTEXT_TYPE", "group___b_a_p___c_o_n_t_e_x_t___t_y_p_e.html", "group___b_a_p___c_o_n_t_e_x_t___t_y_p_e" ],
+    [ "LC3_PLUS", "group___l_c3___p_l_u_s.html", null ],
     [ "BAP_AUDIO_LOCATIONS", "group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s.html", "group___b_a_p___a_u_d_i_o___l_o_c_a_t_i_o_n_s" ],
     [ "BAP_SUPPORTED_SAMPLING_FREQ", "group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q.html", "group___b_a_p___s_u_p_p_o_r_t_e_d___s_a_m_p_l_i_n_g___f_r_e_q" ],
     [ "BAP_SAMPLING_FREQ", "group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q.html", "group___b_a_p___s_a_m_p_l_i_n_g___f_r_e_q" ],
@@ -85,13 +86,13 @@ var group__wiced__bt__ga__bap =
     ] ],
     [ "wiced_bt_ga_bap_is_state_transition_valid", "group__wiced__bt__ga__bap.html#gaba4867263bf1acca873ee9e681a1eff9", null ],
     [ "wiced_bt_ga_bap_update_ltv", "group__wiced__bt__ga__bap.html#ga60de5d2346717f69cec93bc57ebd5d85", null ],
-    [ "wiced_bt_ga_bap_fill_csc", "group__wiced__bt__ga__bap.html#ga1f87083815d078de68f966d6b2cd59de", null ],
+    [ "wiced_bt_ga_bap_fill_csc", "group__wiced__bt__ga__bap.html#ga8908384208b9c28efd8951dd073b024f", null ],
     [ "wiced_bt_ga_bap_parse_csc", "group__wiced__bt__ga__bap.html#ga0feb4bfbf9cc5732e1a1b8cc0ff42261", null ],
     [ "wiced_bt_ga_bap_get_metadata", "group__wiced__bt__ga__bap.html#ga69f8cb30461ce08a052f3efbf9b71079", null ],
-    [ "wiced_bt_ga_bap_fill_metadata", "group__wiced__bt__ga__bap.html#gae1cbb78ce6123bc020e1c13ed997f25f", null ],
+    [ "wiced_bt_ga_bap_fill_metadata", "group__wiced__bt__ga__bap.html#ga67c835667ca654400a8f149c7fb5c3c3", null ],
     [ "wiced_bt_ga_bap_get_sampling_freq_index", "group__wiced__bt__ga__bap.html#ga81988e702f4721e61a4518078bcd259e", null ],
     [ "wiced_bt_ga_bap_get_fram_duration_index", "group__wiced__bt__ga__bap.html#gad221282845fc4ab58b72492d1d08fd9b", null ],
     [ "wiced_bt_ga_bap_get_unicast_stream_config", "group__wiced__bt__ga__bap.html#gaad022eecd61d56af7f16e04460ae4e41", null ],
     [ "wiced_bt_ga_bap_get_broadcast_stream_config", "group__wiced__bt__ga__bap.html#gacddb365d7bb354f44063156404f3e840", null ],
-    [ "wiced_bt_ga_bap_get_decoded_data_size", "group__wiced__bt__ga__bap.html#ga67c075b6c9e6158a6664c7e5f6e1ae13", null ]
+    [ "wiced_bt_ga_bap_get_decoded_data_size", "group__wiced__bt__ga__bap.html#ga2444afc122a1056019b2b2103c4c7b5d", null ]
 ];

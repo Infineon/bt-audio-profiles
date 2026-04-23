@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__rc__event__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_rc_event_t</compoundname>
       <sectiondef kind="public-attrib">
@@ -8,104 +8,112 @@
         <definition>wiced_bt_device_address_t wiced_bt_rc_event_t::bd_addr</definition>
         <argsstring></argsstring>
         <name>bd_addr</name>
+        <qualifiedname>wiced_bt_rc_event_t::bd_addr</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="176" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="176" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="176" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aba6569457882942fe96c81f32106ff40" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_rc_event_t::handle</definition>
         <argsstring></argsstring>
         <name>handle</name>
+        <qualifiedname>wiced_bt_rc_event_t::handle</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="177" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="177" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="177" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aaa03a9120b09195c6350c9dedb0b647c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_rc_event_t::setting_val</definition>
         <argsstring></argsstring>
         <name>setting_val</name>
+        <qualifiedname>wiced_bt_rc_event_t::setting_val</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="179" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="179" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="179" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1ae89d6fd449dad726027201d63a08a9e4" prot="public" static="no" mutable="no">
         <type>wiced_bool_t</type>
         <definition>wiced_bool_t wiced_bt_rc_event_t::attribute_search_completed</definition>
         <argsstring></argsstring>
         <name>attribute_search_completed</name>
+        <qualifiedname>wiced_bt_rc_event_t::attribute_search_completed</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="181" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="181" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="181" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1acbcddc0bfbe91fbadd3eb87204f47a2e" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_rc_event_t::supported_features</definition>
         <argsstring></argsstring>
         <name>supported_features</name>
+        <qualifiedname>wiced_bt_rc_event_t::supported_features</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="182" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="182" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="182" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1af57944ce1ca6a2f0c6517567b95d3e3a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_rc_event_t::passthrough_response</definition>
         <argsstring></argsstring>
         <name>passthrough_response</name>
+        <qualifiedname>wiced_bt_rc_event_t::passthrough_response</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="184" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="184" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="184" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1a9ac385a8cf36ae0068a01845cb2b8e1f" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__avrc__tg__passthrough__cmd__t" kindref="compound">wiced_bt_avrc_tg_passthrough_cmd_t</ref></type>
         <definition>wiced_bt_avrc_tg_passthrough_cmd_t wiced_bt_rc_event_t::passthrough_command</definition>
         <argsstring></argsstring>
         <name>passthrough_command</name>
+        <qualifiedname>wiced_bt_rc_event_t::passthrough_command</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="186" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="186" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="186" column="40" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__rc__event__t_1aeb3034f4378fa89bc263e99895a7ee47" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__avrc__tg__absolute__volume__t" kindref="compound">wiced_bt_avrc_tg_absolute_volume_t</ref></type>
         <definition>wiced_bt_avrc_tg_absolute_volume_t wiced_bt_rc_event_t::absolute_volume</definition>
         <argsstring></argsstring>
         <name>absolute_volume</name>
+        <qualifiedname>wiced_bt_rc_event_t::absolute_volume</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="188" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="188" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="188" column="40" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -113,26 +121,26 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="95">
-        <label>wiced_bt_avrc_tg_passthrough_cmd_t</label>
-        <link refid="structwiced__bt__avrc__tg__passthrough__cmd__t"/>
-      </node>
-      <node id="96">
+      <node id="3">
         <label>wiced_bt_avrc_tg_absolute_volume_t</label>
         <link refid="structwiced__bt__avrc__tg__absolute__volume__t"/>
       </node>
-      <node id="94">
+      <node id="2">
+        <label>wiced_bt_avrc_tg_passthrough_cmd_t</label>
+        <link refid="structwiced__bt__avrc__tg__passthrough__cmd__t"/>
+      </node>
+      <node id="1">
         <label>wiced_bt_rc_event_t</label>
         <link refid="structwiced__bt__rc__event__t"/>
-        <childnode refid="95" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>passthrough_command</edgelabel>
         </childnode>
-        <childnode refid="96" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>absolute_volume</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="174" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="174" bodyend="190"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" line="174" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/temp_include_dir/wiced_bt_avrc_tg.h" bodystart="174" bodyend="190"/>
     <listofallmembers>
       <member refid="structwiced__bt__rc__event__t_1aeb3034f4378fa89bc263e99895a7ee47" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>absolute_volume</name></member>
       <member refid="structwiced__bt__rc__event__t_1ae89d6fd449dad726027201d63a08a9e4" prot="public" virt="non-virtual"><scope>wiced_bt_rc_event_t</scope><name>attribute_search_completed</name></member>

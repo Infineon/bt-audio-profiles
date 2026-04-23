@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__vcs_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_vcs.h</compoundname>
     <includes local="yes">wiced_bt_dev.h</includes>
@@ -11,29 +11,29 @@
     <includes refid="wiced__bt__ga__vocs_8h" local="yes">wiced_bt_ga_vocs.h</includes>
     <includedby refid="le__audio__cap_8h" local="yes">le_audio_cap.h</includedby>
     <incdepgraph>
-      <node id="119">
-        <label>gatt_interface.h</label>
-      </node>
-      <node id="118">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="117">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="116">
-        <label>wiced_bt_dev.h</label>
-      </node>
-      <node id="115">
+      <node id="1">
         <label>wiced_bt_ga_vcs.h</label>
         <link refid="wiced__bt__ga__vcs_8h"/>
-        <childnode refid="116" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>gatt_interface.h</label>
+      </node>
+      <node id="3">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="2">
+        <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structwiced__bt__ga__vcs__volume__state__t" prot="public">wiced_bt_ga_vcs_volume_state_t</innerclass>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="40" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="40" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="40" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga3c3adc823a58e852a0dd539900fe44d7" prot="public" static="no">
         <name>WICED_BT_GA_VCS_MAXIMUM_VOLUME</name>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="43" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="43" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="43" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga164e1918889d940e0686e18415621341" prot="public" static="no">
         <name>WICED_BT_GA_VCS_MUTED</name>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="46" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="46" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="46" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__wiced__bt__ga__vcs_1ga2ab9b2d7570be6a77c6cd6379c082f41" prot="public" static="no">
         <name>WICED_BT_GA_VCS_NOT_MUTED</name>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="49" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="49" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="49" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="53" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="52" bodyend="61"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="52" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="53" bodyend="61"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="63" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="63" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="63" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="109" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="109" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" declline="109" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcs_1ga03ce05ac4d15fca03e6cbdcef046ac51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="112" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="112" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" declline="112" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__wiced__bt__ga__vcs_1gaff37c14ee16a9a0eb9ae143dc46a5416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="115" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" line="115" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h" declline="115" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -270,7 +270,7 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>$<sp/>Copyright<sp/>Cypress<sp/>Semiconductor<sp/>$</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VCS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__WICED_BT_GA_VCS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WICED_BT_GA_VCS_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
@@ -287,15 +287,15 @@
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wiced_bt_ga_vocs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MINIMUM_VOLUME<sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MINIMUM_VOLUME<sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MAXIMUM_VOLUME<sp/><sp/><sp/><sp/><sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MAXIMUM_VOLUME<sp/><sp/><sp/><sp/><sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MUTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_MUTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_NOT_MUTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WICED_BT_GA_VCS_NOT_MUTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1ga3a3ccbdcb3adc274d360133d9c088601" kindref="member">volume_control_opcodes_e</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1ga3a3ccbdcb3adc274d360133d9c088601" kindref="member">volume_control_opcodes_e</ref></highlight></codeline>
 <codeline lineno="53"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601aba612f125f702b634a487eef927b0332" kindref="member">VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_DOWN</ref><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vcs_1gga3a3ccbdcb3adc274d360133d9c088601a65d84b2a1098cb9b863f8cba0eec7427" kindref="member">VOLUME_CONTROL_OPCODE_RELATIVE_VOLUME_UP</ref><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -307,19 +307,19 @@
 <codeline lineno="61"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" kindref="member">volume_control_opcodes_t</ref>;<sp/></highlight></codeline>
-<codeline lineno="66" refid="structwiced__bt__ga__vcs__volume__state__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structwiced__bt__ga__vcs__volume__state__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>volume_setting;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1gaf3d69e1f95ade7d0697a14947215e563" kindref="member">wiced_bt_ga_mute_val_t</ref><sp/>mute_state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="70"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__vcs__volume__state__t" kindref="compound">wiced_bt_ga_vcs_volume_state_t</ref>;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73" refid="structwiced__bt__ga__vcs__control__point__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structwiced__bt__ga__vcs__control__point__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__wiced__bt__ga__vcs_1gaac1329051f85c4a8ca2fb622486ab326" kindref="member">volume_control_opcodes_t</ref><sp/>opcode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__vcs__volume__state__t" kindref="compound">wiced_bt_ga_vcs_volume_state_t</ref><sp/>volume_state;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="77"><highlight class="normal">}<sp/><ref refid="structwiced__bt__ga__vcs__control__point__t" kindref="compound">wiced_bt_ga_vcs_control_point_t</ref>;</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="structvcs__included__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80" refid="structvcs__included__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>index;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionwiced__bt__ga__vocs__data__t" kindref="compound">wiced_bt_ga_vocs_data_t</ref>*<sp/>p_vocs;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -327,13 +327,13 @@
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="86"><highlight class="normal">}<sp/><ref refid="structvcs__included__t" kindref="compound">vcs_included_t</ref>;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89" refid="unionwiced__bt__ga__vcs__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89" refid="unionwiced__bt__ga__vcs__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structwiced__bt__ga__vcs__control__point__t" kindref="compound">wiced_bt_ga_vcs_control_point_t</ref><sp/>control_point_data;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___generic___structures_1ga586763db26059b7048666921829f9b59" kindref="member">wiced_bt_ga_volume_flag_val_t</ref><sp/><sp/><sp/>volume_flag;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvcs__included__t" kindref="compound">vcs_included_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>volume_included;<sp/><sp/></highlight></codeline>
 <codeline lineno="93"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__vcs__data__t" kindref="compound">wiced_bt_ga_vcs_data_t</ref>;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96" refid="structwiced__bt__ga__vcs__init__data__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structwiced__bt__ga__vcs__init__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_aics;<sp/><sp/></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>max_vocs;<sp/><sp/></highlight></codeline>
@@ -342,16 +342,15 @@
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal">wiced_result_t<sp/><ref refid="group__wiced__bt__ga__vcs_1ga008f6d1fc9260862cee48b67fce0e93c" kindref="member">wiced_bt_ga_vcs_init</ref>(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1ga03ce05ac4d15fca03e6cbdcef046ac51" kindref="member">wiced_bt_ga_vcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1ga03ce05ac4d15fca03e6cbdcef046ac51" kindref="member">wiced_bt_ga_vcs_enable_server</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1gaff37c14ee16a9a0eb9ae143dc46a5416" kindref="member">wiced_bt_ga_vcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wiced__bt__ga__vcs_1gaff37c14ee16a9a0eb9ae143dc46a5416" kindref="member">wiced_bt_ga_vcs_enable_client</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_VCS_H__</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_VCS_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_vcs.h"/>
   </compounddef>
 </doxygen>

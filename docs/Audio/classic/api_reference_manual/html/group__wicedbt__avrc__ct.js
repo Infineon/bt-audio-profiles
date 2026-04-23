@@ -1,12 +1,7 @@
 var group__wicedbt__avrc__ct =
 [
-    [ "wiced_bt_avrc_ct_features_abs_vol_t", "structwiced__bt__avrc__ct__features__abs__vol__t.html", [
-      [ "handle", "group__wicedbt__avrc__ct.html#ga4aaab434c3a57b5038ca0f6bab94325d", null ],
-      [ "supported", "group__wicedbt__avrc__ct.html#ga0c5b8a3eaf7388999a499a1302dda935", null ]
-    ] ],
-    [ "wiced_bt_avrc_ct_features_data_t", "unionwiced__bt__avrc__ct__features__data__t.html", [
-      [ "abs_vol_supported", "group__wicedbt__avrc__ct.html#ga0fef9fdbb50ef04ada367bf32951ea48", null ]
-    ] ],
+    [ "wiced_bt_avrc_ct_features_abs_vol_t", "structwiced__bt__avrc__ct__features__abs__vol__t.html", null ],
+    [ "wiced_bt_avrc_ct_features_data_t", "unionwiced__bt__avrc__ct__features__data__t.html", null ],
     [ "wiced_bt_avrc_ct_connection_state_cback_t", "group__wicedbt__avrc__ct.html#ga32df8d96f9d00a406d4a30b7feaf2616", null ],
     [ "wiced_bt_avrc_ct_rsp_cback_t", "group__wicedbt__avrc__ct.html#gafa15326facc165fa88f551bbaf861c23", null ],
     [ "wiced_bt_avrc_ct_cmd_cback_t", "group__wicedbt__avrc__ct.html#ga960d7b30e95cb3e60cb5d43c1c70d37f", null ],

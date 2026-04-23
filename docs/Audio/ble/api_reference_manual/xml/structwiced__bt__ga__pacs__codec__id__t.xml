@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__ga__pacs__codec__id__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_ga_pacs_codec_id_t</compoundname>
     <includes local="no">wiced_bt_ga_pacs.h</includes>
@@ -9,20 +9,23 @@
         <definition>uint8_t wiced_bt_ga_pacs_codec_id_t::coding_format</definition>
         <argsstring></argsstring>
         <name>coding_format</name>
+        <qualifiedname>wiced_bt_ga_pacs_codec_id_t::coding_format</qualifiedname>
         <briefdescription>
-<para>Coding format. </para>
+<para>Coding format <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="29" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="29" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="29" column="13" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__pacs__codec__id__t_1afc3a318f444ededdfdfa0b48f8cc2341" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_ga_pacs_codec_id_t::company_id</definition>
         <argsstring></argsstring>
         <name>company_id</name>
+        <qualifiedname>wiced_bt_ga_pacs_codec_id_t::company_id</qualifiedname>
         <briefdescription>
 <para>Company ID from the assigned value document. </para>
         </briefdescription>
@@ -30,13 +33,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="30" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="30" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="30" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__pacs__codec__id__t_1a0ae0d3e2a7bf2231215a245321bbe607" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_ga_pacs_codec_id_t::vendor_specific_codec_id</definition>
         <argsstring></argsstring>
         <name>vendor_specific_codec_id</name>
+        <qualifiedname>wiced_bt_ga_pacs_codec_id_t::vendor_specific_codec_id</qualifiedname>
         <briefdescription>
 <para>Vendor specific codec id value. </para>
         </briefdescription>
@@ -44,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="31" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="31" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="31" column="14" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +56,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="28" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="27" bodyend="32"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" line="27" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_pacs.h" bodystart="28" bodyend="32"/>
     <listofallmembers>
       <member refid="structwiced__bt__ga__pacs__codec__id__t_1a855848986856ecf59312f2257f88c301" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_codec_id_t</scope><name>coding_format</name></member>
       <member refid="structwiced__bt__ga__pacs__codec__id__t_1afc3a318f444ededdfdfa0b48f8cc2341" prot="public" virt="non-virtual"><scope>wiced_bt_ga_pacs_codec_id_t</scope><name>company_id</name></member>

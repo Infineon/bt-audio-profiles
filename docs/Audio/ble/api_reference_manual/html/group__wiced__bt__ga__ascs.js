@@ -147,6 +147,7 @@ var group__wiced__bt__ga__ascs =
     [ "wiced_bt_ga_ascs_parse_data", "group__wiced__bt__ga__ascs.html#gae4b0033e8aa59266e059bf2aad4cf6a1", null ],
     [ "wiced_bt_ga_ascs_get_cp_header", "group__wiced__bt__ga__ascs.html#ga010b2bf44205e29aedba5b7fae6e062a", null ],
     [ "wiced_bt_ga_ascs_send_receiver_start_stop_ready", "group__wiced__bt__ga__ascs.html#ga12f47cea7084955768879fba3e676357", null ],
-    [ "ascs_opcode_str", "group__wiced__bt__ga__ascs.html#ga43523ac797afad701a5905357e1574cd", null ],
-    [ "ascs_state_str", "group__wiced__bt__ga__ascs.html#gae89618dc19c25df5c3597a188a874e27", null ]
+    [ "ascs_lib_get_state_string", "group__wiced__bt__ga__ascs.html#gad89a80227a13e0f62bc2a7cbab7ca423", null ],
+    [ "ascs_lib_get_opcode_string", "group__wiced__bt__ga__ascs.html#ga9369e7802809e68ac5a601b8b5da2f22", null ],
+    [ "ascs_lib_get_characteristic_name", "group__wiced__bt__ga__ascs.html#ga1590ed8e88c0b33cc4f5b734c40d8699", null ]
 ];

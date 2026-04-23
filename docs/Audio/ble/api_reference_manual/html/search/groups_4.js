@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['media_5fcontrol_5fapis',['Media_Control_APIs',['../group___media___control___a_p_is.html',1,'']]]
+  ['lc3_5fplus_0',['LC3_PLUS',['../group___l_c3___p_l_u_s.html',1,'']]]
 ];

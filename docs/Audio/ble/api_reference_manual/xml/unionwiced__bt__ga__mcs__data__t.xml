@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="unionwiced__bt__ga__mcs__data__t" kind="union" language="C++" prot="public">
     <compoundname>wiced_bt_ga_mcs_data_t</compoundname>
     <includes local="no">wiced_bt_ga_mcs.h</includes>
@@ -9,6 +9,7 @@
         <definition>wiced_bt_ga_string_t wiced_bt_ga_mcs_data_t::media_player_name</definition>
         <argsstring></argsstring>
         <name>media_player_name</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::media_player_name</qualifiedname>
         <briefdescription>
 <para>Media Player Name. </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="200" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="200" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="200" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a0e2b4b46e9427621564b0140140c54d5" prot="public" static="no" mutable="no">
         <type><ref refid="group___generic___structures_1ga1579ac439b5c41c465562322b93f810b" kindref="member">wiced_bt_ga_string_t</ref></type>
         <definition>wiced_bt_ga_string_t wiced_bt_ga_mcs_data_t::track_title</definition>
         <argsstring></argsstring>
         <name>track_title</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::track_title</qualifiedname>
         <briefdescription>
 <para>Track Title. </para>
         </briefdescription>
@@ -30,13 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="201" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="201" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="201" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a116ab729d63735a0b8583279241434b2" prot="public" static="no" mutable="no">
         <type>int32_t</type>
         <definition>int32_t wiced_bt_ga_mcs_data_t::track_duration</definition>
         <argsstring></argsstring>
         <name>track_duration</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::track_duration</qualifiedname>
         <briefdescription>
 <para>Track Duration. </para>
         </briefdescription>
@@ -44,13 +47,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="202" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="202" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="202" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a39ec00ebaa000454e0117d519f4726ad" prot="public" static="no" mutable="no">
         <type>int32_t</type>
         <definition>int32_t wiced_bt_ga_mcs_data_t::track_position</definition>
         <argsstring></argsstring>
         <name>track_position</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::track_position</qualifiedname>
         <briefdescription>
 <para>Track Position. </para>
         </briefdescription>
@@ -58,13 +62,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="203" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="203" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="203" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1aa7c6c94785f9b99af4656dfcd1769e56" prot="public" static="no" mutable="no">
         <type>int8_t</type>
         <definition>int8_t wiced_bt_ga_mcs_data_t::playback_speed</definition>
         <argsstring></argsstring>
         <name>playback_speed</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::playback_speed</qualifiedname>
         <briefdescription>
 <para>Playback Speed. </para>
         </briefdescription>
@@ -72,13 +77,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="204" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="204" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="204" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1afa504ca8f9a906a1ec4123a722f4f888" prot="public" static="no" mutable="no">
         <type>int8_t</type>
         <definition>int8_t wiced_bt_ga_mcs_data_t::seeking_speed</definition>
         <argsstring></argsstring>
         <name>seeking_speed</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::seeking_speed</qualifiedname>
         <briefdescription>
 <para>Seeking Speed. </para>
         </briefdescription>
@@ -86,13 +92,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="205" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="205" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="205" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a9a4ca1b2a4f3e70e5ce0abb60feed680" prot="public" static="no" mutable="no">
         <type><ref refid="group___media___control___a_p_is_1gaf916a125663a55c59a306f3a4908c28b" kindref="member">wiced_bt_ga_media_control_playing_order_t</ref></type>
         <definition>wiced_bt_ga_media_control_playing_order_t wiced_bt_ga_mcs_data_t::playing_order</definition>
         <argsstring></argsstring>
         <name>playing_order</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::playing_order</qualifiedname>
         <briefdescription>
 <para>Playing Order. </para>
         </briefdescription>
@@ -100,13 +107,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="206" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="206" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="206" column="50" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a3dc0204ed0ba40b9c97522231a56456a" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t wiced_bt_ga_mcs_data_t::playing_order_supported</definition>
         <argsstring></argsstring>
         <name>playing_order_supported</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::playing_order_supported</qualifiedname>
         <briefdescription>
 <para>Playing Order Supported bit field. </para>
         </briefdescription>
@@ -114,13 +122,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="207" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="207" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="207" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a42fa03692fe9e298f9825f61fbc2b326" prot="public" static="no" mutable="no">
         <type><ref refid="group___media___control___a_p_is_1gae95e0e5fbadbecf2de223458c514b42a" kindref="member">wiced_bt_ga_media_control_state_t</ref></type>
         <definition>wiced_bt_ga_media_control_state_t wiced_bt_ga_mcs_data_t::media_state</definition>
         <argsstring></argsstring>
         <name>media_state</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::media_state</qualifiedname>
         <briefdescription>
 <para>Media State. </para>
         </briefdescription>
@@ -128,13 +137,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="208" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="208" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="208" column="40" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1aa9e9fd2f0e180cd1d82e2896cb8ebb17" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
         <definition>uint32_t wiced_bt_ga_mcs_data_t::media_control_supported_opcodes</definition>
         <argsstring></argsstring>
         <name>media_control_supported_opcodes</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::media_control_supported_opcodes</qualifiedname>
         <briefdescription>
 <para>Media Control Supported Opcodes. </para>
         </briefdescription>
@@ -142,13 +152,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="209" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="209" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="209" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="209" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1a7b4b68ae8b513ea8c840393382d0e47b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
         <definition>uint8_t wiced_bt_ga_mcs_data_t::content_control_id</definition>
         <argsstring></argsstring>
         <name>content_control_id</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::content_control_id</qualifiedname>
         <briefdescription>
 <para>Content Control ID. </para>
         </briefdescription>
@@ -156,13 +167,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="210" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="210" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="210" column="29" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="unionwiced__bt__ga__mcs__data__t_1ae5a9f86cce459103bae1631de5997a82" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__mcs__operation__t" kindref="compound">wiced_bt_ga_mcs_operation_t</ref></type>
         <definition>wiced_bt_ga_mcs_operation_t wiced_bt_ga_mcs_data_t::control_point_operation</definition>
         <argsstring></argsstring>
         <name>control_point_operation</name>
+        <qualifiedname>wiced_bt_ga_mcs_data_t::control_point_operation</qualifiedname>
         <briefdescription>
 <para>Control point operation result. </para>
         </briefdescription>
@@ -170,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="211" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="211" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="211" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="211" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -179,26 +191,26 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="244">
+      <node id="1">
         <label>wiced_bt_ga_mcs_data_t</label>
         <link refid="unionwiced__bt__ga__mcs__data__t"/>
-        <childnode refid="245" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>control_point_operation</edgelabel>
         </childnode>
       </node>
-      <node id="246">
+      <node id="3">
         <label>wiced_bt_ga_mcs_operation_data_t</label>
         <link refid="unionwiced__bt__ga__mcs__operation__data__t"/>
       </node>
-      <node id="245">
+      <node id="2">
         <label>wiced_bt_ga_mcs_operation_t</label>
         <link refid="structwiced__bt__ga__mcs__operation__t"/>
-        <childnode refid="246" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>data</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="199" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="198" bodyend="212"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" line="198" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_mcs.h" bodystart="199" bodyend="212"/>
     <listofallmembers>
       <member refid="unionwiced__bt__ga__mcs__data__t_1a7b4b68ae8b513ea8c840393382d0e47b" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_data_t</scope><name>content_control_id</name></member>
       <member refid="unionwiced__bt__ga__mcs__data__t_1ae5a9f86cce459103bae1631de5997a82" prot="public" virt="non-virtual"><scope>wiced_bt_ga_mcs_data_t</scope><name>control_point_operation</name></member>

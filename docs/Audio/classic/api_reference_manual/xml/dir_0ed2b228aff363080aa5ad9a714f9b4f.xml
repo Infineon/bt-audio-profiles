@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="dir_0ed2b228aff363080aa5ad9a714f9b4f" kind="dir">
     <compoundname>PROFILES_CLASSIC_AUDIO</compoundname>
     <innerdir refid="dir_69e7a4193715d5b7458e13032b9f892f">temp_include_dir</innerdir>
@@ -7,6 +7,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_CLASSIC_AUDIO/"/>
   </compounddef>
 </doxygen>

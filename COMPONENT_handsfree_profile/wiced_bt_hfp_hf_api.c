@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -122,7 +122,9 @@ wiced_result_t wiced_bt_hfp_hf_deinit(void)
          return result;
     }
 
-    p_buf->hf_evt = WICED_BT_HFP_HF_API_DEINIT_EVT;
+    //Casting to wiced_bt_hfp_hf_state_evt_t is ok
+    // in hf_main.c (386) we are parsing non state machine event correctly.
+    p_buf->hf_evt = (wiced_bt_hfp_hf_state_evt_t)WICED_BT_HFP_HF_API_DEINIT_EVT;
 
     GKI_send_msg(WICED_BT_HFP_HF_TASK_ID, WICED_BT_HFP_HF_TASK_MBOX, p_buf);
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2025, Cypress Semiconductor Corporation (an Infineon company)
+ * Copyright 2026, Cypress Semiconductor Corporation (an Infineon company)
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,6 +22,7 @@
 #include "wiced_bt_types.h"
 #include "wiced_bt_a2d.h"
 #include "wiced_bt_a2d_m24.h"
+#include "wiced_bt_a2dp_int.h"
 
 
 /******************************************************************************
@@ -83,6 +84,7 @@ uint8_t wiced_bt_a2dp_m24_cfg_for_cap(uint8_t *p_peer,
         {
             peer_cie.obj_type = A2D_M24_IE_OBJ_2LC;
         }
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
         else if (peer_cie.obj_type & A2D_M24_IE_OBJ_4HE)
         {
             peer_cie.obj_type = A2D_M24_IE_OBJ_4HE;
@@ -95,6 +97,7 @@ uint8_t wiced_bt_a2dp_m24_cfg_for_cap(uint8_t *p_peer,
         {
             peer_cie.obj_type = A2D_M24_IE_OBJ_4ELD2;
         }
+#endif //WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
         else
         {
             /* Bad sink...sink must support at least A2D_M24_IE_OBJ_2LC */
@@ -244,17 +247,21 @@ uint8_t wiced_bt_a2dp_m24_cfg_in_cap(uint8_t *p_cfg, wiced_bt_a2d_m24_cie_t *p_c
     {
         status = A2D_NS_VBR;
     }
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
     /* DRC */
     else if (!p_cap->drc && cfg_cie.drc)
     {
         status = A2D_NS_DRC;
     }
+#endif //WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT
     return status;
 }
 
+#if (WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT == TRUE)
 wiced_bool_t wiced_bt_a2dp_m24_are_equal(wiced_bt_a2d_m24_cie_t *cap_1, wiced_bt_a2d_m24_cie_t *cap_2)
 {
     return (cap_1->bitrate == cap_2->bitrate) && (cap_1->chnl == cap_2->chnl) && (cap_1->obj_type == cap_2->obj_type) &&
            (cap_1->samp_freq == cap_2->samp_freq) && (cap_1->vbr == cap_2->vbr) && (cap_1->drc == cap_2->drc);
 
 }
+#endif //WICED_BT_A2DP_SOURCE_CO_M24_SUPPORT

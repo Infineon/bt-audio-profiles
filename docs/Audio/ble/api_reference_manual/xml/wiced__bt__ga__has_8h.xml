@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="wiced__bt__ga__has_8h" kind="file" language="C++">
     <compoundname>wiced_bt_ga_has.h</compoundname>
     <includes local="yes">wiced_bt_ble.h</includes>
@@ -8,24 +8,24 @@
     <includes refid="wiced__bt__ga_8h" local="yes">wiced_bt_ga.h</includes>
     <includes refid="wiced__bt__ga__common_8h" local="yes">wiced_bt_ga_common.h</includes>
     <incdepgraph>
-      <node id="76">
-        <label>wiced_bt_gatt.h</label>
-      </node>
-      <node id="74">
-        <label>wiced_bt_ble.h</label>
-      </node>
-      <node id="73">
+      <node id="1">
         <label>wiced_bt_ga_has.h</label>
         <link refid="wiced__bt__ga__has_8h"/>
-        <childnode refid="74" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="75">
+      <node id="2">
+        <label>wiced_bt_ble.h</label>
+      </node>
+      <node id="3">
         <label>wiced_bt_dev.h</label>
+      </node>
+      <node id="4">
+        <label>wiced_bt_gatt.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structwiced__bt__ga__has__preset__records__t" prot="public">wiced_bt_ga_has_preset_records_t</innerclass>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="15" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="15" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="15" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a34729915351167618813ef7f5354bdb0" prot="public" static="no">
         <name>HAS_TRACE_CRIT</name>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="16" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="16" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="16" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a34b68ac6b175827d03466a82f9d891e8" prot="public" static="no">
         <name>HAS_TRACE_ARRAY</name>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="17" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="17" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="17" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a9f567cad6eba24d0db278378097e3e9f" prot="public" static="no">
         <name>HAS_MAX_PRESET_RECORD_NAME_LENGTH</name>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="19" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="19" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="19" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a9df8d562375e51b3bd81a3633cd694fd" prot="public" static="no">
         <name>HAS_BINAURAL_HEARING_AID</name>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="20" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="20" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="20" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1aa388e998c55a85d44bc607ddef4f8d86" prot="public" static="no">
         <name>HAS_MONAURAL_HEARING_AID</name>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="21" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="21" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="21" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a8ffeca851f704dda28424c150cce8612" prot="public" static="no">
         <name>HAS_BANDED_HEARING_AID</name>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="22" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="22" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="22" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1af17b7089f5f0dc256868623ca2ada8b2" prot="public" static="no">
         <name>HAS_PRESET_SYNCHRONIZATION_NOT_SUPPORTED</name>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="23" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="23" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="23" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a843f7d43130ef764121d069e066d8149" prot="public" static="no">
         <name>HAS_PRESET_SYNCHRONIZATION_SUPPORTED</name>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="24" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="24" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="24" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a6d1c5d67edbb8db824318acf6b816e2c" prot="public" static="no">
         <name>HAS_IDENTICAL_PRESET_IN_COORDINATED_SET</name>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="25" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="25" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="25" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a6337ce9f737baa610230cfbaea338ce9" prot="public" static="no">
         <name>HAS_INDEPENDENT_PRESET_IN_COORDINATED_SET</name>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="26" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="26" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="26" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a2e3c5d2e22390afb1288760375c2d622" prot="public" static="no">
         <name>HAS_STATIC_PRESET</name>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="27" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="27" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="27" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1ac75cb26357b81da39734e411eb1ee7fc" prot="public" static="no">
         <name>HAS_DYNAMIC_PRESET</name>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="28" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="28" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="28" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1ab1110c27432165b8e40181e538612147" prot="public" static="no">
         <name>HAS_WRITABLE_PRESETS_NOT_SUPPORTED</name>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="29" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="29" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="29" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wiced__bt__ga__has_8h_1a23b1b93efb85d0376b6c5ebba6e76883" prot="public" static="no">
         <name>HAS_WRITABLE_PRESETS_SUPPORTED</name>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="30" column="9" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="30" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="30" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="42" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="41" bodyend="54"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="41" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="42" bodyend="54"/>
       </memberdef>
       <memberdef kind="enum" id="wiced__bt__ga__has_8h_1aa07e64030c0ac8323448c804581565b5" prot="public" static="no" strong="no">
         <type></type>
@@ -327,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="59" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="58" bodyend="64"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="58" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="59" bodyend="64"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="56" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="56" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="56" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="wiced__bt__ga__has_8h_1a4cfa8d9caf10fe356230809e49c56547" prot="public" static="no">
         <type>uint8_t</type>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="66" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="66" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="66" column="17" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -397,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="115" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="115" column="16" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" declline="115" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__ga__has_8h_1a28d497790b598fdf124d882bcbec9683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -414,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="117" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="117" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" declline="117" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="wiced__bt__ga__has_8h_1abbfe5b858aabbddc503fd19770914c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -431,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="120" column="1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" line="120" column="6" declfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h" declline="120" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -548,12 +548,12 @@
 <codeline lineno="107"><highlight class="normal">}<sp/><ref refid="unionwiced__bt__ga__has__data__t" kindref="compound">wiced_bt_ga_has_data_t</ref>;</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal">wiced_result_t<sp/>wiced_bt_ga_has_init(uint8_t<sp/>num_instances,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pv_ini);</highlight></codeline>
-<codeline lineno="117"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_server(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_server(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_client(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wiced_bt_ga_has_enable_client(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//__WICED_BT_GA_HAS_H__</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__WICED_BT_GA_HAS_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_has.h"/>
   </compounddef>
 </doxygen>

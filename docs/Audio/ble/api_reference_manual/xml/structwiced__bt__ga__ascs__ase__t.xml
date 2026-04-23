@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="structwiced__bt__ga__ascs__ase__t" kind="struct" language="C++" prot="public">
     <compoundname>wiced_bt_ga_ascs_ase_t</compoundname>
     <includes local="no">wiced_bt_ga_ascs.h</includes>
@@ -9,6 +9,7 @@
         <definition>wiced_bt_ga_ascs_ase_info_t* wiced_bt_ga_ascs_ase_t::p_ase_info</definition>
         <argsstring></argsstring>
         <name>p_ase_info</name>
+        <qualifiedname>wiced_bt_ga_ascs_ase_t::p_ase_info</qualifiedname>
         <briefdescription>
 <para>Server ASE info. </para>
         </briefdescription>
@@ -16,13 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="263" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="263" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="263" column="33" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__t_1a7d9e30afa3e811b1c7a71f8a769626bc" prot="public" static="no" mutable="no">
         <type><ref refid="group__wiced__bt__ga__ascs_1ga12d57a5be6ea0bd2a9a392f5581e353d" kindref="member">wiced_bt_ga_ascs_state_t</ref></type>
         <definition>wiced_bt_ga_ascs_state_t wiced_bt_ga_ascs_ase_t::ase_state</definition>
         <argsstring></argsstring>
         <name>ase_state</name>
+        <qualifiedname>wiced_bt_ga_ascs_ase_t::ase_state</qualifiedname>
         <briefdescription>
 <para>State of the ase for the client. </para>
         </briefdescription>
@@ -30,41 +32,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="264" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="264" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="264" column="30" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="264" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__t_1aa0d34857bfa8b4fced9de42a8d69d773" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__ascs__config__codec__args__t" kindref="compound">wiced_bt_ga_ascs_config_codec_args_t</ref></type>
         <definition>wiced_bt_ga_ascs_config_codec_args_t wiced_bt_ga_ascs_ase_t::codec_configured</definition>
         <argsstring></argsstring>
         <name>codec_configured</name>
+        <qualifiedname>wiced_bt_ga_ascs_ase_t::codec_configured</qualifiedname>
         <briefdescription>
-<para>Client configured Codec params. </para>
+<para>Client configured Codec params <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="265" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="265" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="265" column="42" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__t_1aee68ef6d38ce050ff410106abccf96b9" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__ascs__config__qos__args__t" kindref="compound">wiced_bt_ga_ascs_config_qos_args_t</ref></type>
         <definition>wiced_bt_ga_ascs_config_qos_args_t wiced_bt_ga_ascs_ase_t::qos_configured</definition>
         <argsstring></argsstring>
         <name>qos_configured</name>
+        <qualifiedname>wiced_bt_ga_ascs_ase_t::qos_configured</qualifiedname>
         <briefdescription>
-<para>Client configured QOS params. </para>
+<para>Client configured QOS params <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="266" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="266" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="266" column="40" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structwiced__bt__ga__ascs__ase__t_1ac819a19cb9ac73566fa93f781035073f" prot="public" static="no" mutable="no">
         <type><ref refid="structwiced__bt__ga__bap__metadata__t" kindref="compound">wiced_bt_ga_bap_metadata_t</ref></type>
         <definition>wiced_bt_ga_bap_metadata_t wiced_bt_ga_ascs_ase_t::metadata</definition>
         <argsstring></argsstring>
         <name>metadata</name>
+        <qualifiedname>wiced_bt_ga_ascs_ase_t::metadata</qualifiedname>
         <briefdescription>
 <para>Metadata information for the ASE. </para>
         </briefdescription>
@@ -72,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="267" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="267" bodyend="-1"/>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="267" column="32" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="267" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -81,61 +88,61 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="133">
-        <label>wiced_bt_ga_ascs_config_qos_args_t</label>
-        <link refid="structwiced__bt__ga__ascs__config__qos__args__t"/>
-      </node>
-      <node id="131">
+      <node id="2">
         <label>wiced_bt_ga_ascs_ase_info_t</label>
         <link refid="structwiced__bt__ga__ascs__ase__info__t"/>
-        <childnode refid="132" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>ascs_data</edgelabel>
         </childnode>
       </node>
-      <node id="126">
-        <label>wiced_bt_ga_ascs_ase_t</label>
-        <link refid="structwiced__bt__ga__ascs__ase__t"/>
-        <childnode refid="127" relation="usage">
-          <edgelabel>metadata</edgelabel>
-        </childnode>
-        <childnode refid="128" relation="usage">
-          <edgelabel>codec_configured</edgelabel>
-        </childnode>
-        <childnode refid="131" relation="usage">
-          <edgelabel>p_ase_info</edgelabel>
-        </childnode>
-        <childnode refid="133" relation="usage">
-          <edgelabel>qos_configured</edgelabel>
-        </childnode>
-      </node>
-      <node id="129">
-        <label>wiced_bt_ga_bap_csc_t</label>
-        <link refid="structwiced__bt__ga__bap__csc__t"/>
-      </node>
-      <node id="130">
-        <label>wiced_bt_ga_bap_codec_id_t</label>
-        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
-      </node>
-      <node id="132">
+      <node id="3">
         <label>wiced_bt_ga_ascs_ase_preferences_t</label>
         <link refid="structwiced__bt__ga__ascs__ase__preferences__t"/>
       </node>
-      <node id="127">
+      <node id="1">
+        <label>wiced_bt_ga_ascs_ase_t</label>
+        <link refid="structwiced__bt__ga__ascs__ase__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_ase_info</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>codec_configured</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>qos_configured</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>wiced_bt_ga_ascs_config_codec_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__codec__args__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>codec_id</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>csc</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>wiced_bt_ga_ascs_config_qos_args_t</label>
+        <link refid="structwiced__bt__ga__ascs__config__qos__args__t"/>
+      </node>
+      <node id="5">
+        <label>wiced_bt_ga_bap_codec_id_t</label>
+        <link refid="structwiced__bt__ga__bap__codec__id__t"/>
+      </node>
+      <node id="6">
+        <label>wiced_bt_ga_bap_csc_t</label>
+        <link refid="structwiced__bt__ga__bap__csc__t"/>
+      </node>
+      <node id="8">
         <label>wiced_bt_ga_bap_metadata_t</label>
         <link refid="structwiced__bt__ga__bap__metadata__t"/>
       </node>
-      <node id="128">
-        <label>wiced_bt_ga_ascs_config_codec_args_t</label>
-        <link refid="structwiced__bt__ga__ascs__config__codec__args__t"/>
-        <childnode refid="129" relation="usage">
-          <edgelabel>csc</edgelabel>
-        </childnode>
-        <childnode refid="130" relation="usage">
-          <edgelabel>codec_id</edgelabel>
-        </childnode>
-      </node>
     </collaborationgraph>
-    <location file="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="262" column="1" bodyfile="D:/glb/XytiXpSuN/0/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="261" bodyend="268"/>
+    <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" line="261" column="1" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_ascs.h" bodystart="262" bodyend="268"/>
     <listofallmembers>
       <member refid="structwiced__bt__ga__ascs__ase__t_1a7d9e30afa3e811b1c7a71f8a769626bc" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_t</scope><name>ase_state</name></member>
       <member refid="structwiced__bt__ga__ascs__ase__t_1aa0d34857bfa8b4fced9de42a8d69d773" prot="public" virt="non-virtual"><scope>wiced_bt_ga_ascs_ase_t</scope><name>codec_configured</name></member>

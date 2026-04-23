@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="group___l_c3___p_l_u_s" kind="group">
+    <compoundname>LC3_PLUS</compoundname>
+    <title>LC3_PLUS</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___l_c3___p_l_u_s_1ga121fd413322ec005a9fc1a13a5fb2f33" prot="public" static="no">
+        <name>VENDOR_SPECIFIC_CODING_FORMAT</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" line="83" column="9" bodyfile="/builds/repo/bluetooth_apps/PROFILES_LE/temp_include_dir/wiced_bt_ga_bap.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of LC3 plus definition which can be used. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

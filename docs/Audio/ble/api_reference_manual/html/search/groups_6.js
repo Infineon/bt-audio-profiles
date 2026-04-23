@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stream_5fcontrol_5fapis',['Stream_Control_APIs',['../group___stream___control___a_p_is.html',1,'']]]
+  ['public_5fbroadcast_5fprofile_0',['Public_Broadcast_Profile',['../group___public___broadcast___profile.html',1,'']]],
+  ['published_5faudio_5fcapability_5fservice_5fapis_1',['Published_Audio_Capability_Service_APIs',['../group___published___audio___capability___service___a_p_is.html',1,'']]]
 ];
